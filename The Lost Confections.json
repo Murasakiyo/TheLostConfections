@@ -810,6 +810,18 @@
         "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialogueData.json\"}",
         "name": "DialogueData",
         "userAdded": false
+      },
+      {
+        "file": "assets/CartoonSmoke.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "CartoonSmoke.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/PixiJS/971c74ddfb7396b4a871d3949e0970d50be470c636b91142362c15a3431ed63c_CartoonSmoke.png",
+          "name": "CartoonSmoke.png"
+        }
       }
     ]
   },
@@ -2008,6 +2020,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/color-pattern-minigame"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/fly-shooting--minigame"
     }
   ],
   "externalEvents": [

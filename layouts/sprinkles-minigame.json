@@ -29,31 +29,40 @@
   "variables": [
     {
       "name": "BalloonScore",
+      "persistentUuid": "bf626d24-c60b-4977-8669-011db0de2f9f",
       "type": "number",
       "value": 0
     },
     {
       "name": "Timer",
+      "persistentUuid": "6a492513-0153-4100-9c1b-df5d41fd36d6",
       "type": "number",
       "value": 0
     },
     {
-      "name": "Health",
+      "name": "GameCountdown",
+      "persistentUuid": "c90b3c6d-93fe-4b56-b48d-39d596abfd76",
       "type": "number",
-      "value": 3
+      "value": 15
+    },
+    {
+      "name": "TimerCountdown",
+      "persistentUuid": "bf79da47-7287-440b-85c0-f8f45fd2e7f8",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1.1658031088082903,
-      "height": 81.60621761658034,
+      "depth": 0.9975669099756692,
+      "height": 81.80048661800487,
       "keepRatio": true,
       "layer": "Platform",
       "name": "TempPlatformSprite",
       "persistentUuid": "44c54437-8994-4f83-a74e-9dbdc0e378ef",
-      "width": 450,
+      "width": 410,
       "x": 78,
       "y": 690,
       "zOrder": 1,
@@ -64,13 +73,13 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1.1658031088082903,
-      "height": 81.60621761658034,
+      "depth": 1.062176165803109,
+      "height": 74.35233160621765,
       "keepRatio": true,
       "layer": "Platform",
       "name": "TempPlatformSprite",
       "persistentUuid": "e98a111b-3882-48e9-821e-3345e5cffb9a",
-      "width": 450,
+      "width": 410,
       "x": 743,
       "y": 690,
       "zOrder": 1,
@@ -81,13 +90,13 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1.1658031088082903,
-      "height": 81.60621761658034,
+      "depth": 1.062176165803109,
+      "height": 74.35233160621765,
       "keepRatio": true,
       "layer": "Platform",
       "name": "TempPlatformSprite",
       "persistentUuid": "4cdfa29e-dfd2-4ba9-92d7-69e552bc4a1e",
-      "width": 450,
+      "width": 410,
       "x": 1415,
       "y": 690,
       "zOrder": 1,
@@ -150,7 +159,7 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "UI",
+      "layer": "Balloons",
       "name": "Balloon_of_Sprinkles",
       "persistentUuid": "76d0b2a0-f936-4cca-a997-7b063d55fe3f",
       "width": 0,
@@ -183,12 +192,12 @@
       "height": 0,
       "keepRatio": true,
       "layer": "UI",
-      "name": "HealthIcon",
-      "persistentUuid": "f9fc175c-22dc-42aa-be86-b27495cde6ca",
+      "name": "Countdown",
+      "persistentUuid": "d79ba064-9b9e-43d2-ae44-e0f7bc6540d8",
       "width": 0,
-      "x": 34,
-      "y": 25,
-      "zOrder": 8,
+      "x": 940,
+      "y": 10,
+      "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -199,43 +208,15 @@
       "height": 0,
       "keepRatio": true,
       "layer": "UI",
-      "name": "HealthIcon",
-      "persistentUuid": "4211baa5-837f-409d-ae56-3e2736decfd8",
+      "name": "ObjectiveText",
+      "persistentUuid": "11009974-6cea-4986-9ebb-db06b0d2f6df",
       "width": 0,
-      "x": 140,
-      "y": 25,
-      "zOrder": 9,
+      "x": 22,
+      "y": 26,
+      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "ID",
-          "type": "number",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "UI",
-      "name": "HealthIcon",
-      "persistentUuid": "4ae77e67-ece2-4e58-9b9c-199ee71327e2",
-      "width": 0,
-      "x": 249,
-      "y": 25,
-      "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "ID",
-          "type": "number",
-          "value": 3
-        }
-      ]
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -250,6 +231,22 @@
       "variables": [],
       "effects": [],
       "behaviors": [
+        {
+          "name": "EllipseMovement",
+          "type": "EllipseMovement::EllipseMovement",
+          "RadiusX": 200,
+          "RadiusY": 0,
+          "LoopDuration": 2,
+          "InitialTurningLeft": false,
+          "InitialDirectionAngle": 0,
+          "ShouldRotate": false,
+          "RotationOffset": 0,
+          "CenterX": 0,
+          "CenterY": 0,
+          "MovementAngle": 0,
+          "OldX": 0,
+          "OldY": 0
+        },
         {
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior",
@@ -577,6 +574,94 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Countdown",
+      "persistentUuid": "4e183033-197d-4ca0-8b8e-f2eb3e48c36b",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "15",
+      "font": "retro-pixel-cute-prop.ttf",
+      "textAlignment": "left",
+      "characterSize": 80,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "15",
+        "font": "retro-pixel-cute-prop.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 80,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "ObjectiveText",
+      "persistentUuid": "9fe9c6ff-94e1-4d91-9f46-f7affc0b4771",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Objective: Catch The Balloons!",
+      "font": "retro-pixel-cute-prop.ttf",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Objective: Catch The Balloons!",
+        "font": "retro-pixel-cute-prop.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -602,6 +687,12 @@
       },
       {
         "objectName": "HealthIcon"
+      },
+      {
+        "objectName": "Countdown"
+      },
+      {
+        "objectName": "ObjectiveText"
       }
     ]
   },
@@ -632,16 +723,6 @@
             "845",
             "=",
             "390"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "Health",
-            "-",
-            "1"
           ]
         }
       ]
@@ -706,7 +787,7 @@
           "parameters": [
             "Balloon_of_Sprinkles",
             "+",
-            "350 * TimeDelta()"
+            "550 * TimeDelta()"
           ]
         },
         {
@@ -717,34 +798,6 @@
             "Balloon_of_Sprinkles",
             "+",
             "cos(TimeFromStart() * 2) * 200 * TimeDelta()"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::ForEach",
-      "object": "HealthIcon",
-      "conditions": [
-        {
-          "type": {
-            "value": "NumberObjectVariable"
-          },
-          "parameters": [
-            "HealthIcon",
-            "ID",
-            ">",
-            "Variable(Health)"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "HealthIcon",
-            ""
           ]
         }
       ]
@@ -770,7 +823,7 @@
           "parameters": [
             "Timer",
             ">=",
-            "2"
+            "1"
           ]
         }
       ],
@@ -811,6 +864,74 @@
             "Timer",
             "+",
             "TimeDelta()"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "TimerCountdown",
+            "+",
+            "TimeDelta()"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "TimerCountdown",
+            ">=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "GameCountdown",
+            ">=",
+            "1"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "GameCountdown",
+            "-",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Countdown",
+            "Text",
+            "=",
+            "ToString(GameCountdown)"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "TimerCountdown",
+            "=",
+            "0"
           ]
         }
       ]
@@ -1161,6 +1282,10 @@
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "EllipseMovement",
+      "type": "EllipseMovement::EllipseMovement"
     },
     {
       "name": "Flippable",

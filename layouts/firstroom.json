@@ -29,11 +29,13 @@
   "variables": [
     {
       "name": "CurrentNPC",
+      "persistentUuid": "3c58d17d-e801-4b3d-b878-6cfb861d2c5a",
       "type": "string",
       "value": "None"
     },
     {
       "name": "StopScreen",
+      "persistentUuid": "63d767ad-ca61-443b-ba74-362cd4326cf9",
       "type": "boolean",
       "value": false
     }
