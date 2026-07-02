@@ -1,0 +1,2058 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 273,
+    "major": 5,
+    "minor": 6,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "default",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": true,
+    "projectUuid": "f8d04c1e-b66a-4e56-bda6-ebcc31e57ce7",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "",
+    "templateSlug": "",
+    "useDeprecatedZeroAsDefaultStringVariable": true,
+    "version": "1.0.0",
+    "name": "The Lost Confections",
+    "description": "",
+    "author": "",
+    "windowWidth": 1920,
+    "windowHeight": 1080,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": ""
+    },
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "bg_lvl5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bg_lvl5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "bg_lvl6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bg_lvl6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "stanley_sp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "stanley_sp.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/stanley_sp.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "stanley_sp",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/stanley_sp2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "stanley_sp2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/stanley_sp3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "stanley_sp3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/stanley_sp4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "stanley_sp4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite.png\"}",
+        "name": "NewSprite",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite2.png\"}",
+        "name": "NewSprite2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/stand.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "stand",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/stand2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "stand2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/children/childrenlvl1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/children/childrenlvl1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/children/childrenlvl2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/children/childrenlvl1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/children/childrenlvl2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/children/childrenlvl2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/stand3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "stand3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/stand4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "stand4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/arrow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/arrow.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "E.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "E.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "background.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "wall.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wall.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "wallend.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wallend.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/wall.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "wall.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "level_menu.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "level_menu.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "spotlight.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "spotlight.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "retro-pixel-cute-prop.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "retro-pixel-cute-prop.ttf",
+        "userAdded": false
+      },
+      {
+        "file": "down.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "down.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "enter.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "enter.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/playersprite/stanley_sp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/playersprite/stanley_sp.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/playersprite/stanley_sp2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/playersprite/stanley_sp2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/playersprite/stanley_sp3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/playersprite/stanley_sp3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/playersprite/stanley_sp4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/playersprite/stanley_sp4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/level_menu.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/level_menu.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/spotlight.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/spotlight.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/arrow.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/directions/arrow.png\",\"extension\":\".png\"}",
+        "name": "assets/directions/arrow.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/down.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/down.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/enter.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/enter.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/wall.png2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/wall.png2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/E.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/E.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/background.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/wallend.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/wallend.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../GDevelop-Projects/kenney_platformer-art-deluxe/Ice expansion/preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../GDevelop-Projects/kenney_platformer-art-deluxe/Ice expansion/preview.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "igloo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "igloo.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/wallcorner.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/wallcorner.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../GDevelop-Projects/kenney_platformer-art-deluxe/Ice expansion/Tiles/igloo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../GDevelop-Projects/kenney_platformer-art-deluxe/Ice expansion/Tiles/igloo.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NewSprite3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/stanley_sp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stanley_sp.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NewSprite4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/playersprite/stand.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/playersprite/stand.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/door/door1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/door/door1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../GDevelop-Projects/kenney_platformer-art-deluxe/Base pack/Tiles/stoneWall.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../GDevelop-Projects/kenney_platformer-art-deluxe/Base pack/Tiles/stoneWall.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/door/door2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/door/door2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../GDevelop-Projects/kenney_platformer-art-deluxe/Base pack/Tiles/hill_largeAlt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../GDevelop-Projects/kenney_platformer-art-deluxe/Base pack/Tiles/hill_largeAlt.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/door/exit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/door/exit.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../GDevelop-Projects/kenney_platformer-art-deluxe/Base pack/Tiles/boxExplosive.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../GDevelop-Projects/kenney_platformer-art-deluxe/Base pack/Tiles/boxExplosive.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/door/louieroomdoor.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/door/louieroomdoor.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/arrow2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/directions/arrow",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/door/stanroomdoor.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/door/stanroomdoor.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/arrow3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/directions/arrow2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/door/torresroomdoor.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/door/torresroomdoor.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/arrow4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/directions/arrow3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Bright.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Bright",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/basket.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/basket.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/Bright.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/Bright.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/basket_touch.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/basket_touch.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/DimArrowUp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/DimArrowUp.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "set_button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "set_button.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/BrightArrowUp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/BrightArrowUp.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/instructemote.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/instructemote.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/BrightArrowRight.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/directions/BrightArrowRight.png\"}",
+        "name": "assets/directions/BrightArrowRight",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/BrightArrowLeft.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/directions/BrightArrowLeft",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/BrightArrowDown.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/directions/BrightArrowDown",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/BrightArrowDown.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/BrightArrowDown.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Dim.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Dim",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/BrightArrowLeft.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/directions/BrightArrowLeft.png\",\"extension\":\".png\"}",
+        "name": "assets/directions/BrightArrowLeft.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Bright2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Bright2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/BrightArrowRight.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/directions/BrightArrowRight.png\",\"extension\":\".png\"}",
+        "name": "assets/directions/BrightArrowRight.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Bright3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Bright3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/dialogue_box.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/dialogue_box.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../GDevelop-Projects/kenney_platformer-art-deluxe/Buildings expansion/Tiles/doorOpen.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../GDevelop-Projects/kenney_platformer-art-deluxe/Buildings expansion/Tiles/doorOpen.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/box.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/box.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/balloon1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ingredient/balloon1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/balloon2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ingredient/balloon2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/balloon3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ingredient/balloon3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/cocoa.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ingredient/cocoa.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/sprinkles.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ingredient/sprinkles.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/vanilla.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ingredient/vanilla.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/E2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/directions/E",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/DialogueData.json",
+        "kind": "json",
+        "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialogueData.json\"}",
+        "name": "DialogueData",
+        "userAdded": false
+      }
+    ]
+  },
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Stanley",
+      "persistentUuid": "2b31a3e1-cf4a-4933-89e2-ffc2fb709d2b",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
+        }
+      ],
+      "animations": [
+        {
+          "name": "stand",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.7,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/playersprite/stanley_sp.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 356,
+                    "y": 727.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 18,
+                        "y": 19
+                      },
+                      {
+                        "x": 609,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 615,
+                        "y": 738
+                      },
+                      {
+                        "x": 18,
+                        "y": 739
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/playersprite/stanley_sp2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 356,
+                    "y": 727.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 18,
+                        "y": 19
+                      },
+                      {
+                        "x": 609,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 615,
+                        "y": 738
+                      },
+                      {
+                        "x": 18,
+                        "y": 739
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "run",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.2,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/playersprite/stanley_sp3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 356,
+                    "y": 727.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 18,
+                        "y": 19
+                      },
+                      {
+                        "x": 609,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 615,
+                        "y": 738
+                      },
+                      {
+                        "x": 18,
+                        "y": 739
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/playersprite/stanley_sp4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 356,
+                    "y": 727.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 18,
+                        "y": 19
+                      },
+                      {
+                        "x": 609,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 615,
+                        "y": 738
+                      },
+                      {
+                        "x": 18,
+                        "y": 739
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 540,
+      "name": "wall",
+      "persistentUuid": "f8954a2e-24b5-4256-84c2-eeed9c3e1ca3",
+      "texture": "assets/backgrounds/wall.png2.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 650,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "childnpc",
+      "persistentUuid": "382091c4-777b-4926-9bd8-a6726a8f3fce",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "InteractButton",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Name",
+          "type": "string",
+          "value": "Doe"
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
+        }
+      ],
+      "animations": [
+        {
+          "name": "npc_lvl1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.8,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "stand3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 19.5,
+                    "y": 44
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 38,
+                        "y": 1
+                      },
+                      {
+                        "x": 38,
+                        "y": 44
+                      },
+                      {
+                        "x": 0,
+                        "y": 44
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "stand4",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 19.5,
+                    "y": 44
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 38,
+                        "y": 1
+                      },
+                      {
+                        "x": 38,
+                        "y": 44
+                      },
+                      {
+                        "x": 0,
+                        "y": 44
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "npc_tutorial",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.8,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/NewSprite3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 32
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 38,
+                        "y": 1
+                      },
+                      {
+                        "x": 38,
+                        "y": 44
+                      },
+                      {
+                        "x": 0,
+                        "y": 44
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/NewSprite4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 32
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 38,
+                        "y": 1
+                      },
+                      {
+                        "x": 38,
+                        "y": 44
+                      },
+                      {
+                        "x": 0,
+                        "y": 44
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Basket",
+      "persistentUuid": "d2295918-c838-4da6-9757-517be61a24fd",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "basket",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/basket.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 2
+                      },
+                      {
+                        "x": 56,
+                        "y": 2
+                      },
+                      {
+                        "x": 56,
+                        "y": 71
+                      },
+                      {
+                        "x": 1,
+                        "y": 71
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "touch",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/basket_touch.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 2
+                      },
+                      {
+                        "x": 56,
+                        "y": 2
+                      },
+                      {
+                        "x": 56,
+                        "y": 71
+                      },
+                      {
+                        "x": 1,
+                        "y": 71
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Settings",
+      "persistentUuid": "674696ee-1ff8-4734-b1b7-98907e576c57",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "set_button.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 100,
+                        "y": 0
+                      },
+                      {
+                        "x": 100,
+                        "y": 100
+                      },
+                      {
+                        "x": 0,
+                        "y": 100
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Instructions",
+      "persistentUuid": "9e118f2c-f26b-4d6e-b259-70ce4e4eb1cb",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/instructemote.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 4
+                      },
+                      {
+                        "x": 59,
+                        "y": 4
+                      },
+                      {
+                        "x": 59,
+                        "y": 63
+                      },
+                      {
+                        "x": 5,
+                        "y": 63
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "DialogueBox",
+      "persistentUuid": "5af0b912-47f2-4041-8792-efc35c27be78",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/dialogue_box.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 19,
+                        "y": 29
+                      },
+                      {
+                        "x": 979,
+                        "y": 29
+                      },
+                      {
+                        "x": 979,
+                        "y": 389
+                      },
+                      {
+                        "x": 19,
+                        "y": 389
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "InventorySlot",
+      "persistentUuid": "39dd5569-90d2-455f-90bd-453c3224df4e",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "SlotNum",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/box.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Ingredients",
+      "persistentUuid": "51c37c90-6537-486a-bdda-22da8929f19b",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Name",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "cocoa",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/cocoa.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 59
+                      },
+                      {
+                        "x": 0,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "sprinkles",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/sprinkles.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 59
+                      },
+                      {
+                        "x": 0,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "vanilla",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/vanilla.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 59
+                      },
+                      {
+                        "x": 0,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "E",
+      "persistentUuid": "cc2943eb-cdb9-4a43-acea-bba5e70e5243",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/directions/E.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 50,
+                        "y": 0
+                      },
+                      {
+                        "x": 50,
+                        "y": 50
+                      },
+                      {
+                        "x": 0,
+                        "y": 50
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "LocationInteract",
+      "persistentUuid": "e76a8d15-3b83-458e-a2ca-5b2947703cec",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "assets/directions/E",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/directions/E",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 50,
+                        "y": 0
+                      },
+                      {
+                        "x": 50,
+                        "y": 50
+                      },
+                      {
+                        "x": 0,
+                        "y": 50
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "DialogueTXT",
+      "persistentUuid": "6d473990-1911-4ffb-bd47-87a5f2742c88",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Dialogues",
+        "opacity": 255,
+        "fontSize": 40,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "retro-pixel-cute-prop.ttf",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Space",
+      "persistentUuid": "2e54ce75-7696-442c-93b2-26dda4f2fbe6",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Space",
+      "font": "retro-pixel-cute-prop.ttf",
+      "textAlignment": "left",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 3,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Space",
+        "font": "retro-pixel-cute-prop.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 30,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "wall"
+      },
+      {
+        "objectName": "Stanley"
+      },
+      {
+        "objectName": "Basket"
+      },
+      {
+        "objectName": "Instructions"
+      },
+      {
+        "objectName": "Settings"
+      },
+      {
+        "objectName": "childnpc"
+      },
+      {
+        "objectName": "DialogueBox"
+      },
+      {
+        "objectName": "InventorySlot"
+      },
+      {
+        "objectName": "Ingredients"
+      },
+      {
+        "objectName": "E"
+      },
+      {
+        "objectName": "DialogueTXT"
+      },
+      {
+        "objectName": "LocationInteract"
+      },
+      {
+        "objectName": "Space"
+      }
+    ]
+  },
+  "objectsGroups": [],
+  "variables": [
+    {
+      "name": "Inventory",
+      "type": "structure",
+      "children": []
+    },
+    {
+      "name": "InventoryOpen",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "DialogueOngoing",
+      "type": "boolean",
+      "value": false
+    }
+  ],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/untitled-scene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/firstroom"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/levelselection"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/sprinkles-minigame"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/color-pattern-minigame"
+    }
+  ],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/player-movement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/inventory"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/add-item"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/dialogue"
+    }
+  ],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/all"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/stayonscreen"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/ysort"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/smoothcamera"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/ellipsemovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/autotyping"
+    }
+  ],
+  "externalLayouts": []
+}

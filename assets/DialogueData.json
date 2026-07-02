@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "Hai\nHello\nCan you hear me?\nI'm not finished\nAM I?",
+		"position": {
+			"x": 127,
+			"y": 175
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 395,
+			"y": 176
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node_2",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 641,
+			"y": 177
+		},
+		"colorID": 0
+	}
+]
