@@ -30,21 +30,17 @@
     {
       "folded": true,
       "name": "SystemPatternOne",
-      "persistentUuid": "3ee0ee8b-15b0-4e10-ae5c-2088ff3b231c",
       "type": "array",
       "children": [
         {
-          "persistentUuid": "b5d8e335-c47c-4ede-9a3f-0f4cdb33f60d",
           "type": "number",
           "value": 1
         },
         {
-          "persistentUuid": "f85cc4ab-f675-44e0-8282-08bfc2fc09eb",
           "type": "number",
           "value": 2
         },
         {
-          "persistentUuid": "20b5fbe3-48e8-4acd-aaf1-ae5efd438d09",
           "type": "number",
           "value": 3
         }
@@ -52,55 +48,46 @@
     },
     {
       "name": "SystemStep",
-      "persistentUuid": "771beb5b-ee60-4237-b8e2-13d12b9967b8",
       "type": "number",
       "value": 0
     },
     {
       "name": "PlayerStep",
-      "persistentUuid": "88408a81-43d0-4770-ab91-bce17180acef",
       "type": "number",
       "value": -1
     },
     {
       "name": "CurrentTurn",
-      "persistentUuid": "cee5f5f2-c9cb-4d23-9f51-7351350516ad",
       "type": "string",
       "value": "System"
     },
     {
       "name": "Timer",
-      "persistentUuid": "edf3c5c5-47e9-421a-aba9-c381670a8fc3",
       "type": "number",
       "value": 0
     },
     {
       "name": "SystemPhase",
-      "persistentUuid": "ebcb01b1-c975-4646-9bce-3f9ec114f9ff",
       "type": "string",
       "value": "FirstLvl"
     },
     {
       "name": "LastInput",
-      "persistentUuid": "9e285abc-d082-4f23-9b30-42a8d913d6bd",
       "type": "number",
       "value": 0
     },
     {
       "name": "StepsThisPhase",
-      "persistentUuid": "d42a2277-05a9-4fbc-9859-afb63a062caf",
       "type": "number",
       "value": 0
     },
     {
       "name": "SystemPlayPattern",
-      "persistentUuid": "298d52b2-423d-4b1a-8ef0-1db1a227f8c7",
       "type": "boolean",
       "value": true
     },
     {
       "name": "ToggleTimer",
-      "persistentUuid": "9ec0d93f-b0cb-48f6-ae07-816725e34c55",
       "type": "boolean",
       "value": true
     }
