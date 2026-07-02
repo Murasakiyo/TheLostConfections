@@ -62,11 +62,11 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 0.9975669099756692,
-      "height": 81.80048661800487,
+      "depth": 1,
+      "height": 72,
       "keepRatio": true,
       "layer": "Platform",
-      "name": "TempPlatformSprite",
+      "name": "Platform",
       "persistentUuid": "44c54437-8994-4f83-a74e-9dbdc0e378ef",
       "width": 410,
       "x": 78,
@@ -79,11 +79,11 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1.062176165803109,
-      "height": 74.35233160621765,
+      "depth": 1,
+      "height": 73,
       "keepRatio": true,
       "layer": "Platform",
-      "name": "TempPlatformSprite",
+      "name": "Platform",
       "persistentUuid": "e98a111b-3882-48e9-821e-3345e5cffb9a",
       "width": 410,
       "x": 743,
@@ -100,7 +100,7 @@
       "height": 74.35233160621765,
       "keepRatio": true,
       "layer": "Platform",
-      "name": "TempPlatformSprite",
+      "name": "Platform",
       "persistentUuid": "4cdfa29e-dfd2-4ba9-92d7-69e552bc4a1e",
       "width": 410,
       "x": 1415,
@@ -162,13 +162,14 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 341,
       "keepRatio": true,
       "layer": "Balloons",
       "name": "Balloon_of_Sprinkles",
       "persistentUuid": "76d0b2a0-f936-4cca-a997-7b063d55fe3f",
-      "width": 0,
+      "width": 138,
       "x": 318,
       "y": 208,
       "zOrder": 6,
@@ -240,15 +241,31 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "background",
+      "persistentUuid": "3076e2c4-8882-40e7-90e6-5cd5cc63502f",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
     {
       "assetStoreId": "",
       "height": 70,
-      "name": "TempPlatformSprite",
+      "name": "Platform",
       "persistentUuid": "dae53a67-8f5a-46fc-9baa-8c083f941eef",
-      "texture": "../GDevelop-Projects/kenney_platformer-art-deluxe/Ice expansion/Tiles/igloo.png",
+      "texture": "assets/platforms/cupcake_platform.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 70,
       "variables": [],
@@ -290,13 +307,13 @@
       "effects": [],
       "behaviors": [
         {
+          "acceleration": 6000,
+          "deceleration": 6000,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "acceleration": 3000,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
           "canGrabWithoutMoving": true,
-          "deceleration": 3000,
           "gravity": 1000,
           "ignoreDefaultControls": false,
           "jumpSpeed": 1200,
@@ -313,16 +330,136 @@
       ],
       "animations": [
         {
-          "name": "",
+          "name": "stand",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
+              "looping": true,
+              "timeBetweenFrames": 0.7,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/playersprite/stand.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 208,
+                        "y": 50
+                      },
+                      {
+                        "x": 485.5,
+                        "y": 55.5
+                      },
+                      {
+                        "x": 431,
+                        "y": 738
+                      },
+                      {
+                        "x": 270,
+                        "y": 736.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/playersprite/stand2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 208,
+                        "y": 50
+                      },
+                      {
+                        "x": 485.5,
+                        "y": 55.5
+                      },
+                      {
+                        "x": 431,
+                        "y": 738
+                      },
+                      {
+                        "x": 270,
+                        "y": 736.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "run",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.2,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/playersprite/stanley_sp3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 208,
+                        "y": 50
+                      },
+                      {
+                        "x": 485.5,
+                        "y": 55.5
+                      },
+                      {
+                        "x": 431,
+                        "y": 738
+                      },
+                      {
+                        "x": 270,
+                        "y": 736.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/playersprite/stanley_sp4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -383,7 +520,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Balloon_of_Sprinkles",
       "persistentUuid": "8c219839-e750-4aab-928a-090657939127",
@@ -394,7 +531,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "blue",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -403,7 +540,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "../GDevelop-Projects/kenney_platformer-art-deluxe/Base pack/Tiles/hill_largeAlt.png",
+                  "image": "assets/ingredient/balloon1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -419,20 +556,116 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 2,
+                        "y": 1
                       },
                       {
-                        "x": 48,
-                        "y": 0
+                        "x": 26,
+                        "y": 1
                       },
                       {
-                        "x": 48,
-                        "y": 146
+                        "x": 26,
+                        "y": 30
                       },
                       {
-                        "x": 0,
-                        "y": 146
+                        "x": 2,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pink",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/balloon2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 26,
+                        "y": 1
+                      },
+                      {
+                        "x": 26,
+                        "y": 30
+                      },
+                      {
+                        "x": 2,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "yellow",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/balloon3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 26,
+                        "y": 1
+                      },
+                      {
+                        "x": 26,
+                        "y": 30
+                      },
+                      {
+                        "x": 2,
+                        "y": 30
                       }
                     ]
                   ]
@@ -688,6 +921,17 @@
     },
     {
       "assetStoreId": "",
+      "height": 1080,
+      "name": "background",
+      "persistentUuid": "2be32d94-284f-480a-8985-c7044bd50cca",
+      "texture": "assets/backgrounds/stan_room.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 1920,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
       "bold": false,
       "italic": false,
       "name": "WinningText",
@@ -796,7 +1040,7 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "TempPlatformSprite"
+        "objectName": "Platform"
       },
       {
         "objectName": "StanleyPlatformer"
@@ -821,6 +1065,9 @@
       },
       {
         "objectName": "ObjectiveText"
+      },
+      {
+        "objectName": "background"
       },
       {
         "objectName": "WinningText"
@@ -976,12 +1223,34 @@
         },
         {
           "type": {
+            "value": "ScalableCapability::ScalableBehavior::SetValue"
+          },
+          "parameters": [
+            "Balloon_of_Sprinkles",
+            "Scale",
+            "=",
+            "5"
+          ]
+        },
+        {
+          "type": {
             "value": "SetNumberVariable"
           },
           "parameters": [
             "Timer",
             "=",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+          },
+          "parameters": [
+            "Balloon_of_Sprinkles",
+            "Animation",
+            "=",
+            "RandomInRange(0,2)"
           ]
         }
       ]
@@ -1155,6 +1424,107 @@
                 ""
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyFromTextPressed"
+          },
+          "parameters": [
+            "",
+            "\"a\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlatformBehavior::SimulateControl"
+          },
+          "parameters": [
+            "StanleyPlatformer",
+            "PlatformerObject",
+            "\"Left\""
+          ]
+        },
+        {
+          "type": {
+            "value": "FlippableCapability::FlippableBehavior::FlipX"
+          },
+          "parameters": [
+            "StanleyPlatformer",
+            "Flippable",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "StanleyPlatformer",
+            "Animation",
+            "=",
+            "\"run\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "AnyKeyPressed"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "StanleyPlatformer",
+            "Animation",
+            "=",
+            "\"stand\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyFromTextPressed"
+          },
+          "parameters": [
+            "",
+            "\"Space\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "StanleyPlatformer",
+            "Animation",
+            "=",
+            "\"run\""
           ]
         }
       ]

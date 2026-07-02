@@ -822,6 +822,46 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/PixiJS/971c74ddfb7396b4a871d3949e0970d50be470c636b91142362c15a3431ed63c_CartoonSmoke.png",
           "name": "CartoonSmoke.png"
         }
+      },
+      {
+        "file": "assets/platforms/cupcake_platform.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/platforms/cupcake_platform.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/stan_room.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/stan_room.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/playersprite/stand2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/playersprite/stand2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/creatures/fly_enemy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/creatures/fly_enemy.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/fly_room.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/fly_room.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
