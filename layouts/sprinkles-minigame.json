@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2705012603962561,
+    "zoomFactor": 0.34118560234734574,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,21 +29,31 @@
   "variables": [
     {
       "name": "BalloonScore",
+      "persistentUuid": "24e82f2f-e20e-4fb4-9789-9b9f5389ac5d",
       "type": "number",
       "value": 0
     },
     {
       "name": "Timer",
+      "persistentUuid": "d18c5300-cb7c-42ca-b418-e15f91ed1671",
       "type": "number",
       "value": 0
     },
     {
       "name": "GameCountdown",
+      "persistentUuid": "0bf1e492-20e1-411d-9138-812bfa1bc393",
       "type": "number",
       "value": 15
     },
     {
       "name": "TimerCountdown",
+      "persistentUuid": "8457e329-9aa9-4cbf-b059-9b2ed9a0ceea",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "WinTimer",
+      "persistentUuid": "2b7dab9d-6c0a-4275-a0db-ede231823113",
       "type": "number",
       "value": 0
     }
@@ -195,6 +205,39 @@
       "x": 22,
       "y": 26,
       "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "WinningText",
+      "persistentUuid": "14d8da84-7587-4dd9-85a2-1fa47bdc609d",
+      "width": 0,
+      "x": 579,
+      "y": 251,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 110,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Sprinkles",
+      "persistentUuid": "7d7219e3-f58d-4e68-b149-bfae95ef714f",
+      "width": 100,
+      "x": 2108,
+      "y": -300,
+      "zOrder": 14,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -887,6 +930,110 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "WinningText",
+      "persistentUuid": "2bca8118-797e-4792-a601-d4a9471c3228",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "retro-pixel-cute-prop.ttf",
+      "textAlignment": "left",
+      "characterSize": 60,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "retro-pixel-cute-prop.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 60,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Sprinkles",
+      "persistentUuid": "2b87c350-bab9-4ce9-8f0d-c3212571d304",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/sprinkles.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 48,
+                        "y": 1
+                      },
+                      {
+                        "x": 48,
+                        "y": 50
+                      },
+                      {
+                        "x": 2,
+                        "y": 50
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -921,6 +1068,12 @@
       },
       {
         "objectName": "background"
+      },
+      {
+        "objectName": "WinningText"
+      },
+      {
+        "objectName": "Sprinkles"
       }
     ]
   },
@@ -1129,6 +1282,7 @@
       ]
     },
     {
+      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1191,34 +1345,56 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyFromTextPressed"
+            "value": "NumberVariable"
           },
           "parameters": [
-            "",
-            "\"d\""
+            "BalloonScore",
+            ">=",
+            "10"
           ]
         }
       ],
       "actions": [
         {
           "type": {
-            "value": "PlatformBehavior::SimulateControl"
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
-            "StanleyPlatformer",
-            "PlatformerObject",
-            "\"Right\""
+            "WinningText",
+            "Text",
+            "=",
+            "\"You got all the balloons!!\""
           ]
         },
         {
           "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+            "value": "SetNumberVariable"
           },
           "parameters": [
-            "StanleyPlatformer",
-            "Animation",
+            "WinTimer",
+            "+",
+            "TimeDelta()"
+          ]
+        },
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "Sprinkles",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "Sprinkles",
             "=",
-            "\"run\""
+            "925",
+            "=",
+            "311"
           ]
         }
       ],
@@ -1228,23 +1404,24 @@
           "conditions": [
             {
               "type": {
-                "value": "FlippableCapability::FlippableBehavior::FlippedX"
+                "value": "NumberVariable"
               },
               "parameters": [
-                "StanleyPlatformer",
-                "Flippable"
+                "WinTimer",
+                ">=",
+                "2"
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "FlippableCapability::FlippableBehavior::FlipX"
+                "value": "Scene"
               },
               "parameters": [
-                "StanleyPlatformer",
-                "Flippable",
-                "no"
+                "",
+                "\"Firstroom\"",
+                ""
               ]
             }
           ]

@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.03951772666953833,
+    "zoomFactor": 0.6622955665507556,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,41 +29,36 @@
   "variables": [
     {
       "name": "CurrentNPC",
-      "persistentUuid": "3c58d17d-e801-4b3d-b878-6cfb861d2c5a",
+      "persistentUuid": "90e4a80d-98ee-4c2c-b6b5-7304432ee501",
       "type": "string",
       "value": "None"
     },
     {
       "name": "StopScreen",
-      "persistentUuid": "63d767ad-ca61-443b-ba74-362cd4326cf9",
+      "persistentUuid": "058f09d6-09ab-4eb6-8a2a-f27dc1f0fa16",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "CurrentRoom",
+      "persistentUuid": "fc28bd6e-5640-4fdd-a3e8-4291467554d6",
+      "type": "string",
+      "value": "None"
+    },
+    {
+      "name": "VanillaTimer",
+      "persistentUuid": "e7b83849-6988-4b0c-ab47-a74904781184",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "StartVanillaTimer",
+      "persistentUuid": "32462d3c-a5dd-4ccd-813a-69be9f843cd2",
       "type": "boolean",
       "value": false
     }
   ],
   "instances": [
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 189.19999999999982,
-      "keepRatio": true,
-      "layer": "Player + NPC",
-      "name": "childnpc",
-      "persistentUuid": "3403f28b-e427-4c36-97a5-0a94e2fdf447",
-      "width": 172,
-      "x": 255,
-      "y": 576,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Name",
-          "type": "string",
-          "value": "lvl1"
-        }
-      ]
-    },
     {
       "angle": 0,
       "customSize": true,
@@ -852,6 +847,39 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 128,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Vanilla_Extract",
+      "persistentUuid": "03b96cad-a513-41ce-a796-50f3088fd565",
+      "width": 50,
+      "x": -2026,
+      "y": 821,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FoundVanillaText",
+      "persistentUuid": "951cab06-6f1c-46bc-93f7-138f0cfa3ff5",
+      "width": 0,
+      "x": -2418,
+      "y": 544,
+      "zOrder": 28,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1002,7 +1030,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Doors",
       "persistentUuid": "bd0fceb1-5aee-4d09-a8ba-8696957145a2",
@@ -1042,16 +1070,16 @@
                         "y": 0
                       },
                       {
-                        "x": 402,
+                        "x": 417,
                         "y": 0
                       },
                       {
-                        "x": 402,
-                        "y": 120
+                        "x": 417,
+                        "y": 216
                       },
                       {
                         "x": 0,
-                        "y": 120
+                        "y": 216
                       }
                     ]
                   ]
@@ -1090,16 +1118,16 @@
                         "y": 0
                       },
                       {
-                        "x": 402,
+                        "x": 417,
                         "y": 0
                       },
                       {
-                        "x": 402,
-                        "y": 120
+                        "x": 417,
+                        "y": 216
                       },
                       {
                         "x": 0,
-                        "y": 120
+                        "y": 216
                       }
                     ]
                   ]
@@ -1138,16 +1166,16 @@
                         "y": 0
                       },
                       {
-                        "x": 402,
+                        "x": 417,
                         "y": 0
                       },
                       {
-                        "x": 402,
-                        "y": 120
+                        "x": 417,
+                        "y": 216
                       },
                       {
                         "x": 0,
-                        "y": 120
+                        "y": 216
                       }
                     ]
                   ]
@@ -1186,16 +1214,16 @@
                         "y": 0
                       },
                       {
-                        "x": 402,
+                        "x": 417,
                         "y": 0
                       },
                       {
-                        "x": 402,
-                        "y": 120
+                        "x": 417,
+                        "y": 216
                       },
                       {
                         "x": 0,
-                        "y": 120
+                        "y": 216
                       }
                     ]
                   ]
@@ -1234,16 +1262,16 @@
                         "y": 0
                       },
                       {
-                        "x": 402,
+                        "x": 417,
                         "y": 0
                       },
                       {
-                        "x": 402,
-                        "y": 120
+                        "x": 417,
+                        "y": 216
                       },
                       {
                         "x": 0,
-                        "y": 120
+                        "y": 216
                       }
                     ]
                   ]
@@ -1282,16 +1310,16 @@
                         "y": 0
                       },
                       {
-                        "x": 402,
+                        "x": 417,
                         "y": 0
                       },
                       {
-                        "x": 402,
-                        "y": 120
+                        "x": 417,
+                        "y": 216
                       },
                       {
                         "x": 0,
-                        "y": 120
+                        "y": 216
                       }
                     ]
                   ]
@@ -1350,6 +1378,111 @@
         "lineHeight": 0,
         "color": "0;0;0"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Vanilla_Extract",
+      "persistentUuid": "a6aea305-dbb9-4904-96a1-13ba88d45cd1",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/vanilla.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 6
+                      },
+                      {
+                        "x": 24,
+                        "y": 6
+                      },
+                      {
+                        "x": 24,
+                        "y": 63
+                      },
+                      {
+                        "x": 2,
+                        "y": 63
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "FoundVanillaText",
+      "persistentUuid": "9bf4f833-6612-469d-947b-8cd0c0e0f98c",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "retro-pixel-cute-prop.ttf",
+      "textAlignment": "left",
+      "characterSize": 60,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "retro-pixel-cute-prop.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 60,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1362,6 +1495,9 @@
         "objectName": "Floor"
       },
       {
+        "objectName": "FoundVanillaText"
+      },
+      {
         "objectName": "wallend"
       },
       {
@@ -1369,6 +1505,9 @@
       },
       {
         "objectName": "Doors"
+      },
+      {
+        "objectName": "Vanilla_Extract"
       },
       {
         "objectName": "location"
@@ -1781,6 +1920,287 @@
         "includeConfig": 0
       },
       "target": "Dialogue"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Distance"
+          },
+          "parameters": [
+            "Stanley",
+            "Doors",
+            "600",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::Name"
+          },
+          "parameters": [
+            "Doors",
+            "Animation",
+            "=",
+            "\"stanroomdoor\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "LocationInteract",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "LocationInteract",
+            "=",
+            "Stanley.X() ",
+            "=",
+            "Stanley.Y() - 250"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"f\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Sprinkles Minigame\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Distance"
+          },
+          "parameters": [
+            "Stanley",
+            "Doors",
+            "600",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::Name"
+          },
+          "parameters": [
+            "Doors",
+            "Animation",
+            "=",
+            "\"torresroomdoor\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "LocationInteract",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "LocationInteract",
+            "=",
+            "Stanley.X() ",
+            "=",
+            "Stanley.Y() - 250"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"f\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Fly Shooting  Minigame\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Stanley",
+            "Vanilla_Extract",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "FoundVanillaText",
+            "Text",
+            "=",
+            "\"You found Vanilla Extract!!\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "Vanilla_Extract",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "Vanilla_Extract",
+            "=",
+            "-2040",
+            "=",
+            "690"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "StartVanillaTimer",
+            "True",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "StartVanillaTimer",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "VanillaTimer",
+            "+",
+            "TimeDelta()"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "VanillaTimer",
+                ">=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "FoundVanillaText",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Vanilla_Extract",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "layers": [
