@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6622955665507556,
+    "zoomFactor": 0.36458333333339904,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,31 +29,26 @@
   "variables": [
     {
       "name": "CurrentNPC",
-      "persistentUuid": "90e4a80d-98ee-4c2c-b6b5-7304432ee501",
       "type": "string",
       "value": "None"
     },
     {
       "name": "StopScreen",
-      "persistentUuid": "058f09d6-09ab-4eb6-8a2a-f27dc1f0fa16",
       "type": "boolean",
       "value": false
     },
     {
       "name": "CurrentRoom",
-      "persistentUuid": "fc28bd6e-5640-4fdd-a3e8-4291467554d6",
       "type": "string",
       "value": "None"
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "e7b83849-6988-4b0c-ab47-a74904781184",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartVanillaTimer",
-      "persistentUuid": "32462d3c-a5dd-4ccd-813a-69be9f843cd2",
       "type": "boolean",
       "value": false
     }
@@ -2195,6 +2190,84 @@
               },
               "parameters": [
                 "Vanilla_Extract",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Distance"
+          },
+          "parameters": [
+            "Stanley",
+            "Doors",
+            "600",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::Name"
+          },
+          "parameters": [
+            "Doors",
+            "Animation",
+            "=",
+            "\"door1\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "LocationInteract",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "LocationInteract",
+            "=",
+            "Stanley.X() ",
+            "=",
+            "Stanley.Y() - 250"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"f\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Kitchen (Topdown)\"",
                 ""
               ]
             }

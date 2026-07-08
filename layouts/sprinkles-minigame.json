@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.34118560234734574,
+    "zoomFactor": 0.4027225833325921,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,31 +29,26 @@
   "variables": [
     {
       "name": "BalloonScore",
-      "persistentUuid": "24e82f2f-e20e-4fb4-9789-9b9f5389ac5d",
       "type": "number",
       "value": 0
     },
     {
       "name": "Timer",
-      "persistentUuid": "d18c5300-cb7c-42ca-b418-e15f91ed1671",
       "type": "number",
       "value": 0
     },
     {
       "name": "GameCountdown",
-      "persistentUuid": "0bf1e492-20e1-411d-9138-812bfa1bc393",
       "type": "number",
       "value": 15
     },
     {
       "name": "TimerCountdown",
-      "persistentUuid": "8457e329-9aa9-4cbf-b059-9b2ed9a0ceea",
       "type": "number",
       "value": 0
     },
     {
       "name": "WinTimer",
-      "persistentUuid": "2b7dab9d-6c0a-4275-a0db-ede231823113",
       "type": "number",
       "value": 0
     }
@@ -70,7 +65,7 @@
       "persistentUuid": "44c54437-8994-4f83-a74e-9dbdc0e378ef",
       "width": 410,
       "x": 78,
-      "y": 690,
+      "y": 824,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -87,7 +82,7 @@
       "persistentUuid": "e98a111b-3882-48e9-821e-3345e5cffb9a",
       "width": 410,
       "x": 743,
-      "y": 690,
+      "y": 824,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -104,7 +99,7 @@
       "persistentUuid": "4cdfa29e-dfd2-4ba9-92d7-69e552bc4a1e",
       "width": 410,
       "x": 1415,
-      "y": 690,
+      "y": 824,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -120,8 +115,8 @@
       "name": "StanleyPlatformer",
       "persistentUuid": "fe1177fb-04ab-4a89-a590-326f8e072ad7",
       "width": 240.00000000000003,
-      "x": 845,
-      "y": 390,
+      "x": 817,
+      "y": 499,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -308,9 +303,11 @@
       "behaviors": [
         {
           "acceleration": 6000,
-          "deceleration": 6000,
+          "maxFallingSpeed": 900,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "xGrabTolerance": 10,
+          "deceleration": 6000,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
           "canGrabWithoutMoving": true,
@@ -319,12 +316,10 @@
           "jumpSpeed": 1200,
           "jumpSustainTime": 0.2,
           "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 700,
           "maxSpeed": 250,
           "slopeMaxAngle": 60,
           "useLegacyTrajectory": false,
           "useRepeatedJump": false,
-          "xGrabTolerance": 10,
           "yGrabOffset": 0
         }
       ],
@@ -932,6 +927,7 @@
       "behaviors": []
     },
     {
+      "assetStoreId": "",
       "bold": false,
       "italic": false,
       "name": "WinningText",
@@ -1516,6 +1512,53 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "StanleyPlatformer",
+            "Animation",
+            "=",
+            "\"run\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyFromTextPressed"
+          },
+          "parameters": [
+            "",
+            "\"d\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlatformBehavior::SimulateControl"
+          },
+          "parameters": [
+            "StanleyPlatformer",
+            "PlatformerObject",
+            "\"Right\""
+          ]
+        },
+        {
+          "type": {
+            "value": "FlippableCapability::FlippableBehavior::FlipX"
+          },
+          "parameters": [
+            "StanleyPlatformer",
+            "Flippable",
+            "no"
+          ]
+        },
         {
           "type": {
             "value": "AnimatableCapability::AnimatableBehavior::SetName"

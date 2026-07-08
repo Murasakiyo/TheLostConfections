@@ -862,6 +862,30 @@
         "name": "assets/backgrounds/fly_room.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/kitchen.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/kitchen.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/bowl.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ingredient/bowl.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/whisk.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ingredient/whisk.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -1643,7 +1667,12 @@
         }
       ],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
       "animations": [
         {
           "name": "cocoa",
