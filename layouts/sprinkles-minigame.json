@@ -302,10 +302,10 @@
       "effects": [],
       "behaviors": [
         {
-          "acceleration": 6000,
-          "maxFallingSpeed": 900,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "acceleration": 6000,
+          "maxFallingSpeed": 900,
           "xGrabTolerance": 10,
           "deceleration": 6000,
           "canGoDownFromJumpthru": true,
@@ -1030,6 +1030,198 @@
           ]
         }
       ]
+    },
+    {
+      "additive": false,
+      "assetStoreId": "",
+      "destroyWhenNoParticles": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 360,
+      "emitterForceMax": 170,
+      "emitterForceMin": 90,
+      "flow": 45,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 300,
+      "name": "BalloonConfettiRed",
+      "particleAlpha1": 204,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 51,
+      "particleBlue2": 51,
+      "particleColor1": "255;51;51",
+      "particleColor2": "255;51;51",
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 51,
+      "particleGreen2": 51,
+      "particleLifeTimeMax": 2.5,
+      "particleLifeTimeMin": 0.5,
+      "particleRed1": 255,
+      "particleRed2": 255,
+      "particleSize1": 100,
+      "particleSize2": 100,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "persistentUuid": "ae05a8fc-fda6-4766-841b-337205216590",
+      "rendererParam1": 3,
+      "rendererParam2": 5,
+      "rendererType": "Point",
+      "tank": 10,
+      "textureParticleName": "",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 3,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "additive": false,
+      "assetStoreId": "",
+      "destroyWhenNoParticles": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 360,
+      "emitterForceMax": 85,
+      "emitterForceMin": 45,
+      "flow": 45,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 300,
+      "name": "BalloonConfettiYellow",
+      "particleAlpha1": 204,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 28,
+      "particleBlue2": 28,
+      "particleColor1": "248;231;28",
+      "particleColor2": "248;231;28",
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 231,
+      "particleGreen2": 231,
+      "particleLifeTimeMax": 2.5,
+      "particleLifeTimeMin": 0.5,
+      "particleRed1": 248,
+      "particleRed2": 248,
+      "particleSize1": 100,
+      "particleSize2": 100,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "persistentUuid": "5acd8d84-b6e5-4dba-b491-ee9990a1ccad",
+      "rendererParam1": 3,
+      "rendererParam2": 5,
+      "rendererType": "Point",
+      "tank": 10,
+      "textureParticleName": "",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 3,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "additive": false,
+      "assetStoreId": "",
+      "destroyWhenNoParticles": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 360,
+      "emitterForceMax": 85,
+      "emitterForceMin": 45,
+      "flow": 45,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 300,
+      "name": "BalloonConfettiPink",
+      "particleAlpha1": 204,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 144,
+      "particleBlue2": 144,
+      "particleColor1": "255;51;144",
+      "particleColor2": "255;51;144",
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 51,
+      "particleGreen2": 51,
+      "particleLifeTimeMax": 2.5,
+      "particleLifeTimeMin": 0.5,
+      "particleRed1": 255,
+      "particleRed2": 255,
+      "particleSize1": 100,
+      "particleSize2": 100,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "persistentUuid": "382e6054-8e19-4632-886e-aaf76328e75f",
+      "rendererParam1": 3,
+      "rendererParam2": 5,
+      "rendererType": "Point",
+      "tank": 10,
+      "textureParticleName": "",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 3,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "additive": false,
+      "assetStoreId": "",
+      "destroyWhenNoParticles": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 360,
+      "emitterForceMax": 85,
+      "emitterForceMin": 45,
+      "flow": 45,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 300,
+      "name": "BalloonConfettiBlue",
+      "particleAlpha1": 204,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 226,
+      "particleBlue2": 226,
+      "particleColor1": "74;144;226",
+      "particleColor2": "74;144;226",
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 144,
+      "particleGreen2": 144,
+      "particleLifeTimeMax": 2.5,
+      "particleLifeTimeMin": 0.5,
+      "particleRed1": 74,
+      "particleRed2": 74,
+      "particleSize1": 100,
+      "particleSize2": 100,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "persistentUuid": "e67024d6-ee8b-4c08-a665-efe947ad11ca",
+      "rendererParam1": 3,
+      "rendererParam2": 5,
+      "rendererType": "Point",
+      "tank": 10,
+      "textureParticleName": "",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 3,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -1070,6 +1262,18 @@
       },
       {
         "objectName": "Sprinkles"
+      },
+      {
+        "objectName": "BalloonConfettiRed"
+      },
+      {
+        "objectName": "BalloonConfettiYellow"
+      },
+      {
+        "objectName": "BalloonConfettiPink"
+      },
+      {
+        "objectName": "BalloonConfettiBlue"
       }
     ]
   },
@@ -1149,6 +1353,54 @@
           "parameters": [
             "Balloon_of_Sprinkles",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "BalloonConfettiRed",
+            "Balloon_of_Sprinkles.CenterX()",
+            "Balloon_of_Sprinkles.CenterY() - 100",
+            "\"Balloons\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "BalloonConfettiYellow",
+            "Balloon_of_Sprinkles.CenterX()",
+            "Balloon_of_Sprinkles.CenterY() - 100",
+            "\"Balloons\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "BalloonConfettiPink",
+            "Balloon_of_Sprinkles.CenterX()",
+            "Balloon_of_Sprinkles.CenterY() - 100",
+            "\"Balloons\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "BalloonConfettiBlue",
+            "Balloon_of_Sprinkles.CenterX()",
+            "Balloon_of_Sprinkles.CenterY() - 100",
+            "\"Balloons\""
           ]
         }
       ]
