@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3768772036750875,
+    "zoomFactor": 0.30887412163426536,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,31 +29,31 @@
   "variables": [
     {
       "name": "HitCount",
-      "persistentUuid": "a320aba0-88a5-4d98-abd6-f505570293d6",
       "type": "number",
       "value": 0
     },
     {
       "name": "GunCooldown",
-      "persistentUuid": "6172d940-ccef-454c-ae40-cca7c4667620",
       "type": "number",
       "value": 0
     },
     {
       "name": "ShotGun",
-      "persistentUuid": "56bd4344-7caf-474d-91d7-b3af98879530",
       "type": "boolean",
       "value": false
     },
     {
       "name": "FlyDeath",
-      "persistentUuid": "8c940121-37b3-4159-9b5c-7f954c9bb7b9",
       "type": "boolean",
       "value": false
     },
     {
       "name": "DeathTimer",
-      "persistentUuid": "af470000-028f-4134-8a6f-808b17f5a113",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "HurtTimer",
       "type": "number",
       "value": 0
     }
@@ -919,6 +919,40 @@
             "Fly.Y()",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "Fly",
+            "\"255;74;74\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.2\n"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Fly",
+                "\"255;255;255\""
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1059,6 +1093,15 @@
             "+",
             "TimeDelta()"
           ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "Fly",
+            "\"255;74;74\""
+          ]
         }
       ],
       "events": [
@@ -1130,11 +1173,31 @@
               "parameters": [
                 "DeathTimer",
                 ">=",
-                "4"
+                "5"
               ]
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Inventory.Cocoa",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "FlyMinigame",
+                "True",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "Scene"
@@ -1347,12 +1410,20 @@
       "type": "OpacityCapability::OpacityBehavior"
     },
     {
+      "name": "PlatformerObject",
+      "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
       "name": "Resizable",
       "type": "ResizableCapability::ResizableBehavior"
     },
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "StayOnScreen",
+      "type": "StayOnScreen::StayOnScreen"
     },
     {
       "name": "Text",

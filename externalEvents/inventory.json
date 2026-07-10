@@ -1,8 +1,9 @@
 {
-  "associatedLayout": "LevelSelection",
+  "associatedLayout": "Firstroom",
   "name": "Inventory",
   "events": [
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -28,11 +29,7 @@
       ],
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        },
-        {
+          "folded": true,
           "type": "BuiltinCommonInstructions::ForEach",
           "object": "InventorySlot",
           "conditions": [],
@@ -130,9 +127,133 @@
                 ""
               ]
             }
+          ],
+          "events": [
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Inventory.Vanilla",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "InventoryIcon",
+                    "1790",
+                    "yPosition",
+                    "\"Menu\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "InventoryIcon",
+                    "Animation",
+                    "=",
+                    "\"vanilla\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Inventory.Cocoa",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "InventoryIcon",
+                    "1780",
+                    "yPosition + 115",
+                    "\"Menu\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "InventoryIcon",
+                    "Animation",
+                    "=",
+                    "\"cocoa\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Inventory.Sprinkles",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "InventoryIcon",
+                    "1780",
+                    "yPosition + 230",
+                    "\"Menu\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "InventoryIcon",
+                    "Animation",
+                    "=",
+                    "\"sprinkles\""
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Else",
           "conditions": [
             {
@@ -168,6 +289,22 @@
             },
             {
               "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "Ingredients"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "InventoryIcon"
+              ]
+            },
+            {
+              "type": {
                 "value": "SetBooleanVariable"
               },
               "parameters": [
@@ -179,13 +316,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Add Item"
     }
   ]
 }
