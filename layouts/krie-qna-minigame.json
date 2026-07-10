@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4448515998886648,
+    "zoomFactor": 0.4303403802207659,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,26 +29,31 @@
   "variables": [
     {
       "name": "WrongAnswerCount",
+      "persistentUuid": "161c135b-c93a-45dd-897d-9d3ab42883a6",
       "type": "number",
       "value": 0
     },
     {
       "name": "DialogueState",
+      "persistentUuid": "89d94e9b-0ca6-4115-9d2a-89c1ed84db97",
       "type": "number",
       "value": 0
     },
     {
       "name": "EndingType",
+      "persistentUuid": "d3f4cad0-073c-4d59-8c1d-119e56dcfcd0",
       "type": "string",
       "value": ""
     },
     {
       "name": "QNAFinished",
+      "persistentUuid": "5e2f67b9-ab08-4a4f-ab52-3e35bbc40968",
       "type": "boolean",
       "value": false
     },
     {
       "name": "TextColor",
+      "persistentUuid": "b9b7a127-4d88-4ca1-a41e-aacc5ef7c620",
       "type": "string",
       "value": ""
     }
@@ -74,14 +79,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 451,
+      "height": 481,
       "keepRatio": true,
       "layer": "UI",
       "name": "DialogueBox_QNA",
       "persistentUuid": "5d249d07-ee90-4ece-935f-f2b655a88729",
-      "width": 1117,
-      "x": 406,
-      "y": 603,
+      "width": 1191,
+      "x": 345,
+      "y": 602,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -91,14 +96,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 203,
+      "height": 176,
       "keepRatio": true,
       "layer": "Dialogue",
       "name": "DialogueTXT_QNA",
       "persistentUuid": "df17a3c9-df2e-41ca-992e-2bf16125bfb6",
-      "width": 915,
-      "x": 515,
-      "y": 707,
+      "width": 984,
+      "x": 461,
+      "y": 765,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -113,8 +118,8 @@
       "name": "Space_QNA",
       "persistentUuid": "5c7c20c2-2632-44f6-9411-7cba1e04c2f6",
       "width": 0,
-      "x": 1361,
-      "y": 912,
+      "x": 1374,
+      "y": 941,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -130,8 +135,8 @@
       "name": "OptionBox_QNA",
       "persistentUuid": "9e502404-dccd-4244-8d0b-2e0ec8f46e6e",
       "width": 843,
-      "x": 543,
-      "y": 232,
+      "x": 510,
+      "y": 263,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -141,14 +146,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 737,
+      "height": 739,
       "keepRatio": true,
       "layer": "Sprites",
       "name": "Stanley_QNA",
       "persistentUuid": "0b0a803b-d9f6-4722-9e34-fa2f17a79acd",
-      "width": 590,
-      "x": -10,
-      "y": 206,
+      "width": 592,
+      "x": 274,
+      "y": 220,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -164,9 +169,73 @@
       "name": "OptionsTXT_QNA",
       "persistentUuid": "a20b514f-ea25-4d65-8b80-d78ad05344df",
       "width": 816,
-      "x": 556,
-      "y": 246,
+      "x": 523,
+      "y": 277,
       "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FoundCherrySyrupTXT",
+      "persistentUuid": "d91d9dc3-ecd5-424e-a372-0517e2f774dc",
+      "width": 0,
+      "x": 1151,
+      "y": -98,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FoundCherrySyrupTXT",
+      "persistentUuid": "779df5e5-27c8-4487-a3ba-ab38eede546b",
+      "width": 0,
+      "x": 1934,
+      "y": 509,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FoundCherrySyrupTXT",
+      "persistentUuid": "462aa066-991d-46ce-a1cc-4eb28b650a2f",
+      "width": 0,
+      "x": 1385,
+      "y": 1183,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Dialogue",
+      "name": "NameTXT_QNA",
+      "persistentUuid": "80979b51-626f-46a0-b898-6a8b30a262d3",
+      "width": 0,
+      "x": 464,
+      "y": 712,
+      "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -542,6 +611,44 @@
         "lineHeight": 0,
         "color": "255;255;255"
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "NameTXT_QNA",
+      "persistentUuid": "ec8a38a9-12a9-4ca3-bbc9-80b32c57153a",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "Effect",
+          "doubleParameters": {
+            "alpha": 1,
+            "blur": 2,
+            "distance": 1,
+            "padding": 0,
+            "quality": 3,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "74;74;74"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        }
+      ],
+      "behaviors": [],
+      "content": {
+        "text": "Name",
+        "opacity": 255,
+        "fontSize": 40,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "retro-pixel-cute-prop.ttf",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -555,6 +662,9 @@
       },
       {
         "objectName": "DialogueTXT_QNA"
+      },
+      {
+        "objectName": "NameTXT_QNA"
       },
       {
         "objectName": "Space_QNA"
@@ -574,6 +684,17 @@
     ]
   },
   "events": [
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Dialogue",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
+    },
     {
       "aiGeneratedEventId": "01KWGFEC2B1SF29DHVGKXG67SF",
       "type": "BuiltinCommonInstructions::Standard",
@@ -635,42 +756,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DialogueTree::IsCommandCalled"
-          },
-          "parameters": [
-            "\"set_color\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetStringVariable"
-          },
-          "parameters": [
-            "TextColor",
-            "=",
-            "DialogueTree::CommandParameter(0)"
-          ]
-        },
-        {
-          "type": {
-            "value": "DialogueTree::GoToNextLine"
-          },
-          "parameters": []
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
     },
     {
       "aiGeneratedEventId": "01KX3R44QEE76CGM7JWD4JEW8V",
@@ -793,6 +878,17 @@
           "actions": []
         }
       ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Option scrolling",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
     },
     {
       "aiGeneratedEventId": "01KWGFWKZWTWCJCVS4SNNT4QK3",
@@ -993,6 +1089,67 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DialogueTree::IsCommandCalled"
+          },
+          "parameters": [
+            "\"Krie\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "NameTXT_QNA",
+            "=",
+            "\"[b][color=#dd5887]Krie[/color][/b]\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DialogueTree::IsCommandCalled"
+          },
+          "parameters": [
+            "\"Stanley\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "NameTXT_QNA",
+            "=",
+            "\"[b][color=#cc4040]Stanley[/color][/b]\""
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Endings",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
+    },
+    {
       "type": "BuiltinCommonInstructions::Comment",
       "color": {
         "b": 109,
@@ -1040,6 +1197,38 @@
       "conditions": [
         {
           "type": {
+            "value": "DialogueTree::WasBranchVisited"
+          },
+          "parameters": [
+            "\"Question3\""
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "DialogueTree::IsDialogueRunning"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "QNAFinished",
+            "True",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "BooleanVariable"
           },
           "parameters": [
@@ -1047,6 +1236,19 @@
             "True",
             ""
           ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "DialogueTree::IsDialogueRunning"
+          },
+          "parameters": []
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
@@ -1070,7 +1272,7 @@
               },
               "parameters": [
                 "WrongAnswerCount",
-                ">=",
+                ">",
                 "1"
               ]
             },
@@ -1111,7 +1313,7 @@
               },
               "parameters": [
                 "WrongAnswerCount",
-                "<",
+                "<=",
                 "1"
               ]
             },
