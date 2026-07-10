@@ -1,0 +1,222 @@
+[
+	{
+		"title": "Tutorial",
+		"tags": "",
+		"body": "<<Krie>> \nStanley!! Hello hello~\nI don't usually see you around the greenhouse, let alone days where I need my dear jester's help to harvest some fruit.\n<<Stanley>> \n[i]*chuckles* [/i]Greetings, Your Highness Krie, you sound awfully busy.\n<<Krie>>\nHmph! You're sooo obvious, it's only when you want something from me that you come here.\n<<Stanley>> \nMy deepest apologies, Your Highness. Would adorning a fool's cap cease your sadness? Or shall I assist you once I've tended to the children?\n<<Krie>>\nThe latter would be delightful! \n<<Stanley>> \nAs you guessed, I'm here for some syrup.\n<<Krie>>\nHmm... Give me a moment as I search my pantry, I should have something for you.\n[i]*shuffle shuffle clatter [b]THUNK[/b] rattle [b]CLANG[/b]*[/i]\n<<Krie>>\nPhewww~ Found it!\n<<Stanley>> \nWow, Your Highness...... You sure didn't hold back after taking up my offer...\n<<Krie>>\nComplain all you want, Stanley~ You'll be needing this cherry syrup either way!\nBefore that, I want to ask you a few questions about botany! Pretty please with a cherry on top?\n<<Stanley>> \nAye, wouldn't hurt to entertain Your Highness. Perhaps it would ease your mind from the separation of your darling syrup.\n<<Krie>>\nHey!!\nAhem. Alright, I'll ask you three questions in total, but let's do an example question first. No consequences.\n[i](There's consequences??!)[/i]\nMy question is: Which family do cherries belong to?\n[[Rosaceae (rose)|tut_correct]]\n[[Cucurbitaceae (gourd)|tut_wrong1]]\n[[Lamiaceae (Mint)|tut_wrong2]]\n[[Rutaceae (citrus)|tut_wrong3]]",
+		"position": {
+			"x": 757,
+			"y": 6
+		},
+		"colorID": 0
+	},
+	{
+		"title": "tut_correct",
+		"tags": "correct",
+		"body": "<<Krie>>\nHooray!!! As you said, cherries belong to the rose family! \nThey are considered stone fruits in the family due to the pits in the flesh.\n<<Stanley>> \n[i](Phew, got lucky there.)[/i]\nYour Highness is very knowledgable~\n<<Krie>>\nBut of course!\nAnyways... let's get serious!\n[[Question1]]",
+		"position": {
+			"x": 660,
+			"y": -336
+		},
+		"colorID": 0
+	},
+	{
+		"title": "tut_wrong1",
+		"tags": "wrong",
+		"body": "<<Krie>>\nOh dearie.. You're mistaken, Stanley.\nThe gourd family has fruits that grow on vines. Their rinds are suuuuper tough. Think of watermelons and cucumbers.\n<<Stanley>> \nI see! I assume pumpkins count as well?\n<<Krie>>\nExactly! You're catching on quick, dear jester.\n<<Stanley>> \nYou flatter me, Your Highness.\n<<Krie>>\nAlright, let's get serious!.\n[[Question1]]",
+		"position": {
+			"x": 972,
+			"y": -256
+		},
+		"colorID": 0
+	},
+	{
+		"title": "tut_wrong2",
+		"tags": "wrong",
+		"body": "<<Krie>>\nOh dearie.. You're mistaken, Stanley.\nThe mint family, as stated in the name, have really fragrant plants! Think of mint leaves and basil leaves. \n<<Stanley>> \nI see! I assume rosemary counts as well?\n<<Krie>>\nExactly! You're catching on quick, dear jester.\n<<Stanley>> \nYou flatter me, Your Highness.\n<<Krie>>\nAlright, let's get serious!\n[[Question1]]",
+		"position": {
+			"x": 1288,
+			"y": -165
+		},
+		"colorID": 0
+	},
+	{
+		"title": "tut_wrong3",
+		"tags": "wrong",
+		"body": "<<Krie>>\nOh dearie.. You're mistaken, Stanley.\nAs the name suggests, the citrus family includes fruits with acidic pulp. Remember when you'd pucker up after eating a lemon by mistake? Haha!\n<<Stanley>> \nErr, let's not talk about that incident..\n(I can't believe Her Highness still remembers that. How embarrassing!!!)\nYour Highness, let's just move to the next question, shall we?\n<<Krie>>\nOh ho ho! Someone is embarrassed~ \nAlright, let's get serious!\n[[Question1]]",
+		"position": {
+			"x": 1712,
+			"y": 5
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Question1",
+		"tags": "",
+		"body": "<<Krie>>\nQuestion 1: Which of these is germination?\n[[The movement of water from roots up to the leaves|q1_wrong1]]\n[[The watering of seeds by rain or other means|q1_wrong2]]\n[[The dispersal of seeds into soil|q1_wrong3]]\n[[The first outward signs of growth of a seed|q1_correct]]",
+		"position": {
+			"x": 1369,
+			"y": -570
+		},
+		"colorID": 0
+	},
+	{
+		"title": "q1_wrong1",
+		"tags": "wrong",
+		"body": "<<Krie>>\nAw, your answer is wrong...\nWhen water moves up from the roots to the leaves, it is called transpiration!\nIt happens when water evaporates from the leaves, causing a vacuum to pull water upwards.\n<<Stanley>> \nI see, thank you for enlightening me, Your Highness.\n<<Krie>>\nNo problem! Let's keep going...\n[[Question2]]",
+		"position": {
+			"x": 1019,
+			"y": -982
+		},
+		"colorID": 0
+	},
+	{
+		"title": "q1_wrong2",
+		"tags": "wrong",
+		"body": "<<Krie>>\nAw, your answer is wrong...\nThe watering of seeds by rain or other artificial means, such as using a watering can, is called irrigation!\nPlants need plenty of hydration to grow up strong and healthy.\n<<Stanley>> \nI see, thank you for enlightening me, Your Highness.\n<<Krie>>\nNo problem! Let's keep going...\n[[Question2]]",
+		"position": {
+			"x": 1307,
+			"y": -974
+		},
+		"colorID": 0
+	},
+	{
+		"title": "q1_wrong3",
+		"tags": "wrong",
+		"body": "<<Krie>>\nAw, your answer is wrong...\nThe dispersal of seeds into soil is actually very different from germination!\nIt's basically when seeds are spread away from the parent plant via natural agents like water, wind and animals.\n<<Stanley>> \nI see, thank you for enlightening me, Your Highness.\n<<Krie>>\nNo problem! Let's keep going...\n[[Question2]]",
+		"position": {
+			"x": 1602,
+			"y": -919
+		},
+		"colorID": 0
+	},
+	{
+		"title": "q1_correct",
+		"tags": "correct",
+		"body": "<<Krie>>\n[i]*squeal*[/i] Great job, Stanley!! You're doing wonderful~\nThe initial outward signs of growth of a seed is indeed known as germination.\nLet's talk about pollinators, shall we?\n[i](Oh dear...)[/i]\n[[Question2]]",
+		"position": {
+			"x": 1854,
+			"y": -717
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Question2",
+		"tags": "",
+		"body": "<<Krie>>\nQuestion 2: What attracts bees, and other insects to flowers?\n[[Bees and other insects like bright colours|q2_wrong1]] \n[[Scent, structure, colours and nectar guides attract them|q2_correct]] \n[[Flowers have honey in them which bees take for food|q2_wrong2]]\n[[Insects know instinctively where the nectar is|q2_wrong3]]",
+		"position": {
+			"x": 1666,
+			"y": -1289
+		},
+		"colorID": 0
+	},
+	{
+		"title": "q2_wrong1",
+		"tags": "wrong",
+		"body": "<<Krie>>\nNoooo Stanley, you're mistaken. Well, partially at least.\nBright colors do part of the job, but flowers also use their scent, shape, and nectar to attract pollinators!\n<<Stanley>> \nIt seems I was mistaken indeed. I will keep that in mind.\n<<Krie>>\nYeah, now you know!\nAnd now, for the final question. Drum roll pleaseee!\n[[Question3]]",
+		"position": {
+			"x": 1654,
+			"y": -1828
+		},
+		"colorID": 0
+	},
+	{
+		"title": "q2_correct",
+		"tags": "correct",
+		"body": "<<Krie>>\nThat's right!! You know your pollinators well huh. [i]*giggle*[/i]\nAs you know, flowers are super pretty, and I'm sure the pollinators think so too. That's why they love gathering around flowers!\nI'm sure the nectar is yummy for our little friends too.\n<<Stanley>> \nI believe so too.\n<<Krie>>\nAnd now, for the final question. Drum roll pleaseee!\n[[Question3]]",
+		"position": {
+			"x": 1936,
+			"y": -1713
+		},
+		"colorID": 0
+	},
+	{
+		"title": "q2_wrong2",
+		"tags": "wrong",
+		"body": "<<Krie>>\nNoooo Stanley, you're mistaken.\nFlowers actually don't contain honey. Bees collect nectar from flowers and turn it into honey in their hive!\n<<Stanley>> \nIt seems I was mistaken indeed. I will keep that in mind.\n<<Krie>>\nYeah, now you know!\nAnd now, for the final question. Drum roll pleaseee!\n[[Question3]]",
+		"position": {
+			"x": 2228,
+			"y": -1622
+		},
+		"colorID": 0
+	},
+	{
+		"title": "q2_wrong3",
+		"tags": "wrong",
+		"body": "<<Krie>>\nThat's not totally true, dear jester.\nThe little pollinators do have instincts, but flowers still need to attract them first.\nThat's why flowers are so colorful, fragrant and shaped uniquely to guide the pollinators!\n<<Stanley>> \nIt seems I was mistaken indeed. I will keep that in mind.\n<<Krie>>\nYeah, now you know!\nAnd now, for the final question. Drum roll pleaseee!\n[[Question3]]",
+		"position": {
+			"x": 2544,
+			"y": -1442
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Question3",
+		"tags": "",
+		"body": "<<Krie>>\nI decided I'll go easy on you!\n<<Stanely>> \n[i](This lowly jester sure got lucky.)[/i]\n<<Krie>>\nFinal question: What is the name of the ripened ovary which contains the seeds in many plants?\n[[Cellulose|q3_wrong1]]\n[[Leaf|q3_wrong2]]\n[[Flower|q3_wrong3]]\n[[Fruit|q3_correct]]",
+		"position": {
+			"x": 2252,
+			"y": -2067
+		},
+		"colorID": 0
+	},
+	{
+		"title": "q3_wrong1",
+		"tags": "wrong",
+		"body": "<<Krie>>\nBoooo Stanley, you're not taking me seriously!!\nCellulose is the substance that makes up most plant cell walls, y'know.\n<<Stanley>> \nAh... I apologize, Your Highness. I promise I'm trying my best here.\n<<Krie>>\n...\nAlright, fine. The Queen declares you forgiven!\n<<Stanley>> \nBy my jester's privilege, a million thanks to your forgiveness!",
+		"position": {
+			"x": 2081,
+			"y": -2542
+		},
+		"colorID": 0
+	},
+	{
+		"title": "q3_wrong2",
+		"tags": "wrong",
+		"body": "<<Krie>>\nBoooo Stanley, you're not taking me seriously!!\nThe flower contains the ovary, but a ripened ovary is called a fruit y'know.\n<<Stanley>> \nAh... I apologize, Your Highness. I promise I'm trying my best here.\n<<Krie>>\n...\nAlright, fine. The Queen declares you forgiven!\n<<Stanley>> \nBy my jester's privilege, a million thanks to your forgiveness!",
+		"position": {
+			"x": 2373,
+			"y": -2421
+		},
+		"colorID": 0
+	},
+	{
+		"title": "q3_wrong3",
+		"tags": "wrong",
+		"body": "<<Krie>>\nBoooo Stanley, you're not taking me seriously!!\nLeaves carry out photosynthesis, which helps the plant produce food. \nAlso they emerge from tree branches, y'know.\n<<Stanley>> \nAh... I apologize, Your Highness. I promise I'm trying my best here.\n<<Krie>>\n...\nAlright, fine. The Queen declares you forgiven!\n<<Stanley>> \nBy my jester's privilege, a million thanks to your forgiveness!",
+		"position": {
+			"x": 2687,
+			"y": -2388
+		},
+		"colorID": 0
+	},
+	{
+		"title": "q3_correct",
+		"tags": "correct",
+		"body": "<<Krie>>\nYes, that's right! \nAfter fertilization, the ovary develops into a fruit to enclose and protect the seeds.\n<<Stanley>> \nSeems like I understand plants quite well.\n<<Krie>>\nSure you do!",
+		"position": {
+			"x": 3038,
+			"y": -2192
+		},
+		"colorID": 0
+	},
+	{
+		"title": "GoodEnding",
+		"tags": "good",
+		"body": "<<Krie>>\nYou did so well, Stanley!\nI didn't know you were so knowledgeable about botany.\n<<Stanley>> \nHaha, thank you for praising this humble jester. Will I be rewarded accordingly?\n<<Krie>>\nYupp! Here you go! The cherry syrup you've been needing.\n<<Stanley>> \nSplendid! Thank you for your time, Your Highness.\n<<Krie>>\nDon't forget to come back and help out!",
+		"position": {
+			"x": 3029,
+			"y": -2752
+		},
+		"colorID": 0
+	},
+	{
+		"title": "BadEnding",
+		"tags": "bad",
+		"body": "<<Krie>>\nOh dear me... that did not go as well as I had hoped.\n<<Stanley>> \nI'm afraid your questions are a little too complicated for me, Your Highness.\n<<Krie>>\nI suppose that's fair.\nBut I'm sorry, Stanley. I think it would be best if I held onto the syrup first.\nI'm sure you can find other ingredients, right?\n<<Stanley>> \n[i]*sigh*[/i] Well, I suppose I can.\nThank you for your time, Your Highness.\n<<Krie>>\nDon't forget to come back and help out!",
+		"position": {
+			"x": 2511,
+			"y": -2768
+		},
+		"colorID": 0
+	}
+]
