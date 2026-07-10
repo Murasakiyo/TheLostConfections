@@ -30,17 +30,82 @@
     {
       "folded": true,
       "name": "SystemPatternOne",
+      "persistentUuid": "d2bc8dd6-d995-4259-84d4-c1dff23708fa",
       "type": "array",
       "children": [
         {
+          "persistentUuid": "1b103b4b-12b5-4283-a319-fc7de9154d9e",
           "type": "number",
           "value": 1
         },
         {
+          "persistentUuid": "0b991937-d7e1-48c4-97fd-96fd8d6b2384",
           "type": "number",
           "value": 2
         },
         {
+          "persistentUuid": "3dcea5af-586f-4a43-ba99-f5c7c988e236",
+          "type": "number",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "SystemPatternTwo",
+      "persistentUuid": "8ffd2270-db66-4740-870b-9e86d6a27779",
+      "type": "array",
+      "children": [
+        {
+          "persistentUuid": "85d5ffbf-1a88-4ddd-82d7-9be117b4dc99",
+          "type": "number",
+          "value": 2
+        },
+        {
+          "persistentUuid": "f6dd211a-2fbb-4660-8f4e-769f39a99a81",
+          "type": "number",
+          "value": 3
+        },
+        {
+          "persistentUuid": "2a4ab2c1-48ef-4562-8cb8-9cbed23581e2",
+          "type": "number",
+          "value": 4
+        },
+        {
+          "persistentUuid": "d76bf3e4-efbd-42bf-93fd-7d4d5d75eb11",
+          "type": "number",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "SystemPatternThree",
+      "persistentUuid": "0b072dd1-6d92-44fd-b3ee-719c2fdf2837",
+      "type": "array",
+      "children": [
+        {
+          "persistentUuid": "966ba8ec-b6d6-4e69-a762-5f726559918f",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "persistentUuid": "bf363adb-cb5f-4a03-a554-9d3bc2efcff5",
+          "type": "number",
+          "value": 2
+        },
+        {
+          "persistentUuid": "19a1d609-591d-424c-9b22-ecc5bebc8400",
+          "type": "number",
+          "value": 2
+        },
+        {
+          "persistentUuid": "eae9de05-4975-4aaf-aa5a-3b1147b98174",
+          "type": "number",
+          "value": 4
+        },
+        {
+          "persistentUuid": "8a326ac8-6a20-4f5a-ad14-d202cf883ac8",
           "type": "number",
           "value": 3
         }
@@ -48,46 +113,55 @@
     },
     {
       "name": "SystemStep",
+      "persistentUuid": "69f64b28-310b-46c8-87c5-18c8ac6b1117",
       "type": "number",
       "value": 0
     },
     {
       "name": "PlayerStep",
+      "persistentUuid": "810180d9-39e6-4c39-a910-e7627dee78d3",
       "type": "number",
       "value": -1
     },
     {
       "name": "CurrentTurn",
+      "persistentUuid": "378e710b-043e-4d46-b7bc-0ce833519a8c",
       "type": "string",
       "value": "System"
     },
     {
       "name": "Timer",
+      "persistentUuid": "f319dd57-92cb-4e14-ada3-fd53e3f3b3df",
       "type": "number",
       "value": 0
     },
     {
       "name": "SystemPhase",
+      "persistentUuid": "b923936e-690d-4c78-83e0-179c68efc28f",
       "type": "string",
       "value": "FirstLvl"
     },
     {
       "name": "LastInput",
+      "persistentUuid": "3c1a1a5d-8cdf-4094-b098-f99934e0b2c3",
       "type": "number",
       "value": 0
     },
     {
       "name": "StepsThisPhase",
+      "persistentUuid": "290a584e-3197-426e-a343-3bced8278bfe",
       "type": "number",
       "value": 0
     },
     {
       "name": "SystemPlayPattern",
+      "persistentUuid": "dd270db4-6c96-4d7f-a97c-23be3f0ace80",
       "type": "boolean",
       "value": true
     },
     {
       "name": "ToggleTimer",
+      "persistentUuid": "5954e3b4-69d9-458a-8713-ff7b9757cc99",
       "type": "boolean",
       "value": true
     }
@@ -1511,6 +1585,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "System Displaying Color Pattern (Pt 2)",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1962,7 +2037,556 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Player Input Checking (Pt 1)",
+      "name": "System Displaying Color Pattern (Pt 3)",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Timer",
+                ">",
+                "0.8"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SystemStep",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "SystemPhase",
+                "=",
+                "\"ThirdLvl\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "UpButton",
+                "Animation",
+                "=",
+                "\"Bright\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Timer",
+                    ">",
+                    "1.3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "UpButton",
+                    "Animation",
+                    "=",
+                    "\"Dim\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "SystemStep",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Timer",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Timer",
+                ">",
+                "0.8"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SystemStep",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "SystemPhase",
+                "=",
+                "\"ThirdLvl\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "DownButton",
+                "Animation",
+                "=",
+                "\"Bright\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Timer",
+                    ">",
+                    "1.3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "DownButton",
+                    "Animation",
+                    "=",
+                    "\"Dim\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "SystemStep",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Timer",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Timer",
+                ">",
+                "0.8"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SystemStep",
+                "=",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "SystemPhase",
+                "=",
+                "\"ThirdLvl\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "DownButton",
+                "Animation",
+                "=",
+                "\"Bright\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Timer",
+                    ">",
+                    "1.3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "DownButton",
+                    "Animation",
+                    "=",
+                    "\"Dim\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "SystemStep",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Timer",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Timer",
+                ">",
+                "0.8"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SystemStep",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "SystemPhase",
+                "=",
+                "\"ThirdLvl\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "RightButton",
+                "Animation",
+                "=",
+                "\"Bright\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Timer",
+                    ">",
+                    "1.3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "RightButton",
+                    "Animation",
+                    "=",
+                    "\"Dim\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "SystemStep",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Timer",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Timer",
+                ">",
+                "0.8"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SystemStep",
+                "=",
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "SystemPhase",
+                "=",
+                "\"ThirdLvl\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "LeftButton",
+                "Animation",
+                "=",
+                "\"Bright\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Timer",
+                    ">",
+                    "1.3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "LeftButton",
+                    "Animation",
+                    "=",
+                    "\"Dim\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "SystemStep",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "ToggleTimer",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Timer",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SystemStep",
+                "=",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "SystemPhase",
+                "=",
+                "\"ThirdLvl\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "CurrentTurn",
+                "=",
+                "\"Player\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Player Input Checking ",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [],
@@ -1991,6 +2615,60 @@
             "StepsThisPhase",
             "=",
             "2"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "StringVariable"
+          },
+          "parameters": [
+            "SystemPhase",
+            "=",
+            "\"SecondLvl\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "StepsThisPhase",
+            "=",
+            "3"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "StringVariable"
+          },
+          "parameters": [
+            "SystemPhase",
+            "=",
+            "\"ThirdLvl\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "StepsThisPhase",
+            "=",
+            "4"
           ]
         }
       ]
@@ -2136,54 +2814,235 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "SystemPhase",
+                "=",
+                "\"FirstLvl\""
+              ]
             }
           ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "LastInput",
+                "=",
+                "SystemPatternTwo[Variable(PlayerStep)]"
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "SystemPhase",
+                "=",
+                "\"SecondLvl\""
+              ]
+            }
+          ],
           "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::CompareNumbers"
-          },
-          "parameters": [
-            "PlayerStep",
-            "=",
-            "StepsThisPhase"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetStringVariable"
-          },
-          "parameters": [
-            "SystemPhase",
-            "=",
-            "\"SecondLvl\""
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "LastInput",
+                "=",
+                "SystemPatternTwo[Variable(PlayerStep)]"
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "SystemPhase",
+                "=",
+                "\"SecondLvl\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "LastInput",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "CurrentTurn",
+                "=",
+                "\"System\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SystemStep",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PlayerStep",
+                "=",
+                "-1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "ToggleTimer",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "SystemPhase",
+                "=",
+                "\"SecondLvl\""
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "SetStringVariable"
-          },
-          "parameters": [
-            "CurrentTurn",
-            "=",
-            "\"System\""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "LastInput",
+                "=",
+                "SystemPatternThree[Variable(PlayerStep)]"
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "SystemPhase",
+                "=",
+                "\"ThirdLvl\""
+              ]
+            }
+          ],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "LastInput",
+                "=",
+                "SystemPatternThree[Variable(PlayerStep)]"
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "SystemPhase",
+                "=",
+                "\"ThirdLvl\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "LastInput",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "CurrentTurn",
+                "=",
+                "\"System\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SystemStep",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PlayerStep",
+                "=",
+                "-1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "ToggleTimer",
+                "True",
+                ""
+              ]
+            }
           ]
         }
       ]
@@ -2193,39 +3052,274 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "DEBUG",
+      "name": "Complete Phases",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
-      "events": [],
-      "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "events": [
         {
-          "type": {
-            "value": "BuiltinCommonInstructions::CompareNumbers"
-          },
-          "parameters": [
-            "PlayerStep",
-            "=",
-            "StepsThisPhase"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "PlayerStep",
+                "=",
+                "StepsThisPhase"
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "SystemPhase",
+                "=",
+                "\"FirstLvl\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "SystemPhase",
+                "=",
+                "\"SecondLvl\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "CurrentTurn",
+                "=",
+                "\"System\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "ToggleTimer",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SystemStep",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PlayerStep",
+                "=",
+                "-1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "LastInput",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "PlayerStep",
+                "=",
+                "StepsThisPhase"
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "SystemPhase",
+                "=",
+                "\"SecondLvl\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "SystemPhase",
+                "=",
+                "\"ThirdLvl\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "CurrentTurn",
+                "=",
+                "\"System\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "ToggleTimer",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SystemStep",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PlayerStep",
+                "=",
+                "-1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "LastInput",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "PlayerStep",
+                "=",
+                "StepsThisPhase"
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "SystemPhase",
+                "=",
+                "\"ThirdLvl\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "DebugText",
+                "Text",
+                "=",
+                "\"COMPLETED MINIGAME\""
+              ]
+            }
           ]
         }
       ],
-      "actions": [
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "DEBUG",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "DebugText",
-            "Text",
-            "=",
-            "\"COMPLETED PHASE 1\""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "PlayerStep",
+                "=",
+                "StepsThisPhase"
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "SystemPhase",
+                "=",
+                "\"SecondLvl\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "DebugText",
+                "Text",
+                "=",
+                "\"COMPLETED PHASE 2\""
+              ]
+            }
           ]
         }
-      ]
+      ],
+      "parameters": []
     }
   ],
   "layers": [
