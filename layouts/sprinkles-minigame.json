@@ -29,26 +29,31 @@
   "variables": [
     {
       "name": "BalloonScore",
+      "persistentUuid": "0fcfdc54-f390-44a6-91d9-8c4579111edf",
       "type": "number",
       "value": 0
     },
     {
       "name": "Timer",
+      "persistentUuid": "911c0cb3-4a4a-4ac7-af3b-3489450a7a92",
       "type": "number",
       "value": 0
     },
     {
       "name": "GameCountdown",
+      "persistentUuid": "ae5c2a95-d908-479a-9429-469d1374b895",
       "type": "number",
       "value": 15
     },
     {
       "name": "TimerCountdown",
+      "persistentUuid": "97555dcc-7d40-4753-b02c-42bd6ba2e14b",
       "type": "number",
       "value": 0
     },
     {
       "name": "WinTimer",
+      "persistentUuid": "9ff873fc-d02c-48d0-b911-8be25edb59e1",
       "type": "number",
       "value": 0
     }
@@ -302,10 +307,10 @@
       "effects": [],
       "behaviors": [
         {
-          "acceleration": 6000,
-          "maxFallingSpeed": 900,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "acceleration": 6000,
+          "maxFallingSpeed": 900,
           "xGrabTolerance": 10,
           "deceleration": 6000,
           "canGoDownFromJumpthru": true,
