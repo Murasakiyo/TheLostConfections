@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2987985363606932,
+    "zoomFactor": 0.1700303648902909,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -2116,6 +2116,10 @@
       "type": "OpacityCapability::OpacityBehavior"
     },
     {
+      "name": "PlatformerObject",
+      "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
       "name": "Resizable",
       "type": "ResizableCapability::ResizableBehavior"
     },
@@ -2126,6 +2130,10 @@
     {
       "name": "ShakeObject_PositionAngle",
       "type": "ShakeObject::ShakeObject_PositionAngle"
+    },
+    {
+      "name": "StayOnScreen",
+      "type": "StayOnScreen::StayOnScreen"
     },
     {
       "name": "Text",

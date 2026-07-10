@@ -1086,6 +1086,30 @@
         "name": "assets/ingredient/tutocupcake.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NPCS/Torres2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NPCS/Torres2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NPCS/Torres1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NPCS/Torres1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/fly_room.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets/backgrounds/fly_room.png2",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -1100,6 +1124,36 @@
       "variables": [],
       "effects": [],
       "behaviors": [
+        {
+          "acceleration": 1500,
+          "canGoDownFromJumpthru": true,
+          "canGrabPlatforms": false,
+          "canGrabWithoutMoving": true,
+          "deceleration": 1500,
+          "gravity": 1000,
+          "ignoreDefaultControls": false,
+          "isFolded": true,
+          "jumpSpeed": 600,
+          "jumpSustainTime": 0.2,
+          "ladderClimbingSpeed": 150,
+          "maxFallingSpeed": 700,
+          "maxSpeed": 250,
+          "name": "PlatformerObject",
+          "slopeMaxAngle": 60,
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "useLegacyTrajectory": false,
+          "useRepeatedJump": false,
+          "xGrabTolerance": 10,
+          "yGrabOffset": 0
+        },
+        {
+          "name": "StayOnScreen",
+          "type": "StayOnScreen::StayOnScreen",
+          "MarginTop": 0,
+          "MarginBottom": 0,
+          "MarginLeft": 0,
+          "MarginRight": 0
+        },
         {
           "name": "YSort",
           "type": "YSort::YSort"
@@ -3583,6 +3637,18 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/kitchen-topdown"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/torresroom"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/louieroom"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/stanleyroom"
     }
   ],
   "externalEvents": [
@@ -3597,6 +3663,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/dialogue"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/player-movement-sidescroller"
     }
   ],
   "eventsFunctionsExtensions": [
@@ -3627,6 +3697,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/inventories"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/platformertrajectory"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flashtransitionpainter"
     }
   ],
   "externalLayouts": []

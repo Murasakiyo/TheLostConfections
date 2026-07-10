@@ -1,6 +1,6 @@
 {
-  "associatedLayout": "LevelSelection",
-  "name": "Player Movement",
+  "associatedLayout": "Stanley Room (Topdown)",
+  "name": "Player Movement Sidescroller",
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -139,7 +139,7 @@
               },
               "parameters": [
                 "",
-                "\"w\""
+                "\"Space\""
               ]
             }
           ],
@@ -151,84 +151,36 @@
               "parameters": [
                 "Stanley",
                 "-",
-                "15"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Stanley",
-                "Animation",
-                "=",
-                "\"run\""
+                "10"
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"s\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetY"
-              },
-              "parameters": [
-                "Stanley",
-                "+",
-                "15"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Stanley",
-                "Animation",
-                "=",
-                "\"run\""
-              ]
-            }
+          "type": {
+            "inverted": true,
+            "value": "AnyKeyPressed"
+          },
+          "parameters": [
+            ""
           ]
-        },
+        }
+      ],
+      "actions": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "AnyKeyPressed"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Stanley",
-                "Animation",
-                "=",
-                "\"stand\""
-              ]
-            }
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Stanley",
+            "Animation",
+            "=",
+            "\"stand\""
           ]
         }
       ]
@@ -244,7 +196,7 @@
           "parameters": [
             "Stanley",
             "StayOnScreen",
-            "no"
+            "yes"
           ]
         },
         {
@@ -254,7 +206,7 @@
           "parameters": [
             "Stanley",
             "PlatformerObject",
-            "no"
+            "yes"
           ]
         }
       ]

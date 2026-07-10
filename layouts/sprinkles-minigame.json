@@ -2220,6 +2220,10 @@
       "type": "ScalableCapability::ScalableBehavior"
     },
     {
+      "name": "StayOnScreen",
+      "type": "StayOnScreen::StayOnScreen"
+    },
+    {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
     },
