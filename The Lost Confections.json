@@ -912,6 +912,14 @@
         "userAdded": false
       },
       {
+        "file": "assets/backgrounds/cloud-sky.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/cloud-sky.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
         "file": "assets/ingredient/cherrysyrup.png",
         "kind": "image",
         "metadata": "",
@@ -920,10 +928,26 @@
         "userAdded": false
       },
       {
+        "file": "assets/platforms/ghPlatform_normal.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/platforms/ghPlatform_normal.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
         "file": "assets/ingredient/chocolate.png",
         "kind": "image",
         "metadata": "",
         "name": "assets/ingredient/chocolate.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/krie-greenhouse.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/krie-greenhouse.jpg",
         "smoothed": false,
         "userAdded": false
       },
@@ -1108,6 +1132,22 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "assets/backgrounds/fly_room.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/DialogueData_QNA.json",
+        "kind": "json",
+        "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialogueData_QNA.json\"}",
+        "name": "DialogueData_QNA",
+        "userAdded": false
+      },
+      {
+        "file": "assets/option_box.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/option_box.png",
         "smoothed": false,
         "userAdded": false
       }
@@ -3625,6 +3665,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/fly-shooting--minigame"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/krie-qna-minigame"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
