@@ -2,10 +2,10 @@
 	{
 		"title": "Start",
 		"tags": "",
-		"body": "Stanley...\nI'm upset...\nBut you know what would cheer me up..?\nA chocolate cupcake!!\nOh but not just any chocolate cupcake, specially topped with your gorgeous vanilla essence and finished off with rainbow sprinkles!!\nCould you do that.",
+		"body": "Stanley...\nI'm upset...\nBut you know what would cheer me up..?\nA chocolate cupcake!!\nOh but not just any chocolate cupcake, specially topped with your gorgeous vanilla essence and finished off with rainbow sprinkles!!\nCould you do that?\nPlease?",
 		"position": {
-			"x": 127,
-			"y": 175
+			"x": 124,
+			"y": 172
 		},
 		"colorID": 0
 	},
@@ -16,26 +16,6 @@
 		"position": {
 			"x": 395,
 			"y": 176
-		},
-		"colorID": 0
-	},
-	{
-		"title": "Node_2",
-		"tags": "",
-		"body": "Empty Text",
-		"position": {
-			"x": 641,
-			"y": 177
-		},
-		"colorID": 0
-	},
-	{
-		"title": "Node_3",
-		"tags": "",
-		"body": "Empty Text",
-		"position": {
-			"x": -100,
-			"y": 416
 		},
 		"colorID": 0
 	}

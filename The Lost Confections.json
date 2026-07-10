@@ -886,6 +886,182 @@
         "name": "assets/ingredient/whisk.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/LeftStirPoint.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "LeftStirPoint",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/RightStirPoint.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "RightStirPoint",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/oven.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/oven.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/cherrysyrup.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ingredient/cherrysyrup.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/chocolate.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ingredient/chocolate.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/coffeebean.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/ingredient/coffeebean.png\",\"extension\":\".png\"}",
+        "name": "assets/ingredient/coffeebean.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/creamcheese.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/ingredient/creamcheese.png\",\"extension\":\".png\"}",
+        "name": "assets/ingredient/creamcheese.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/grapes.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/ingredient/grapes.png\",\"extension\":\".png\"}",
+        "name": "assets/ingredient/grapes.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/lemonzest.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/ingredient/lemonzest.png\",\"extension\":\".png\"}",
+        "name": "assets/ingredient/lemonzest.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/lime.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/ingredient/lime.png\",\"extension\":\".png\"}",
+        "name": "assets/ingredient/lime.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/meltedchoco.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/ingredient/meltedchoco.png\",\"extension\":\".png\"}",
+        "name": "assets/ingredient/meltedchoco.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/milk.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/ingredient/milk.png\",\"extension\":\".png\"}",
+        "name": "assets/ingredient/milk.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/powderedsugar.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/ingredient/powderedsugar.png\",\"extension\":\".png\"}",
+        "name": "assets/ingredient/powderedsugar.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/cocoa.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "cocoa",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sprinkles.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "sprinkles",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/vanilla.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "vanilla",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/cherrysyrup.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "cherrysyrup",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/milk.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "milk",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/grapes.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "grapes",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/chocolatebar.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "chocolatebar",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/exit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/exit.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/exit_hover.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/exit_hover.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -1817,6 +1993,487 @@
               ]
             }
           ]
+        },
+        {
+          "name": "cherrysyrup",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/cherrysyrup.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 59
+                      },
+                      {
+                        "x": 0,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "chocolatebar",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/chocolate.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 59
+                      },
+                      {
+                        "x": 0,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "coffeebean",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/coffeebean.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 59
+                      },
+                      {
+                        "x": 0,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "creamcheese",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/creamcheese.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 59
+                      },
+                      {
+                        "x": 0,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "grapes",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/grapes.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 59
+                      },
+                      {
+                        "x": 0,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "lemonzest",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/lemonzest.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 59
+                      },
+                      {
+                        "x": 0,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "lime",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/lime.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 59
+                      },
+                      {
+                        "x": 0,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "meltedchoco",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/meltedchoco.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 59
+                      },
+                      {
+                        "x": 0,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "milk",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/milk.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 59
+                      },
+                      {
+                        "x": 0,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "sugar",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/powderedsugar.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 1
+                      },
+                      {
+                        "x": 49,
+                        "y": 59
+                      },
+                      {
+                        "x": 0,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2005,6 +2662,667 @@
         "lineHeight": 0,
         "color": "255;255;255"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "InventoryIcon",
+      "persistentUuid": "64636bfd-0406-47ed-baa9-830ff4752a33",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Name",
+          "type": "string",
+          "value": "None"
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "cocoa",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "cocoa",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 62
+                      },
+                      {
+                        "x": 0,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "sprinkles",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "sprinkles",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 62
+                      },
+                      {
+                        "x": 0,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "vanilla",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "vanilla",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 62
+                      },
+                      {
+                        "x": 0,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "cherrysyrup",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "cherrysyrup",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 62
+                      },
+                      {
+                        "x": 0,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "chocolatebar",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "chocolatebar",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 62
+                      },
+                      {
+                        "x": 0,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "coffeebean",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/coffeebean.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 62
+                      },
+                      {
+                        "x": 0,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "creamcheese",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/creamcheese.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 62
+                      },
+                      {
+                        "x": 0,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "grapes",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "grapes",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 62
+                      },
+                      {
+                        "x": 0,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "lemonzest",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/lemonzest.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 62
+                      },
+                      {
+                        "x": 0,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "lime",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/lime.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 62
+                      },
+                      {
+                        "x": 0,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "meltedchoco",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/meltedchoco.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 62
+                      },
+                      {
+                        "x": 0,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "milk",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "milk",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 62
+                      },
+                      {
+                        "x": 0,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "sugar",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/powderedsugar.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 62
+                      },
+                      {
+                        "x": 0,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2038,6 +3356,9 @@
         "objectName": "Ingredients"
       },
       {
+        "objectName": "InventoryIcon"
+      },
+      {
         "objectName": "E"
       },
       {
@@ -2054,17 +3375,109 @@
   "objectsGroups": [],
   "variables": [
     {
-      "name": "Inventory",
-      "type": "structure",
-      "children": []
-    },
-    {
       "name": "InventoryOpen",
       "type": "boolean",
       "value": false
     },
     {
       "name": "DialogueOngoing",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "yPosition",
+      "type": "number",
+      "value": 290
+    },
+    {
+      "name": "CurrentRoom",
+      "type": "string",
+      "value": "Main"
+    },
+    {
+      "folded": true,
+      "name": "Inventory",
+      "type": "structure",
+      "children": [
+        {
+          "name": "CherrySyrup",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "ChocoBar",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Cocoa",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "CoffeeBean",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "CreamCheese",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Grapes",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "LemonZest",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Lime",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "MeltedChoco",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Milk",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Sprinkles",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Sugar",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Vanilla",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "name": "SprinkleMinigame",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "CookingMinigame",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "FlyMinigame",
       "type": "boolean",
       "value": false
     }
@@ -2118,14 +3531,14 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/add-item"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/dialogue"
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/inventoryicondisplay"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/all"
@@ -2149,6 +3562,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/autotyping"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/shakeobject"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/inventories"
     }
   ],
   "externalLayouts": []

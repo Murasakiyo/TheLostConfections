@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3768772036750875,
+    "zoomFactor": 0.44485159988866524,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,31 +29,31 @@
   "variables": [
     {
       "name": "HitCount",
-      "persistentUuid": "a320aba0-88a5-4d98-abd6-f505570293d6",
+      "persistentUuid": "90839ac1-9c02-4f60-a500-bacf94eee5d8",
       "type": "number",
       "value": 0
     },
     {
       "name": "GunCooldown",
-      "persistentUuid": "6172d940-ccef-454c-ae40-cca7c4667620",
+      "persistentUuid": "12572cea-1398-428c-abc7-d7cf88f6ec96",
       "type": "number",
       "value": 0
     },
     {
       "name": "ShotGun",
-      "persistentUuid": "56bd4344-7caf-474d-91d7-b3af98879530",
+      "persistentUuid": "cb7c34b7-729e-47ce-9978-d582e415a73d",
       "type": "boolean",
       "value": false
     },
     {
       "name": "FlyDeath",
-      "persistentUuid": "8c940121-37b3-4159-9b5c-7f954c9bb7b9",
+      "persistentUuid": "e4786ef8-bbe1-493c-b3b6-0e677cb81156",
       "type": "boolean",
       "value": false
     },
     {
       "name": "DeathTimer",
-      "persistentUuid": "af470000-028f-4134-8a6f-808b17f5a113",
+      "persistentUuid": "095b3b31-f9e9-4e8e-ae32-cf9dd8fe70f3",
       "type": "number",
       "value": 0
     }
@@ -1130,11 +1130,31 @@
               "parameters": [
                 "DeathTimer",
                 ">=",
-                "4"
+                "5"
               ]
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Inventory.Cocoa",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "FlyMinigame",
+                "True",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "Scene"
