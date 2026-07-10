@@ -1644,6 +1644,26 @@
             "=",
             "311"
           ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "SprinkleMinigame",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "Inventory.Sprinkles",
+            "True",
+            ""
+          ]
         }
       ],
       "events": [
@@ -1657,7 +1677,7 @@
               "parameters": [
                 "WinTimer",
                 ">=",
-                "2"
+                "3"
               ]
             }
           ],

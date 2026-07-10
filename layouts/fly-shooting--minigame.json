@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.44485159988866524,
+    "zoomFactor": 0.30887412163426536,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,31 +29,31 @@
   "variables": [
     {
       "name": "HitCount",
-      "persistentUuid": "90839ac1-9c02-4f60-a500-bacf94eee5d8",
       "type": "number",
       "value": 0
     },
     {
       "name": "GunCooldown",
-      "persistentUuid": "12572cea-1398-428c-abc7-d7cf88f6ec96",
       "type": "number",
       "value": 0
     },
     {
       "name": "ShotGun",
-      "persistentUuid": "cb7c34b7-729e-47ce-9978-d582e415a73d",
       "type": "boolean",
       "value": false
     },
     {
       "name": "FlyDeath",
-      "persistentUuid": "e4786ef8-bbe1-493c-b3b6-0e677cb81156",
       "type": "boolean",
       "value": false
     },
     {
       "name": "DeathTimer",
-      "persistentUuid": "095b3b31-f9e9-4e8e-ae32-cf9dd8fe70f3",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "HurtTimer",
       "type": "number",
       "value": 0
     }
@@ -919,6 +919,40 @@
             "Fly.Y()",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "Fly",
+            "\"255;74;74\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.2\n"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Fly",
+                "\"255;255;255\""
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1058,6 +1092,15 @@
             "DeathTimer",
             "+",
             "TimeDelta()"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "Fly",
+            "\"255;74;74\""
           ]
         }
       ],

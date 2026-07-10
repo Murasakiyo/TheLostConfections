@@ -1062,6 +1062,30 @@
         "name": "assets/directions/exit_hover.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/1stcupcake.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ingredient/1stcupcake.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/2ndcupcake.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ingredient/2ndcupcake.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/tutocupcake.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ingredient/tutocupcake.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -3467,6 +3491,11 @@
       ]
     },
     {
+      "name": "LevelCupcakeComplete",
+      "type": "boolean",
+      "value": false
+    },
+    {
       "name": "SprinkleMinigame",
       "type": "boolean",
       "value": false
@@ -3480,6 +3509,42 @@
       "name": "FlyMinigame",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "LVL1",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "LVL2",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "GameSave",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Level1Comeplete",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Level2Complete",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "TutorialComplete",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "name": "CurrentLVL",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
@@ -3535,14 +3600,6 @@
     }
   ],
   "eventsFunctionsExtensions": [
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/inventoryicondisplay"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/all"
-    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/stayonscreen"

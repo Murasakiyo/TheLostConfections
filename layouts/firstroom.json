@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.05505826590602676,
+    "zoomFactor": 0.2531414001299144,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,25 +29,25 @@
   "variables": [
     {
       "name": "CurrentNPC",
-      "persistentUuid": "f08db523-4e5d-4238-9147-49e3faccc61a",
+      "persistentUuid": "eadd1635-e7aa-4d62-bb37-3dc3e8f4357f",
       "type": "string",
       "value": "None"
     },
     {
       "name": "StopScreen",
-      "persistentUuid": "99682f30-cfb5-4819-b0b1-73b46522147e",
+      "persistentUuid": "dfbed954-6a72-4262-bf68-5bb29d41a55c",
       "type": "boolean",
       "value": false
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "6b58b8fc-e1c8-4856-9d48-144f5f662c08",
+      "persistentUuid": "697b0e21-98ba-4209-a0e7-f024e6bb3dfa",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartVanillaTimer",
-      "persistentUuid": "7be3483f-4605-4224-ab3c-bbf2d6d07b0c",
+      "persistentUuid": "c9109bd7-07a3-4ba2-afc4-c5630e396ec3",
       "type": "boolean",
       "value": false
     }
@@ -487,8 +487,8 @@
       "name": "Doors",
       "persistentUuid": "3ff64b73-00c6-4d6b-8a4b-f6e6f946ee3d",
       "width": 585,
-      "x": 3484,
-      "y": 118,
+      "x": 3919,
+      "y": 428,
       "zOrder": 14,
       "numberProperties": [
         {
@@ -509,8 +509,8 @@
       "name": "Doors",
       "persistentUuid": "c4e4e3ee-9671-485e-b1b5-ac4b0cca7201",
       "width": 537,
-      "x": -2259,
-      "y": 149,
+      "x": -1988,
+      "y": 388,
       "zOrder": 15,
       "numberProperties": [
         {
@@ -548,8 +548,8 @@
       "name": "Doors",
       "persistentUuid": "6844f59f-f0f9-4ad7-b933-3993c901b372",
       "width": 804,
-      "x": 535,
-      "y": -3324,
+      "x": 943,
+      "y": -2680,
       "zOrder": 16,
       "numberProperties": [
         {
@@ -570,8 +570,8 @@
       "name": "Doors",
       "persistentUuid": "598a197b-38ca-494c-85a7-eabe7eb28e1f",
       "width": 606,
-      "x": -426,
-      "y": -1314,
+      "x": -89,
+      "y": -1296,
       "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
@@ -1059,14 +1059,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 310,
-                    "y": 467
+                    "x": 203,
+                    "y": 121
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 310.5,
-                    "y": 539
+                    "x": 203.5,
+                    "y": 77.5
                   },
                   "customCollisionMask": [
                     [
@@ -1107,14 +1107,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 310,
-                    "y": 467
+                    "x": 316,
+                    "y": 541
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 310.5,
-                    "y": 539
+                    "x": 315.5,
+                    "y": 362
                   },
                   "customCollisionMask": [
                     [
@@ -1155,14 +1155,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 310,
-                    "y": 467
+                    "x": 204.5,
+                    "y": 179.5
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 310.5,
-                    "y": 539
+                    "x": 205,
+                    "y": 259.5
                   },
                   "customCollisionMask": [
                     [
@@ -1203,14 +1203,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 310,
-                    "y": 467
+                    "x": 210.5,
+                    "y": 221
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 310.5,
-                    "y": 539
+                    "x": 212,
+                    "y": 153
                   },
                   "customCollisionMask": [
                     [
@@ -1251,14 +1251,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 310,
-                    "y": 467
+                    "x": 206,
+                    "y": 281
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 310.5,
-                    "y": 539
+                    "x": 207.5,
+                    "y": 218.5
                   },
                   "customCollisionMask": [
                     [
@@ -1299,14 +1299,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 310,
-                    "y": 467
+                    "x": 200.5,
+                    "y": 125
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 310.5,
-                    "y": 539
+                    "x": 201,
+                    "y": 63
                   },
                   "customCollisionMask": [
                     [
@@ -1742,7 +1742,7 @@
           "parameters": [
             "Stanley",
             "Doors",
-            "500",
+            "300",
             ""
           ]
         }
@@ -1779,7 +1779,7 @@
           "parameters": [
             "Stanley",
             "Doors",
-            "500",
+            "300",
             ""
           ]
         }
@@ -2105,6 +2105,43 @@
       "conditions": [
         {
           "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "Inventory.Vanilla",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::Name"
+          },
+          "parameters": [
+            "Ingredients",
+            "Animation",
+            "=",
+            "\"vanilla\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Ingredients",
+            "Tween"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "CollisionNP"
           },
           "parameters": [
@@ -2169,16 +2206,6 @@
             "True",
             ""
           ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Inventory.Vanilla",
-            "True",
-            ""
-          ]
         }
       ]
     },
@@ -2224,6 +2251,16 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Inventory.Vanilla",
+                "True",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "Delete"
