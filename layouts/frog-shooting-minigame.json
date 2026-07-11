@@ -29,49 +29,49 @@
   "variables": [
     {
       "name": "JumpTimer",
-      "persistentUuid": "725bbd48-e000-4119-8b5a-028c2d7cdb93",
+      "persistentUuid": "dbf3bf54-5602-4a23-9288-48185106a3b0",
       "type": "number",
       "value": 0
     },
     {
       "name": "GunCooldown",
-      "persistentUuid": "7da9bef3-3be0-47e8-af42-67abcec4c1b2",
+      "persistentUuid": "4324a693-b684-4da0-bcf6-4e85455e8ff2",
       "type": "number",
       "value": 0
     },
     {
       "name": "ShotGun",
-      "persistentUuid": "e6ef64a9-0c10-449e-8c41-c14ec40625c2",
+      "persistentUuid": "72b7a0ef-2e25-4680-b518-ae7953a5d9d0",
       "type": "boolean",
       "value": false
     },
     {
       "name": "HitCount",
-      "persistentUuid": "8254104d-23f8-4840-b3d8-949ab0b5a325",
+      "persistentUuid": "f0d7ce7f-5d29-4099-a790-e43c9bd594e9",
       "type": "number",
       "value": 0
     },
     {
       "name": "FrogDeath",
-      "persistentUuid": "d0dd5a96-3012-4db8-aa0f-af6e9609125c",
+      "persistentUuid": "c9dc752d-2590-416b-8b41-5aea24f349e8",
       "type": "boolean",
       "value": false
     },
     {
       "name": "DeathTimer",
-      "persistentUuid": "c75039fe-1a66-474f-ac22-c7d86c4bfbc9",
+      "persistentUuid": "ae32bfd0-9b7e-4cfe-8dc6-8060ee22e3dc",
       "type": "number",
       "value": 0
     },
     {
       "name": "GameStart",
-      "persistentUuid": "a66e816a-f145-41ca-9b0d-90345d4c17da",
+      "persistentUuid": "4b5f4afa-d841-4ffc-b54d-a296de830b9b",
       "type": "boolean",
       "value": false
     },
     {
       "name": "GameStartTimer",
-      "persistentUuid": "2690bfbf-b7b2-4ff2-9fd2-8f834eac74c9",
+      "persistentUuid": "381b7339-7f17-44f3-90bd-79dfb3d72df9",
       "type": "number",
       "value": 0
     }
@@ -906,6 +906,9 @@
       },
       {
         "objectName": "Background"
+      },
+      {
+        "objectName": "InstructionText"
       }
     ]
   },
