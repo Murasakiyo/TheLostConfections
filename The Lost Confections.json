@@ -1538,6 +1538,14 @@
         "name": "assets/backgrounds/inside_greenhouse.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/DialogueData_TorresDistract.json",
+        "kind": "json",
+        "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialogueData_TorresDistract.json\"}",
+        "name": "DialogueData_TorresDistract",
+        "userAdded": false
       }
     ]
   },
@@ -4149,6 +4157,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/krie-qna-minigame"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/torres-distract-minigame"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/krie-greenhouse-request"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
