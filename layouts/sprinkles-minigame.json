@@ -29,31 +29,31 @@
   "variables": [
     {
       "name": "BalloonScore",
-      "persistentUuid": "0fcfdc54-f390-44a6-91d9-8c4579111edf",
+      "persistentUuid": "014ebf7b-95c0-472a-bc80-c10ce2832e5e",
       "type": "number",
       "value": 0
     },
     {
       "name": "Timer",
-      "persistentUuid": "911c0cb3-4a4a-4ac7-af3b-3489450a7a92",
+      "persistentUuid": "a1d918cf-c240-491b-bfc5-e8d479490794",
       "type": "number",
       "value": 0
     },
     {
       "name": "GameCountdown",
-      "persistentUuid": "ae5c2a95-d908-479a-9429-469d1374b895",
+      "persistentUuid": "b02994af-ad77-4e0f-8070-68c52e80958f",
       "type": "number",
       "value": 15
     },
     {
       "name": "TimerCountdown",
-      "persistentUuid": "97555dcc-7d40-4753-b02c-42bd6ba2e14b",
+      "persistentUuid": "8dad7b0d-75a9-43e1-8547-f65b4ef0d34b",
       "type": "number",
       "value": 0
     },
     {
       "name": "WinTimer",
-      "persistentUuid": "9ff873fc-d02c-48d0-b911-8be25edb59e1",
+      "persistentUuid": "df0a15b2-11fa-4b55-9add-1b7df2ebbd36",
       "type": "number",
       "value": 0
     }

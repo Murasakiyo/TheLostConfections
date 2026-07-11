@@ -59,19 +59,16 @@
     },
     {
       "name": "DeathTimer",
-      "persistentUuid": "c75039fe-1a66-474f-ac22-c7d86c4bfbc9",
       "type": "number",
       "value": 0
     },
     {
       "name": "GameStart",
-      "persistentUuid": "a66e816a-f145-41ca-9b0d-90345d4c17da",
       "type": "boolean",
       "value": false
     },
     {
       "name": "GameStartTimer",
-      "persistentUuid": "2690bfbf-b7b2-4ff2-9fd2-8f834eac74c9",
       "type": "number",
       "value": 0
     }
