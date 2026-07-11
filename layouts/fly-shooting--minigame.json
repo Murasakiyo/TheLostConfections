@@ -29,31 +29,31 @@
   "variables": [
     {
       "name": "HitCount",
-      "persistentUuid": "a320aba0-88a5-4d98-abd6-f505570293d6",
+      "persistentUuid": "8db4baee-294c-4294-9e6c-0f6893626361",
       "type": "number",
       "value": 0
     },
     {
       "name": "GunCooldown",
-      "persistentUuid": "6172d940-ccef-454c-ae40-cca7c4667620",
+      "persistentUuid": "9f05ecfa-8743-4890-be25-9bc50a4f0268",
       "type": "number",
       "value": 0
     },
     {
       "name": "ShotGun",
-      "persistentUuid": "56bd4344-7caf-474d-91d7-b3af98879530",
+      "persistentUuid": "17768851-c39a-456a-9a70-de81ee65d2ba",
       "type": "boolean",
       "value": false
     },
     {
       "name": "FlyDeath",
-      "persistentUuid": "8c940121-37b3-4159-9b5c-7f954c9bb7b9",
+      "persistentUuid": "fe9dcc3d-f999-4d2c-b575-cf73c81875bd",
       "type": "boolean",
       "value": false
     },
     {
       "name": "DeathTimer",
-      "persistentUuid": "af470000-028f-4134-8a6f-808b17f5a113",
+      "persistentUuid": "7916e177-beb0-47fd-9600-324cf2c35ba3",
       "type": "number",
       "value": 0
     }

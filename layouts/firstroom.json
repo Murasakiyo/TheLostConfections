@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.36458333333339904,
+    "zoomFactor": 0.2616774116992621,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,31 +29,31 @@
   "variables": [
     {
       "name": "CurrentNPC",
-      "persistentUuid": "91e1bedc-bc5b-4b6c-b3cb-e380548f824b",
+      "persistentUuid": "33812960-1eef-4a90-8c2f-7daab56d7665",
       "type": "string",
       "value": "None"
     },
     {
       "name": "StopScreen",
-      "persistentUuid": "2a3abc1e-4327-449d-9671-bf4c3bff2cfe",
+      "persistentUuid": "db3b57a9-04b9-4f80-8dd1-8f5d1d57384a",
       "type": "boolean",
       "value": false
     },
     {
       "name": "CurrentRoom",
-      "persistentUuid": "9e2eed7d-0cdf-4c20-a5bd-a3d254bac0f6",
+      "persistentUuid": "da061e92-e4ad-4881-8723-27331082efff",
       "type": "string",
       "value": "None"
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "962ddbd1-9283-4c52-8a80-bb2b954b2938",
+      "persistentUuid": "4f7b8966-346b-4a3f-ac64-cb032400be2b",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartVanillaTimer",
-      "persistentUuid": "90cfd7d3-8ac4-4106-a0dc-65867e02895d",
+      "persistentUuid": "85ceebdc-dbc3-4367-a7e8-4bd4f35352b5",
       "type": "boolean",
       "value": false
     }

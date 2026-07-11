@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.47535850871269336,
+    "zoomFactor": 0.4027225833325914,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -30,21 +30,21 @@
     {
       "folded": true,
       "name": "SystemPatternOne",
-      "persistentUuid": "d2bc8dd6-d995-4259-84d4-c1dff23708fa",
+      "persistentUuid": "238f3763-721f-465a-b4af-98f5bba03d91",
       "type": "array",
       "children": [
         {
-          "persistentUuid": "1b103b4b-12b5-4283-a319-fc7de9154d9e",
+          "persistentUuid": "575fda84-29a9-4de4-b8a3-5952b10ea87a",
           "type": "number",
           "value": 1
         },
         {
-          "persistentUuid": "0b991937-d7e1-48c4-97fd-96fd8d6b2384",
+          "persistentUuid": "47455c7d-919f-487f-80ef-577ae4f22ea8",
           "type": "number",
           "value": 2
         },
         {
-          "persistentUuid": "3dcea5af-586f-4a43-ba99-f5c7c988e236",
+          "persistentUuid": "c8377b1e-76a9-418f-b46f-1685852881f2",
           "type": "number",
           "value": 3
         }
@@ -53,26 +53,26 @@
     {
       "folded": true,
       "name": "SystemPatternTwo",
-      "persistentUuid": "8ffd2270-db66-4740-870b-9e86d6a27779",
+      "persistentUuid": "faaeaf38-d565-4afb-b26b-b1cc6b68162d",
       "type": "array",
       "children": [
         {
-          "persistentUuid": "85d5ffbf-1a88-4ddd-82d7-9be117b4dc99",
+          "persistentUuid": "57bde57f-8d24-47e7-8f33-d3607da99423",
           "type": "number",
           "value": 2
         },
         {
-          "persistentUuid": "f6dd211a-2fbb-4660-8f4e-769f39a99a81",
+          "persistentUuid": "f05d3137-da2c-4b3b-beea-c6ffa84872e8",
           "type": "number",
           "value": 3
         },
         {
-          "persistentUuid": "2a4ab2c1-48ef-4562-8cb8-9cbed23581e2",
+          "persistentUuid": "60ff7c8d-6400-49b6-be26-d6523e36bab1",
           "type": "number",
           "value": 4
         },
         {
-          "persistentUuid": "d76bf3e4-efbd-42bf-93fd-7d4d5d75eb11",
+          "persistentUuid": "c5da71a5-4a3f-428a-a4e8-c69c852723a3",
           "type": "number",
           "value": 1
         }
@@ -81,31 +81,31 @@
     {
       "folded": true,
       "name": "SystemPatternThree",
-      "persistentUuid": "0b072dd1-6d92-44fd-b3ee-719c2fdf2837",
+      "persistentUuid": "7fee0001-57fe-42c5-8954-c4c9f572b705",
       "type": "array",
       "children": [
         {
-          "persistentUuid": "966ba8ec-b6d6-4e69-a762-5f726559918f",
+          "persistentUuid": "587002aa-e55e-4ef3-b4b7-7c6d307caded",
           "type": "number",
           "value": 1
         },
         {
-          "persistentUuid": "bf363adb-cb5f-4a03-a554-9d3bc2efcff5",
+          "persistentUuid": "690f346f-0cd7-4432-867c-cd14e6e93e82",
           "type": "number",
           "value": 2
         },
         {
-          "persistentUuid": "19a1d609-591d-424c-9b22-ecc5bebc8400",
+          "persistentUuid": "87f0b1d4-e1f9-4146-8238-40774d69c447",
           "type": "number",
           "value": 2
         },
         {
-          "persistentUuid": "eae9de05-4975-4aaf-aa5a-3b1147b98174",
+          "persistentUuid": "5461ee01-9aa3-4e83-a235-496661303db8",
           "type": "number",
           "value": 4
         },
         {
-          "persistentUuid": "8a326ac8-6a20-4f5a-ad14-d202cf883ac8",
+          "persistentUuid": "02653e35-0f55-45fa-b754-b83262461a18",
           "type": "number",
           "value": 3
         }
@@ -113,57 +113,75 @@
     },
     {
       "name": "SystemStep",
-      "persistentUuid": "69f64b28-310b-46c8-87c5-18c8ac6b1117",
+      "persistentUuid": "46fdd068-d16a-48d3-9219-370e4b330158",
       "type": "number",
       "value": 0
     },
     {
       "name": "PlayerStep",
-      "persistentUuid": "810180d9-39e6-4c39-a910-e7627dee78d3",
+      "persistentUuid": "31f8c9dc-5f50-46b3-88eb-abec9655ae38",
       "type": "number",
       "value": -1
     },
     {
       "name": "CurrentTurn",
-      "persistentUuid": "378e710b-043e-4d46-b7bc-0ce833519a8c",
+      "persistentUuid": "b7483bc9-c113-4453-bf2a-562c53503d6b",
       "type": "string",
       "value": "System"
     },
     {
       "name": "Timer",
-      "persistentUuid": "f319dd57-92cb-4e14-ada3-fd53e3f3b3df",
+      "persistentUuid": "01ba97ee-5993-4e54-a2a5-02dee981a592",
       "type": "number",
       "value": 0
     },
     {
       "name": "SystemPhase",
-      "persistentUuid": "b923936e-690d-4c78-83e0-179c68efc28f",
+      "persistentUuid": "4782c9cf-c1b8-4c3f-9ad9-85e2433c32cb",
       "type": "string",
       "value": "FirstLvl"
     },
     {
       "name": "LastInput",
-      "persistentUuid": "3c1a1a5d-8cdf-4094-b098-f99934e0b2c3",
+      "persistentUuid": "bb60a609-1022-478f-9268-019c079111d1",
       "type": "number",
       "value": 0
     },
     {
       "name": "StepsThisPhase",
-      "persistentUuid": "290a584e-3197-426e-a343-3bced8278bfe",
+      "persistentUuid": "cb012ded-4368-42df-87f7-e9248ba15f44",
       "type": "number",
       "value": 0
     },
     {
       "name": "SystemPlayPattern",
-      "persistentUuid": "dd270db4-6c96-4d7f-a97c-23be3f0ace80",
+      "persistentUuid": "48eba3d4-8568-4dad-9891-3be1c518f3d5",
       "type": "boolean",
       "value": true
     },
     {
       "name": "ToggleTimer",
-      "persistentUuid": "5954e3b4-69d9-458a-8713-ff7b9757cc99",
+      "persistentUuid": "82597806-6365-4fd1-a913-3a54dcd6ef87",
       "type": "boolean",
       "value": true
+    },
+    {
+      "name": "COMPLETE",
+      "persistentUuid": "dc8311a8-50f6-4201-9de9-a31b8cd9d2e0",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "FAIL",
+      "persistentUuid": "2e4c49a9-9f14-425b-84aa-8313f433a5cf",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "Lives",
+      "persistentUuid": "bed0149b-4e95-4f1b-9552-c9e5adc72af3",
+      "type": "number",
+      "value": 3
     }
   ],
   "instances": [
@@ -241,12 +259,28 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "DebugText",
+      "name": "Phase_Text",
       "persistentUuid": "8ed67337-d953-4db8-a0e6-4d3cc1df0263",
       "width": 0,
-      "x": 385,
-      "y": 266,
+      "x": 757,
+      "y": 980,
       "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "CurrentTurnText",
+      "persistentUuid": "175b27b2-75b7-4705-a883-4bced13948bc",
+      "width": 0,
+      "x": 663,
+      "y": 24,
+      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -325,6 +359,54 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/directions/BrightArrowDown",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 31
+                      },
+                      {
+                        "x": 0,
+                        "y": 31
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gray",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/directions/GrayArrowDown.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -472,6 +554,54 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Gray",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/directions/GrayArrowLeft.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 1,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -547,6 +677,54 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Bright3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 31,
+                        "y": 0
+                      },
+                      {
+                        "x": 31,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gray",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/directions/GrayArrowRight.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -693,6 +871,54 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Gray",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/directions/GrayArrowUp.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 32,
+                        "y": 1
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -761,7 +987,7 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "DebugText",
+      "name": "Phase_Text",
       "persistentUuid": "90fb8b38-6c10-46c7-8ce5-d7979a95d3cf",
       "smoothed": true,
       "type": "TextObject::Text",
@@ -769,10 +995,10 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Text",
-      "font": "",
+      "string": "Current Phase: 1",
+      "font": "retro-pixel-cute-prop.ttf",
       "textAlignment": "left",
-      "characterSize": 60,
+      "characterSize": 50,
       "color": {
         "b": 0,
         "g": 0,
@@ -792,11 +1018,55 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Text",
-        "font": "",
+        "text": "Current Phase: 1",
+        "font": "retro-pixel-cute-prop.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 60,
+        "characterSize": 50,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "CurrentTurnText",
+      "persistentUuid": "ea6095fc-f31a-4b82-a613-d639ab93f6d5",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Current Turn: Computer",
+      "font": "retro-pixel-cute-prop.ttf",
+      "textAlignment": "left",
+      "characterSize": 50,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Current Turn: Computer",
+        "font": "retro-pixel-cute-prop.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 50,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -821,7 +1091,10 @@
         "objectName": "Test"
       },
       {
-        "objectName": "DebugText"
+        "objectName": "Phase_Text"
+      },
+      {
+        "objectName": "CurrentTurnText"
       }
     ]
   },
@@ -854,6 +1127,16 @@
             "value": "BuiltinCommonInstructions::Once"
           },
           "parameters": []
+        },
+        {
+          "type": {
+            "value": "StringVariable"
+          },
+          "parameters": [
+            "CurrentTurn",
+            "=",
+            "\"Player\""
+          ]
         }
       ],
       "actions": [
@@ -945,6 +1228,16 @@
             "value": "BuiltinCommonInstructions::Once"
           },
           "parameters": []
+        },
+        {
+          "type": {
+            "value": "StringVariable"
+          },
+          "parameters": [
+            "CurrentTurn",
+            "=",
+            "\"Player\""
+          ]
         }
       ],
       "actions": [
@@ -1036,6 +1329,16 @@
             "value": "BuiltinCommonInstructions::Once"
           },
           "parameters": []
+        },
+        {
+          "type": {
+            "value": "StringVariable"
+          },
+          "parameters": [
+            "CurrentTurn",
+            "=",
+            "\"Player\""
+          ]
         }
       ],
       "actions": [
@@ -1127,6 +1430,16 @@
             "value": "BuiltinCommonInstructions::Once"
           },
           "parameters": []
+        },
+        {
+          "type": {
+            "value": "StringVariable"
+          },
+          "parameters": [
+            "CurrentTurn",
+            "=",
+            "\"Player\""
+          ]
         }
       ],
       "actions": [
@@ -1562,6 +1875,16 @@
                 "=",
                 "\"FirstLvl\""
               ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "CurrentTurn",
+                "=",
+                "\"System\""
+              ]
             }
           ],
           "actions": [
@@ -1574,6 +1897,50 @@
                 "=",
                 "\"Player\""
               ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "UpButton",
+                "Animation",
+                "=",
+                "\"Gray\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "DownButton",
+                "Animation",
+                "=",
+                "\"Gray\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "LeftButton",
+                "Animation",
+                "=",
+                "\"Gray\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "RightButton",
+                "Animation",
+                "=",
+                "\"Gray\""
+              ]
             }
           ]
         }
@@ -1585,7 +1952,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "System Displaying Color Pattern (Pt 2)",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2014,6 +2380,16 @@
                 "=",
                 "\"SecondLvl\""
               ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "CurrentTurn",
+                "=",
+                "\"System\""
+              ]
             }
           ],
           "actions": [
@@ -2025,6 +2401,50 @@
                 "CurrentTurn",
                 "=",
                 "\"Player\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "UpButton",
+                "Animation",
+                "=",
+                "\"Gray\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "DownButton",
+                "Animation",
+                "=",
+                "\"Gray\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "LeftButton",
+                "Animation",
+                "=",
+                "\"Gray\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "RightButton",
+                "Animation",
+                "=",
+                "\"Gray\""
               ]
             }
           ]
@@ -2563,6 +2983,16 @@
                 "=",
                 "\"ThirdLvl\""
               ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "CurrentTurn",
+                "=",
+                "\"System\""
+              ]
             }
           ],
           "actions": [
@@ -2574,6 +3004,50 @@
                 "CurrentTurn",
                 "=",
                 "\"Player\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "UpButton",
+                "Animation",
+                "=",
+                "\"Gray\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "DownButton",
+                "Animation",
+                "=",
+                "\"Gray\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "LeftButton",
+                "Animation",
+                "=",
+                "\"Gray\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "RightButton",
+                "Animation",
+                "=",
+                "\"Gray\""
               ]
             }
           ]
@@ -2824,6 +3298,50 @@
                 "=",
                 "\"FirstLvl\""
               ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "UpButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "DownButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "LeftButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "RightButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
             }
           ]
         },
@@ -2938,6 +3456,50 @@
                 "=",
                 "\"SecondLvl\""
               ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "UpButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "DownButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "LeftButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "RightButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
             }
           ]
         },
@@ -3041,6 +3603,50 @@
                 "ToggleTimer",
                 "True",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "UpButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "DownButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "LeftButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "RightButton",
+                "Animation",
+                "=",
+                "\"Dim\""
               ]
             }
           ]
@@ -3140,6 +3746,50 @@
                 "=",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "UpButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "DownButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "LeftButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "RightButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
             }
           ]
         },
@@ -3227,6 +3877,50 @@
                 "=",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "UpButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "DownButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "LeftButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "RightButton",
+                "Animation",
+                "=",
+                "\"Dim\""
+              ]
             }
           ]
         },
@@ -3257,13 +3951,56 @@
           "actions": [
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                "value": "SetBooleanVariable"
               },
               "parameters": [
-                "DebugText",
-                "Text",
+                "COMPLETE",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "UpButton",
+                "Animation",
                 "=",
-                "\"COMPLETED MINIGAME\""
+                "\"Bright\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "DownButton",
+                "Animation",
+                "=",
+                "\"Bright\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "LeftButton",
+                "Animation",
+                "=",
+                "\"Bright\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "RightButton",
+                "Animation",
+                "=",
+                "\"Bright\""
               ]
             }
           ]
@@ -3276,7 +4013,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "DEBUG",
+      "name": "UI",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -3285,22 +4022,12 @@
           "conditions": [
             {
               "type": {
-                "value": "BuiltinCommonInstructions::CompareNumbers"
+                "value": "NumberVariable"
               },
               "parameters": [
-                "PlayerStep",
+                "StepsThisPhase",
                 "=",
-                "StepsThisPhase"
-              ]
-            },
-            {
-              "type": {
-                "value": "StringVariable"
-              },
-              "parameters": [
-                "SystemPhase",
-                "=",
-                "\"SecondLvl\""
+                "2"
               ]
             }
           ],
@@ -3310,10 +4037,150 @@
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
-                "DebugText",
+                "Phase_Text",
                 "Text",
                 "=",
-                "\"COMPLETED PHASE 2\""
+                "\"Current Phase: 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "StepsThisPhase",
+                "=",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Phase_Text",
+                "Text",
+                "=",
+                "\"Current Phase: 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "StepsThisPhase",
+                "=",
+                "4"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Phase_Text",
+                "Text",
+                "=",
+                "\"Current Phase: 3\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "CurrentTurn",
+                "=",
+                "\"System\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "CurrentTurnText",
+                "Text",
+                "=",
+                "\"Current Turn: Computer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "CurrentTurn",
+                "=",
+                "\"Player\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "CurrentTurnText",
+                "Text",
+                "=",
+                "\"Current Turn: Player\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "COMPLETE",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Phase_Text",
+                "Text",
+                "=",
+                "\"COMPLETED MINIGAME\""
               ]
             }
           ]
