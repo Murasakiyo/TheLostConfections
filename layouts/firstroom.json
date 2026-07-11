@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.11805730185032026,
+    "zoomFactor": 0.11420623007497321,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,43 +29,43 @@
   "variables": [
     {
       "name": "CurrentNPC",
-      "persistentUuid": "5d2c710d-b34e-4c32-bd0f-7d51f66fbb84",
+      "persistentUuid": "d5b8bd4f-2a97-4d54-ae45-4182c1a4569c",
       "type": "string",
       "value": "None"
     },
     {
       "name": "StopScreen",
-      "persistentUuid": "3080fda5-cb71-41b0-9fc4-8b2196e08599",
+      "persistentUuid": "26057595-05db-4e65-99ce-cd89be724946",
       "type": "boolean",
       "value": false
     },
     {
       "name": "CurrentRoom",
-      "persistentUuid": "8e34c04c-63e7-444d-aa7c-3d05630fb9a4",
+      "persistentUuid": "b5269763-20ea-4ce7-adfe-96a013098ac8",
       "type": "string",
       "value": "None"
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "0cc5b6fb-b8ec-4056-a7fc-01e5156ed1e2",
+      "persistentUuid": "ea388392-dd85-43f6-92a1-8976167e3102",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartVanillaTimer",
-      "persistentUuid": "7d71123a-c421-49a6-8326-488b1f1837e4",
+      "persistentUuid": "91102d38-dde5-4683-95ea-31cd932c09af",
       "type": "boolean",
       "value": false
     },
     {
       "name": "LastPositionX",
-      "persistentUuid": "7bf86da3-2e44-4c21-abcb-17d9a6151a67",
+      "persistentUuid": "1bf1b6f0-a951-4edf-b6cb-c65ea01a6d8e",
       "type": "number",
       "value": 934
     },
     {
       "name": "LastPositionY",
-      "persistentUuid": "fa310e5a-50c5-49a2-8e5b-d75148d6c032",
+      "persistentUuid": "474b72e6-fc66-464e-8331-a9e059b80d84",
       "type": "number",
       "value": 683
     }
@@ -2110,7 +2110,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Camera Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
