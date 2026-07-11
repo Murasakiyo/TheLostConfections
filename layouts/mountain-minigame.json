@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4027225833325921,
+    "zoomFactor": 0.3526904934771234,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,43 +29,31 @@
   "variables": [
     {
       "name": "DropTimer",
-      "persistentUuid": "3bcbc001-1709-4b09-9926-1e0711063867",
+      "persistentUuid": "254c6cb2-b09c-49a1-a1e9-23ea21ca59c4",
       "type": "number",
       "value": 0
     },
     {
       "name": "CupcakeCount",
-      "persistentUuid": "c2db1190-b1e4-4fed-ad2a-b0fe94113494",
+      "persistentUuid": "05ad7e79-306f-459b-90dc-cfd7b07c1157",
       "type": "number",
       "value": 0
     },
     {
       "name": "SnowballCount",
-      "persistentUuid": "32afaf69-4edf-4e79-86dd-6a6783a2b19e",
+      "persistentUuid": "07165f2e-9efe-41ee-bd35-b6f879b3c15c",
       "type": "number",
       "value": 0
     },
     {
       "name": "COMPLETE",
-      "persistentUuid": "e181f97e-77fb-4972-9707-424aceebc7a8",
+      "persistentUuid": "3ea42a47-b87e-4a3a-afda-ce11c4e87882",
       "type": "boolean",
       "value": false
     },
     {
       "name": "EndTimer",
-      "persistentUuid": "f031d355-3c52-4d9a-9515-7da37bd8ed7b",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "GameStart",
-      "persistentUuid": "67952936-47a4-4814-a40f-afd5c462dcac",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "name": "GameStartTimer",
-      "persistentUuid": "3b01e85f-f9b5-41b1-9b97-9927626837cb",
+      "persistentUuid": "93021993-e3dc-4243-a5b3-4dc47f2bbe34",
       "type": "number",
       "value": 0
     }
@@ -133,22 +121,6 @@
       "x": 923,
       "y": -447,
       "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "InstructionText",
-      "persistentUuid": "8b80bd08-1527-4676-84a3-ee308f64f4de",
-      "width": 0,
-      "x": 426,
-      "y": 349,
-      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -227,10 +199,10 @@
       "effects": [],
       "behaviors": [
         {
-          "acceleration": 8000,
-          "deceleration": 4000,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "acceleration": 8000,
+          "deceleration": 4000,
           "allowDiagonals": true,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -442,50 +414,6 @@
           ]
         }
       ]
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "InstructionText",
-      "persistentUuid": "8aad263d-9e9c-4209-9484-79caa9101ffd",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "A-D to move Left and Right",
-      "font": "retro-pixel-cute-prop.ttf",
-      "textAlignment": "left",
-      "characterSize": 80,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "A-D to move Left and Right",
-        "font": "retro-pixel-cute-prop.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 80,
-        "lineHeight": 0,
-        "color": "0;0;0"
-      }
     }
   ],
   "objectsFolderStructure": {
@@ -505,9 +433,6 @@
       },
       {
         "objectName": "PowderedSugar"
-      },
-      {
-        "objectName": "InstructionText"
       }
     ]
   },
@@ -559,7 +484,7 @@
           "parameters": [
             "DropTimer",
             ">=",
-            "1"
+            "0.5"
           ]
         },
         {
@@ -569,16 +494,6 @@
           "parameters": [
             "COMPLETE",
             "=",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "True",
             ""
           ]
         }
@@ -592,6 +507,18 @@
             "DropTimer",
             "=",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Snowball",
+            "RandomInRange(0, SceneWindowWidth())",
+            "-100",
+            "\"Cupcake\""
           ]
         },
         {
@@ -630,16 +557,6 @@
             "",
             "\"a\""
           ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "True",
-            ""
-          ]
         }
       ],
       "actions": [
@@ -664,16 +581,6 @@
           "parameters": [
             "",
             "\"d\""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "True",
-            ""
           ]
         }
       ],
@@ -871,71 +778,6 @@
             }
           ],
           "actions": []
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "False",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "GameStartTimer",
-            "+",
-            "TimeDelta()"
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "GameStartTimer",
-                ">=",
-                "4"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "GameStart",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "InstructionText",
-                ""
-              ]
-            }
-          ]
         }
       ]
     }

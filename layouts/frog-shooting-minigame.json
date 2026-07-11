@@ -29,49 +29,37 @@
   "variables": [
     {
       "name": "JumpTimer",
-      "persistentUuid": "16a472c2-52f7-47d6-aa9b-6ff2a9a66f76",
+      "persistentUuid": "725bbd48-e000-4119-8b5a-028c2d7cdb93",
       "type": "number",
       "value": 0
     },
     {
       "name": "GunCooldown",
-      "persistentUuid": "598cc031-54a6-49a5-9dcb-ee11098066b6",
+      "persistentUuid": "7da9bef3-3be0-47e8-af42-67abcec4c1b2",
       "type": "number",
       "value": 0
     },
     {
       "name": "ShotGun",
-      "persistentUuid": "12b34c45-7fc9-4594-8a01-69b8e57c5951",
+      "persistentUuid": "e6ef64a9-0c10-449e-8c41-c14ec40625c2",
       "type": "boolean",
       "value": false
     },
     {
       "name": "HitCount",
-      "persistentUuid": "433ee8d7-5df5-489e-a243-931b147bc011",
+      "persistentUuid": "8254104d-23f8-4840-b3d8-949ab0b5a325",
       "type": "number",
       "value": 0
     },
     {
       "name": "FrogDeath",
-      "persistentUuid": "b24d2505-ccef-4396-831e-c0a6d3ab2f20",
+      "persistentUuid": "d0dd5a96-3012-4db8-aa0f-af6e9609125c",
       "type": "boolean",
       "value": false
     },
     {
       "name": "DeathTimer",
-      "persistentUuid": "0e8c00f6-5c94-4782-8f68-706c3e935ed4",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "GameStart",
-      "persistentUuid": "74a63900-02f6-4267-8eec-354624093bda",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "name": "GameStartTimer",
-      "persistentUuid": "3a1727e5-e1f6-4dcb-8a9d-c6dd75d1870e",
+      "persistentUuid": "f8b95f31-8342-4eca-aa51-aa63883606f8",
       "type": "number",
       "value": 0
     }
@@ -160,22 +148,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "InstructionText",
-      "persistentUuid": "fd9a5dc8-bc05-4562-aacc-70ab1c515d10",
-      "width": 0,
-      "x": 487,
-      "y": 342,
-      "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
     }
   ],
   "objects": [
@@ -190,10 +162,10 @@
       "effects": [],
       "behaviors": [
         {
-          "acceleration": 8000,
-          "deceleration": 4000,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "acceleration": 8000,
+          "deceleration": 4000,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 0,
@@ -620,50 +592,6 @@
           ]
         }
       ]
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "InstructionText",
-      "persistentUuid": "6e293633-5038-47ce-98b4-f28ee14915ae",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "W-S to move Up and Down\n\nLeft-Click to Shoot",
-      "font": "retro-pixel-cute-prop.ttf",
-      "textAlignment": "left",
-      "characterSize": 80,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "W-S to move Up and Down\n\nLeft-Click to Shoot",
-        "font": "retro-pixel-cute-prop.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 80,
-        "lineHeight": 0,
-        "color": "0;0;0"
-      }
     }
   ],
   "objectsFolderStructure": {
@@ -674,9 +602,6 @@
       },
       {
         "objectName": "WinText"
-      },
-      {
-        "objectName": "InstructionText"
       },
       {
         "objectName": "Bullet"
@@ -698,18 +623,7 @@
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "True",
-            ""
-          ]
-        }
-      ],
+      "conditions": [],
       "actions": [
         {
           "type": {
@@ -754,16 +668,6 @@
             "",
             "\"w\""
           ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "True",
-            ""
-          ]
         }
       ],
       "actions": [
@@ -797,16 +701,6 @@
           "parameters": [
             "",
             "\"s\""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "True",
-            ""
           ]
         }
       ],
@@ -842,16 +736,6 @@
             "JumpTimer",
             ">=",
             "0.5"
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "True",
-            ""
           ]
         }
       ],
@@ -910,16 +794,6 @@
             "value": "BuiltinCommonInstructions::Once"
           },
           "parameters": []
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "True",
-            ""
-          ]
         }
       ],
       "actions": [
@@ -1212,71 +1086,6 @@
             }
           ],
           "actions": []
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "False",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "GameStartTimer",
-            "+",
-            "TimeDelta()"
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "GameStartTimer",
-                ">=",
-                "4"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "GameStart",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "InstructionText",
-                ""
-              ]
-            }
-          ]
         }
       ]
     }

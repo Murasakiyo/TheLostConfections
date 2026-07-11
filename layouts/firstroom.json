@@ -29,49 +29,41 @@
   "variables": [
     {
       "name": "CurrentNPC",
-      "persistentUuid": "8d3d8744-fc98-4b88-8a5a-595908fb3f6b",
       "type": "string",
       "value": "None"
     },
     {
       "name": "StopScreen",
-      "persistentUuid": "9b98bf32-ec3c-4104-9b13-f8480da92f57",
       "type": "boolean",
       "value": false
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "26cc595f-79e8-42a4-814a-fcbc0ebc68ae",
       "type": "number",
       "value": 0
     },
     {
       "name": "CurrentRoom",
-      "persistentUuid": "c61953aa-7ee1-48a9-a567-853087e94da7",
       "type": "string",
       "value": "None"
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "923047b8-bd2a-4ac7-9750-08075f95662a",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartVanillaTimer",
-      "persistentUuid": "83c48860-b2a8-433e-9a3d-35a86c5091f6",
       "type": "boolean",
       "value": false
     },
     {
       "name": "LastPositionX",
-      "persistentUuid": "3e62ae9c-761a-4fa9-a41c-0872e188032c",
       "type": "number",
       "value": 934
     },
     {
       "name": "LastPositionY",
-      "persistentUuid": "c0c21250-2689-4d4f-884c-13e2ff4ce7bd",
       "type": "number",
       "value": 683
     }
