@@ -896,6 +896,14 @@
         "userAdded": false
       },
       {
+        "file": "assets/directions/GrayArrowUp.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/directions/GrayArrowUp",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
         "file": "assets/RightStirPoint.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -908,6 +916,14 @@
         "kind": "image",
         "metadata": "",
         "name": "assets/backgrounds/oven.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/GrayArrowUp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/GrayArrowUp.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -1024,6 +1040,14 @@
         "userAdded": false
       },
       {
+        "file": "assets/directions/GrayArrowLeft.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/directions/GrayArrowLeft",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
         "file": "assets/sprinkles.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -1032,10 +1056,26 @@
         "userAdded": false
       },
       {
+        "file": "assets/directions/GrayArrowRight.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/directions/GrayArrowRight",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
         "file": "assets/vanilla.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "vanilla",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/GrayArrowDown.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/directions/GrayArrowDown",
         "smoothed": false,
         "userAdded": false
       },
@@ -1080,12 +1120,88 @@
         "userAdded": false
       },
       {
+        "file": "assets/directions/GrayArrowDown.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/GrayArrowDown.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
         "file": "assets/directions/exit_hover.png",
         "kind": "image",
         "metadata": "",
         "name": "assets/directions/exit_hover.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/directions/GrayArrowLeft.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/GrayArrowLeft.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/GrayArrowRight.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/GrayArrowRight.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "frog_enemy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "frog_enemy.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/frog_enemy.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "frog_enemy",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "frog_enemy2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "frog_enemy2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/frog_enemy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/frog_enemy.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/stand3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stand3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/LightGlow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LightGlow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/GDevelop/c17e2d500015e598624b763f4942b26e3aac96efca094cd20257a61e15b27fcb_LightGlow.png",
+          "name": "LightGlow.png"
+        }
       },
       {
         "file": "assets/ingredient/1stcupcake.png",
@@ -1150,6 +1266,14 @@
         "name": "assets/option_box.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/playersprite/NewSprite.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/playersprite/NewSprite.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -1165,6 +1289,9 @@
       "effects": [],
       "behaviors": [
         {
+          "isFolded": true,
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 1500,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
@@ -1172,15 +1299,12 @@
           "deceleration": 1500,
           "gravity": 1000,
           "ignoreDefaultControls": false,
-          "isFolded": true,
           "jumpSpeed": 600,
           "jumpSustainTime": 0.2,
           "ladderClimbingSpeed": 150,
           "maxFallingSpeed": 700,
           "maxSpeed": 250,
-          "name": "PlatformerObject",
           "slopeMaxAngle": 60,
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "useLegacyTrajectory": false,
           "useRepeatedJump": false,
           "xGrabTolerance": 10,
@@ -3693,6 +3817,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/stanleyroom"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/frog-shooting-minigame"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/mountain-minigame"
     }
   ],
   "externalEvents": [

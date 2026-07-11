@@ -29,31 +29,31 @@
   "variables": [
     {
       "name": "WrongAnswerCount",
-      "persistentUuid": "161c135b-c93a-45dd-897d-9d3ab42883a6",
+      "persistentUuid": "6e23aba9-2880-44ee-8c35-35009d7c9141",
       "type": "number",
       "value": 0
     },
     {
       "name": "DialogueState",
-      "persistentUuid": "89d94e9b-0ca6-4115-9d2a-89c1ed84db97",
+      "persistentUuid": "2d068d6b-79f2-4461-9762-9f47af18b071",
       "type": "number",
       "value": 0
     },
     {
       "name": "EndingType",
-      "persistentUuid": "d3f4cad0-073c-4d59-8c1d-119e56dcfcd0",
+      "persistentUuid": "97d9ab62-4c6b-43df-adbf-91e2ddc6ce9d",
       "type": "string",
       "value": ""
     },
     {
       "name": "QNAFinished",
-      "persistentUuid": "5e2f67b9-ab08-4a4f-ab52-3e35bbc40968",
+      "persistentUuid": "72d28e5a-14fe-4f0f-a44e-de5158fccccc",
       "type": "boolean",
       "value": false
     },
     {
       "name": "TextColor",
-      "persistentUuid": "b9b7a127-4d88-4ca1-a41e-aacc5ef7c620",
+      "persistentUuid": "090377b3-bf7d-4b25-b033-28a9cce2763d",
       "type": "string",
       "value": ""
     }
@@ -1660,12 +1660,20 @@
       "type": "OpacityCapability::OpacityBehavior"
     },
     {
+      "name": "PlatformerObject",
+      "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
       "name": "Resizable",
       "type": "ResizableCapability::ResizableBehavior"
     },
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "StayOnScreen",
+      "type": "StayOnScreen::StayOnScreen"
     },
     {
       "name": "Text",
