@@ -1922,6 +1922,16 @@
                     "=",
                     "\"cocoa\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "AmountOfGoodIngredients",
+                    "+",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -1979,6 +1989,16 @@
                     "=",
                     "\"vanilla\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "AmountOfGoodIngredients",
+                    "+",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -2035,6 +2055,16 @@
                     "Animation",
                     "=",
                     "\"sprinkles\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "AmountOfGoodIngredients",
+                    "+",
+                    "1"
                   ]
                 }
               ]

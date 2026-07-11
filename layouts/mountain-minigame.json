@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.30887412163426625,
+    "zoomFactor": 0.3526904934771234,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,43 +29,43 @@
   "variables": [
     {
       "name": "DropTimer",
-      "persistentUuid": "3d5640b1-fc9a-423d-b6be-f00d65b260b5",
+      "persistentUuid": "cc63b394-e493-4440-84fe-bec30d37afc9",
       "type": "number",
       "value": 0
     },
     {
       "name": "CupcakeCount",
-      "persistentUuid": "2447154e-338f-45be-adc7-7724e3e30741",
+      "persistentUuid": "a8a4f98d-b651-439c-842b-d667f2cfcfb6",
       "type": "number",
       "value": 0
     },
     {
       "name": "SnowballCount",
-      "persistentUuid": "6aa56899-e74f-4d37-a44f-6d21083c0d77",
+      "persistentUuid": "9ede2ec8-efbe-4a81-b7d5-f5c56138b898",
       "type": "number",
       "value": 0
     },
     {
       "name": "COMPLETE",
-      "persistentUuid": "37462c71-5d5a-438f-8ebc-95bb62cfe242",
+      "persistentUuid": "159f9a2d-59f3-414c-ae27-c0096df34661",
       "type": "boolean",
       "value": false
     },
     {
       "name": "EndTimer",
-      "persistentUuid": "423aa478-c703-46c4-a931-d9bf6323847e",
+      "persistentUuid": "99b4c7e7-4de1-44a9-bb6a-e84e88c3bdbb",
       "type": "number",
       "value": 0
     },
     {
       "name": "GameStart",
-      "persistentUuid": "ad1a612f-1a26-4e51-9399-dfb4bbc50847",
+      "persistentUuid": "fdf7226e-4391-4414-a947-9723266abfc4",
       "type": "boolean",
       "value": false
     },
     {
       "name": "GameStartTimer",
-      "persistentUuid": "e855eee3-8d30-4d74-a51e-99f4f587b2d7",
+      "persistentUuid": "38d3f7fc-c0be-496e-b92f-9d8d33853b49",
       "type": "number",
       "value": 0
     }
@@ -595,7 +595,7 @@
           "parameters": [
             "DropTimer",
             ">=",
-            "1"
+            "0.5"
           ]
         },
         {
@@ -605,16 +605,6 @@
           "parameters": [
             "COMPLETE",
             "=",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "True",
             ""
           ]
         }
@@ -644,6 +634,18 @@
         },
         {
           "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Snowball",
+            "RandomInRange(0, SceneWindowWidth())",
+            "-100",
+            "\"Cupcake\""
+          ]
+        },
+        {
+          "type": {
             "value": "ScalableCapability::ScalableBehavior::SetValue"
           },
           "parameters": [
@@ -665,16 +667,6 @@
           "parameters": [
             "",
             "\"a\""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "True",
-            ""
           ]
         }
       ],
@@ -700,16 +692,6 @@
           "parameters": [
             "",
             "\"d\""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "True",
-            ""
           ]
         }
       ],
@@ -907,71 +889,6 @@
             }
           ],
           "actions": []
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "False",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "GameStartTimer",
-            "+",
-            "TimeDelta()"
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "GameStartTimer",
-                ">=",
-                "4"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "GameStart",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "InstructionText",
-                ""
-              ]
-            }
-          ]
         }
       ]
     }

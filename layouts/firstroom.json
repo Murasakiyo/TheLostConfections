@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.20746499616306696,
+    "zoomFactor": 0.06944547167666065,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,49 +29,55 @@
   "variables": [
     {
       "name": "StopScreen",
-      "persistentUuid": "ae89b3d7-2777-497c-859c-5f893384c92c",
+      "persistentUuid": "a5f94848-0464-42d4-883a-52a36432e2f2",
       "type": "boolean",
       "value": false
     },
     {
-      "name": "VanillaTimer",
-      "persistentUuid": "4c751e33-5ce1-4171-82be-62c7f31e2b6f",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "CurrentRoom",
-      "persistentUuid": "3be37def-b3f1-4451-bd49-3c4b3d571515",
+      "name": "CurrentNPC",
+      "persistentUuid": "6576ca70-d5b7-409a-8a08-141bd4b24f98",
       "type": "string",
       "value": "None"
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "734439d3-a71d-4d5f-adec-779a0f8dcb57",
+      "persistentUuid": "4b05461d-049f-4282-9c17-35bf1730ba18",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "CurrentRoom",
+      "persistentUuid": "75b33b04-d699-42e4-9bca-2989e3b25ef0",
+      "type": "string",
+      "value": "None"
+    },
+    {
+      "name": "VanillaTimer",
+      "persistentUuid": "982d7095-479b-499c-b42f-7c01c7392d4e",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartVanillaTimer",
-      "persistentUuid": "688f7612-54cc-4346-9693-7d15de4634cf",
+      "persistentUuid": "540a00f8-2d63-41be-8886-4cc5703f5523",
       "type": "boolean",
       "value": false
     },
     {
       "name": "LastPositionX",
-      "persistentUuid": "e0f56b6a-cacf-4021-a1e8-2fd2d7482a7a",
+      "persistentUuid": "7b37f3ed-c045-464e-939c-f0d4c8ca95ca",
       "type": "number",
       "value": 934
     },
     {
       "name": "LastPositionY",
-      "persistentUuid": "c8654939-ebee-4492-ba41-bc1a9c133c90",
+      "persistentUuid": "4ae627b9-e36f-4960-9754-0b8bf9a2c7b0",
       "type": "number",
       "value": 683
     },
     {
       "name": "tutorialpart",
-      "persistentUuid": "bece0f08-77ee-4ffb-9249-268062e58054",
+      "persistentUuid": "fe9270f8-2a67-4b34-bb72-e0182f43b773",
       "type": "number",
       "value": 0
     }
