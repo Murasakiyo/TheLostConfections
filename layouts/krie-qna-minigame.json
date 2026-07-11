@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3088741216342665,
+    "zoomFactor": 0.3411856023473464,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,31 +29,31 @@
   "variables": [
     {
       "name": "WrongAnswerCount",
-      "persistentUuid": "dc6aa097-0379-44e8-b691-7b4a31d15496",
+      "persistentUuid": "9549adc5-2a3f-4802-b282-267f710246cd",
       "type": "number",
       "value": 0
     },
     {
       "name": "DialogueState",
-      "persistentUuid": "6918c448-389d-4b05-9d3a-76ee38288bac",
+      "persistentUuid": "99d50511-5d67-4293-8e37-ef811918ecb5",
       "type": "number",
       "value": 0
     },
     {
       "name": "EndingType",
-      "persistentUuid": "ea658201-5b90-437c-9d94-195e59595b6f",
+      "persistentUuid": "04e93afa-bcd6-450f-a3a8-90f8c031bb3b",
       "type": "string",
       "value": ""
     },
     {
       "name": "QNAFinished",
-      "persistentUuid": "89d0eb9c-60e9-48e9-bc9f-59f6c80849d5",
+      "persistentUuid": "9a729eaa-ecd9-42a1-9006-7ba993da5e11",
       "type": "boolean",
       "value": false
     },
     {
       "name": "TextColor",
-      "persistentUuid": "234f09d1-d867-430c-921e-c088b674af28",
+      "persistentUuid": "8a5f5a4a-76ab-4470-8f59-1677320a0a8b",
       "type": "string",
       "value": ""
     }

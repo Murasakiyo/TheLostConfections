@@ -1372,6 +1372,14 @@
         "userAdded": false
       },
       {
+        "file": "assets/directions/done.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/done.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
         "file": "assets/snowball.png",
         "kind": "image",
         "metadata": "",
@@ -1380,10 +1388,26 @@
         "userAdded": false
       },
       {
+        "file": "assets/backgrounds/stanleyroom.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/stanleyroom.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
         "file": "Snowball.png",
         "kind": "image",
         "metadata": "",
         "name": "Snowball.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/fly_room.png2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/fly_room.png2.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -1417,12 +1441,11 @@
       "effects": [],
       "behaviors": [
         {
+          "acceleration": 6000,
+          "gravity": 2000,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "gravity": 2000,
           "maxFallingSpeed": 1000,
-          "isFolded": true,
-          "acceleration": 1500,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
           "canGrabWithoutMoving": true,
@@ -1439,6 +1462,7 @@
           "yGrabOffset": 0
         },
         {
+          "isFolded": true,
           "name": "StayOnScreen",
           "type": "StayOnScreen::StayOnScreen",
           "MarginTop": 0,
@@ -1657,6 +1681,10 @@
       ],
       "effects": [],
       "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        },
         {
           "name": "YSort",
           "type": "YSort::YSort"
@@ -3755,6 +3783,11 @@
       "value": false
     },
     {
+      "name": "TutoKidStart",
+      "type": "boolean",
+      "value": false
+    },
+    {
       "name": "yPosition",
       "type": "number",
       "value": 290
@@ -3892,6 +3925,11 @@
       "name": "CurrentLVL",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "InventoryCupcake",
+      "type": "string",
+      "value": "None"
     }
   ],
   "layouts": [
@@ -3922,10 +3960,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/krie-qna-minigame"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/torres-room-sidescroller"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

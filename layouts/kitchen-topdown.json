@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.17003036489029105,
+    "zoomFactor": 0.22169247275005424,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,31 +29,26 @@
   "variables": [
     {
       "name": "CompleteIngredient",
-      "persistentUuid": "dc427a7c-9d94-4559-919c-aa9c6bd6c905",
       "type": "number",
       "value": 0
     },
     {
       "name": "MixingProgress",
-      "persistentUuid": "8e3d7a37-c7a2-41d5-a5c9-279060b652ad",
       "type": "number",
       "value": 0
     },
     {
       "name": "StirDirection",
-      "persistentUuid": "0ddd869a-1234-4100-b957-958fd9816490",
       "type": "number",
       "value": 0
     },
     {
       "name": "Complete",
-      "persistentUuid": "96dd741e-ffb0-4778-8fcf-a02ac8ef4a90",
       "type": "boolean",
       "value": false
     },
     {
       "name": "StartCook",
-      "persistentUuid": "25a8798a-a97a-49da-9060-229d0359fb6d",
       "type": "boolean",
       "value": false
     }
@@ -211,6 +206,23 @@
           "value": 2
         }
       ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 235.82051282051262,
+      "keepRatio": true,
+      "layer": "Cupcake",
+      "name": "Done",
+      "persistentUuid": "89cffd9d-fcb1-4cd9-8b97-5702928d07fe",
+      "width": 541,
+      "x": -659,
+      "y": 896,
+      "zOrder": 7,
+      "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
@@ -855,6 +867,79 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "persistentUuid": "5bdbf911-b274-4833-9902-1b99ed76e625",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Done",
+      "persistentUuid": "0b9063be-9946-4278-8d7b-ceb2291031c3",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/directions/done.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 39,
+                        "y": 0
+                      },
+                      {
+                        "x": 39,
+                        "y": 17
+                      },
+                      {
+                        "x": 0,
+                        "y": 17
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -886,6 +971,12 @@
       },
       {
         "objectName": "Cupcake"
+      },
+      {
+        "objectName": "NewSprite"
+      },
+      {
+        "objectName": "Done"
       }
     ]
   },
@@ -998,6 +1089,14 @@
           "parameters": [
             "Ingredients",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "Done"
           ]
         }
       ]
@@ -1658,6 +1757,86 @@
               "parameters": [
                 "Cupcake",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "Done",
+                "=",
+                "706",
+                "=",
+                "788"
+              ]
+            },
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "Done",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IsCursorOnObject"
+                  },
+                  "parameters": [
+                    "Done",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "InventoryCupcake",
+                    "=",
+                    "\"Perfect\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "LevelCupcakeComplete",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Firstroom\"",
+                    ""
+                  ]
+                }
               ]
             }
           ]

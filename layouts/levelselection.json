@@ -29,7 +29,6 @@
   "variables": [
     {
       "name": "Currentlevel",
-      "persistentUuid": "1dde2f3d-cab3-41db-9637-46c7c535c7e4",
       "type": "number",
       "value": 0
     }

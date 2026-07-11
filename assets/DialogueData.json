@@ -2,30 +2,40 @@
 	{
 		"title": "Start",
 		"tags": "",
-		"body": "Stanley...\nI'm upset...\nBut you know what would cheer me up..?\nA chocolate cupcake!!\nOh but not just any chocolate cupcake, specially topped with your gorgeous vanilla essence and finished off with rainbow sprinkles!!\nCould you do that?\nPlease?",
+		"body": "Stanley...\nI'm upset...\nBut you know what would cheer me up..?\nA chocolate cupcake!!\nOh but not just any chocolate cupcake, specially topped with your gorgeous vanilla essence and finished off with rainbow sprinkles!!\nCould you do that?\n<<Finished>> \nPlease?",
 		"position": {
-			"x": 124,
-			"y": 172
+			"x": -32,
+			"y": 90
 		},
 		"colorID": 0
 	},
 	{
 		"title": "ReceivedCupcake",
 		"tags": "",
-		"body": "Let's see...\nThis is exactly what I needed!!\nThanks Stanley!",
+		"body": "Oh, Thank you Stanley! Thank you so much!\nThis is exactly what I needed, I'm so happy...\nLets meet again soon!\nGoodbye!\n<<Finished>> \nEnd",
 		"position": {
-			"x": 395,
-			"y": 176
+			"x": 334,
+			"y": 354
 		},
 		"colorID": 0
 	},
 	{
 		"title": "TutorialTorres",
 		"tags": "",
-		"body": "",
+		"body": "Empty Text",
 		"position": {
-			"x": 108,
+			"x": -25,
 			"y": 393
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TutoAsk",
+		"tags": "",
+		"body": "I really want one last cupcake for the road...\n<<Finished>> \nEnd",
+		"position": {
+			"x": 310,
+			"y": -21
 		},
 		"colorID": 0
 	}

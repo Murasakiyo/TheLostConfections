@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.0742078838455971,
+    "zoomFactor": 0.4027225833326893,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,13 +29,13 @@
   "variables": [
     {
       "name": "CurrentNPC",
-      "persistentUuid": "694975d2-a9d5-46db-adf5-eaf4b8792f39",
+      "persistentUuid": "8d3d8744-fc98-4b88-8a5a-595908fb3f6b",
       "type": "string",
       "value": "None"
     },
     {
       "name": "StopScreen",
-      "persistentUuid": "2a826e40-2a0a-4647-a802-d9e591584e28",
+      "persistentUuid": "9b98bf32-ec3c-4104-9b13-f8480da92f57",
       "type": "boolean",
       "value": false
     },
@@ -47,21 +47,33 @@
     },
     {
       "name": "CurrentRoom",
-      "persistentUuid": "ea343088-b755-4112-b855-4b1b337f7021",
+      "persistentUuid": "c61953aa-7ee1-48a9-a567-853087e94da7",
       "type": "string",
       "value": "None"
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "ba30172a-29dd-4c5c-a5c7-cbfe6c06dce8",
+      "persistentUuid": "923047b8-bd2a-4ac7-9750-08075f95662a",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartVanillaTimer",
-      "persistentUuid": "153df375-dbd9-42ae-806e-2441de46396f",
+      "persistentUuid": "83c48860-b2a8-433e-9a3d-35a86c5091f6",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "LastPositionX",
+      "persistentUuid": "3e62ae9c-761a-4fa9-a41c-0872e188032c",
+      "type": "number",
+      "value": 934
+    },
+    {
+      "name": "LastPositionY",
+      "persistentUuid": "c0c21250-2689-4d4f-884c-13e2ff4ce7bd",
+      "type": "number",
+      "value": 683
     }
   ],
   "instances": [
@@ -592,39 +604,6 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 0,
-      "height": 221.1428571428573,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "Basket",
-      "persistentUuid": "2462f860-0663-49a5-87d3-31956a338b44",
-      "width": 172,
-      "x": 1702,
-      "y": 31,
-      "zOrder": 14,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "Settings",
-      "persistentUuid": "38f2add7-c579-4751-9e74-72e82f973c1a",
-      "width": 0,
-      "x": 48,
-      "y": 64,
-      "zOrder": 18,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 1,
       "height": 90,
       "keepRatio": true,
@@ -638,155 +617,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 173.99999999999994,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "Instructions",
-      "persistentUuid": "00caf3b9-9856-4456-810c-d363ebc4be7d",
-      "width": 174,
-      "x": 1492,
-      "y": 67,
-      "zOrder": 20,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 96.00000000000006,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "InventorySlot",
-      "persistentUuid": "08dabd45-7f4a-4090-997b-c850255e3366",
-      "width": 96,
-      "x": 1756,
-      "y": 272,
-      "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 96.00000000000006,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "InventorySlot",
-      "persistentUuid": "53c3051b-26a3-45f5-b4a1-db025479b7a4",
-      "width": 96,
-      "x": 1756,
-      "y": 384,
-      "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "SlotNum",
-          "type": "number",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 96.00000000000006,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "InventorySlot",
-      "persistentUuid": "e1da2c75-5b3c-4490-a999-7bd5648bf300",
-      "width": 96,
-      "x": 1756,
-      "y": 497,
-      "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "SlotNum",
-          "type": "number",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 96.00000000000006,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "InventorySlot",
-      "persistentUuid": "21321f9d-208b-4444-8c8b-185a30c59e0b",
-      "width": 96,
-      "x": 1756,
-      "y": 610,
-      "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "SlotNum",
-          "type": "number",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 96.00000000000006,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "InventorySlot",
-      "persistentUuid": "de1ce8a3-e147-417f-8b85-58e47aa5ca77",
-      "width": 96,
-      "x": 1756,
-      "y": 727,
-      "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "SlotNum",
-          "type": "number",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 96.00000000000006,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "InventorySlot",
-      "persistentUuid": "fca00abe-3e16-4f93-be29-8c9c96746c8d",
-      "width": 96,
-      "x": 1756,
-      "y": 844,
-      "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "SlotNum",
-          "type": "number",
-          "value": 5
-        }
-      ]
     },
     {
       "angle": 0,
@@ -1550,8 +1380,47 @@
           "parameters": [
             "LocationInteract"
           ]
+        },
+        {
+          "type": {
+            "value": "FileSystem::LoadVariableFromJSONFileSync"
+          },
+          "parameters": [
+            "LastPositionX",
+            "\"LastPositionX\"",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FileSystem::LoadVariableFromJSONFileSync"
+          },
+          "parameters": [
+            "LastPositionY",
+            "\"LastPositionY\"",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "Stanley",
+            "=",
+            "LastPositionX",
+            "=",
+            "LastPositionY"
+          ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -1866,7 +1735,47 @@
                   },
                   "parameters": [
                     "",
-                    "\"Sprinkles Minigame\"",
+                    "\"StanleyRoom\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LastPositionX",
+                    "=",
+                    "Stanley.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LastPositionY",
+                    "=",
+                    "Stanley.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FileSystem::SaveVariableToJSONFileSync"
+                  },
+                  "parameters": [
+                    "LastPositionX",
+                    "\"LastPositionX\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FileSystem::SaveVariableToJSONFileSync"
+                  },
+                  "parameters": [
+                    "LastPositionY",
+                    "\"LastPositionY\"",
                     ""
                   ]
                 }
@@ -1884,6 +1793,16 @@
                     "=",
                     "\"kitchen\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "LevelCupcakeComplete",
+                    "False",
+                    ""
+                  ]
                 }
               ],
               "actions": [
@@ -1894,6 +1813,46 @@
                   "parameters": [
                     "",
                     "\"Kitchen (Topdown)\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LastPositionX",
+                    "=",
+                    "Stanley.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LastPositionY",
+                    "=",
+                    "Stanley.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FileSystem::SaveVariableToJSONFileSync"
+                  },
+                  "parameters": [
+                    "LastPositionX",
+                    "\"LastPositionX\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FileSystem::SaveVariableToJSONFileSync"
+                  },
+                  "parameters": [
+                    "LastPositionY",
+                    "\"LastPositionY\"",
                     ""
                   ]
                 }
@@ -1920,7 +1879,47 @@
                   },
                   "parameters": [
                     "",
-                    "\"Fly Shooting  Minigame\"",
+                    "\"TorresRoom\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LastPositionX",
+                    "=",
+                    "Stanley.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LastPositionY",
+                    "=",
+                    "Stanley.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FileSystem::SaveVariableToJSONFileSync"
+                  },
+                  "parameters": [
+                    "LastPositionX",
+                    "\"LastPositionX\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FileSystem::SaveVariableToJSONFileSync"
+                  },
+                  "parameters": [
+                    "LastPositionY",
+                    "\"LastPositionY\"",
                     ""
                   ]
                 }
@@ -1935,7 +1934,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Camera Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",

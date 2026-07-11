@@ -34,6 +34,12 @@
       "value": 0
     },
     {
+      "name": "CupcakeCount",
+      "persistentUuid": "c2db1190-b1e4-4fed-ad2a-b0fe94113494",
+      "type": "number",
+      "value": 0
+    },
+    {
       "name": "SnowballCount",
       "persistentUuid": "32afaf69-4edf-4e79-86dd-6a6783a2b19e",
       "type": "number",
