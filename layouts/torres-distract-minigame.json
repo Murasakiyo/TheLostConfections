@@ -29,26 +29,31 @@
   "variables": [
     {
       "name": "WrongAnswerCount",
+      "persistentUuid": "ad060302-17cc-4827-831e-48c23c6a187e",
       "type": "number",
       "value": 0
     },
     {
       "name": "DialogueState",
+      "persistentUuid": "3e791e9f-36e3-48ca-9ad4-24adb1d1851e",
       "type": "number",
       "value": 0
     },
     {
       "name": "EndingType",
+      "persistentUuid": "afd1c630-9d4d-48de-8ed0-181fe0a3b0d8",
       "type": "string",
       "value": ""
     },
     {
       "name": "DistractFinished",
+      "persistentUuid": "783e73c9-7e3f-441a-aaba-ae6d497a80aa",
       "type": "boolean",
       "value": false
     },
     {
       "name": "TextColor",
+      "persistentUuid": "d4224f54-da0d-4507-aa81-d673e90f8769",
       "type": "string",
       "value": ""
     }
@@ -63,7 +68,7 @@
       "name": "Background",
       "persistentUuid": "4b7150c7-8190-4839-802a-9e1ade1de9b2",
       "width": 0,
-      "x": 2,
+      "x": 0,
       "y": 0,
       "zOrder": 1,
       "numberProperties": [],
@@ -1206,7 +1211,7 @@
           "parameters": [
             "WrongAnswerCount",
             ">=",
-            "2"
+            "3"
           ]
         }
       ],
@@ -1278,58 +1283,57 @@
             "\"Options\""
           ]
         }
-      ],
-      "events": [
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "WrongAnswerCount",
-                "<=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "EndingType",
-                "=",
-                "\"GoodEnding\""
-              ]
-            },
-            {
-              "type": {
-                "value": "DialogueTree::StartDialogueFromBranch"
-              },
-              "parameters": [
-                "\"GoodEnding\""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "FoundChocolateBarTXT",
-                "Text",
-                "=",
-                "\"You found Bar of Chocolate!!\""
-              ]
-            }
+          "type": {
+            "value": "DialogueTree::WasBranchVisited"
+          },
+          "parameters": [
+            "\"GoodEnding\""
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "DialogueTree::IsDialogueRunning"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "DistractFinished",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "EndingType",
+            "=",
+            "\"GoodEnding\""
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "FoundChocolateBarTXT",
+            "Text",
+            "=",
+            "\"You found Bar of Chocolate!!\""
           ]
         }
       ]

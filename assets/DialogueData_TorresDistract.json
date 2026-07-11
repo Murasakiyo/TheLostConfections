@@ -11,18 +11,18 @@
 	},
 	{
 		"title": "torres1_correct",
-		"tags": "correct",
-		"body": "<<Torres>> Her Highness needs my help?\n<<Stanley>> Yes, indeed! An errand of utmost urgency that only you, her dear knight, can handle!\n<<Torres>> ...very well, then. And what errand would this be?\n[[torres2]]",
+		"tags": "",
+		"body": "<<Torres>> Her Majesty needs me?\n<<Stanley>> Yes, indeed! A request of utmost urgency that only you, her dear knight, can handle!\n<<Torres>> ...I see. And what request would this be?\n<<Stanley>> (I've made some progress!)\n[[torres2]]",
 		"position": {
-			"x": 319,
-			"y": -91
+			"x": 316,
+			"y": -94
 		},
 		"colorID": 0
 	},
 	{
 		"title": "torres1_wrong1",
 		"tags": "wrong",
-		"body": "<<Torres>> A child? Forgive me, but I don't exactly have a presence that's comforting to children. Aren't [i]you[/i] better suited for this, Stanley?\n<<Stanley>> That's true.. I've always been the more popular one amongst the children too!\n<<Torres>> [i]Sighs[/i] Right... Well, if there isn't anything else, leave me be. I've got things to do.\n<<Stanley>> Wait, hold on now, my friend! There's actually another thing I have to talk to you about!\n[[torres1_check]]",
+		"body": "<<Torres>> A child? Forgive me, but I'm better at protecting children, not comforting. Aren't [i]you[/i] better suited for that, Stanley?\n<<Stanley>> That's true... I've always been the more popular one amongst the children too!\n<<Torres>> [i]Sighs[/i] Right. Well, if there isn't anything else, leave me be. I've got things to do.\n<<Stanley>> Wait, hold on now, my friend! There's actually another thing I have to talk to you about!\n[[torres1_check]]",
 		"position": {
 			"x": 315,
 			"y": 178
@@ -52,10 +52,10 @@
 	{
 		"title": "GoodEnding",
 		"tags": "good",
-		"body": "<<Stanley>> Wonderful! Now, I can just go over and...\n<<Stanley>> There we go! The bar of chocolate has been obtained!",
+		"body": "<<Stanley>> There we go! The bar of chocolate has been obtained!",
 		"position": {
-			"x": 1506,
-			"y": -175
+			"x": 1443,
+			"y": -93
 		},
 		"colorID": 0
 	},
@@ -64,8 +64,8 @@
 		"tags": "bad",
 		"body": "<<Torres>> Stanley, I don't know what you're up to, but I don't have time for it! Get out of my room!\n<<stanley>> Wait, Torres, I really do need to--\n<<Torres>> Get out, now!!!",
 		"position": {
-			"x": 1503,
-			"y": -443
+			"x": 1446,
+			"y": -389
 		},
 		"colorID": 0
 	},
@@ -74,35 +74,35 @@
 		"tags": "choice ",
 		"body": "<<Stanley>> (Hmm... I need to figure out a way to distract Torres from her axe, so that I can shave some chocolate off of it. What should I say?)\n[[Krie needs your help with something.|torres1_correct]]\n[[There's a crying child that needs comforting.|torres1_wrong1]]\n[[A cat got stuck up on a tree, and it can't get down!|torres1_wrong2]]\n[[Your shoelaces are untied!|torres1_wrong3]]",
 		"position": {
-			"x": -211,
-			"y": -91
+			"x": -214,
+			"y": -92
 		},
 		"colorID": 0
 	},
 	{
 		"title": "torres2",
 		"tags": "choice",
-		"body": "<<Stanley>> (I've made some progress! Now, what's something that Her Highness would ask Torres to do?)\n[[You have to bake a cupcake for her!|torres2_wrong1]]\n[[She needs you to clean the greenhouse!|torres2_correct]]\n[[a|torres2_wrong2]]\n[[a|torres2_wrong3]]",
+		"body": "<<Stanley>> (Now, what's something that Her Majesty would ask Torres to do?)\n[[You have to bake a cupcake for her!|torres2_wrong1]]\n[[She needed to talk to you about something important.|torres2_correct]]\n[[She needs you to clean the greenhouse!|torres2_wrong2]]\n[[She wants you to entertain the children!|torres2_wrong3]]",
 		"position": {
-			"x": 645,
-			"y": -91
+			"x": 626,
+			"y": -95
 		},
 		"colorID": 0
 	},
 	{
 		"title": "torres2_wrong1",
-		"tags": "",
-		"body": "Empty Text",
+		"tags": "wrong",
+		"body": "<<Torres>> She wants [i]me[/i] to bake a cupcake for her? I find that hard to believe, even for Her Majesty. Are you sure you got that right?\n<<Stanley>> Oh! On second thought, I must've gotten my thoughts mixed up! My apologies for the confusion, Torres.\n<<Torres>> Right...\n<<Stanley>> In any case, the actual errand entrusted to you was...\n[[torres2_check]]",
 		"position": {
-			"x": 1084,
-			"y": -402
+			"x": 1069,
+			"y": 169
 		},
 		"colorID": 0
 	},
 	{
 		"title": "torres2_correct",
 		"tags": "",
-		"body": "<<Torres>> The greenhouse, you say? Well, I suppose I can spare some time if Her Highness really needs the help...\n<<Stanley>> Of course! Someone as strong and capable as you would make light work of cleaning up a place even as big as the greenhouse!\n<<Torres>>",
+		"body": "<<Torres>> Her Majesty wishes to talk to me? What about?\n<<Stanley>> She didn't say, but it seemed urgent. You shouldn't keep Her Majesty waiting!\n<<Torres>> Hm. Very well, then. This had better be important...\n<<Stanley>> (Wonderful! Now that she's gone, I can just...)\n[[GoodEnding]]",
 		"position": {
 			"x": 1082,
 			"y": -95
@@ -111,28 +111,28 @@
 	},
 	{
 		"title": "torres2_wrong2",
-		"tags": "",
-		"body": "Empty Text",
+		"tags": "wrong",
+		"body": "<<Torres>> The greenhouse? Last I checked, the two of you were at the greenhouse earlier today.\n<<Stanley>> Oh, well, um...\n<<Torres>> Besides, even though Her Majesty can be rather irresponsible, I doubt she'd leave her precious greenhouse a mess. Stanley, are you messing with me?\n<<Stanley>> I wouldn't dare, my friend! I simply misremembered Her Majesty's message. What I meant to say was...\n[[torres2_check]]",
 		"position": {
-			"x": 1084,
-			"y": 179
+			"x": 1092,
+			"y": 443
 		},
 		"colorID": 0
 	},
 	{
 		"title": "torres2_wrong3",
-		"tags": "",
-		"body": "Empty Text",
+		"tags": "wrong",
+		"body": "<<Torres>> ...shouldn't that be [i]your[/i] job as court jester, Stanley? Why would she ask me to do that?\n<<Stanley>> Oh... yes, how silly of me! I got my memories mixed up, my apologies. What I meant to say was...\n[[torres2_check]]",
 		"position": {
-			"x": 1084,
-			"y": 450
+			"x": 1087,
+			"y": 700
 		},
 		"colorID": 0
 	},
 	{
 		"title": "torres1_check",
 		"tags": "check",
-		"body": "<<Stanley>> (I think Torres is getting suspicious of me! I've got to find a better plan before she loses her patience!) \n[[torres1]]",
+		"body": "<<Stanley>> (I think Torres is getting suspicious of me! If I mess up too many times, she might kick me out of her room!)\n[[torres1]]",
 		"position": {
 			"x": -221,
 			"y": 456
@@ -142,10 +142,10 @@
 	{
 		"title": "torres2_check",
 		"tags": "check",
-		"body": "<<Stanley>> (I think Torres is getting suspicious of me! I've got to find a better plan before she loses her patience!)\n[[torres2]]",
+		"body": "<<Stanley>> (I think Torres is getting suspicious of me! If I mess up too many times, she might kick me out of her room!)\n[[torres2]]",
 		"position": {
-			"x": 645,
-			"y": 421
+			"x": 626,
+			"y": 420
 		},
 		"colorID": 0
 	}
