@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.24488383633731786,
+    "zoomFactor": 0.20746499616306696,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,41 +29,49 @@
   "variables": [
     {
       "name": "StopScreen",
+      "persistentUuid": "ae89b3d7-2777-497c-859c-5f893384c92c",
       "type": "boolean",
       "value": false
     },
     {
       "name": "VanillaTimer",
+      "persistentUuid": "4c751e33-5ce1-4171-82be-62c7f31e2b6f",
       "type": "number",
       "value": 0
     },
     {
       "name": "CurrentRoom",
+      "persistentUuid": "3be37def-b3f1-4451-bd49-3c4b3d571515",
       "type": "string",
       "value": "None"
     },
     {
       "name": "VanillaTimer",
+      "persistentUuid": "734439d3-a71d-4d5f-adec-779a0f8dcb57",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartVanillaTimer",
+      "persistentUuid": "688f7612-54cc-4346-9693-7d15de4634cf",
       "type": "boolean",
       "value": false
     },
     {
       "name": "LastPositionX",
+      "persistentUuid": "e0f56b6a-cacf-4021-a1e8-2fd2d7482a7a",
       "type": "number",
       "value": 934
     },
     {
       "name": "LastPositionY",
+      "persistentUuid": "c8654939-ebee-4492-ba41-bc1a9c133c90",
       "type": "number",
       "value": 683
     },
     {
       "name": "tutorialpart",
+      "persistentUuid": "bece0f08-77ee-4ffb-9249-268062e58054",
       "type": "number",
       "value": 0
     }
