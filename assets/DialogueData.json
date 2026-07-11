@@ -4,8 +4,8 @@
 		"tags": "",
 		"body": "Stanley...\nI'm upset...\nBut you know what would cheer me up..?\nA chocolate cupcake!!\nOh but not just any chocolate cupcake, specially topped with your gorgeous vanilla essence and finished off with rainbow sprinkles!!\nCould you do that?\n<<Finished>> \nPlease?",
 		"position": {
-			"x": -32,
-			"y": 90
+			"x": -41,
+			"y": -116
 		},
 		"colorID": 0
 	},
@@ -14,18 +14,18 @@
 		"tags": "",
 		"body": "Oh, Thank you Stanley! Thank you so much!\nThis is exactly what I needed, I'm so happy...\nLets meet again soon!\nGoodbye!\n<<Finished>> \nEnd",
 		"position": {
-			"x": 334,
-			"y": 354
+			"x": -45,
+			"y": 126
 		},
 		"colorID": 0
 	},
 	{
 		"title": "TutorialTorres",
 		"tags": "",
-		"body": "Empty Text",
+		"body": "<<Stanley>><< SHappy>> \nHello there, dearest Ganache Knight! \n<<Torres>><<TMiff>> \nStanley... \nGuess now that all the children are gone, you're off to bother me aren't you?\n<<Stanley>><<SShock>>\nMy, is that what you think of me? I'm offended, Torres!\n<<STalk>> \nActually I came here to ask you for a favour. Do you happen to have any leftover chocolate I could use?\n<<Torres>><<TMiff>> \n...\nWhy are you asking me this? There's chocolate EVERYWHERE here!\nIf you're so desperate for chocolate, then go and shoot the cocoa flies. They've been bugging me for days and they always come back!\n<<Stanley>><<SSilly>> \nDon't mind if I do~\n<<Finished>>",
 		"position": {
-			"x": -25,
-			"y": 393
+			"x": 227,
+			"y": 130
 		},
 		"colorID": 0
 	},
@@ -34,8 +34,8 @@
 		"tags": "",
 		"body": "I really want one last cupcake for the road...\n<<Finished>> \nEnd",
 		"position": {
-			"x": 310,
-			"y": -21
+			"x": 202,
+			"y": -121
 		},
 		"colorID": 0
 	}

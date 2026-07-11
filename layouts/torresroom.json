@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3895856273827319,
+    "zoomFactor": 0.2796226521839404,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -94,6 +94,55 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "DialogueBox",
+      "persistentUuid": "b64ff1f9-72e9-4a74-97ec-c2486be90eed",
+      "width": 0,
+      "x": 940,
+      "y": -455,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "DialogueTXT",
+      "persistentUuid": "0aee32a6-3e6a-4822-901c-d355c7f18349",
+      "width": 0,
+      "x": 1015,
+      "y": -532,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 54,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Name",
+      "persistentUuid": "198ae942-78fd-449c-857e-8ccc70b08666",
+      "width": 270,
+      "x": 1017,
+      "y": -578,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -121,7 +170,13 @@
       "persistentUuid": "f633aed5-720e-45fb-afba-141b04981629",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "Name",
+          "type": "string",
+          "value": "Torres"
+        }
+      ],
       "effects": [],
       "behaviors": [],
       "animations": [
@@ -359,6 +414,13 @@
         "includeConfig": 0
       },
       "target": "Inventory"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Character Sprites"
     }
   ],
   "layers": [

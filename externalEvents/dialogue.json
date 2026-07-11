@@ -4,6 +4,11 @@
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
@@ -54,6 +59,16 @@
               "parameters": [
                 "\"Start\""
               ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "CurrentNPC",
+                "=",
+                "\"Tutorialguy\""
+              ]
             }
           ],
           "actions": [
@@ -96,6 +111,16 @@
                 "LevelCupcakeComplete",
                 "False",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "CurrentNPC",
+                "=",
+                "\"Tutorialguy\""
               ]
             }
           ],
@@ -140,6 +165,16 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "CurrentNPC",
+                "=",
+                "\"Tutorialguy\""
+              ]
             }
           ],
           "actions": [
@@ -149,6 +184,41 @@
               },
               "parameters": [
                 "\"ReceivedCupcake\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Else",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "CurrentNPC",
+                "=",
+                "\"Torres\""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "CurrentLVL",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DialogueTree::StartDialogueFromBranch"
+              },
+              "parameters": [
+                "\"TutorialTorres\""
               ]
             }
           ]
