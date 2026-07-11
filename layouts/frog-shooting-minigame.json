@@ -29,49 +29,49 @@
   "variables": [
     {
       "name": "JumpTimer",
-      "persistentUuid": "16a472c2-52f7-47d6-aa9b-6ff2a9a66f76",
+      "persistentUuid": "4b915d54-3030-4ad4-a16a-0df4a27593f0",
       "type": "number",
       "value": 0
     },
     {
       "name": "GunCooldown",
-      "persistentUuid": "598cc031-54a6-49a5-9dcb-ee11098066b6",
+      "persistentUuid": "b257e69d-d7fa-4523-aad5-e7489fdb29f7",
       "type": "number",
       "value": 0
     },
     {
       "name": "ShotGun",
-      "persistentUuid": "12b34c45-7fc9-4594-8a01-69b8e57c5951",
+      "persistentUuid": "2cb42972-2265-4402-a000-c45ec0c01697",
       "type": "boolean",
       "value": false
     },
     {
       "name": "HitCount",
-      "persistentUuid": "433ee8d7-5df5-489e-a243-931b147bc011",
+      "persistentUuid": "95b9a005-bb5e-442c-8b2e-c1a5fa48b97c",
       "type": "number",
       "value": 0
     },
     {
       "name": "FrogDeath",
-      "persistentUuid": "b24d2505-ccef-4396-831e-c0a6d3ab2f20",
+      "persistentUuid": "af9da092-dcba-44aa-acc0-021009eec879",
       "type": "boolean",
       "value": false
     },
     {
       "name": "DeathTimer",
-      "persistentUuid": "0e8c00f6-5c94-4782-8f68-706c3e935ed4",
+      "persistentUuid": "c75039fe-1a66-474f-ac22-c7d86c4bfbc9",
       "type": "number",
       "value": 0
     },
     {
       "name": "GameStart",
-      "persistentUuid": "74a63900-02f6-4267-8eec-354624093bda",
+      "persistentUuid": "a66e816a-f145-41ca-9b0d-90345d4c17da",
       "type": "boolean",
       "value": false
     },
     {
       "name": "GameStartTimer",
-      "persistentUuid": "3a1727e5-e1f6-4dcb-8a9d-c6dd75d1870e",
+      "persistentUuid": "2690bfbf-b7b2-4ff2-9fd2-8f834eac74c9",
       "type": "number",
       "value": 0
     }
@@ -190,10 +190,10 @@
       "effects": [],
       "behaviors": [
         {
-          "acceleration": 8000,
-          "deceleration": 4000,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "acceleration": 8000,
+          "deceleration": 4000,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 0,

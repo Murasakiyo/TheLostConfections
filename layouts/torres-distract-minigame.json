@@ -29,31 +29,31 @@
   "variables": [
     {
       "name": "WrongAnswerCount",
-      "persistentUuid": "ad060302-17cc-4827-831e-48c23c6a187e",
+      "persistentUuid": "c32b53cf-8710-4a1e-ad0e-73bfdd1bff5d",
       "type": "number",
       "value": 0
     },
     {
       "name": "DialogueState",
-      "persistentUuid": "3e791e9f-36e3-48ca-9ad4-24adb1d1851e",
+      "persistentUuid": "192c7390-f461-461e-b162-0fb9fe3eda7b",
       "type": "number",
       "value": 0
     },
     {
       "name": "EndingType",
-      "persistentUuid": "afd1c630-9d4d-48de-8ed0-181fe0a3b0d8",
+      "persistentUuid": "2b9d9baf-5519-4dab-afb8-362befcf0e07",
       "type": "string",
       "value": ""
     },
     {
       "name": "DistractFinished",
-      "persistentUuid": "783e73c9-7e3f-441a-aaba-ae6d497a80aa",
+      "persistentUuid": "d35b72de-7c9f-4bab-9ec4-f830af1658a7",
       "type": "boolean",
       "value": false
     },
     {
       "name": "TextColor",
-      "persistentUuid": "d4224f54-da0d-4507-aa81-d673e90f8769",
+      "persistentUuid": "c3bb8a20-8866-4b30-a4dd-8d119e7d7d4c",
       "type": "string",
       "value": ""
     }
@@ -1109,7 +1109,7 @@
           "parameters": [
             "NameTXT_Distract",
             "=",
-            "\"[b][color=#dd5887]Torres[/color][/b]\""
+            "\"[b][color=#ea792f]Torres[/color][/b]\""
           ]
         }
       ]
