@@ -1546,6 +1546,94 @@
         "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialogueData_TorresDistract.json\"}",
         "name": "DialogueData_TorresDistract",
         "userAdded": false
+      },
+      {
+        "file": "assets/platforms/trunk.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/platforms/trunk.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/acorn.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/acorn.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/platforms/tree_ground.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/platforms/tree_ground.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/platforms/tree_platform.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/platforms/tree_platform.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/grass.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/grass.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/acorn_spawner.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/acorn_spawner.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ingredient/lime2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/ingredient/lime",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tree_leaves.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tree_leaves.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/greenhouse_ladder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/greenhouse_ladder.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/platforms/greenhouse_platform.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/platforms/greenhouse_platform.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -4121,7 +4209,7 @@
     {
       "name": "CurrentLVL",
       "type": "number",
-      "value": 0
+      "value": 1
     },
     {
       "name": "InventoryCupcake",
@@ -4189,6 +4277,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/mountain-minigame"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/tree-climbing-minigame"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/greenhouse-platformer-minigame"
     }
   ],
   "externalEvents": [
@@ -4245,6 +4341,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/flashtransitionpainter"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/behaviorremapper"
     }
   ],
   "externalLayouts": []
