@@ -40,14 +40,20 @@
       "value": false
     },
     {
+      "name": "CurrentRoom",
+      "persistentUuid": "1fdd4225-83cd-49d8-baef-42e03ec04f5d",
+      "type": "string",
+      "value": "None"
+    },
+    {
       "name": "VanillaTimer",
-      "persistentUuid": "05abf8fa-eab5-45e5-8b6b-b78f7c91fee4",
+      "persistentUuid": "11ff404f-2d91-4d76-9310-e16987445b42",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartVanillaTimer",
-      "persistentUuid": "54841534-99df-43d8-9c96-83fc7d0d8f1d",
+      "persistentUuid": "0736ea20-2a6a-4b45-bd69-f5b33df96b23",
       "type": "boolean",
       "value": false
     }
