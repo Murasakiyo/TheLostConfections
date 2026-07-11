@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.0742078838455971,
+    "zoomFactor": 0.11805730185032026,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,33 +29,45 @@
   "variables": [
     {
       "name": "CurrentNPC",
-      "persistentUuid": "8daaea3c-cee3-425a-b622-65da392ea331",
+      "persistentUuid": "5d2c710d-b34e-4c32-bd0f-7d51f66fbb84",
       "type": "string",
       "value": "None"
     },
     {
       "name": "StopScreen",
-      "persistentUuid": "e4886e77-2cfa-4093-9298-c46ecd18c4c2",
+      "persistentUuid": "3080fda5-cb71-41b0-9fc4-8b2196e08599",
       "type": "boolean",
       "value": false
     },
     {
       "name": "CurrentRoom",
-      "persistentUuid": "1fdd4225-83cd-49d8-baef-42e03ec04f5d",
+      "persistentUuid": "8e34c04c-63e7-444d-aa7c-3d05630fb9a4",
       "type": "string",
       "value": "None"
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "11ff404f-2d91-4d76-9310-e16987445b42",
+      "persistentUuid": "0cc5b6fb-b8ec-4056-a7fc-01e5156ed1e2",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartVanillaTimer",
-      "persistentUuid": "0736ea20-2a6a-4b45-bd69-f5b33df96b23",
+      "persistentUuid": "7d71123a-c421-49a6-8326-488b1f1837e4",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "LastPositionX",
+      "persistentUuid": "7bf86da3-2e44-4c21-abcb-17d9a6151a67",
+      "type": "number",
+      "value": 934
+    },
+    {
+      "name": "LastPositionY",
+      "persistentUuid": "fa310e5a-50c5-49a2-8e5b-d75148d6c032",
+      "type": "number",
+      "value": 683
     }
   ],
   "instances": [
@@ -1544,8 +1556,47 @@
           "parameters": [
             "LocationInteract"
           ]
+        },
+        {
+          "type": {
+            "value": "FileSystem::LoadVariableFromJSONFileSync"
+          },
+          "parameters": [
+            "LastPositionX",
+            "\"LastPositionX\"",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FileSystem::LoadVariableFromJSONFileSync"
+          },
+          "parameters": [
+            "LastPositionY",
+            "\"LastPositionY\"",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "Stanley",
+            "=",
+            "LastPositionX",
+            "=",
+            "LastPositionY"
+          ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -1863,6 +1914,46 @@
                     "\"Sprinkles Minigame\"",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LastPositionX",
+                    "=",
+                    "Stanley.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LastPositionY",
+                    "=",
+                    "Stanley.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FileSystem::SaveVariableToJSONFileSync"
+                  },
+                  "parameters": [
+                    "LastPositionX",
+                    "\"LastPositionX\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FileSystem::SaveVariableToJSONFileSync"
+                  },
+                  "parameters": [
+                    "LastPositionY",
+                    "\"LastPositionY\"",
+                    ""
+                  ]
                 }
               ]
             },
@@ -1878,6 +1969,16 @@
                     "=",
                     "\"kitchen\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "LevelCupcakeComplete",
+                    "False",
+                    ""
+                  ]
                 }
               ],
               "actions": [
@@ -1888,6 +1989,46 @@
                   "parameters": [
                     "",
                     "\"Kitchen (Topdown)\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LastPositionX",
+                    "=",
+                    "Stanley.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LastPositionY",
+                    "=",
+                    "Stanley.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FileSystem::SaveVariableToJSONFileSync"
+                  },
+                  "parameters": [
+                    "LastPositionX",
+                    "\"LastPositionX\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FileSystem::SaveVariableToJSONFileSync"
+                  },
+                  "parameters": [
+                    "LastPositionY",
+                    "\"LastPositionY\"",
                     ""
                   ]
                 }
@@ -1915,6 +2056,46 @@
                   "parameters": [
                     "",
                     "\"Fly Shooting  Minigame\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LastPositionX",
+                    "=",
+                    "Stanley.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LastPositionY",
+                    "=",
+                    "Stanley.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FileSystem::SaveVariableToJSONFileSync"
+                  },
+                  "parameters": [
+                    "LastPositionX",
+                    "\"LastPositionX\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FileSystem::SaveVariableToJSONFileSync"
+                  },
+                  "parameters": [
+                    "LastPositionY",
+                    "\"LastPositionY\"",
                     ""
                   ]
                 }

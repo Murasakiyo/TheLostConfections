@@ -29,13 +29,13 @@
   "variables": [
     {
       "name": "DropTimer",
-      "persistentUuid": "20d2382e-1ed7-4694-83e8-8005be46204b",
+      "persistentUuid": "e3aabc0f-361e-424f-af04-79e25427efe4",
       "type": "number",
       "value": 0
     },
     {
       "name": "CupcakeCount",
-      "persistentUuid": "65263955-e3a7-448d-b392-175ce681841b",
+      "persistentUuid": "c2db1190-b1e4-4fed-ad2a-b0fe94113494",
       "type": "number",
       "value": 0
     }

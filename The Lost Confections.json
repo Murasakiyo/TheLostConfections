@@ -1370,6 +1370,14 @@
         "name": "assets/playersprite/NewSprite.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/directions/done.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/done.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -1385,11 +1393,11 @@
       "effects": [],
       "behaviors": [
         {
+          "isFolded": true,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
           "gravity": 2000,
           "maxFallingSpeed": 1000,
-          "isFolded": true,
           "acceleration": 1500,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
@@ -3723,6 +3731,11 @@
       "value": false
     },
     {
+      "name": "TutoKidStart",
+      "type": "boolean",
+      "value": false
+    },
+    {
       "name": "yPosition",
       "type": "number",
       "value": 290
@@ -3860,6 +3873,11 @@
       "name": "CurrentLVL",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "InventoryCupcake",
+      "type": "string",
+      "value": "None"
     }
   ],
   "layouts": [
