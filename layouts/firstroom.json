@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.34118560234743,
+    "zoomFactor": 0.24488383633731578,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,49 +29,49 @@
   "variables": [
     {
       "name": "CurrentNPC",
-      "persistentUuid": "cb1ef804-2381-4010-974e-a37bd083b4f8",
+      "persistentUuid": "d93814cc-be6b-4326-8820-6590549aca2f",
       "type": "string",
       "value": "None"
     },
     {
       "name": "StopScreen",
-      "persistentUuid": "a6e1be5e-4036-49bd-a675-f8549e38c7ef",
+      "persistentUuid": "cad2dde9-6cc4-47b3-9b13-45842c56e8f0",
       "type": "boolean",
       "value": false
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "553bd24d-4e52-4b6b-9b65-a25425e620ff",
+      "persistentUuid": "982ffbd3-7d28-407e-b976-a1246716d9de",
       "type": "number",
       "value": 0
     },
     {
       "name": "CurrentRoom",
-      "persistentUuid": "bce3d67a-8ab4-43ee-9ced-38e6ee7cf099",
+      "persistentUuid": "4ec048dc-7f31-41c3-8c33-ec979515933c",
       "type": "string",
       "value": "None"
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "6abda39d-16e0-4f04-82af-8256214c8eae",
+      "persistentUuid": "c5d2d8ce-8120-40d0-9238-c9c9b854d91f",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartVanillaTimer",
-      "persistentUuid": "6c9f2632-3317-4b67-963e-48204486da36",
+      "persistentUuid": "9fa5e5fc-617a-4041-bf87-af4324d3ab41",
       "type": "boolean",
       "value": false
     },
     {
       "name": "LastPositionX",
-      "persistentUuid": "3c672305-8f49-4f6b-91a0-fcae14ce60e7",
+      "persistentUuid": "6d69dd79-1b5e-466c-bfb9-9e9cf3479358",
       "type": "number",
       "value": 934
     },
     {
       "name": "LastPositionY",
-      "persistentUuid": "96ab3fe2-4d2f-472b-84bc-5a6640078707",
+      "persistentUuid": "d547d471-67b0-407e-a6f3-d1ff4665a3ed",
       "type": "number",
       "value": 683
     }
