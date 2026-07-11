@@ -1495,11 +1495,131 @@
         "userAdded": false
       },
       {
+        "file": "assets/NewPanelSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewPanelSprite",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
         "file": "assets/directions/StartButton.png",
         "kind": "image",
         "metadata": "",
         "name": "assets/directions/StartButton.png",
         "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/creatures/frog_enemy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/creatures/frog_enemy.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/creatures/frog_enemy6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/creatures/frog_enemy6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/creatures/frog_enemy5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/creatures/frog_enemy5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/creatures/frog_enemy4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/creatures/frog_enemy4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/creatures/frog_enemy3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/creatures/frog_enemy3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/creatures/frog_enemy2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/creatures/frog_enemy2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/creatures/frog_enemy1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/creatures/frog_enemy1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/bg_lvl5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/bg_lvl5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/playersprite/bowlstanley.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/playersprite/bowlstanley.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/snowsky.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/snowsky.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/bg_lvl5.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets/backgrounds/bg_lvl5.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/sky.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/sky.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/inside_greenhouse.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/inside_greenhouse.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/DialogueData_TorresDistract.json",
+        "kind": "json",
+        "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialogueData_TorresDistract.json\"}",
+        "name": "DialogueData_TorresDistract",
         "userAdded": false
       }
     ]
@@ -3796,6 +3916,77 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "location",
+      "persistentUuid": "98ce57ab-ccab-4364-8e5e-1bcdddf069f7",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "Main Circus Room",
+      "font": "retro-pixel-cute-prop.ttf",
+      "textAlignment": "left",
+      "characterSize": 80,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Main Circus Room",
+        "font": "retro-pixel-cute-prop.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 80,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 0,
+      "height": 32,
+      "leftMargin": 0,
+      "name": "transitionscreen",
+      "persistentUuid": "9815e46d-a1e3-4185-97e6-d3396db9d3b2",
+      "rightMargin": 0,
+      "texture": "NewPanelSprite",
+      "tiled": true,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -3841,7 +4032,13 @@
         "objectName": "LocationInteract"
       },
       {
+        "objectName": "location"
+      },
+      {
         "objectName": "Space"
+      },
+      {
+        "objectName": "transitionscreen"
       }
     ]
   },
@@ -4038,7 +4235,11 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/stanley-room-topdown"
+      "referenceTo": "/layouts/torres-distract-minigame"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/krie-greenhouse-request"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
