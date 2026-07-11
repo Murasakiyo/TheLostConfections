@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4027225833325914,
+    "zoomFactor": 0.4753585087126934,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -30,21 +30,21 @@
     {
       "folded": true,
       "name": "SystemPatternOne",
-      "persistentUuid": "238f3763-721f-465a-b4af-98f5bba03d91",
+      "persistentUuid": "d54cf43e-8a3b-453c-bbb0-230ffcaa295b",
       "type": "array",
       "children": [
         {
-          "persistentUuid": "575fda84-29a9-4de4-b8a3-5952b10ea87a",
+          "persistentUuid": "34bddd89-8d93-4776-8437-21a2550ff2d4",
           "type": "number",
           "value": 1
         },
         {
-          "persistentUuid": "47455c7d-919f-487f-80ef-577ae4f22ea8",
+          "persistentUuid": "c257c3e9-a61a-49b1-bc22-493f1c340969",
           "type": "number",
           "value": 2
         },
         {
-          "persistentUuid": "c8377b1e-76a9-418f-b46f-1685852881f2",
+          "persistentUuid": "254afbf2-33c5-4423-bd4c-0cd143c6d3b6",
           "type": "number",
           "value": 3
         }
@@ -53,26 +53,26 @@
     {
       "folded": true,
       "name": "SystemPatternTwo",
-      "persistentUuid": "faaeaf38-d565-4afb-b26b-b1cc6b68162d",
+      "persistentUuid": "0e382ecb-a11b-48e2-a285-a5bb54315d07",
       "type": "array",
       "children": [
         {
-          "persistentUuid": "57bde57f-8d24-47e7-8f33-d3607da99423",
+          "persistentUuid": "15f2bcae-5596-4217-b36c-23b1945216eb",
           "type": "number",
           "value": 2
         },
         {
-          "persistentUuid": "f05d3137-da2c-4b3b-beea-c6ffa84872e8",
+          "persistentUuid": "aaeedfca-0789-4953-a78a-7602f83316b3",
           "type": "number",
           "value": 3
         },
         {
-          "persistentUuid": "60ff7c8d-6400-49b6-be26-d6523e36bab1",
+          "persistentUuid": "f4a535d0-37f0-4446-8913-85cb901ba34a",
           "type": "number",
           "value": 4
         },
         {
-          "persistentUuid": "c5da71a5-4a3f-428a-a4e8-c69c852723a3",
+          "persistentUuid": "cbc11d98-5c96-4df8-b3ed-844a23aa3e2b",
           "type": "number",
           "value": 1
         }
@@ -81,31 +81,31 @@
     {
       "folded": true,
       "name": "SystemPatternThree",
-      "persistentUuid": "7fee0001-57fe-42c5-8954-c4c9f572b705",
+      "persistentUuid": "78da432c-2603-4a31-a56e-f2c71d912b50",
       "type": "array",
       "children": [
         {
-          "persistentUuid": "587002aa-e55e-4ef3-b4b7-7c6d307caded",
+          "persistentUuid": "8c6f7ff4-5c37-48cf-9fdb-d74c6c056949",
           "type": "number",
           "value": 1
         },
         {
-          "persistentUuid": "690f346f-0cd7-4432-867c-cd14e6e93e82",
+          "persistentUuid": "72ef908d-aa4a-45d9-8d7f-bae682e120b2",
           "type": "number",
           "value": 2
         },
         {
-          "persistentUuid": "87f0b1d4-e1f9-4146-8238-40774d69c447",
+          "persistentUuid": "99968a09-7ae8-4807-8803-ac41bd3ca4df",
           "type": "number",
           "value": 2
         },
         {
-          "persistentUuid": "5461ee01-9aa3-4e83-a235-496661303db8",
+          "persistentUuid": "942dc633-54dd-4b72-b0b2-3fb506f4dc54",
           "type": "number",
           "value": 4
         },
         {
-          "persistentUuid": "02653e35-0f55-45fa-b754-b83262461a18",
+          "persistentUuid": "7686a4f3-9a64-42f0-a5e7-c60f6b3d071c",
           "type": "number",
           "value": 3
         }
@@ -113,75 +113,81 @@
     },
     {
       "name": "SystemStep",
-      "persistentUuid": "46fdd068-d16a-48d3-9219-370e4b330158",
+      "persistentUuid": "7a332e34-8a4e-4310-94b0-d994ffc3c39d",
       "type": "number",
       "value": 0
     },
     {
       "name": "PlayerStep",
-      "persistentUuid": "31f8c9dc-5f50-46b3-88eb-abec9655ae38",
+      "persistentUuid": "c9c28cdc-9822-4d12-b239-f14232ec972e",
       "type": "number",
       "value": -1
     },
     {
       "name": "CurrentTurn",
-      "persistentUuid": "b7483bc9-c113-4453-bf2a-562c53503d6b",
+      "persistentUuid": "ed3e10e2-854d-4c14-ac8b-c6d8ca4bcb08",
       "type": "string",
       "value": "System"
     },
     {
       "name": "Timer",
-      "persistentUuid": "01ba97ee-5993-4e54-a2a5-02dee981a592",
+      "persistentUuid": "1d8cfd5e-531a-499d-bb48-3876c6423dcf",
       "type": "number",
       "value": 0
     },
     {
       "name": "SystemPhase",
-      "persistentUuid": "4782c9cf-c1b8-4c3f-9ad9-85e2433c32cb",
+      "persistentUuid": "93c19d2f-adf6-4058-9e84-506fd4669d4c",
       "type": "string",
       "value": "FirstLvl"
     },
     {
       "name": "LastInput",
-      "persistentUuid": "bb60a609-1022-478f-9268-019c079111d1",
+      "persistentUuid": "2e5ff096-58ac-41ad-81d1-3fba93ff15c1",
       "type": "number",
       "value": 0
     },
     {
       "name": "StepsThisPhase",
-      "persistentUuid": "cb012ded-4368-42df-87f7-e9248ba15f44",
+      "persistentUuid": "ab4e8910-7a11-4888-a061-7a60c1f73757",
       "type": "number",
       "value": 0
     },
     {
       "name": "SystemPlayPattern",
-      "persistentUuid": "48eba3d4-8568-4dad-9891-3be1c518f3d5",
+      "persistentUuid": "054cb0b6-83aa-40e8-8e58-5f5d44d9289f",
       "type": "boolean",
       "value": true
     },
     {
       "name": "ToggleTimer",
-      "persistentUuid": "82597806-6365-4fd1-a913-3a54dcd6ef87",
+      "persistentUuid": "4654ab36-fef4-4c2a-ae27-ee226cb963a9",
       "type": "boolean",
       "value": true
     },
     {
       "name": "COMPLETE",
-      "persistentUuid": "dc8311a8-50f6-4201-9de9-a31b8cd9d2e0",
+      "persistentUuid": "d397c3b1-1aa6-46a9-9cec-594db290bf38",
       "type": "boolean",
       "value": false
     },
     {
       "name": "FAIL",
-      "persistentUuid": "2e4c49a9-9f14-425b-84aa-8313f433a5cf",
+      "persistentUuid": "ed001c21-a511-4c0d-9680-5dea292bd3b8",
       "type": "boolean",
       "value": false
     },
     {
       "name": "Lives",
-      "persistentUuid": "bed0149b-4e95-4f1b-9552-c9e5adc72af3",
+      "persistentUuid": "33b9f318-8c2b-49e2-975c-f3f19eeb657d",
       "type": "number",
       "value": 3
+    },
+    {
+      "name": "EndTimer",
+      "persistentUuid": "d3830ad7-8cef-4a84-93cd-daaf46e01550",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -281,6 +287,89 @@
       "x": 663,
       "y": 24,
       "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 86,
+      "keepRatio": true,
+      "layer": "",
+      "name": "InstructionText",
+      "persistentUuid": "d1998e87-8cb8-47d5-8d78-c1b40caac643",
+      "width": 349,
+      "x": 12,
+      "y": 437,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 256,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Milk",
+      "persistentUuid": "12d35213-207c-47a6-a471-a3249dfb38df",
+      "width": 256,
+      "x": 1003,
+      "y": -458,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EndText",
+      "persistentUuid": "d7041955-644e-4daf-85b0-ef1acf66e647",
+      "width": 0,
+      "x": 517,
+      "y": 330,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 256,
+      "keepRatio": true,
+      "layer": "",
+      "name": "CreamCheese",
+      "persistentUuid": "8c6683e3-14c8-467f-9c25-a9a889592b24",
+      "width": 256,
+      "x": 437,
+      "y": -309,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LivesText",
+      "persistentUuid": "d5c32468-2d33-40eb-b327-c57848eb0b79",
+      "width": 0,
+      "x": 32,
+      "y": 28,
+      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1070,6 +1159,260 @@
         "lineHeight": 0,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "InstructionText",
+      "persistentUuid": "be45bbf5-71ce-4652-9ebc-e6e7177abea0",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Use ARROW keys to play",
+      "font": "retro-pixel-cute-prop.ttf",
+      "textAlignment": "left",
+      "characterSize": 50,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Use ARROW keys to play",
+        "font": "retro-pixel-cute-prop.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 50,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "EndText",
+      "persistentUuid": "d1453f41-a762-41df-978a-32c3899f40b2",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "retro-pixel-cute-prop.ttf",
+      "textAlignment": "left",
+      "characterSize": 80,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "retro-pixel-cute-prop.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 80,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Milk",
+      "persistentUuid": "b810bc27-c7d1-46e7-807f-eb7fda7f22d5",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/milk.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14,
+                        "y": 6
+                      },
+                      {
+                        "x": 56,
+                        "y": 6
+                      },
+                      {
+                        "x": 56,
+                        "y": 60
+                      },
+                      {
+                        "x": 14,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "CreamCheese",
+      "persistentUuid": "91e79289-00db-432d-8b1f-e419304bff9c",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/creamcheese.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 15
+                      },
+                      {
+                        "x": 55,
+                        "y": 15
+                      },
+                      {
+                        "x": 55,
+                        "y": 57
+                      },
+                      {
+                        "x": 11,
+                        "y": 57
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "LivesText",
+      "persistentUuid": "ac9efdad-8c26-4c8d-bcc1-043898904421",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Chances Left: 3",
+      "font": "retro-pixel-cute-prop.ttf",
+      "textAlignment": "left",
+      "characterSize": 50,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Chances Left: 3",
+        "font": "retro-pixel-cute-prop.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 50,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1095,6 +1438,21 @@
       },
       {
         "objectName": "CurrentTurnText"
+      },
+      {
+        "objectName": "InstructionText"
+      },
+      {
+        "objectName": "EndText"
+      },
+      {
+        "objectName": "LivesText"
+      },
+      {
+        "objectName": "Milk"
+      },
+      {
+        "objectName": "CreamCheese"
       }
     ]
   },
@@ -3244,6 +3602,16 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
+                "Lives",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
                 "LastInput",
                 "=",
                 "0"
@@ -3342,6 +3710,17 @@
                 "=",
                 "\"Dim\""
               ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "LivesText",
+                "Text",
+                "=",
+                "\"Chances Left: \" + Lives"
+              ]
             }
           ]
         },
@@ -3397,6 +3776,16 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Lives",
+                "-",
+                "1"
+              ]
+            },
             {
               "type": {
                 "value": "SetNumberVariable"
@@ -3500,6 +3889,17 @@
                 "=",
                 "\"Dim\""
               ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "LivesText",
+                "Text",
+                "=",
+                "\"Chances Left: \" + Lives"
+              ]
             }
           ]
         },
@@ -3555,6 +3955,16 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Lives",
+                "-",
+                "1"
+              ]
+            },
             {
               "type": {
                 "value": "SetNumberVariable"
@@ -3647,6 +4057,17 @@
                 "Animation",
                 "=",
                 "\"Dim\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "LivesText",
+                "Text",
+                "=",
+                "\"Chances Left: \" + Lives"
               ]
             }
           ]
@@ -4004,6 +4425,33 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Lives",
+                "<=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "FAIL",
+                "True",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
@@ -4181,6 +4629,190 @@
                 "Text",
                 "=",
                 "\"COMPLETED MINIGAME\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "EndTimer",
+                "+",
+                "TimeDelta()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "UpButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "DownButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "LeftButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "RightButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "EndText",
+                "Text",
+                "=",
+                "\"You got the Milk!!\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "Milk",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "Milk",
+                "=",
+                "820",
+                "=",
+                "480"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "FAIL",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Phase_Text",
+                "Text",
+                "=",
+                "\"FAILED MINIGAME\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "EndTimer",
+                "+",
+                "TimeDelta()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "UpButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "DownButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "LeftButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "RightButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "EndText",
+                "Text",
+                "=",
+                "\"You got Cream Cheese!!\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "CreamCheese",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "CreamCheese",
+                "=",
+                "820",
+                "=",
+                "480"
               ]
             }
           ]

@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.30887412163426536,
+    "zoomFactor": 0.41630252177333305,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,31 +29,37 @@
   "variables": [
     {
       "name": "HitCount",
+      "persistentUuid": "85dabd89-88fb-4eef-939f-34d7239ee3a0",
       "type": "number",
       "value": 0
     },
     {
       "name": "GunCooldown",
+      "persistentUuid": "d239e090-dac8-4ea4-8e42-f87510a2882d",
       "type": "number",
       "value": 0
     },
     {
       "name": "ShotGun",
+      "persistentUuid": "dc2b9116-0db0-4200-a1bf-72bb73d85bd6",
       "type": "boolean",
       "value": false
     },
     {
       "name": "FlyDeath",
+      "persistentUuid": "8a5cb9a1-8cba-4360-a815-0930643783bb",
       "type": "boolean",
       "value": false
     },
     {
       "name": "DeathTimer",
+      "persistentUuid": "2c03cca0-129d-4675-b714-318d6e11ab78",
       "type": "number",
       "value": 0
     },
     {
       "name": "HurtTimer",
+      "persistentUuid": "388921de-88a1-4f5f-957c-6711fa4c99d3",
       "type": "number",
       "value": 0
     }

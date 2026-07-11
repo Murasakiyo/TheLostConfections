@@ -40,6 +40,12 @@
       "value": false
     },
     {
+      "name": "VanillaTimer",
+      "persistentUuid": "26cc595f-79e8-42a4-814a-fcbc0ebc68ae",
+      "type": "number",
+      "value": 0
+    },
+    {
       "name": "CurrentRoom",
       "persistentUuid": "c61953aa-7ee1-48a9-a567-853087e94da7",
       "type": "string",
