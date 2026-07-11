@@ -29,25 +29,25 @@
   "variables": [
     {
       "name": "StartCoffeeBeanTimer",
-      "persistentUuid": "15bd2a81-186e-4a45-bc85-fda01e1214d1",
+      "persistentUuid": "938f6392-e1d6-41c3-8340-3c8dc133af12",
       "type": "boolean",
       "value": false
     },
     {
       "name": "CoffeeBeanTimer",
-      "persistentUuid": "19eeacdd-7950-41cd-95f7-207e3ca2b21c",
+      "persistentUuid": "72c0529f-eb82-49a9-b092-7d0f02c4e7cf",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartGrapeTimer",
-      "persistentUuid": "b04b64f6-70d8-4ad3-9b70-167f658b690a",
+      "persistentUuid": "1a883657-66ae-4df9-a80e-12bb7e3e9911",
       "type": "boolean",
       "value": false
     },
     {
       "name": "GrapeTimer",
-      "persistentUuid": "dcfae425-0eb2-43d2-9668-07dd68810f16",
+      "persistentUuid": "60b0e1a8-ea64-440c-b852-d387585acb76",
       "type": "number",
       "value": 0
     }

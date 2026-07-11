@@ -29,43 +29,43 @@
   "variables": [
     {
       "name": "DropTimer",
-      "persistentUuid": "f347e7b1-415f-43f1-8717-64c0857faf6c",
+      "persistentUuid": "e84d0f6d-8380-4a6b-85ce-34bb494e8356",
       "type": "number",
       "value": 0
     },
     {
       "name": "CupcakeCount",
-      "persistentUuid": "ddf0bbe9-4296-4f0b-beb4-71325dc06660",
+      "persistentUuid": "c57646cc-0f01-48d5-ad71-99d91d7dd046",
       "type": "number",
       "value": 0
     },
     {
       "name": "SnowballCount",
-      "persistentUuid": "2b389dd1-dbe6-404f-be80-00d59a85b680",
+      "persistentUuid": "1f331b03-3542-41b9-86db-2ddff309ed40",
       "type": "number",
       "value": 0
     },
     {
       "name": "COMPLETE",
-      "persistentUuid": "17bf9ed4-0270-478e-8f6f-cac70bdfb552",
+      "persistentUuid": "4345db14-1708-48f4-85bf-b0dc6ccf26b0",
       "type": "boolean",
       "value": false
     },
     {
       "name": "EndTimer",
-      "persistentUuid": "ea3deaa4-6d5d-466c-be7d-630da268584b",
+      "persistentUuid": "46cc2495-c5df-4905-83de-4ff06a4fef63",
       "type": "number",
       "value": 0
     },
     {
       "name": "GameStart",
-      "persistentUuid": "8ca3a4bb-37bd-4863-846c-dbb3feefe08e",
+      "persistentUuid": "7e1336cd-0293-4071-9705-3584159e9042",
       "type": "boolean",
       "value": false
     },
     {
       "name": "GameStartTimer",
-      "persistentUuid": "13e354f9-f49d-453a-bf2c-835695d34028",
+      "persistentUuid": "cf19639c-4291-4324-9ca3-9730c15759ff",
       "type": "number",
       "value": 0
     }

@@ -29,31 +29,31 @@
   "variables": [
     {
       "name": "WrongAnswerCount",
-      "persistentUuid": "8e6ce929-0b47-4798-ac73-bef71c62f99b",
+      "persistentUuid": "b532b9e8-bd19-409e-b0cc-5b251b288740",
       "type": "number",
       "value": 0
     },
     {
       "name": "DialogueState",
-      "persistentUuid": "2620b0cc-9e9a-4f15-9858-fecbc089e8f5",
+      "persistentUuid": "9a0c4d98-0abb-4e8a-9a70-86f6fc652403",
       "type": "number",
       "value": 0
     },
     {
       "name": "EndingType",
-      "persistentUuid": "2ff6b952-b9fe-4819-8db8-76b38021329a",
+      "persistentUuid": "ca184e00-e109-4721-99bf-d6262c25a68e",
       "type": "string",
       "value": ""
     },
     {
       "name": "QNAFinished",
-      "persistentUuid": "a9cba05b-df71-48e3-8072-44f287b9e17c",
+      "persistentUuid": "cbaf871f-9220-4244-8db2-d216a83f4b45",
       "type": "boolean",
       "value": false
     },
     {
       "name": "TextColor",
-      "persistentUuid": "d9fd172a-0abb-41ed-bf20-0269e4cf89b1",
+      "persistentUuid": "b163ee5c-c88a-4da8-94ab-07db1ea70999",
       "type": "string",
       "value": ""
     }

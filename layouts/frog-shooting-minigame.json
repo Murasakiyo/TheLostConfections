@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.1816906597848626,
+    "zoomFactor": 0.2291680161074884,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,49 +29,49 @@
   "variables": [
     {
       "name": "JumpTimer",
-      "persistentUuid": "dbf3bf54-5602-4a23-9288-48185106a3b0",
+      "persistentUuid": "13715667-2479-43b2-af86-ef64bcee55eb",
       "type": "number",
       "value": 0
     },
     {
       "name": "GunCooldown",
-      "persistentUuid": "4324a693-b684-4da0-bcf6-4e85455e8ff2",
+      "persistentUuid": "e70fe8ef-3c03-4b4e-b2a1-2d75997249e5",
       "type": "number",
       "value": 0
     },
     {
       "name": "ShotGun",
-      "persistentUuid": "72b7a0ef-2e25-4680-b518-ae7953a5d9d0",
+      "persistentUuid": "ffe7fdf3-9608-4a3e-88e0-672bb7bbaf2a",
       "type": "boolean",
       "value": false
     },
     {
       "name": "HitCount",
-      "persistentUuid": "f0d7ce7f-5d29-4099-a790-e43c9bd594e9",
+      "persistentUuid": "208e7015-8410-423f-a140-b3dd480ab1df",
       "type": "number",
       "value": 0
     },
     {
       "name": "FrogDeath",
-      "persistentUuid": "c9dc752d-2590-416b-8b41-5aea24f349e8",
+      "persistentUuid": "17e27459-6f17-4b6c-8b2c-1b5844d28c38",
       "type": "boolean",
       "value": false
     },
     {
       "name": "DeathTimer",
-      "persistentUuid": "ae32bfd0-9b7e-4cfe-8dc6-8060ee22e3dc",
+      "persistentUuid": "583dc620-dde5-480c-a258-873536a7372d",
       "type": "number",
       "value": 0
     },
     {
       "name": "GameStart",
-      "persistentUuid": "4b5f4afa-d841-4ffc-b54d-a296de830b9b",
+      "persistentUuid": "7b73be16-2887-4189-88a3-4ae4326918fc",
       "type": "boolean",
       "value": false
     },
     {
       "name": "GameStartTimer",
-      "persistentUuid": "381b7339-7f17-44f3-90bd-79dfb3d72df9",
+      "persistentUuid": "273638d0-6691-4b89-9caf-7c311cdf1b3c",
       "type": "number",
       "value": 0
     }
