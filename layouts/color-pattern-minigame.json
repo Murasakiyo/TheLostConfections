@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4753585087126934,
+    "zoomFactor": 0.43034038022076554,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -30,21 +30,21 @@
     {
       "folded": true,
       "name": "SystemPatternOne",
-      "persistentUuid": "d54cf43e-8a3b-453c-bbb0-230ffcaa295b",
+      "persistentUuid": "5e609567-93c5-4620-9b06-040f80710642",
       "type": "array",
       "children": [
         {
-          "persistentUuid": "34bddd89-8d93-4776-8437-21a2550ff2d4",
+          "persistentUuid": "0f890a4d-5b1c-4cc6-a64a-e9c15b400573",
           "type": "number",
           "value": 1
         },
         {
-          "persistentUuid": "c257c3e9-a61a-49b1-bc22-493f1c340969",
+          "persistentUuid": "42a053ba-6e27-455a-8dd5-ff250e67a19c",
           "type": "number",
           "value": 2
         },
         {
-          "persistentUuid": "254afbf2-33c5-4423-bd4c-0cd143c6d3b6",
+          "persistentUuid": "f38c5f12-6ced-4386-9521-ad6a29741b8e",
           "type": "number",
           "value": 3
         }
@@ -53,26 +53,26 @@
     {
       "folded": true,
       "name": "SystemPatternTwo",
-      "persistentUuid": "0e382ecb-a11b-48e2-a285-a5bb54315d07",
+      "persistentUuid": "6f73afaa-e4d9-47a2-99b6-1b3666b1f972",
       "type": "array",
       "children": [
         {
-          "persistentUuid": "15f2bcae-5596-4217-b36c-23b1945216eb",
+          "persistentUuid": "fb17fdf8-cbec-4273-ab13-78034f63ab60",
           "type": "number",
           "value": 2
         },
         {
-          "persistentUuid": "aaeedfca-0789-4953-a78a-7602f83316b3",
+          "persistentUuid": "fcd8b319-191c-4e39-8b3d-b939bc53cb7b",
           "type": "number",
           "value": 3
         },
         {
-          "persistentUuid": "f4a535d0-37f0-4446-8913-85cb901ba34a",
+          "persistentUuid": "7212953d-48d3-43c9-aa28-863578dc59a1",
           "type": "number",
           "value": 4
         },
         {
-          "persistentUuid": "cbc11d98-5c96-4df8-b3ed-844a23aa3e2b",
+          "persistentUuid": "c497ebfc-0563-40a6-825f-dbb831badbba",
           "type": "number",
           "value": 1
         }
@@ -81,31 +81,31 @@
     {
       "folded": true,
       "name": "SystemPatternThree",
-      "persistentUuid": "78da432c-2603-4a31-a56e-f2c71d912b50",
+      "persistentUuid": "fc9bccae-6802-41a7-8db3-ac6a4c0a38a8",
       "type": "array",
       "children": [
         {
-          "persistentUuid": "8c6f7ff4-5c37-48cf-9fdb-d74c6c056949",
+          "persistentUuid": "29399115-63de-42ff-b03d-b621c4f39167",
           "type": "number",
           "value": 1
         },
         {
-          "persistentUuid": "72ef908d-aa4a-45d9-8d7f-bae682e120b2",
+          "persistentUuid": "bc1348d9-c681-4648-9b6f-9b26d77f751b",
           "type": "number",
           "value": 2
         },
         {
-          "persistentUuid": "99968a09-7ae8-4807-8803-ac41bd3ca4df",
+          "persistentUuid": "0772030a-9b70-434e-8251-1fa2201a139b",
           "type": "number",
           "value": 2
         },
         {
-          "persistentUuid": "942dc633-54dd-4b72-b0b2-3fb506f4dc54",
+          "persistentUuid": "1dd24fc3-cb93-4dbb-87f1-96fb612de44a",
           "type": "number",
           "value": 4
         },
         {
-          "persistentUuid": "7686a4f3-9a64-42f0-a5e7-c60f6b3d071c",
+          "persistentUuid": "7d104e5c-737f-43c3-ab6b-084d42c025cb",
           "type": "number",
           "value": 3
         }
@@ -113,79 +113,79 @@
     },
     {
       "name": "SystemStep",
-      "persistentUuid": "7a332e34-8a4e-4310-94b0-d994ffc3c39d",
+      "persistentUuid": "e07d48a6-eb0e-4d1a-b74f-6382195f7d35",
       "type": "number",
       "value": 0
     },
     {
       "name": "PlayerStep",
-      "persistentUuid": "c9c28cdc-9822-4d12-b239-f14232ec972e",
+      "persistentUuid": "9e105835-cd2a-4b3c-818e-5bde90f9d504",
       "type": "number",
       "value": -1
     },
     {
       "name": "CurrentTurn",
-      "persistentUuid": "ed3e10e2-854d-4c14-ac8b-c6d8ca4bcb08",
+      "persistentUuid": "50e60605-ad15-46b4-b0a5-6c2162132fd0",
       "type": "string",
       "value": "System"
     },
     {
       "name": "Timer",
-      "persistentUuid": "1d8cfd5e-531a-499d-bb48-3876c6423dcf",
+      "persistentUuid": "94beafe1-8644-4c98-a398-ff9fd3002677",
       "type": "number",
       "value": 0
     },
     {
       "name": "SystemPhase",
-      "persistentUuid": "93c19d2f-adf6-4058-9e84-506fd4669d4c",
+      "persistentUuid": "83bf91cc-8c52-4675-a072-0bb619315764",
       "type": "string",
       "value": "FirstLvl"
     },
     {
       "name": "LastInput",
-      "persistentUuid": "2e5ff096-58ac-41ad-81d1-3fba93ff15c1",
+      "persistentUuid": "70c21adb-641f-431d-a4ab-21ab35541769",
       "type": "number",
       "value": 0
     },
     {
       "name": "StepsThisPhase",
-      "persistentUuid": "ab4e8910-7a11-4888-a061-7a60c1f73757",
+      "persistentUuid": "e67d9df2-7254-4873-9227-5a0b370cc644",
       "type": "number",
       "value": 0
     },
     {
       "name": "SystemPlayPattern",
-      "persistentUuid": "054cb0b6-83aa-40e8-8e58-5f5d44d9289f",
+      "persistentUuid": "43eda474-bf8f-47d0-8021-efa4f4336179",
       "type": "boolean",
       "value": true
     },
     {
       "name": "ToggleTimer",
-      "persistentUuid": "4654ab36-fef4-4c2a-ae27-ee226cb963a9",
+      "persistentUuid": "402db2a8-902b-44a7-962f-bb8aa434d513",
       "type": "boolean",
       "value": true
     },
     {
       "name": "COMPLETE",
-      "persistentUuid": "d397c3b1-1aa6-46a9-9cec-594db290bf38",
+      "persistentUuid": "316289ea-05da-4875-b97e-c8ffad734de4",
       "type": "boolean",
       "value": false
     },
     {
       "name": "FAIL",
-      "persistentUuid": "ed001c21-a511-4c0d-9680-5dea292bd3b8",
+      "persistentUuid": "d6330451-6aa6-4a6f-b309-10d15ee992f5",
       "type": "boolean",
       "value": false
     },
     {
       "name": "Lives",
-      "persistentUuid": "33b9f318-8c2b-49e2-975c-f3f19eeb657d",
+      "persistentUuid": "151a1502-ccfa-4ecd-b17e-f2e79168b1e4",
       "type": "number",
       "value": 3
     },
     {
       "name": "EndTimer",
-      "persistentUuid": "d3830ad7-8cef-4a84-93cd-daaf46e01550",
+      "persistentUuid": "cbbcac3d-87a5-4bf9-beb5-1431a9e4a883",
       "type": "number",
       "value": 0
     }
@@ -287,23 +287,6 @@
       "x": 663,
       "y": 24,
       "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 86,
-      "keepRatio": true,
-      "layer": "",
-      "name": "InstructionText",
-      "persistentUuid": "d1998e87-8cb8-47d5-8d78-c1b40caac643",
-      "width": 349,
-      "x": 12,
-      "y": 437,
-      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -4572,7 +4555,7 @@
                 "CurrentTurnText",
                 "Text",
                 "=",
-                "\"Current Turn: Computer\""
+                "\"Current Turn: Louie\""
               ]
             }
           ]
@@ -4600,7 +4583,7 @@
                 "CurrentTurnText",
                 "Text",
                 "=",
-                "\"Current Turn: Player\""
+                "\"Current Turn: Stanley\""
               ]
             }
           ]

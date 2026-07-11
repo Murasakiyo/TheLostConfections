@@ -29,31 +29,31 @@
   "variables": [
     {
       "name": "JumpTimer",
-      "persistentUuid": "4b915d54-3030-4ad4-a16a-0df4a27593f0",
+      "persistentUuid": "725bbd48-e000-4119-8b5a-028c2d7cdb93",
       "type": "number",
       "value": 0
     },
     {
       "name": "GunCooldown",
-      "persistentUuid": "b257e69d-d7fa-4523-aad5-e7489fdb29f7",
+      "persistentUuid": "7da9bef3-3be0-47e8-af42-67abcec4c1b2",
       "type": "number",
       "value": 0
     },
     {
       "name": "ShotGun",
-      "persistentUuid": "2cb42972-2265-4402-a000-c45ec0c01697",
+      "persistentUuid": "e6ef64a9-0c10-449e-8c41-c14ec40625c2",
       "type": "boolean",
       "value": false
     },
     {
       "name": "HitCount",
-      "persistentUuid": "95b9a005-bb5e-442c-8b2e-c1a5fa48b97c",
+      "persistentUuid": "8254104d-23f8-4840-b3d8-949ab0b5a325",
       "type": "number",
       "value": 0
     },
     {
       "name": "FrogDeath",
-      "persistentUuid": "af9da092-dcba-44aa-acc0-021009eec879",
+      "persistentUuid": "d0dd5a96-3012-4db8-aa0f-af6e9609125c",
       "type": "boolean",
       "value": false
     },
@@ -890,9 +890,6 @@
         "objectName": "WinText"
       },
       {
-        "objectName": "InstructionText"
-      },
-      {
         "objectName": "Bullet"
       },
       {
@@ -915,18 +912,7 @@
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "True",
-            ""
-          ]
-        }
-      ],
+      "conditions": [],
       "actions": [
         {
           "type": {
@@ -971,16 +957,6 @@
             "",
             "\"w\""
           ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "True",
-            ""
-          ]
         }
       ],
       "actions": [
@@ -1014,16 +990,6 @@
           "parameters": [
             "",
             "\"s\""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "True",
-            ""
           ]
         }
       ],
@@ -1059,16 +1025,6 @@
             "JumpTimer",
             ">=",
             "0.5"
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "True",
-            ""
           ]
         }
       ],
@@ -1127,16 +1083,6 @@
             "value": "BuiltinCommonInstructions::Once"
           },
           "parameters": []
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "True",
-            ""
-          ]
         }
       ],
       "actions": [
@@ -1429,71 +1375,6 @@
             }
           ],
           "actions": []
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "GameStart",
-            "False",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "GameStartTimer",
-            "+",
-            "TimeDelta()"
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "GameStartTimer",
-                ">=",
-                "4"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "GameStart",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "InstructionText",
-                ""
-              ]
-            }
-          ]
         }
       ]
     }
