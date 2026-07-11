@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.1700303648902909,
+    "zoomFactor": 0.17003036489029105,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,31 +29,31 @@
   "variables": [
     {
       "name": "CompleteIngredient",
-      "persistentUuid": "21466e2b-eb37-4b33-8b3b-ebcb96dd196a",
+      "persistentUuid": "dc427a7c-9d94-4559-919c-aa9c6bd6c905",
       "type": "number",
       "value": 0
     },
     {
       "name": "MixingProgress",
-      "persistentUuid": "d320f9eb-48c2-4bd7-b342-a610583be64c",
+      "persistentUuid": "8e3d7a37-c7a2-41d5-a5c9-279060b652ad",
       "type": "number",
       "value": 0
     },
     {
       "name": "StirDirection",
-      "persistentUuid": "ed8ba4d3-33ec-4f9f-ad84-1209196bd141",
+      "persistentUuid": "0ddd869a-1234-4100-b957-958fd9816490",
       "type": "number",
       "value": 0
     },
     {
       "name": "Complete",
-      "persistentUuid": "fe95c454-78e0-4d1a-98ce-4d0d3651ae0c",
+      "persistentUuid": "96dd741e-ffb0-4778-8fcf-a02ac8ef4a90",
       "type": "boolean",
       "value": false
     },
     {
       "name": "StartCook",
-      "persistentUuid": "0ea5664b-78a0-419e-a23f-7c68d85f1475",
+      "persistentUuid": "25a8798a-a97a-49da-9060-229d0359fb6d",
       "type": "boolean",
       "value": false
     }
@@ -108,85 +108,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 208.31999999999988,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Ingredients",
-      "persistentUuid": "75a91f60-4cd1-4e7b-b85c-e59bd8f0550f",
-      "width": 168,
-      "x": 594,
-      "y": 37,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Name",
-          "type": "string",
-          "value": "Cocoa"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 197,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Ingredients",
-      "persistentUuid": "cd58ee6f-35c5-41aa-8f76-dc6d5de6a98e",
-      "width": 202,
-      "x": 791,
-      "y": 37,
-      "zOrder": 5,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Name",
-          "type": "string",
-          "value": "Sprinkles"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 222.72,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Ingredients",
-      "persistentUuid": "52eba1c4-c404-4c0a-9b42-747fc7fe24d7",
-      "width": 87,
-      "x": 1067,
-      "y": 25,
-      "zOrder": 6,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 2
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Name",
-          "type": "string",
-          "value": "Vanilla"
-        }
-      ]
     },
     {
       "angle": 0,
@@ -1035,10 +956,12 @@
         },
         {
           "type": {
-            "value": "Hide"
+            "value": "SetNumberVariable"
           },
           "parameters": [
-            "Complete2"
+            "CompleteIngredient",
+            "=",
+            "0"
           ]
         },
         {
@@ -1046,7 +969,7 @@
             "value": "Hide"
           },
           "parameters": [
-            "Ingredients"
+            "Complete2"
           ]
         },
         {
@@ -1066,6 +989,15 @@
             "Scale",
             "=",
             "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "Ingredients",
+            ""
           ]
         }
       ]
@@ -1772,24 +1704,44 @@
                 },
                 {
                   "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Ingredients",
+                    "1067",
+                    "25",
+                    "\"Whisk\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Ingredients",
+                    "Scale",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
                     "Ingredients",
                     "Animation",
                     "=",
                     "\"cocoa\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Show"
-                  },
-                  "parameters": [
-                    "Ingredients",
-                    ""
                   ]
                 }
               ]
@@ -1809,24 +1761,44 @@
                 },
                 {
                   "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Ingredients",
+                    "594",
+                    "37",
+                    "\"Whisk\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Ingredients",
+                    "Scale",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
                     "Ingredients",
                     "Animation",
                     "=",
                     "\"vanilla\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Show"
-                  },
-                  "parameters": [
-                    "Ingredients",
-                    ""
                   ]
                 }
               ]
@@ -1846,24 +1818,44 @@
                 },
                 {
                   "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Ingredients",
+                    "791",
+                    "37",
+                    "\"Whisk\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Ingredients",
+                    "Scale",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
                     "Ingredients",
                     "Animation",
                     "=",
                     "\"sprinkles\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Show"
-                  },
-                  "parameters": [
-                    "Ingredients",
-                    ""
                   ]
                 }
               ]

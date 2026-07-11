@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4303403802207659,
+    "zoomFactor": 0.3088741216342665,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,31 +29,31 @@
   "variables": [
     {
       "name": "WrongAnswerCount",
-      "persistentUuid": "6e23aba9-2880-44ee-8c35-35009d7c9141",
+      "persistentUuid": "dc6aa097-0379-44e8-b691-7b4a31d15496",
       "type": "number",
       "value": 0
     },
     {
       "name": "DialogueState",
-      "persistentUuid": "2d068d6b-79f2-4461-9762-9f47af18b071",
+      "persistentUuid": "6918c448-389d-4b05-9d3a-76ee38288bac",
       "type": "number",
       "value": 0
     },
     {
       "name": "EndingType",
-      "persistentUuid": "97d9ab62-4c6b-43df-adbf-91e2ddc6ce9d",
+      "persistentUuid": "ea658201-5b90-437c-9d94-195e59595b6f",
       "type": "string",
       "value": ""
     },
     {
       "name": "QNAFinished",
-      "persistentUuid": "72d28e5a-14fe-4f0f-a44e-de5158fccccc",
+      "persistentUuid": "89d0eb9c-60e9-48e9-bc9f-59f6c80849d5",
       "type": "boolean",
       "value": false
     },
     {
       "name": "TextColor",
-      "persistentUuid": "090377b3-bf7d-4b25-b033-28a9cce2763d",
+      "persistentUuid": "234f09d1-d867-430c-921e-c088b674af28",
       "type": "string",
       "value": ""
     }
@@ -146,23 +146,6 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 739,
-      "keepRatio": true,
-      "layer": "Sprites",
-      "name": "Stanley_QNA",
-      "persistentUuid": "0b0a803b-d9f6-4722-9e34-fa2f17a79acd",
-      "width": 592,
-      "x": 274,
-      "y": 220,
-      "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
       "height": 348,
       "keepRatio": true,
       "layer": "Options",
@@ -236,6 +219,41 @@
       "x": 464,
       "y": 712,
       "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "flippedX": true,
+      "height": 970.9090909090922,
+      "keepRatio": true,
+      "layer": "Sprites",
+      "name": "Stanley_QNA",
+      "persistentUuid": "287ae4ab-5085-4c86-b951-d1ab2a1888b7",
+      "width": 1780,
+      "x": 439,
+      "y": 233,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 894.5454545454547,
+      "keepRatio": true,
+      "layer": "Sprites",
+      "name": "Krie",
+      "persistentUuid": "fde81758-d699-42a3-aaf1-81802f4c4537",
+      "width": 1640,
+      "x": 1618,
+      "y": 409,
+      "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -500,7 +518,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "talk",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -509,36 +527,276 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/playersprite/stand.png",
+                  "image": "assets/dialoguesprite/stanley/talk.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 841.5,
+                    "y": 73.5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 814,
+                    "y": 314.5
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 18,
-                        "y": 19
+                        "x": 558,
+                        "y": 51
                       },
                       {
-                        "x": 593,
-                        "y": 19
+                        "x": 1041,
+                        "y": 51
                       },
                       {
-                        "x": 593,
-                        "y": 739
+                        "x": 1041,
+                        "y": 600
                       },
                       {
-                        "x": 18,
-                        "y": 739
+                        "x": 558,
+                        "y": 600
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "crazy",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/dialoguesprite/stanley/crazy.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 841.5,
+                    "y": 73.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 814,
+                    "y": 314.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 558,
+                        "y": 51
+                      },
+                      {
+                        "x": 1041,
+                        "y": 51
+                      },
+                      {
+                        "x": 1041,
+                        "y": 600
+                      },
+                      {
+                        "x": 558,
+                        "y": 600
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "happy",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/dialoguesprite/stanley/happy.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 841.5,
+                    "y": 73.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 814,
+                    "y": 314.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 558,
+                        "y": 51
+                      },
+                      {
+                        "x": 1041,
+                        "y": 51
+                      },
+                      {
+                        "x": 1041,
+                        "y": 600
+                      },
+                      {
+                        "x": 558,
+                        "y": 600
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "shock",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/dialoguesprite/stanley/shock.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 841.5,
+                    "y": 73.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 814,
+                    "y": 314.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 558,
+                        "y": 51
+                      },
+                      {
+                        "x": 1041,
+                        "y": 51
+                      },
+                      {
+                        "x": 1041,
+                        "y": 600
+                      },
+                      {
+                        "x": 558,
+                        "y": 600
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "silly",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/dialoguesprite/stanley/silly.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 841.5,
+                    "y": 73.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 814,
+                    "y": 314.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 558,
+                        "y": 51
+                      },
+                      {
+                        "x": 1041,
+                        "y": 51
+                      },
+                      {
+                        "x": 1041,
+                        "y": 600
+                      },
+                      {
+                        "x": 558,
+                        "y": 600
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "worry",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/dialoguesprite/stanley/worry.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 841.5,
+                    "y": 73.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 814,
+                    "y": 314.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 558,
+                        "y": 51
+                      },
+                      {
+                        "x": 1041,
+                        "y": 51
+                      },
+                      {
+                        "x": 1041,
+                        "y": 600
+                      },
+                      {
+                        "x": 558,
+                        "y": 600
                       }
                     ]
                   ]
@@ -649,6 +907,211 @@
         "align": "left",
         "verticalTextAlignment": "top"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Krie",
+      "persistentUuid": "68270761-d0b9-4f73-ae49-37108dbd3bce",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "talk",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/dialoguesprite/krie/talk.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 840,
+                    "y": 148.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 825.5,
+                    "y": 432.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 633,
+                        "y": 108
+                      },
+                      {
+                        "x": 1071,
+                        "y": 108
+                      },
+                      {
+                        "x": 1071,
+                        "y": 600
+                      },
+                      {
+                        "x": 633,
+                        "y": 600
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "happy",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/dialoguesprite/krie/happy.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 840,
+                    "y": 148.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 825.5,
+                    "y": 432.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 633,
+                        "y": 108
+                      },
+                      {
+                        "x": 1071,
+                        "y": 108
+                      },
+                      {
+                        "x": 1071,
+                        "y": 600
+                      },
+                      {
+                        "x": 633,
+                        "y": 600
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "miffed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/dialoguesprite/krie/miffed.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 840,
+                    "y": 148.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 825.5,
+                    "y": 432.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 633,
+                        "y": 108
+                      },
+                      {
+                        "x": 1071,
+                        "y": 108
+                      },
+                      {
+                        "x": 1071,
+                        "y": 600
+                      },
+                      {
+                        "x": 633,
+                        "y": 600
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "think",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/dialoguesprite/krie/think.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 840,
+                    "y": 148.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 825.5,
+                    "y": 432.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 633,
+                        "y": 108
+                      },
+                      {
+                        "x": 1071,
+                        "y": 108
+                      },
+                      {
+                        "x": 1071,
+                        "y": 600
+                      },
+                      {
+                        "x": 633,
+                        "y": 600
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -680,6 +1143,9 @@
       },
       {
         "objectName": "FoundCherrySyrupTXT"
+      },
+      {
+        "objectName": "Krie"
       }
     ]
   },

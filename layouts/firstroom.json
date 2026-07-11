@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.11048078165020186,
+    "zoomFactor": 0.0742078838455971,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,21 +29,15 @@
   "variables": [
     {
       "name": "CurrentNPC",
-      "persistentUuid": "53e0176f-23e3-47c8-b280-8ef024c3bf62",
+      "persistentUuid": "8daaea3c-cee3-425a-b622-65da392ea331",
       "type": "string",
       "value": "None"
     },
     {
       "name": "StopScreen",
-      "persistentUuid": "7d460a7f-6403-4692-9b1c-7271acdd8c4b",
+      "persistentUuid": "e4886e77-2cfa-4093-9298-c46ecd18c4c2",
       "type": "boolean",
       "value": false
-    },
-    {
-      "name": "VanillaTimer",
-      "persistentUuid": "bd3226e0-d854-4703-8c16-9d405d81b83e",
-      "type": "number",
-      "value": 0
     },
     {
       "name": "CurrentRoom",
