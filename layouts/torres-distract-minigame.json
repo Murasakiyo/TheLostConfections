@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4303403802207659,
+    "zoomFactor": 0.26167741169921543,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -141,23 +141,6 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 739,
-      "keepRatio": true,
-      "layer": "Sprites",
-      "name": "Stanley_Distract",
-      "persistentUuid": "0b0a803b-d9f6-4722-9e34-fa2f17a79acd",
-      "width": 592,
-      "x": 274,
-      "y": 220,
-      "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
       "height": 348,
       "keepRatio": true,
       "layer": "Options",
@@ -234,6 +217,47 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "flippedX": true,
+      "height": 889.6363636363631,
+      "keepRatio": true,
+      "layer": "Sprites",
+      "name": "Stanley_QNA",
+      "persistentUuid": "0489fbcb-e7b4-4e5f-9284-913f3f3a4a5f",
+      "width": 1631,
+      "x": 418,
+      "y": 298,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "flippedX": true,
+      "height": 905.9999999999998,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Torres_QNA",
+      "persistentUuid": "780035c9-7666-453a-bd4a-d954587aae4e",
+      "width": 1661,
+      "x": 264,
+      "y": 169,
+      "zOrder": 13,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -258,7 +282,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/backgrounds/krie-greenhouse.jpg",
+                  "image": "assets/backgrounds/fly_room.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -484,67 +508,6 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Stanley_Distract",
-      "persistentUuid": "f2ad6e73-9ec5-4e3a-b5d5-4a8ab94b406f",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/playersprite/stand.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 18,
-                        "y": 19
-                      },
-                      {
-                        "x": 593,
-                        "y": 19
-                      },
-                      {
-                        "x": 593,
-                        "y": 739
-                      },
-                      {
-                        "x": 18,
-                        "y": 739
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "assetStoreId": "",
       "name": "OptionsTXT_Distract",
       "persistentUuid": "a0842dd2-d8f8-44ca-a4d6-a0cd432be40f",
@@ -667,9 +630,6 @@
       },
       {
         "objectName": "OptionBox_Distract"
-      },
-      {
-        "objectName": "Stanley_Distract"
       },
       {
         "objectName": "OptionsTXT_Distract"
@@ -1106,6 +1066,23 @@
             "=",
             "\"[b][color=#ea792f]Torres[/color][/b]\""
           ]
+        },
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "Torres_QNA",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "Stanley_QNA"
+          ]
         }
       ]
     },
@@ -1131,8 +1108,32 @@
             "=",
             "\"[b][color=#cc4040]Stanley[/color][/b]\""
           ]
+        },
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "Torres_QNA"
+          ]
+        },
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "Stanley_QNA",
+            ""
+          ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Character Sprites"
     },
     {
       "colorB": 228,
@@ -1346,7 +1347,7 @@
       "cameraType": "",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": true,
+      "isLocked": false,
       "name": "",
       "renderingType": "",
       "visibility": true,
@@ -1465,7 +1466,7 @@
       "cameraType": "",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": false,
+      "isLocked": true,
       "name": "UI",
       "renderingType": "",
       "visibility": true,
@@ -1519,7 +1520,7 @@
       "cameraType": "",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": false,
+      "isLocked": true,
       "name": "Dialogue",
       "renderingType": "",
       "visibility": true,
@@ -1573,7 +1574,7 @@
       "cameraType": "",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": false,
+      "isLocked": true,
       "name": "Options",
       "renderingType": "",
       "visibility": true,

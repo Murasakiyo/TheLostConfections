@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.1941505911274086,
+    "zoomFactor": 0.2291680161074892,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,31 +29,31 @@
   "variables": [
     {
       "name": "WrongAnswerCount",
-      "persistentUuid": "b532b9e8-bd19-409e-b0cc-5b251b288740",
+      "persistentUuid": "8b5e5145-1694-4e36-b17f-3634f8cf9672",
       "type": "number",
       "value": 0
     },
     {
       "name": "DialogueState",
-      "persistentUuid": "9a0c4d98-0abb-4e8a-9a70-86f6fc652403",
+      "persistentUuid": "907da5f2-1fd8-4b6f-a34c-1e0a541c8682",
       "type": "number",
       "value": 0
     },
     {
       "name": "EndingType",
-      "persistentUuid": "ca184e00-e109-4721-99bf-d6262c25a68e",
+      "persistentUuid": "defe14be-8f28-4ac7-a4aa-ebe772371d94",
       "type": "string",
       "value": ""
     },
     {
       "name": "QNAFinished",
-      "persistentUuid": "cbaf871f-9220-4244-8db2-d216a83f4b45",
+      "persistentUuid": "62ab3dff-b68f-45ed-9642-22b997423c39",
       "type": "boolean",
       "value": false
     },
     {
       "name": "TextColor",
-      "persistentUuid": "b163ee5c-c88a-4da8-94ab-07db1ea70999",
+      "persistentUuid": "7d9e6938-dbf8-465a-a3d3-8619e91606c3",
       "type": "string",
       "value": ""
     }
@@ -248,7 +248,7 @@
       "height": 894.5454545454547,
       "keepRatio": true,
       "layer": "Sprites",
-      "name": "Krie",
+      "name": "Krie_QNA",
       "persistentUuid": "fde81758-d699-42a3-aaf1-81802f4c4537",
       "width": 1640,
       "x": 1618,
@@ -507,307 +507,6 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Stanley_QNA",
-      "persistentUuid": "f2ad6e73-9ec5-4e3a-b5d5-4a8ab94b406f",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "talk",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/dialoguesprite/stanley/talk.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 841.5,
-                    "y": 73.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 814,
-                    "y": 314.5
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 558,
-                        "y": 51
-                      },
-                      {
-                        "x": 1041,
-                        "y": 51
-                      },
-                      {
-                        "x": 1041,
-                        "y": 600
-                      },
-                      {
-                        "x": 558,
-                        "y": 600
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "crazy",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/dialoguesprite/stanley/crazy.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 841.5,
-                    "y": 73.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 814,
-                    "y": 314.5
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 558,
-                        "y": 51
-                      },
-                      {
-                        "x": 1041,
-                        "y": 51
-                      },
-                      {
-                        "x": 1041,
-                        "y": 600
-                      },
-                      {
-                        "x": 558,
-                        "y": 600
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "happy",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/dialoguesprite/stanley/happy.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 841.5,
-                    "y": 73.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 814,
-                    "y": 314.5
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 558,
-                        "y": 51
-                      },
-                      {
-                        "x": 1041,
-                        "y": 51
-                      },
-                      {
-                        "x": 1041,
-                        "y": 600
-                      },
-                      {
-                        "x": 558,
-                        "y": 600
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "shock",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/dialoguesprite/stanley/shock.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 841.5,
-                    "y": 73.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 814,
-                    "y": 314.5
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 558,
-                        "y": 51
-                      },
-                      {
-                        "x": 1041,
-                        "y": 51
-                      },
-                      {
-                        "x": 1041,
-                        "y": 600
-                      },
-                      {
-                        "x": 558,
-                        "y": 600
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "silly",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/dialoguesprite/stanley/silly.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 841.5,
-                    "y": 73.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 814,
-                    "y": 314.5
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 558,
-                        "y": 51
-                      },
-                      {
-                        "x": 1041,
-                        "y": 51
-                      },
-                      {
-                        "x": 1041,
-                        "y": 600
-                      },
-                      {
-                        "x": 558,
-                        "y": 600
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "worry",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/dialoguesprite/stanley/worry.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 841.5,
-                    "y": 73.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 814,
-                    "y": 314.5
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 558,
-                        "y": 51
-                      },
-                      {
-                        "x": 1041,
-                        "y": 51
-                      },
-                      {
-                        "x": 1041,
-                        "y": 600
-                      },
-                      {
-                        "x": 558,
-                        "y": 600
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "assetStoreId": "",
       "name": "OptionsTXT_QNA",
       "persistentUuid": "a0842dd2-d8f8-44ca-a4d6-a0cd432be40f",
@@ -907,211 +606,6 @@
         "align": "left",
         "verticalTextAlignment": "top"
       }
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Krie",
-      "persistentUuid": "68270761-d0b9-4f73-ae49-37108dbd3bce",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "talk",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/dialoguesprite/krie/talk.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 840,
-                    "y": 148.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 825.5,
-                    "y": 432.5
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 633,
-                        "y": 108
-                      },
-                      {
-                        "x": 1071,
-                        "y": 108
-                      },
-                      {
-                        "x": 1071,
-                        "y": 600
-                      },
-                      {
-                        "x": 633,
-                        "y": 600
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "happy",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/dialoguesprite/krie/happy.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 840,
-                    "y": 148.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 825.5,
-                    "y": 432.5
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 633,
-                        "y": 108
-                      },
-                      {
-                        "x": 1071,
-                        "y": 108
-                      },
-                      {
-                        "x": 1071,
-                        "y": 600
-                      },
-                      {
-                        "x": 633,
-                        "y": 600
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "miffed",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/dialoguesprite/krie/miffed.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 840,
-                    "y": 148.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 825.5,
-                    "y": 432.5
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 633,
-                        "y": 108
-                      },
-                      {
-                        "x": 1071,
-                        "y": 108
-                      },
-                      {
-                        "x": 1071,
-                        "y": 600
-                      },
-                      {
-                        "x": 633,
-                        "y": 600
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "think",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/dialoguesprite/krie/think.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 840,
-                    "y": 148.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 825.5,
-                    "y": 432.5
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 633,
-                        "y": 108
-                      },
-                      {
-                        "x": 1071,
-                        "y": 108
-                      },
-                      {
-                        "x": 1071,
-                        "y": 600
-                      },
-                      {
-                        "x": 633,
-                        "y": 600
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1136,16 +630,10 @@
         "objectName": "OptionBox_QNA"
       },
       {
-        "objectName": "Stanley_QNA"
-      },
-      {
         "objectName": "OptionsTXT_QNA"
       },
       {
         "objectName": "FoundCherrySyrupTXT"
-      },
-      {
-        "objectName": "Krie"
       }
     ]
   },
@@ -1582,7 +1070,7 @@
             "value": "Show"
           },
           "parameters": [
-            "Krie",
+            "Krie_QNA",
             ""
           ]
         },
@@ -1633,242 +1121,17 @@
             "value": "Hide"
           },
           "parameters": [
-            "Krie"
+            "Krie_QNA"
           ]
         }
       ]
     },
     {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "KrieSprite",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DialogueTree::IsCommandCalled"
-              },
-              "parameters": [
-                "\"KHappy\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Krie",
-                "Animation",
-                "=",
-                "\"happy\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DialogueTree::IsCommandCalled"
-              },
-              "parameters": [
-                "\"KAngry\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Krie",
-                "Animation",
-                "=",
-                "\"miffed\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DialogueTree::IsCommandCalled"
-              },
-              "parameters": [
-                "\"KThink\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Krie",
-                "Animation",
-                "=",
-                "\"think\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DialogueTree::IsCommandCalled"
-              },
-              "parameters": [
-                "\"KTalk\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Krie",
-                "Animation",
-                "=",
-                "\"talk\""
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "StanleySprite",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DialogueTree::IsCommandCalled"
-              },
-              "parameters": [
-                "\"SHappy\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Stanley_QNA",
-                "Animation",
-                "=",
-                "\"happy\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DialogueTree::IsCommandCalled"
-              },
-              "parameters": [
-                "\"SShock\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Stanley_QNA",
-                "Animation",
-                "=",
-                "\"shock\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DialogueTree::IsCommandCalled"
-              },
-              "parameters": [
-                "\"SSilly\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Stanley_QNA",
-                "Animation",
-                "=",
-                "\"silly\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DialogueTree::IsCommandCalled"
-              },
-              "parameters": [
-                "\"STalk\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Stanley_QNA",
-                "Animation",
-                "=",
-                "\"talk\""
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Character Sprites"
     },
     {
       "colorB": 228,
