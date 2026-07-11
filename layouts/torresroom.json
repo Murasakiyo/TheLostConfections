@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2796226521839404,
+    "zoomFactor": 0.22916801610749069,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -97,32 +97,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
+      "customSize": true,
+      "depth": 0,
+      "height": 475,
+      "layer": "Menu",
       "name": "DialogueBox",
       "persistentUuid": "b64ff1f9-72e9-4a74-97ec-c2486be90eed",
-      "width": 0,
-      "x": 940,
-      "y": -455,
+      "width": 1339,
+      "x": 915,
+      "y": -535,
       "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "DialogueTXT",
-      "persistentUuid": "0aee32a6-3e6a-4822-901c-d355c7f18349",
-      "width": 0,
-      "x": 1015,
-      "y": -532,
-      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -131,15 +115,80 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 54,
+      "height": 209,
+      "keepRatio": true,
+      "layer": "Menu",
+      "name": "DialogueTXT",
+      "persistentUuid": "0aee32a6-3e6a-4822-901c-d355c7f18349",
+      "width": 1103,
+      "x": 1047,
+      "y": -428,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 61,
       "keepRatio": true,
       "layer": "",
-      "name": "Name",
-      "persistentUuid": "198ae942-78fd-449c-857e-8ccc70b08666",
-      "width": 270,
-      "x": 1017,
-      "y": -578,
-      "zOrder": 7,
+      "name": "E",
+      "persistentUuid": "bfc7ce90-617f-4ed4-9572-fc5c87d3e8ed",
+      "width": 61,
+      "x": 1612,
+      "y": 570,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Menu",
+      "name": "Space",
+      "persistentUuid": "2572a80e-4a94-4dd5-8cdc-1edc36285f62",
+      "width": 0,
+      "x": 2048,
+      "y": -218,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Sprites",
+      "name": "Stanley_QNA",
+      "persistentUuid": "46b612d6-5497-43be-bb7d-04a293762985",
+      "width": 0,
+      "x": -329,
+      "y": -104,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Sprites",
+      "name": "Torres_QNA",
+      "persistentUuid": "6c62147d-a86c-4586-8c6d-ef719735cb4b",
+      "width": 0,
+      "x": -1209,
+      "y": -175,
+      "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -416,11 +465,140 @@
       "target": "Inventory"
     },
     {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Distance"
+          },
+          "parameters": [
+            "Stanley",
+            "Torres",
+            "200",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "E",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "CurrentNPC",
+            "=",
+            "\"Torres\""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"e\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "DialogueOngoing",
+                "True",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "Distance"
+          },
+          "parameters": [
+            "Stanley",
+            "Torres",
+            "200",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "E"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "CurrentNPC",
+            "=",
+            "\"None\""
+          ]
+        }
+      ]
+    },
+    {
       "type": "BuiltinCommonInstructions::Link",
       "include": {
         "includeConfig": 0
       },
-      "target": "Character Sprites"
+      "target": "Dialogue"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "DialogueOngoing",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Stanley",
+            "PlatformerObject",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -502,6 +680,60 @@
       "isLightingLayer": false,
       "isLocked": false,
       "name": "Player",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Sprites",
       "renderingType": "",
       "visibility": true,
       "cameras": [],

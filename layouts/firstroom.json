@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.15911838846842544,
+    "zoomFactor": 0.09675524297024503,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -1295,42 +1295,6 @@
         },
         {
           "type": {
-            "value": "SetXY"
-          },
-          "parameters": [
-            "DialogueBox",
-            "=",
-            "258",
-            "=",
-            "590"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetXY"
-          },
-          "parameters": [
-            "DialogueTXT",
-            "=",
-            "396",
-            "=",
-            "696"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetXY"
-          },
-          "parameters": [
-            "Space",
-            "=",
-            "1407",
-            "=",
-            "912"
-          ]
-        },
-        {
-          "type": {
             "value": "Hide"
           },
           "parameters": [
@@ -1374,52 +1338,6 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "DialogueOngoing",
-            "=",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Hide"
-          },
-          "parameters": [
-            "DialogueBox"
-          ]
-        },
-        {
-          "type": {
-            "value": "Hide"
-          },
-          "parameters": [
-            "DialogueTXT"
-          ]
-        },
-        {
-          "type": {
-            "value": "Hide"
-          },
-          "parameters": [
-            "Space"
-          ]
-        }
-      ]
-    },
-    {
       "type": "BuiltinCommonInstructions::Link",
       "include": {
         "includeConfig": 0
@@ -1427,7 +1345,6 @@
       "target": "Player Movement"
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::ForEach",
       "object": "childnpc",
       "conditions": [
@@ -1498,33 +1415,6 @@
               "parameters": [
                 "DialogueOngoing",
                 "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Show"
-              },
-              "parameters": [
-                "DialogueBox",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Show"
-              },
-              "parameters": [
-                "DialogueTXT",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Show"
-              },
-              "parameters": [
-                "Space",
                 ""
               ]
             }

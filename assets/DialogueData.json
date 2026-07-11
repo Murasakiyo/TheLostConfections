@@ -22,7 +22,7 @@
 	{
 		"title": "TutorialTorres",
 		"tags": "",
-		"body": "<<Stanley>><< SHappy>> \nHello there, dearest Ganache Knight! \n<<Torres>><<TMiff>> \nStanley... \nGuess now that all the children are gone, you're off to bother me aren't you?\n<<Stanley>><<SShock>>\nMy, is that what you think of me? I'm offended, Torres!\n<<STalk>> \nActually I came here to ask you for a favour. Do you happen to have any leftover chocolate I could use?\n<<Torres>><<TMiff>> \n...\nWhy are you asking me this? There's chocolate EVERYWHERE here!\nIf you're so desperate for chocolate, then go and shoot the cocoa flies. They've been bugging me for days and they always come back!\n<<Stanley>><<SSilly>> \nDon't mind if I do~\n<<Finished>>",
+		"body": "<<Stanley>><< SHappy>> \nHello there, dearest Ganache Knight! \n<<Torres>><<TMiff>> \nStanley... \nGuess now that all the children are gone, you're off to bother me aren't you?\n<<Stanley>><<SShock>>\nMy, is that what you think of me? I'm offended, Torres!\n<<STalk>> \nActually I came here to ask you for a favour. Do you happen to have any leftover chocolate I could use?\n<<Torres>><<TMiff>> \n...\nWhy are you asking me this? There's chocolate EVERYWHERE here!\nIf you're so desperate for chocolate, then go and shoot the cocoa flies. They've been bugging me for days and they always come back!\n<<Stanley>><<SSilly>> \nThat sounds like a plan...\n<<Finished>>\n<<FlyMinigame>> \nEnd",
 		"position": {
 			"x": 227,
 			"y": 130
@@ -36,6 +36,16 @@
 		"position": {
 			"x": 202,
 			"y": -121
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TutoTorresComplete",
+		"tags": "",
+		"body": "<<Torres>><<TTalk>> \nHope you're satisfied.\n<<Finished>> \nend",
+		"position": {
+			"x": 431,
+			"y": 175
 		},
 		"colorID": 0
 	}
