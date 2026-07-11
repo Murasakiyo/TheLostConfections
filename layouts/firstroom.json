@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.11048078165020186,
+    "zoomFactor": 0.19415059112744315,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,25 +29,26 @@
   "variables": [
     {
       "name": "CurrentNPC",
-      "persistentUuid": "eadd1635-e7aa-4d62-bb37-3dc3e8f4357f",
       "type": "string",
       "value": "None"
     },
     {
       "name": "StopScreen",
-      "persistentUuid": "dfbed954-6a72-4262-bf68-5bb29d41a55c",
       "type": "boolean",
       "value": false
     },
     {
+      "name": "CurrentRoom",
+      "type": "string",
+      "value": "None"
+    },
+    {
       "name": "VanillaTimer",
-      "persistentUuid": "697b0e21-98ba-4209-a0e7-f024e6bb3dfa",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartVanillaTimer",
-      "persistentUuid": "c9109bd7-07a3-4ba2-afc4-c5630e396ec3",
       "type": "boolean",
       "value": false
     }
@@ -346,14 +347,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 661,
+      "height": 663,
       "keepRatio": true,
       "layer": "",
       "name": "wallcorner",
       "persistentUuid": "ed8b4ccf-9be2-4f15-a032-aa0575af166f",
-      "width": 655,
+      "width": 651,
       "x": -666,
-      "y": 1139,
+      "y": 1137,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -465,8 +466,8 @@
       "name": "Doors",
       "persistentUuid": "fb3173b7-3504-4cf9-aa59-134910d7d3da",
       "width": 1992,
-      "x": 987,
-      "y": 3427,
+      "x": -19,
+      "y": 3561,
       "zOrder": 13,
       "numberProperties": [
         {
@@ -487,8 +488,8 @@
       "name": "Doors",
       "persistentUuid": "3ff64b73-00c6-4d6b-8a4b-f6e6f946ee3d",
       "width": 585,
-      "x": 3919,
-      "y": 428,
+      "x": 3484,
+      "y": 118,
       "zOrder": 14,
       "numberProperties": [
         {
@@ -509,8 +510,8 @@
       "name": "Doors",
       "persistentUuid": "c4e4e3ee-9671-485e-b1b5-ac4b0cca7201",
       "width": 537,
-      "x": -1988,
-      "y": 388,
+      "x": -2259,
+      "y": 149,
       "zOrder": 15,
       "numberProperties": [
         {
@@ -548,8 +549,8 @@
       "name": "Doors",
       "persistentUuid": "6844f59f-f0f9-4ad7-b933-3993c901b372",
       "width": 804,
-      "x": 943,
-      "y": -2680,
+      "x": 535,
+      "y": -3324,
       "zOrder": 16,
       "numberProperties": [
         {
@@ -570,8 +571,8 @@
       "name": "Doors",
       "persistentUuid": "598a197b-38ca-494c-85a7-eabe7eb28e1f",
       "width": 606,
-      "x": -89,
-      "y": -1296,
+      "x": -426,
+      "y": -1314,
       "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
@@ -798,12 +799,12 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "Indicator",
+      "layer": "Menu",
       "name": "LocationInteract",
       "persistentUuid": "d3601c1f-72f8-45b3-aea6-c37cd1d5c351",
       "width": 0,
-      "x": 251,
-      "y": 395,
+      "x": -2008,
+      "y": 406,
       "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
@@ -844,6 +845,23 @@
     },
     {
       "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 128,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Vanilla_Extract",
+      "persistentUuid": "03b96cad-a513-41ce-a796-50f3088fd565",
+      "width": 50,
+      "x": -2026,
+      "y": 821,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
@@ -857,34 +875,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 135.67999999999998,
-      "keepRatio": true,
-      "layer": "Player + NPC",
-      "name": "Ingredients",
-      "persistentUuid": "93f401bf-1fcd-409e-aaf3-b36ed160e0dc",
-      "width": 53,
-      "x": -1998,
-      "y": 809,
-      "zOrder": 29,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 2
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Name",
-          "type": "string",
-          "value": "vanilla"
-        }
-      ]
     }
   ],
   "objects": [
@@ -1046,7 +1036,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "torresroomdoor",
+          "name": "door1",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1059,14 +1049,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 203,
-                    "y": 121
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 203.5,
-                    "y": 77.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
@@ -1107,14 +1097,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 316,
-                    "y": 541
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 315.5,
-                    "y": 362
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
@@ -1155,14 +1145,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 204.5,
-                    "y": 179.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 205,
-                    "y": 259.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
@@ -1203,14 +1193,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 210.5,
-                    "y": 221
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 212,
-                    "y": 153
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
@@ -1238,7 +1228,7 @@
           ]
         },
         {
-          "name": "kitchen",
+          "name": "torresroomdoor",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1251,14 +1241,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 206,
-                    "y": 281
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 207.5,
-                    "y": 218.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
@@ -1299,14 +1289,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 200.5,
-                    "y": 125
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 201,
-                    "y": 63
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
@@ -1385,6 +1375,67 @@
       }
     },
     {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Vanilla_Extract",
+      "persistentUuid": "a6aea305-dbb9-4904-96a1-13ba88d45cd1",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/vanilla.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 6
+                      },
+                      {
+                        "x": 24,
+                        "y": 6
+                      },
+                      {
+                        "x": 24,
+                        "y": 63
+                      },
+                      {
+                        "x": 2,
+                        "y": 63
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "assetStoreId": "",
       "bold": false,
       "italic": false,
@@ -1451,137 +1502,14 @@
         "objectName": "Doors"
       },
       {
+        "objectName": "Vanilla_Extract"
+      },
+      {
         "objectName": "location"
       }
     ]
   },
   "events": [
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "SceneJustBegins"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-          },
-          "parameters": [
-            "location",
-            "Tween",
-            "\"Fade out\"",
-            "0",
-            "\"linear\"",
-            "2",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetXY"
-          },
-          "parameters": [
-            "location",
-            "=",
-            "619",
-            "=",
-            "913"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetXY"
-          },
-          "parameters": [
-            "DialogueBox",
-            "=",
-            "258",
-            "=",
-            "590"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetXY"
-          },
-          "parameters": [
-            "DialogueTXT",
-            "=",
-            "396",
-            "=",
-            "696"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetXY"
-          },
-          "parameters": [
-            "Space",
-            "=",
-            "1407",
-            "=",
-            "912"
-          ]
-        },
-        {
-          "type": {
-            "value": "Hide"
-          },
-          "parameters": [
-            "LocationInteract"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "DialogueOngoing",
-            "=",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Hide"
-          },
-          "parameters": [
-            "DialogueBox"
-          ]
-        },
-        {
-          "type": {
-            "value": "Hide"
-          },
-          "parameters": [
-            "DialogueTXT"
-          ]
-        },
-        {
-          "type": {
-            "value": "Hide"
-          },
-          "parameters": [
-            "Space"
-          ]
-        }
-      ]
-    },
     {
       "type": "BuiltinCommonInstructions::Link",
       "include": {
@@ -1699,13 +1627,11 @@
       "conditions": [
         {
           "type": {
-            "inverted": true,
-            "value": "Distance"
+            "value": "BooleanVariable"
           },
           "parameters": [
-            "Stanley",
-            "childnpc",
-            "200",
+            "DialogueOngoing",
+            "=",
             ""
           ]
         }
@@ -1716,204 +1642,23 @@
             "value": "Hide"
           },
           "parameters": [
-            "E"
+            "DialogueBox"
           ]
         },
-        {
-          "type": {
-            "value": "SetStringVariable"
-          },
-          "parameters": [
-            "CurrentNPC",
-            "=",
-            "\"None\""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": true,
-            "value": "Distance"
-          },
-          "parameters": [
-            "Stanley",
-            "Doors",
-            "300",
-            ""
-          ]
-        }
-      ],
-      "actions": [
         {
           "type": {
             "value": "Hide"
           },
           "parameters": [
-            "LocationInteract"
+            "DialogueTXT"
           ]
         },
         {
           "type": {
-            "value": "SetStringVariable"
+            "value": "Hide"
           },
           "parameters": [
-            "CurrentRoom",
-            "=",
-            "\"None\""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::ForEach",
-      "object": "Doors",
-      "conditions": [
-        {
-          "type": {
-            "value": "Distance"
-          },
-          "parameters": [
-            "Stanley",
-            "Doors",
-            "300",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Show"
-          },
-          "parameters": [
-            "LocationInteract",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetStringVariable"
-          },
-          "parameters": [
-            "CurrentRoom",
-            "=",
-            "Doors.Animation::Name()"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetXY"
-          },
-          "parameters": [
-            "LocationInteract",
-            "=",
-            "Stanley.X() - 30",
-            "=",
-            "Stanley.Y() - 350"
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"f\""
-              ]
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "CurrentRoom",
-                    "=",
-                    "\"stanroomdoor\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Sprinkles Minigame\"",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Else",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "CurrentRoom",
-                    "=",
-                    "\"kitchen\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Kitchen (Topdown)\"",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Else",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "CurrentRoom",
-                    "=",
-                    "\"torresroomdoor\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Fly Shooting  Minigame\"",
-                    ""
-                  ]
-                }
-              ]
-            }
+            "Space"
           ]
         }
       ]
@@ -2044,6 +1789,127 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "Distance"
+          },
+          "parameters": [
+            "Stanley",
+            "childnpc",
+            "200",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "E"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "CurrentNPC",
+            "=",
+            "\"None\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneJustBegins"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "location",
+            "Tween",
+            "\"Fade out\"",
+            "0",
+            "\"linear\"",
+            "2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "location",
+            "=",
+            "619",
+            "=",
+            "913"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "DialogueBox",
+            "=",
+            "258",
+            "=",
+            "590"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "DialogueTXT",
+            "=",
+            "396",
+            "=",
+            "696"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "Space",
+            "=",
+            "1407",
+            "=",
+            "912"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Inventory"
+    },
+    {
       "type": "BuiltinCommonInstructions::Link",
       "include": {
         "includeConfig": 0
@@ -2055,11 +1921,12 @@
       "conditions": [
         {
           "type": {
-            "value": "BooleanVariable"
+            "value": "Distance"
           },
           "parameters": [
-            "Inventory.Vanilla",
-            "False",
+            "Stanley",
+            "Doors",
+            "600",
             ""
           ]
         },
@@ -2068,23 +1935,10 @@
             "value": "AnimatableCapability::AnimatableBehavior::Name"
           },
           "parameters": [
-            "Ingredients",
+            "Doors",
             "Animation",
             "=",
-            "\"vanilla\""
-          ]
-        },
-        {
-          "type": {
-            "inverted": true,
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "Stanley",
-            "Ingredients",
-            "",
-            "",
-            ""
+            "\"stanroomdoor\""
           ]
         }
       ],
@@ -2094,8 +1948,48 @@
             "value": "Show"
           },
           "parameters": [
-            "Ingredients",
+            "LocationInteract",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "LocationInteract",
+            "=",
+            "Stanley.X() ",
+            "=",
+            "Stanley.Y() - 250"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"f\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Sprinkles Minigame\"",
+                ""
+              ]
+            }
           ]
         }
       ]
@@ -2105,11 +1999,12 @@
       "conditions": [
         {
           "type": {
-            "value": "BooleanVariable"
+            "value": "Distance"
           },
           "parameters": [
-            "Inventory.Vanilla",
-            "True",
+            "Stanley",
+            "Doors",
+            "600",
             ""
           ]
         },
@@ -2118,21 +2013,61 @@
             "value": "AnimatableCapability::AnimatableBehavior::Name"
           },
           "parameters": [
-            "Ingredients",
+            "Doors",
             "Animation",
             "=",
-            "\"vanilla\""
+            "\"torresroomdoor\""
           ]
         }
       ],
       "actions": [
         {
           "type": {
-            "value": "Delete"
+            "value": "Show"
           },
           "parameters": [
-            "Ingredients",
-            "Tween"
+            "LocationInteract",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "LocationInteract",
+            "=",
+            "Stanley.X() ",
+            "=",
+            "Stanley.Y() - 250"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"f\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Fly Shooting  Minigame\"",
+                ""
+              ]
+            }
           ]
         }
       ]
@@ -2146,21 +2081,10 @@
           },
           "parameters": [
             "Stanley",
-            "Ingredients",
+            "Vanilla_Extract",
             "",
             "",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "StringObjectVariable"
-          },
-          "parameters": [
-            "Ingredients",
-            "Name",
-            "=",
-            "\"vanilla\""
           ]
         }
       ],
@@ -2181,7 +2105,7 @@
             "value": "Show"
           },
           "parameters": [
-            "Ingredients",
+            "Vanilla_Extract",
             ""
           ]
         },
@@ -2190,7 +2114,7 @@
             "value": "SetXY"
           },
           "parameters": [
-            "Ingredients",
+            "Vanilla_Extract",
             "=",
             "-2040",
             "=",
@@ -2253,16 +2177,6 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "Inventory.Vanilla",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "Delete"
               },
               "parameters": [
@@ -2275,7 +2189,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "Ingredients",
+                "Vanilla_Extract",
                 ""
               ]
             }
@@ -2284,11 +2198,82 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Inventory"
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Distance"
+          },
+          "parameters": [
+            "Stanley",
+            "Doors",
+            "600",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::Name"
+          },
+          "parameters": [
+            "Doors",
+            "Animation",
+            "=",
+            "\"door1\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "LocationInteract",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "LocationInteract",
+            "=",
+            "Stanley.X() ",
+            "=",
+            "Stanley.Y() - 250"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"f\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Kitchen (Topdown)\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -2646,20 +2631,12 @@
       "type": "OpacityCapability::OpacityBehavior"
     },
     {
-      "name": "PlatformerObject",
-      "type": "PlatformBehavior::PlatformerObjectBehavior"
-    },
-    {
       "name": "Resizable",
       "type": "ResizableCapability::ResizableBehavior"
     },
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "StayOnScreen",
-      "type": "StayOnScreen::StayOnScreen"
     },
     {
       "name": "Text",

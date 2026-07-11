@@ -39,7 +39,7 @@
               "parameters": [
                 "Stanley",
                 "+",
-                "15"
+                "10"
               ]
             },
             {
@@ -104,7 +104,7 @@
               "parameters": [
                 "Stanley",
                 "-",
-                "15"
+                "10"
               ]
             },
             {
@@ -151,7 +151,7 @@
               "parameters": [
                 "Stanley",
                 "-",
-                "15"
+                "10"
               ]
             },
             {
@@ -188,7 +188,7 @@
               "parameters": [
                 "Stanley",
                 "+",
-                "15"
+                "10"
               ]
             },
             {
@@ -229,32 +229,6 @@
                 "\"stand\""
               ]
             }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "ActivateBehavior"
-          },
-          "parameters": [
-            "Stanley",
-            "StayOnScreen",
-            "no"
-          ]
-        },
-        {
-          "type": {
-            "value": "ActivateBehavior"
-          },
-          "parameters": [
-            "Stanley",
-            "PlatformerObject",
-            "no"
           ]
         }
       ]

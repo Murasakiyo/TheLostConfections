@@ -29,31 +29,31 @@
   "variables": [
     {
       "name": "BalloonScore",
-      "persistentUuid": "0fcfdc54-f390-44a6-91d9-8c4579111edf",
+      "persistentUuid": "31988c78-44d4-4570-9b5e-dac34a56db64",
       "type": "number",
       "value": 0
     },
     {
       "name": "Timer",
-      "persistentUuid": "911c0cb3-4a4a-4ac7-af3b-3489450a7a92",
+      "persistentUuid": "d3a98c02-8093-4236-97d1-ed0ce973c4b7",
       "type": "number",
       "value": 0
     },
     {
       "name": "GameCountdown",
-      "persistentUuid": "ae5c2a95-d908-479a-9429-469d1374b895",
+      "persistentUuid": "e0f16b3c-0375-4e62-b489-0431ccb3e47a",
       "type": "number",
       "value": 15
     },
     {
       "name": "TimerCountdown",
-      "persistentUuid": "97555dcc-7d40-4753-b02c-42bd6ba2e14b",
+      "persistentUuid": "93c15bb7-aff1-4647-af29-f8f595602788",
       "type": "number",
       "value": 0
     },
     {
       "name": "WinTimer",
-      "persistentUuid": "9ff873fc-d02c-48d0-b911-8be25edb59e1",
+      "persistentUuid": "e19d3f32-ad50-4a1e-9d38-8979abcdc6fa",
       "type": "number",
       "value": 0
     }
@@ -307,13 +307,12 @@
       "effects": [],
       "behaviors": [
         {
-          "acceleration": 6000,
-          "deceleration": 1000,
-          "maxSpeed": 270,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "acceleration": 6000,
           "maxFallingSpeed": 900,
           "xGrabTolerance": 10,
+          "deceleration": 6000,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
           "canGrabWithoutMoving": true,
@@ -322,6 +321,7 @@
           "jumpSpeed": 1200,
           "jumpSustainTime": 0.2,
           "ladderClimbingSpeed": 150,
+          "maxSpeed": 250,
           "slopeMaxAngle": 60,
           "useLegacyTrajectory": false,
           "useRepeatedJump": false,
@@ -1035,198 +1035,6 @@
           ]
         }
       ]
-    },
-    {
-      "additive": false,
-      "assetStoreId": "",
-      "destroyWhenNoParticles": true,
-      "emitterAngleA": 0,
-      "emitterAngleB": 360,
-      "emitterForceMax": 170,
-      "emitterForceMin": 90,
-      "flow": 45,
-      "jumpForwardInTimeOnCreation": 0,
-      "maxParticleNb": 300,
-      "name": "BalloonConfettiRed",
-      "particleAlpha1": 204,
-      "particleAlpha2": 0,
-      "particleAlphaRandomness1": 0,
-      "particleAlphaRandomness2": 0,
-      "particleAngle1": 0,
-      "particleAngle2": 0,
-      "particleAngleRandomness1": 0,
-      "particleAngleRandomness2": 0,
-      "particleBlue1": 51,
-      "particleBlue2": 51,
-      "particleColor1": "255;51;51",
-      "particleColor2": "255;51;51",
-      "particleGravityX": 0,
-      "particleGravityY": 0,
-      "particleGreen1": 51,
-      "particleGreen2": 51,
-      "particleLifeTimeMax": 2.5,
-      "particleLifeTimeMin": 0.5,
-      "particleRed1": 255,
-      "particleRed2": 255,
-      "particleSize1": 100,
-      "particleSize2": 100,
-      "particleSizeRandomness1": 0,
-      "particleSizeRandomness2": 0,
-      "persistentUuid": "ae05a8fc-fda6-4766-841b-337205216590",
-      "rendererParam1": 3,
-      "rendererParam2": 5,
-      "rendererType": "Point",
-      "tank": 10,
-      "textureParticleName": "",
-      "type": "ParticleSystem::ParticleEmitter",
-      "zoneRadius": 3,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "additive": false,
-      "assetStoreId": "",
-      "destroyWhenNoParticles": true,
-      "emitterAngleA": 0,
-      "emitterAngleB": 360,
-      "emitterForceMax": 85,
-      "emitterForceMin": 45,
-      "flow": 45,
-      "jumpForwardInTimeOnCreation": 0,
-      "maxParticleNb": 300,
-      "name": "BalloonConfettiYellow",
-      "particleAlpha1": 204,
-      "particleAlpha2": 0,
-      "particleAlphaRandomness1": 0,
-      "particleAlphaRandomness2": 0,
-      "particleAngle1": 0,
-      "particleAngle2": 0,
-      "particleAngleRandomness1": 0,
-      "particleAngleRandomness2": 0,
-      "particleBlue1": 28,
-      "particleBlue2": 28,
-      "particleColor1": "248;231;28",
-      "particleColor2": "248;231;28",
-      "particleGravityX": 0,
-      "particleGravityY": 0,
-      "particleGreen1": 231,
-      "particleGreen2": 231,
-      "particleLifeTimeMax": 2.5,
-      "particleLifeTimeMin": 0.5,
-      "particleRed1": 248,
-      "particleRed2": 248,
-      "particleSize1": 100,
-      "particleSize2": 100,
-      "particleSizeRandomness1": 0,
-      "particleSizeRandomness2": 0,
-      "persistentUuid": "5acd8d84-b6e5-4dba-b491-ee9990a1ccad",
-      "rendererParam1": 3,
-      "rendererParam2": 5,
-      "rendererType": "Point",
-      "tank": 10,
-      "textureParticleName": "",
-      "type": "ParticleSystem::ParticleEmitter",
-      "zoneRadius": 3,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "additive": false,
-      "assetStoreId": "",
-      "destroyWhenNoParticles": true,
-      "emitterAngleA": 0,
-      "emitterAngleB": 360,
-      "emitterForceMax": 85,
-      "emitterForceMin": 45,
-      "flow": 45,
-      "jumpForwardInTimeOnCreation": 0,
-      "maxParticleNb": 300,
-      "name": "BalloonConfettiPink",
-      "particleAlpha1": 204,
-      "particleAlpha2": 0,
-      "particleAlphaRandomness1": 0,
-      "particleAlphaRandomness2": 0,
-      "particleAngle1": 0,
-      "particleAngle2": 0,
-      "particleAngleRandomness1": 0,
-      "particleAngleRandomness2": 0,
-      "particleBlue1": 144,
-      "particleBlue2": 144,
-      "particleColor1": "255;51;144",
-      "particleColor2": "255;51;144",
-      "particleGravityX": 0,
-      "particleGravityY": 0,
-      "particleGreen1": 51,
-      "particleGreen2": 51,
-      "particleLifeTimeMax": 2.5,
-      "particleLifeTimeMin": 0.5,
-      "particleRed1": 255,
-      "particleRed2": 255,
-      "particleSize1": 100,
-      "particleSize2": 100,
-      "particleSizeRandomness1": 0,
-      "particleSizeRandomness2": 0,
-      "persistentUuid": "382e6054-8e19-4632-886e-aaf76328e75f",
-      "rendererParam1": 3,
-      "rendererParam2": 5,
-      "rendererType": "Point",
-      "tank": 10,
-      "textureParticleName": "",
-      "type": "ParticleSystem::ParticleEmitter",
-      "zoneRadius": 3,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "additive": false,
-      "assetStoreId": "",
-      "destroyWhenNoParticles": true,
-      "emitterAngleA": 0,
-      "emitterAngleB": 360,
-      "emitterForceMax": 85,
-      "emitterForceMin": 45,
-      "flow": 45,
-      "jumpForwardInTimeOnCreation": 0,
-      "maxParticleNb": 300,
-      "name": "BalloonConfettiBlue",
-      "particleAlpha1": 204,
-      "particleAlpha2": 0,
-      "particleAlphaRandomness1": 0,
-      "particleAlphaRandomness2": 0,
-      "particleAngle1": 0,
-      "particleAngle2": 0,
-      "particleAngleRandomness1": 0,
-      "particleAngleRandomness2": 0,
-      "particleBlue1": 226,
-      "particleBlue2": 226,
-      "particleColor1": "74;144;226",
-      "particleColor2": "74;144;226",
-      "particleGravityX": 0,
-      "particleGravityY": 0,
-      "particleGreen1": 144,
-      "particleGreen2": 144,
-      "particleLifeTimeMax": 2.5,
-      "particleLifeTimeMin": 0.5,
-      "particleRed1": 74,
-      "particleRed2": 74,
-      "particleSize1": 100,
-      "particleSize2": 100,
-      "particleSizeRandomness1": 0,
-      "particleSizeRandomness2": 0,
-      "persistentUuid": "e67024d6-ee8b-4c08-a665-efe947ad11ca",
-      "rendererParam1": 3,
-      "rendererParam2": 5,
-      "rendererType": "Point",
-      "tank": 10,
-      "textureParticleName": "",
-      "type": "ParticleSystem::ParticleEmitter",
-      "zoneRadius": 3,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -1267,18 +1075,6 @@
       },
       {
         "objectName": "Sprinkles"
-      },
-      {
-        "objectName": "BalloonConfettiRed"
-      },
-      {
-        "objectName": "BalloonConfettiYellow"
-      },
-      {
-        "objectName": "BalloonConfettiPink"
-      },
-      {
-        "objectName": "BalloonConfettiBlue"
       }
     ]
   },
@@ -1358,54 +1154,6 @@
           "parameters": [
             "Balloon_of_Sprinkles",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "BalloonConfettiRed",
-            "Balloon_of_Sprinkles.CenterX()",
-            "Balloon_of_Sprinkles.CenterY() - 100",
-            "\"Balloons\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "BalloonConfettiYellow",
-            "Balloon_of_Sprinkles.CenterX()",
-            "Balloon_of_Sprinkles.CenterY() - 100",
-            "\"Balloons\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "BalloonConfettiPink",
-            "Balloon_of_Sprinkles.CenterX()",
-            "Balloon_of_Sprinkles.CenterY() - 100",
-            "\"Balloons\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "BalloonConfettiBlue",
-            "Balloon_of_Sprinkles.CenterX()",
-            "Balloon_of_Sprinkles.CenterY() - 100",
-            "\"Balloons\""
           ]
         }
       ]
@@ -1649,26 +1397,6 @@
             "=",
             "311"
           ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "SprinkleMinigame",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Inventory.Sprinkles",
-            "True",
-            ""
-          ]
         }
       ],
       "events": [
@@ -1682,7 +1410,7 @@
               "parameters": [
                 "WinTimer",
                 ">=",
-                "3"
+                "2"
               ]
             }
           ],
@@ -2223,10 +1951,6 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "StayOnScreen",
-      "type": "StayOnScreen::StayOnScreen"
     },
     {
       "name": "Text",
