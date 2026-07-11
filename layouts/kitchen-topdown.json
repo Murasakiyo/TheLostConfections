@@ -29,31 +29,26 @@
   "variables": [
     {
       "name": "CompleteIngredient",
-      "persistentUuid": "846b7685-659c-4b6f-b07c-1c875b0ec3eb",
       "type": "number",
       "value": 0
     },
     {
       "name": "MixingProgress",
-      "persistentUuid": "1785ca05-7485-478b-8d1f-b9077f29dc24",
       "type": "number",
       "value": 0
     },
     {
       "name": "StirDirection",
-      "persistentUuid": "299c1c7d-19e6-421b-9fb4-a1371dda154d",
       "type": "number",
       "value": 0
     },
     {
       "name": "Complete",
-      "persistentUuid": "db182621-33a5-4b0b-8e0a-a2c536d35634",
       "type": "boolean",
       "value": false
     },
     {
       "name": "StartCook",
-      "persistentUuid": "76f70488-f842-48e5-9c96-80017fa46651",
       "type": "boolean",
       "value": false
     }

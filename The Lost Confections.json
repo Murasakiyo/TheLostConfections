@@ -1578,6 +1578,70 @@
         "name": "assets/dialoguesprite/torres/talk.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/big_box.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/big_box.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Tutorial/tuto1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Tutorial/tuto1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Tutorial/tuto2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Tutorial/tuto2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Tutorial/tuto3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Tutorial/tuto3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Tutorial/tuto4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Tutorial/tuto4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Tutorial/tuto5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Tutorial/tuto5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/happy_tutorial.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "happy_tutorial",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/happy_tutorial2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "happy_tutorial2",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -1980,6 +2044,91 @@
                     "name": "origine",
                     "x": 16,
                     "y": 32
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 38,
+                        "y": 1
+                      },
+                      {
+                        "x": 38,
+                        "y": 44
+                      },
+                      {
+                        "x": 0,
+                        "y": 44
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "happy_tutorial",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.8,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "happy_tutorial",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 38,
+                        "y": 1
+                      },
+                      {
+                        "x": 38,
+                        "y": 44
+                      },
+                      {
+                        "x": 0,
+                        "y": 44
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "happy_tutorial2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -4752,6 +4901,11 @@
       "name": "DialogueOngoing",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "tutorial",
+      "type": "boolean",
+      "value": true
     },
     {
       "name": "TutoKidStart",
