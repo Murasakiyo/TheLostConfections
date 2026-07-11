@@ -1621,6 +1621,46 @@
         "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialogueData_TorresDistract.json\"}",
         "name": "DialogueData_TorresDistract",
         "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/lounge.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/lounge.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/right.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/directions/right",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/bad_ending_stanley.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/bad_ending_stanley.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/restart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/restart.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/restart_hover.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/restart_hover.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -4202,6 +4242,11 @@
       "name": "InventoryCupcake",
       "type": "string",
       "value": "None"
+    },
+    {
+      "name": "AmountOfGoodIngredients",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
@@ -4280,6 +4325,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/flyshooting-minigame-instructions"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/win-screen"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/lose-screen"
     }
   ],
   "externalEvents": [

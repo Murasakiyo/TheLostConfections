@@ -29,31 +29,26 @@
   "variables": [
     {
       "name": "DropTimer",
-      "persistentUuid": "254c6cb2-b09c-49a1-a1e9-23ea21ca59c4",
       "type": "number",
       "value": 0
     },
     {
       "name": "CupcakeCount",
-      "persistentUuid": "05ad7e79-306f-459b-90dc-cfd7b07c1157",
       "type": "number",
       "value": 0
     },
     {
       "name": "SnowballCount",
-      "persistentUuid": "07165f2e-9efe-41ee-bd35-b6f879b3c15c",
       "type": "number",
       "value": 0
     },
     {
       "name": "COMPLETE",
-      "persistentUuid": "3ea42a47-b87e-4a3a-afda-ce11c4e87882",
       "type": "boolean",
       "value": false
     },
     {
       "name": "EndTimer",
-      "persistentUuid": "93021993-e3dc-4243-a5b3-4dc47f2bbe34",
       "type": "number",
       "value": 0
     },

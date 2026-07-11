@@ -29,49 +29,41 @@
   "variables": [
     {
       "name": "JumpTimer",
-      "persistentUuid": "725bbd48-e000-4119-8b5a-028c2d7cdb93",
       "type": "number",
       "value": 0
     },
     {
       "name": "GunCooldown",
-      "persistentUuid": "7da9bef3-3be0-47e8-af42-67abcec4c1b2",
       "type": "number",
       "value": 0
     },
     {
       "name": "ShotGun",
-      "persistentUuid": "e6ef64a9-0c10-449e-8c41-c14ec40625c2",
       "type": "boolean",
       "value": false
     },
     {
       "name": "HitCount",
-      "persistentUuid": "8254104d-23f8-4840-b3d8-949ab0b5a325",
       "type": "number",
       "value": 0
     },
     {
       "name": "FrogDeath",
-      "persistentUuid": "d0dd5a96-3012-4db8-aa0f-af6e9609125c",
       "type": "boolean",
       "value": false
     },
     {
       "name": "DeathTimer",
-      "persistentUuid": "c75039fe-1a66-474f-ac22-c7d86c4bfbc9",
       "type": "number",
       "value": 0
     },
     {
       "name": "GameStart",
-      "persistentUuid": "a66e816a-f145-41ca-9b0d-90345d4c17da",
       "type": "boolean",
       "value": false
     },
     {
       "name": "GameStartTimer",
-      "persistentUuid": "2690bfbf-b7b2-4ff2-9fd2-8f834eac74c9",
       "type": "number",
       "value": 0
     }
@@ -906,6 +898,9 @@
       },
       {
         "objectName": "Background"
+      },
+      {
+        "objectName": "InstructionText"
       }
     ]
   },

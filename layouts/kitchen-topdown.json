@@ -29,31 +29,26 @@
   "variables": [
     {
       "name": "CompleteIngredient",
-      "persistentUuid": "3bd2085a-2f90-4a8d-9900-685bafec2097",
       "type": "number",
       "value": 0
     },
     {
       "name": "MixingProgress",
-      "persistentUuid": "ac7740a1-db29-4d13-a949-8fc72afbe396",
       "type": "number",
       "value": 0
     },
     {
       "name": "StirDirection",
-      "persistentUuid": "8383f284-6f2e-464b-beb1-e6e80c15dc89",
       "type": "number",
       "value": 0
     },
     {
       "name": "Complete",
-      "persistentUuid": "cf1f3c96-befc-443c-9d0d-99ba3577b689",
       "type": "boolean",
       "value": false
     },
     {
       "name": "StartCook",
-      "persistentUuid": "0e1c7143-dca4-4218-a7e2-7ba173b85af7",
       "type": "boolean",
       "value": false
     }
@@ -1927,6 +1922,16 @@
                     "=",
                     "\"cocoa\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "AmountOfGoodIngredients",
+                    "+",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -1984,6 +1989,16 @@
                     "=",
                     "\"vanilla\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "AmountOfGoodIngredients",
+                    "+",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -2040,6 +2055,16 @@
                     "Animation",
                     "=",
                     "\"sprinkles\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "AmountOfGoodIngredients",
+                    "+",
+                    "1"
                   ]
                 }
               ]
