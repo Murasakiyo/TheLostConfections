@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.37687720367509187,
+    "zoomFactor": 0.38958562738273356,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,6 +29,7 @@
   "variables": [
     {
       "name": "Currentlevel",
+      "persistentUuid": "1dde2f3d-cab3-41db-9637-46c7c535c7e4",
       "type": "number",
       "value": 0
     }
@@ -813,6 +814,22 @@
             "Text",
             "=",
             "\"LEVEL 2\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Stanley",
+            "PlatformerObject",
+            "no"
           ]
         }
       ]

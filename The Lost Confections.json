@@ -1150,6 +1150,102 @@
         "name": "assets/option_box.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "../../Documents/TT2L-05/sprites/dialogue/stanley/happy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../../Documents/TT2L-05/sprites/dialogue/stanley/happy.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../../Documents/TT2L-05/sprites/dialogue/stanley/talk.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../../Documents/TT2L-05/sprites/dialogue/stanley/talk.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/dialoguesprite/stanley/crazy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/dialoguesprite/stanley/crazy.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/dialoguesprite/stanley/happy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/dialoguesprite/stanley/happy.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/dialoguesprite/stanley/shock.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/dialoguesprite/stanley/shock.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/dialoguesprite/stanley/silly.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/dialoguesprite/stanley/silly.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/dialoguesprite/stanley/talk.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/dialoguesprite/stanley/talk.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/dialoguesprite/stanley/worry.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/dialoguesprite/stanley/worry.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/dialoguesprite/krie/happy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/dialoguesprite/krie/happy.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/dialoguesprite/krie/miffed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/dialoguesprite/krie/miffed.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/dialoguesprite/krie/talk.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/dialoguesprite/krie/talk.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/dialoguesprite/krie/think.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/dialoguesprite/krie/think.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -1165,22 +1261,21 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "gravity": 2000,
+          "maxFallingSpeed": 1000,
           "acceleration": 1500,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
           "canGrabWithoutMoving": true,
           "deceleration": 1500,
-          "gravity": 1000,
           "ignoreDefaultControls": false,
-          "isFolded": true,
           "jumpSpeed": 600,
           "jumpSustainTime": 0.2,
           "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 700,
           "maxSpeed": 250,
-          "name": "PlatformerObject",
           "slopeMaxAngle": 60,
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "useLegacyTrajectory": false,
           "useRepeatedJump": false,
           "xGrabTolerance": 10,
@@ -3615,6 +3710,7 @@
       "value": false
     },
     {
+      "folded": true,
       "name": "GameSave",
       "type": "structure",
       "children": [
