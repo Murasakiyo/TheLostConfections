@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.31928945896901656,
+    "zoomFactor": 0.4027225833325921,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,13 +29,37 @@
   "variables": [
     {
       "name": "DropTimer",
-      "persistentUuid": "20d2382e-1ed7-4694-83e8-8005be46204b",
+      "persistentUuid": "3bcbc001-1709-4b09-9926-1e0711063867",
       "type": "number",
       "value": 0
     },
     {
-      "name": "CupcakeCount",
-      "persistentUuid": "65263955-e3a7-448d-b392-175ce681841b",
+      "name": "SnowballCount",
+      "persistentUuid": "32afaf69-4edf-4e79-86dd-6a6783a2b19e",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "COMPLETE",
+      "persistentUuid": "e181f97e-77fb-4972-9707-424aceebc7a8",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "EndTimer",
+      "persistentUuid": "f031d355-3c52-4d9a-9515-7da37bd8ed7b",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "GameStart",
+      "persistentUuid": "67952936-47a4-4814-a40f-afd5c462dcac",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "GameStartTimer",
+      "persistentUuid": "3b01e85f-f9b5-41b1-9b97-9927626837cb",
       "type": "number",
       "value": 0
     }
@@ -48,7 +72,7 @@
       "height": 400,
       "keepRatio": true,
       "layer": "",
-      "name": "CupcakeCatcher",
+      "name": "SnowCatcher",
       "persistentUuid": "dd5f2251-01b9-4e08-84de-90821f0f9f21",
       "width": 325,
       "x": 860,
@@ -73,13 +97,62 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "WinText",
+      "persistentUuid": "10d999b4-8dff-4631-ab9a-cea64e458abd",
+      "width": 0,
+      "x": 375,
+      "y": 140,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 256,
+      "keepRatio": true,
+      "layer": "",
+      "name": "PowderedSugar",
+      "persistentUuid": "4abf6c1c-a356-43c3-8abd-11e9d2778f6f",
+      "width": 256,
+      "x": 923,
+      "y": -447,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "InstructionText",
+      "persistentUuid": "8b80bd08-1527-4676-84a3-ee308f64f4de",
+      "width": 0,
+      "x": 426,
+      "y": 349,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Cupcake",
+      "name": "Snowball",
       "persistentUuid": "a2a88773-612c-4dc0-aceb-ef7453dc0306",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -97,7 +170,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/ingredient/1stcupcake.png",
+                  "image": "assets/Snowball.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -113,20 +186,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 6
+                        "x": 20,
+                        "y": 21
                       },
                       {
-                        "x": 27,
-                        "y": 6
+                        "x": 43,
+                        "y": 21
                       },
                       {
-                        "x": 27,
-                        "y": 35
+                        "x": 43,
+                        "y": 44
                       },
                       {
-                        "x": 0,
-                        "y": 35
+                        "x": 20,
+                        "y": 44
                       }
                     ]
                   ]
@@ -140,7 +213,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "CupcakeCatcher",
+      "name": "SnowCatcher",
       "persistentUuid": "65350c1d-5c14-4c9d-97f6-f8024787ab83",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -148,14 +221,14 @@
       "effects": [],
       "behaviors": [
         {
+          "acceleration": 8000,
+          "deceleration": 4000,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "acceleration": 800,
           "allowDiagonals": true,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
           "customIsometryAngle": 30,
-          "deceleration": 1600,
           "ignoreDefaultControls": true,
           "maxSpeed": 800,
           "movementAngleOffset": 0,
@@ -258,19 +331,177 @@
         "lineHeight": 0,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "WinText",
+      "persistentUuid": "c842b78b-a5ff-4ffa-99aa-a6b462c80294",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "retro-pixel-cute-prop.ttf",
+      "textAlignment": "left",
+      "characterSize": 80,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "retro-pixel-cute-prop.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 80,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "PowderedSugar",
+      "persistentUuid": "8ea5e16c-c50b-42a2-a5e1-5705cf747651",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/powderedsugar.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 10,
+                        "y": 9
+                      },
+                      {
+                        "x": 63,
+                        "y": 9
+                      },
+                      {
+                        "x": 63,
+                        "y": 55
+                      },
+                      {
+                        "x": 10,
+                        "y": 55
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "InstructionText",
+      "persistentUuid": "8aad263d-9e9c-4209-9484-79caa9101ffd",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "A-D to move Left and Right",
+      "font": "retro-pixel-cute-prop.ttf",
+      "textAlignment": "left",
+      "characterSize": 80,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "A-D to move Left and Right",
+        "font": "retro-pixel-cute-prop.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 80,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "Cupcake"
+        "objectName": "Snowball"
       },
       {
-        "objectName": "CupcakeCatcher"
+        "objectName": "SnowCatcher"
       },
       {
         "objectName": "ScoreText"
+      },
+      {
+        "objectName": "WinText"
+      },
+      {
+        "objectName": "PowderedSugar"
+      },
+      {
+        "objectName": "InstructionText"
       }
     ]
   },
@@ -294,7 +525,7 @@
             "value": "AddForceXY"
           },
           "parameters": [
-            "Cupcake",
+            "Snowball",
             "0",
             "25",
             "1"
@@ -305,9 +536,9 @@
             "value": "SetX"
           },
           "parameters": [
-            "CupcakeCatcher",
+            "SnowCatcher",
             "=",
-            "clamp(CupcakeCatcher.X(), 0, 1920 - CupcakeCatcher.Width())"
+            "clamp(SnowCatcher.X(), 0, 1920 - SnowCatcher.Width())"
           ]
         }
       ]
@@ -323,6 +554,26 @@
             "DropTimer",
             ">=",
             "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "COMPLETE",
+            "=",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "GameStart",
+            "True",
+            ""
           ]
         }
       ],
@@ -343,7 +594,7 @@
           },
           "parameters": [
             "",
-            "Cupcake",
+            "Snowball",
             "RandomInRange(0, SceneWindowWidth())",
             "-100",
             "\"Cupcake\""
@@ -354,10 +605,10 @@
             "value": "ScalableCapability::ScalableBehavior::SetValue"
           },
           "parameters": [
-            "Cupcake",
+            "Snowball",
             "Scale",
             "=",
-            "3"
+            "2"
           ]
         }
       ]
@@ -373,6 +624,16 @@
             "",
             "\"a\""
           ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "GameStart",
+            "True",
+            ""
+          ]
         }
       ],
       "actions": [
@@ -381,7 +642,7 @@
             "value": "TopDownMovementBehavior::SimulateLeftKey"
           },
           "parameters": [
-            "CupcakeCatcher",
+            "SnowCatcher",
             "TopDownMovement"
           ]
         }
@@ -398,6 +659,16 @@
             "",
             "\"d\""
           ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "GameStart",
+            "True",
+            ""
+          ]
         }
       ],
       "actions": [
@@ -406,7 +677,7 @@
             "value": "TopDownMovementBehavior::SimulateRightKey"
           },
           "parameters": [
-            "CupcakeCatcher",
+            "SnowCatcher",
             "TopDownMovement"
           ]
         }
@@ -420,8 +691,8 @@
             "value": "CollisionNP"
           },
           "parameters": [
-            "CupcakeCatcher",
-            "Cupcake",
+            "SnowCatcher",
+            "Snowball",
             "",
             "",
             ""
@@ -440,7 +711,7 @@
             "value": "Delete"
           },
           "parameters": [
-            "Cupcake",
+            "Snowball",
             ""
           ]
         },
@@ -449,7 +720,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "CupcakeCount",
+            "SnowballCount",
             "+",
             "1"
           ]
@@ -462,7 +733,202 @@
             "ScoreText",
             "Text",
             "=",
-            "\"Score: \" + CupcakeCount"
+            "\"Score: \" + SnowballCount"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosY"
+          },
+          "parameters": [
+            "Snowball",
+            "=",
+            "1200"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Snowball",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "SnowballCount",
+            ">=",
+            "20"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "COMPLETE",
+            "True",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "COMPLETE",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "EndTimer",
+            "+",
+            "TimeDelta()"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "WinText",
+            "Text",
+            "=",
+            "\"You got the Powdered Sugar!!\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "PowderedSugar",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "PowderedSugar",
+            "=",
+            "780",
+            "=",
+            "300"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "EndTimer",
+                ">=",
+                "3"
+              ]
+            }
+          ],
+          "actions": []
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "GameStart",
+            "False",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "GameStartTimer",
+            "+",
+            "TimeDelta()"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "GameStartTimer",
+                ">=",
+                "4"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "GameStart",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "InstructionText",
+                ""
+              ]
+            }
           ]
         }
       ]

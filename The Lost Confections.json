@@ -1370,6 +1370,38 @@
         "name": "assets/playersprite/NewSprite.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/snowball.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/snowball.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Snowball.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Snowball.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Snowball2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Snowball2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Snowball.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Snowball.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },

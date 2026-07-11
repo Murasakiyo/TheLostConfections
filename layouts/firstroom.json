@@ -29,31 +29,37 @@
   "variables": [
     {
       "name": "CurrentNPC",
-      "persistentUuid": "8daaea3c-cee3-425a-b622-65da392ea331",
+      "persistentUuid": "694975d2-a9d5-46db-adf5-eaf4b8792f39",
       "type": "string",
       "value": "None"
     },
     {
       "name": "StopScreen",
-      "persistentUuid": "e4886e77-2cfa-4093-9298-c46ecd18c4c2",
+      "persistentUuid": "2a826e40-2a0a-4647-a802-d9e591584e28",
       "type": "boolean",
       "value": false
     },
     {
+      "name": "VanillaTimer",
+      "persistentUuid": "26cc595f-79e8-42a4-814a-fcbc0ebc68ae",
+      "type": "number",
+      "value": 0
+    },
+    {
       "name": "CurrentRoom",
-      "persistentUuid": "1fdd4225-83cd-49d8-baef-42e03ec04f5d",
+      "persistentUuid": "ea343088-b755-4112-b855-4b1b337f7021",
       "type": "string",
       "value": "None"
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "11ff404f-2d91-4d76-9310-e16987445b42",
+      "persistentUuid": "ba30172a-29dd-4c5c-a5c7-cbfe6c06dce8",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartVanillaTimer",
-      "persistentUuid": "0736ea20-2a6a-4b45-bd69-f5b33df96b23",
+      "persistentUuid": "153df375-dbd9-42ae-806e-2441de46396f",
       "type": "boolean",
       "value": false
     }

@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3645833333333343,
+    "zoomFactor": 0.3895856273827295,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,37 +29,49 @@
   "variables": [
     {
       "name": "JumpTimer",
-      "persistentUuid": "8c3b0b6d-18d8-42f1-a236-c8547c096479",
+      "persistentUuid": "16a472c2-52f7-47d6-aa9b-6ff2a9a66f76",
       "type": "number",
       "value": 0
     },
     {
       "name": "GunCooldown",
-      "persistentUuid": "a014bada-7027-42a9-8495-03e4c6951b32",
+      "persistentUuid": "598cc031-54a6-49a5-9dcb-ee11098066b6",
       "type": "number",
       "value": 0
     },
     {
       "name": "ShotGun",
-      "persistentUuid": "074901ef-c48f-49a5-a5a6-2b02eafa1ac3",
+      "persistentUuid": "12b34c45-7fc9-4594-8a01-69b8e57c5951",
       "type": "boolean",
       "value": false
     },
     {
       "name": "HitCount",
-      "persistentUuid": "ce62f035-70d8-437b-b13f-edd8f671f408",
+      "persistentUuid": "433ee8d7-5df5-489e-a243-931b147bc011",
       "type": "number",
       "value": 0
     },
     {
       "name": "FrogDeath",
-      "persistentUuid": "a63bd5d4-c7be-4392-b3c0-4e7c8d914c62",
+      "persistentUuid": "b24d2505-ccef-4396-831e-c0a6d3ab2f20",
       "type": "boolean",
       "value": false
     },
     {
       "name": "DeathTimer",
-      "persistentUuid": "95c6797a-b5a1-493a-8ef2-0125036ec212",
+      "persistentUuid": "ecff473f-a24d-4ced-8ac4-39a71286295c",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "GameStart",
+      "persistentUuid": "74a63900-02f6-4267-8eec-354624093bda",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "GameStartTimer",
+      "persistentUuid": "3a1727e5-e1f6-4dcb-8a9d-c6dd75d1870e",
       "type": "number",
       "value": 0
     }
@@ -115,6 +127,55 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "WinText",
+      "persistentUuid": "53a1f1f0-f4c3-43fd-8ae1-e4f91f0ffb3c",
+      "width": 0,
+      "x": 387,
+      "y": 86,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 256,
+      "keepRatio": true,
+      "layer": "",
+      "name": "MeltedChocolate",
+      "persistentUuid": "1ea7873b-9194-41ac-ac36-27a51d354fe6",
+      "width": 256,
+      "x": 940,
+      "y": -412,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "InstructionText",
+      "persistentUuid": "fd9a5dc8-bc05-4562-aacc-70ab1c515d10",
+      "width": 0,
+      "x": 487,
+      "y": 342,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -129,14 +190,14 @@
       "effects": [],
       "behaviors": [
         {
+          "acceleration": 8000,
+          "deceleration": 4000,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "acceleration": 800,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 0,
           "customIsometryAngle": 30,
-          "deceleration": 1600,
           "ignoreDefaultControls": true,
           "maxSpeed": 800,
           "movementAngleOffset": 0,
@@ -454,6 +515,155 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "WinText",
+      "persistentUuid": "fbc6aa7b-64df-4e13-8f52-ca1c43d84592",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "retro-pixel-cute-prop.ttf",
+      "textAlignment": "left",
+      "characterSize": 80,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "retro-pixel-cute-prop.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 80,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "MeltedChocolate",
+      "persistentUuid": "98389a47-3092-4925-ac8a-df62a03b58c5",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ingredient/meltedchoco.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 2
+                      },
+                      {
+                        "x": 51,
+                        "y": 2
+                      },
+                      {
+                        "x": 51,
+                        "y": 63
+                      },
+                      {
+                        "x": 9,
+                        "y": 63
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "InstructionText",
+      "persistentUuid": "6e293633-5038-47ce-98b4-f28ee14915ae",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "W-S to move Up and Down\n\nLeft-Click to Shoot",
+      "font": "retro-pixel-cute-prop.ttf",
+      "textAlignment": "left",
+      "characterSize": 80,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "W-S to move Up and Down\n\nLeft-Click to Shoot",
+        "font": "retro-pixel-cute-prop.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 80,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -461,6 +671,12 @@
     "children": [
       {
         "objectName": "FrogShooter"
+      },
+      {
+        "objectName": "WinText"
+      },
+      {
+        "objectName": "InstructionText"
       },
       {
         "objectName": "Bullet"
@@ -473,13 +689,27 @@
       },
       {
         "objectName": "FrogDeathParticle"
+      },
+      {
+        "objectName": "MeltedChocolate"
       }
     ]
   },
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "GameStart",
+            "True",
+            ""
+          ]
+        }
+      ],
       "actions": [
         {
           "type": {
@@ -524,6 +754,16 @@
             "",
             "\"w\""
           ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "GameStart",
+            "True",
+            ""
+          ]
         }
       ],
       "actions": [
@@ -558,6 +798,16 @@
             "",
             "\"s\""
           ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "GameStart",
+            "True",
+            ""
+          ]
         }
       ],
       "actions": [
@@ -586,33 +836,22 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"Space\""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
             "value": "NumberVariable"
           },
           "parameters": [
             "JumpTimer",
             ">=",
             "0.5"
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "GameStart",
+            "True",
+            ""
           ]
         }
       ],
@@ -671,6 +910,16 @@
             "value": "BuiltinCommonInstructions::Once"
           },
           "parameters": []
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "GameStart",
+            "True",
+            ""
+          ]
         }
       ],
       "actions": [
@@ -911,6 +1160,119 @@
               },
               "parameters": [
                 "Frog",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "WinText",
+                "Text",
+                "=",
+                "\"You got the Melted Chocolate!!\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "MeltedChocolate",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "MeltedChocolate",
+                "=",
+                "840",
+                "=",
+                "280"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "DeathTimer",
+                ">=",
+                "3.2"
+              ]
+            }
+          ],
+          "actions": []
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "GameStart",
+            "False",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "GameStartTimer",
+            "+",
+            "TimeDelta()"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "GameStartTimer",
+                ">=",
+                "4"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "GameStart",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "InstructionText",
                 ""
               ]
             }
