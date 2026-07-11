@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4027225833325921,
+    "zoomFactor": 0.30887412163426625,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,43 +29,36 @@
   "variables": [
     {
       "name": "DropTimer",
-      "persistentUuid": "3bcbc001-1709-4b09-9926-1e0711063867",
       "type": "number",
       "value": 0
     },
     {
       "name": "CupcakeCount",
-      "persistentUuid": "c2db1190-b1e4-4fed-ad2a-b0fe94113494",
       "type": "number",
       "value": 0
     },
     {
       "name": "SnowballCount",
-      "persistentUuid": "32afaf69-4edf-4e79-86dd-6a6783a2b19e",
       "type": "number",
       "value": 0
     },
     {
       "name": "COMPLETE",
-      "persistentUuid": "e181f97e-77fb-4972-9707-424aceebc7a8",
       "type": "boolean",
       "value": false
     },
     {
       "name": "EndTimer",
-      "persistentUuid": "f031d355-3c52-4d9a-9515-7da37bd8ed7b",
       "type": "number",
       "value": 0
     },
     {
       "name": "GameStart",
-      "persistentUuid": "67952936-47a4-4814-a40f-afd5c462dcac",
       "type": "boolean",
       "value": false
     },
     {
       "name": "GameStartTimer",
-      "persistentUuid": "3b01e85f-f9b5-41b1-9b97-9927626837cb",
       "type": "number",
       "value": 0
     }
@@ -73,27 +66,10 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 400,
-      "keepRatio": true,
-      "layer": "",
-      "name": "SnowCatcher",
-      "persistentUuid": "dd5f2251-01b9-4e08-84de-90821f0f9f21",
-      "width": 325,
-      "x": 860,
-      "y": 680,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "Instructions",
       "name": "ScoreText",
       "persistentUuid": "6ca94fa2-5927-4040-92c7-538e512ddb59",
       "width": 0,
@@ -142,13 +118,46 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "Instructions",
       "name": "InstructionText",
       "persistentUuid": "8b80bd08-1527-4676-84a3-ee308f64f4de",
       "width": 0,
       "x": 426,
       "y": 349,
       "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 438.3076923076925,
+      "keepRatio": true,
+      "layer": "Snow",
+      "name": "SnowCatcher",
+      "persistentUuid": "03c95d4c-6c55-45e3-9c8e-d76a993c0af8",
+      "width": 518,
+      "x": 702,
+      "y": 647,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "background",
+      "persistentUuid": "982de765-814a-422f-bc17-ea935b0e1e24",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": -7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -227,10 +236,10 @@
       "effects": [],
       "behaviors": [
         {
-          "acceleration": 8000,
-          "deceleration": 4000,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "acceleration": 8000,
+          "deceleration": 4000,
           "allowDiagonals": true,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -245,7 +254,7 @@
       ],
       "animations": [
         {
-          "name": "",
+          "name": "catch",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -254,7 +263,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/playersprite/NewSprite.png",
+                  "image": "assets/playersprite/bowlstanley.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -270,20 +279,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 16,
-                        "y": 25
+                        "x": 18,
+                        "y": 56
                       },
                       {
-                        "x": 600,
-                        "y": 25
+                        "x": 630,
+                        "y": 56
                       },
                       {
-                        "x": 600,
-                        "y": 735
+                        "x": 630,
+                        "y": 550
                       },
                       {
-                        "x": 16,
-                        "y": 735
+                        "x": 18,
+                        "y": 550
                       }
                     ]
                   ]
@@ -486,6 +495,23 @@
         "lineHeight": 0,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 0,
+      "height": 1080,
+      "leftMargin": 0,
+      "name": "background",
+      "persistentUuid": "746e58ec-9fdf-4d42-98ac-4aff6495f9bf",
+      "rightMargin": 0,
+      "texture": "assets/backgrounds/snowsky.png",
+      "tiled": false,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 1920,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -508,6 +534,9 @@
       },
       {
         "objectName": "InstructionText"
+      },
+      {
+        "objectName": "background"
       }
     ]
   },
@@ -603,7 +632,7 @@
             "Snowball",
             "RandomInRange(0, SceneWindowWidth())",
             "-100",
-            "\"Cupcake\""
+            "\"Snow\""
           ]
         },
         {
@@ -1018,7 +1047,115 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "Cupcake",
+      "name": "Player",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Snow",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Instructions",
       "renderingType": "",
       "visibility": true,
       "cameras": [],

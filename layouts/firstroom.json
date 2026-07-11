@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4027225833326893,
+    "zoomFactor": 0.20069741314554726,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,49 +29,41 @@
   "variables": [
     {
       "name": "CurrentNPC",
-      "persistentUuid": "8d3d8744-fc98-4b88-8a5a-595908fb3f6b",
       "type": "string",
       "value": "None"
     },
     {
       "name": "StopScreen",
-      "persistentUuid": "9b98bf32-ec3c-4104-9b13-f8480da92f57",
       "type": "boolean",
       "value": false
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "26cc595f-79e8-42a4-814a-fcbc0ebc68ae",
       "type": "number",
       "value": 0
     },
     {
       "name": "CurrentRoom",
-      "persistentUuid": "c61953aa-7ee1-48a9-a567-853087e94da7",
       "type": "string",
       "value": "None"
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "923047b8-bd2a-4ac7-9750-08075f95662a",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartVanillaTimer",
-      "persistentUuid": "83c48860-b2a8-433e-9a3d-35a86c5091f6",
       "type": "boolean",
       "value": false
     },
     {
       "name": "LastPositionX",
-      "persistentUuid": "3e62ae9c-761a-4fa9-a41c-0872e188032c",
       "type": "number",
       "value": 934
     },
     {
       "name": "LastPositionY",
-      "persistentUuid": "c0c21250-2689-4d4f-884c-13e2ff4ce7bd",
       "type": "number",
       "value": 683
     }
@@ -699,34 +691,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 135.67999999999998,
-      "keepRatio": true,
-      "layer": "Player + NPC",
-      "name": "Ingredients",
-      "persistentUuid": "93f401bf-1fcd-409e-aaf3-b36ed160e0dc",
-      "width": 53,
-      "x": -1998,
-      "y": 809,
-      "zOrder": 29,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 2
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Name",
-          "type": "string",
-          "value": "vanilla"
-        }
-      ]
     }
   ],
   "objects": [
@@ -1181,55 +1145,6 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "location",
-      "persistentUuid": "98ce57ab-ccab-4364-8e5e-1bcdddf069f7",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "string": "Main Circus Room",
-      "font": "retro-pixel-cute-prop.ttf",
-      "textAlignment": "left",
-      "characterSize": 80,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": true,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Main Circus Room",
-        "font": "retro-pixel-cute-prop.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 80,
-        "lineHeight": 0,
-        "color": "0;0;0"
-      }
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
       "name": "FoundVanillaText",
       "persistentUuid": "9bf4f833-6612-469d-947b-8cd0c0e0f98c",
       "smoothed": true,
@@ -1269,6 +1184,41 @@
         "lineHeight": 0,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Transition",
+      "persistentUuid": "a75f8c9a-c10d-459f-a99d-e05f5f7d9d1f",
+      "type": "PrimitiveDrawing::Drawer",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlashTransitionPainter",
+          "type": "FlashTransitionPainter::FlashTransitionPainter",
+          "Progress": 0,
+          "Duration": 0,
+          "Type": "",
+          "Direction": "",
+          "MaxOpacity": 255
+        }
+      ],
+      "fillOpacity": 255,
+      "outlineSize": 1,
+      "outlineOpacity": 255,
+      "absoluteCoordinates": false,
+      "clearBetweenFrames": true,
+      "antialiasing": "none",
+      "fillColor": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "outlineColor": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1293,7 +1243,7 @@
         "objectName": "Doors"
       },
       {
-        "objectName": "location"
+        "objectName": "Transition"
       }
     ]
   },
@@ -1313,6 +1263,17 @@
       "actions": [
         {
           "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "location",
+            "Text",
+            "=",
+            "\"Main Circus Room\""
+          ]
+        },
+        {
+          "type": {
             "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
           },
           "parameters": [
@@ -1322,7 +1283,7 @@
             "0",
             "\"linear\"",
             "2",
-            ""
+            "yes"
           ]
         },
         {
@@ -1471,6 +1432,7 @@
       "target": "Player Movement"
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::ForEach",
       "object": "childnpc",
       "conditions": [
@@ -1731,16 +1693,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"StanleyRoom\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
@@ -1776,6 +1728,16 @@
                   "parameters": [
                     "LastPositionY",
                     "\"LastPositionY\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"StanleyRoom\"",
                     ""
                   ]
                 }
@@ -2075,7 +2037,37 @@
         },
         {
           "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::Name"
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "CurrentLVL",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Ingredients",
+            "-1998",
+            "809",
+            "\"Player + NPC\""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
           },
           "parameters": [
             "Ingredients",
@@ -2086,7 +2078,22 @@
         },
         {
           "type": {
-            "inverted": true,
+            "value": "ResizableCapability::ResizableBehavior::SetSize"
+          },
+          "parameters": [
+            "Ingredients",
+            "Resizable",
+            "53",
+            "135"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "CollisionNP"
           },
           "parameters": [
@@ -2096,15 +2103,59 @@
             "",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::Name"
+          },
+          "parameters": [
+            "Ingredients",
+            "Animation",
+            "=",
+            "\"vanilla\""
+          ]
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "FoundVanillaText",
+            "Text",
+            "=",
+            "\"You found Vanilla Extract!\""
+          ]
+        },
         {
           "type": {
             "value": "Show"
           },
           "parameters": [
             "Ingredients",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "Ingredients",
+            "=",
+            "-2040",
+            "=",
+            "690"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "StartVanillaTimer",
+            "True",
             ""
           ]
         }
@@ -2143,78 +2194,6 @@
           "parameters": [
             "Ingredients",
             "Tween"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "Stanley",
-            "Ingredients",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "StringObjectVariable"
-          },
-          "parameters": [
-            "Ingredients",
-            "Name",
-            "=",
-            "\"vanilla\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "FoundVanillaText",
-            "Text",
-            "=",
-            "\"You found Vanilla Extract!!\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Show"
-          },
-          "parameters": [
-            "Ingredients",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetXY"
-          },
-          "parameters": [
-            "Ingredients",
-            "=",
-            "-2040",
-            "=",
-            "690"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "StartVanillaTimer",
-            "True",
-            ""
           ]
         }
       ]
@@ -2636,6 +2615,60 @@
           }
         }
       ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Transition",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
@@ -2646,6 +2679,10 @@
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FlashTransitionPainter",
+      "type": "FlashTransitionPainter::FlashTransitionPainter"
     },
     {
       "name": "Flippable",
