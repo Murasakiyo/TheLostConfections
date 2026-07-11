@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.11420623007497321,
+    "zoomFactor": 0.4027225833326893,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,43 +29,43 @@
   "variables": [
     {
       "name": "CurrentNPC",
-      "persistentUuid": "d5b8bd4f-2a97-4d54-ae45-4182c1a4569c",
+      "persistentUuid": "8d3d8744-fc98-4b88-8a5a-595908fb3f6b",
       "type": "string",
       "value": "None"
     },
     {
       "name": "StopScreen",
-      "persistentUuid": "26057595-05db-4e65-99ce-cd89be724946",
+      "persistentUuid": "9b98bf32-ec3c-4104-9b13-f8480da92f57",
       "type": "boolean",
       "value": false
     },
     {
       "name": "CurrentRoom",
-      "persistentUuid": "b5269763-20ea-4ce7-adfe-96a013098ac8",
+      "persistentUuid": "c61953aa-7ee1-48a9-a567-853087e94da7",
       "type": "string",
       "value": "None"
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "ea388392-dd85-43f6-92a1-8976167e3102",
+      "persistentUuid": "923047b8-bd2a-4ac7-9750-08075f95662a",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartVanillaTimer",
-      "persistentUuid": "91102d38-dde5-4683-95ea-31cd932c09af",
+      "persistentUuid": "83c48860-b2a8-433e-9a3d-35a86c5091f6",
       "type": "boolean",
       "value": false
     },
     {
       "name": "LastPositionX",
-      "persistentUuid": "1bf1b6f0-a951-4edf-b6cb-c65ea01a6d8e",
+      "persistentUuid": "3e62ae9c-761a-4fa9-a41c-0872e188032c",
       "type": "number",
       "value": 934
     },
     {
       "name": "LastPositionY",
-      "persistentUuid": "474b72e6-fc66-464e-8331-a9e059b80d84",
+      "persistentUuid": "c0c21250-2689-4d4f-884c-13e2ff4ce7bd",
       "type": "number",
       "value": 683
     }
@@ -598,39 +598,6 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 0,
-      "height": 221.1428571428573,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "Basket",
-      "persistentUuid": "2462f860-0663-49a5-87d3-31956a338b44",
-      "width": 172,
-      "x": 1702,
-      "y": 31,
-      "zOrder": 14,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "Settings",
-      "persistentUuid": "38f2add7-c579-4751-9e74-72e82f973c1a",
-      "width": 0,
-      "x": 48,
-      "y": 64,
-      "zOrder": 18,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 1,
       "height": 90,
       "keepRatio": true,
@@ -644,155 +611,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 173.99999999999994,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "Instructions",
-      "persistentUuid": "00caf3b9-9856-4456-810c-d363ebc4be7d",
-      "width": 174,
-      "x": 1492,
-      "y": 67,
-      "zOrder": 20,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 96.00000000000006,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "InventorySlot",
-      "persistentUuid": "08dabd45-7f4a-4090-997b-c850255e3366",
-      "width": 96,
-      "x": 1756,
-      "y": 272,
-      "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 96.00000000000006,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "InventorySlot",
-      "persistentUuid": "53c3051b-26a3-45f5-b4a1-db025479b7a4",
-      "width": 96,
-      "x": 1756,
-      "y": 384,
-      "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "SlotNum",
-          "type": "number",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 96.00000000000006,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "InventorySlot",
-      "persistentUuid": "e1da2c75-5b3c-4490-a999-7bd5648bf300",
-      "width": 96,
-      "x": 1756,
-      "y": 497,
-      "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "SlotNum",
-          "type": "number",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 96.00000000000006,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "InventorySlot",
-      "persistentUuid": "21321f9d-208b-4444-8c8b-185a30c59e0b",
-      "width": 96,
-      "x": 1756,
-      "y": 610,
-      "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "SlotNum",
-          "type": "number",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 96.00000000000006,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "InventorySlot",
-      "persistentUuid": "de1ce8a3-e147-417f-8b85-58e47aa5ca77",
-      "width": 96,
-      "x": 1756,
-      "y": 727,
-      "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "SlotNum",
-          "type": "number",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 96.00000000000006,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "InventorySlot",
-      "persistentUuid": "fca00abe-3e16-4f93-be29-8c9c96746c8d",
-      "width": 96,
-      "x": 1756,
-      "y": 844,
-      "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "SlotNum",
-          "type": "number",
-          "value": 5
-        }
-      ]
     },
     {
       "angle": 0,
@@ -1911,7 +1729,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"Sprinkles Minigame\"",
+                    "\"StanleyRoom\"",
                     ""
                   ]
                 },
@@ -2055,7 +1873,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"Fly Shooting  Minigame\"",
+                    "\"TorresRoom\"",
                     ""
                   ]
                 },

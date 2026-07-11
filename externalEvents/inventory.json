@@ -3,7 +3,6 @@
   "name": "Inventory",
   "events": [
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -29,6 +28,166 @@
       ],
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Basket",
+                "1702",
+                "31",
+                "\"Menu\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "InventorySlot",
+                "1756",
+                "272",
+                "\"Menu\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "InventorySlot",
+                "1756",
+                "384",
+                "\"Menu\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "InventorySlot",
+                "1756",
+                "497",
+                "\"Menu\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "InventorySlot",
+                "1756",
+                "610",
+                "\"Menu\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "InventorySlot",
+                "1756",
+                "727",
+                "\"Menu\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "InventorySlot",
+                "1756",
+                "844",
+                "\"Menu\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Instructions",
+                "1492",
+                "67",
+                "\"Menu\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Settings",
+                "48",
+                "64",
+                "\"Menu\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetSize"
+              },
+              "parameters": [
+                "Basket",
+                "Resizable",
+                "172",
+                "211"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetSize"
+              },
+              "parameters": [
+                "Instructions",
+                "Resizable",
+                "174",
+                "173"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetSize"
+              },
+              "parameters": [
+                "Settings",
+                "Resizable",
+                "100",
+                "100"
+              ]
+            }
+          ]
+        },
+        {
           "folded": true,
           "type": "BuiltinCommonInstructions::ForEach",
           "object": "InventorySlot",
@@ -36,12 +195,13 @@
           "actions": [
             {
               "type": {
-                "value": "SetStringVariable"
+                "value": "ResizableCapability::ResizableBehavior::SetSize"
               },
               "parameters": [
-                "Inventory[InventorySlot.SlotNum].Name",
-                "=",
-                "\"Empty\""
+                "InventorySlot",
+                "Resizable",
+                "96",
+                "96"
               ]
             },
             {
@@ -285,14 +445,6 @@
               },
               "parameters": [
                 "InventorySlot"
-              ]
-            },
-            {
-              "type": {
-                "value": "Hide"
-              },
-              "parameters": [
-                "Ingredients"
               ]
             },
             {
