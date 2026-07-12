@@ -26,7 +26,14 @@
     "gameEditorMode": "instances-editor"
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "Mount",
+      "persistentUuid": "a9e7cdb4-819f-4c33-9deb-84c144459960",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -533,6 +540,16 @@
               },
               "parameters": [
                 "CurrentLVL",
+                "=",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "MountainMinigame",
                 "=",
                 "2"
               ]

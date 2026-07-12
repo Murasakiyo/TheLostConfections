@@ -29,31 +29,37 @@
   "variables": [
     {
       "name": "WrongAnswerCount",
+      "persistentUuid": "f89c8b0d-be3d-4b2a-836a-a83cabe7a088",
       "type": "number",
       "value": 0
     },
     {
       "name": "DialogueState",
+      "persistentUuid": "2cf54e94-dd68-4be0-96d0-79d1eb121c25",
       "type": "number",
       "value": 0
     },
     {
       "name": "EndingType",
+      "persistentUuid": "b1eb535f-f75d-4f38-a961-074043ff6a35",
       "type": "string",
       "value": ""
     },
     {
       "name": "QNAFinished",
+      "persistentUuid": "04e3727c-9ec1-465d-8dcd-3464e47e2ef3",
       "type": "boolean",
       "value": false
     },
     {
       "name": "TextColor",
+      "persistentUuid": "87696fb7-ce2f-4866-a76e-ce53b79443ff",
       "type": "string",
       "value": ""
     },
     {
       "name": "Stop",
+      "persistentUuid": "dc5f76c9-7ff0-4d71-859d-d5725aaae0c5",
       "type": "boolean",
       "value": false
     }
@@ -1374,6 +1380,16 @@
           "parameters": [
             "Ingredients",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "TooManyFruits",
+            "+",
+            "1"
           ]
         }
       ]

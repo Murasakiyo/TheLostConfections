@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3411856023473459,
+    "zoomFactor": 0.3300560049165934,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -44,26 +44,9 @@
       "name": "LevelSelectorButton",
       "persistentUuid": "7356a912-8966-496f-abd0-fecd3561e6d3",
       "width": 150,
-      "x": 1676,
-      "y": 35,
+      "x": 1681,
+      "y": 835,
       "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 180,
-      "keepRatio": true,
-      "layer": "",
-      "name": "NextLevelButton",
-      "persistentUuid": "106e7f5b-bf8f-4bb9-94b1-4a7324c1a295",
-      "width": 180,
-      "x": 1652,
-      "y": 837,
-      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -77,8 +60,8 @@
       "name": "NextLevelText",
       "persistentUuid": "0e18d98f-725f-4d2f-9c37-77e9aeb438ef",
       "width": 0,
-      "x": 1049,
-      "y": 870,
+      "x": 1124,
+      "y": 875,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -540,49 +523,6 @@
             "value": "IsCursorOnObject"
           },
           "parameters": [
-            "NextLevelButton",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "MouseButtonFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"Left\""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"Fly Shooting  Minigame\"",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "IsCursorOnObject"
-          },
-          "parameters": [
             "LevelSelectorButton",
             "",
             "",
@@ -591,7 +531,7 @@
         },
         {
           "type": {
-            "value": "MouseButtonFromTextPressed"
+            "value": "MouseButtonFromTextReleased"
           },
           "parameters": [
             "",

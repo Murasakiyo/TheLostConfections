@@ -98,5 +98,65 @@
 			"y": 88
 		},
 		"colorID": 0
+	},
+	{
+		"title": "LVL1GoodEnding",
+		"tags": "",
+		"body": "...A cupcake?\r\nYou made this... for me?\r\n...It smells like coffee.\r\nMother always made coffee in the mornings. Whenever I smelled it... it meant she was awake.\r\nShe'd sit with mus before school and tell us everything was going to be okay. Even if Dad came home angry the night before...\r\nThe smell of coffee always made the house feel a little safer...\r\n...I haven't thought about that in a long time.\r\n...\r\nThank you.\r\nMaybe... when we wake up tomorrow... we'll remember the smell of coffee instead of being scared of him.\r\n...I think I can do that.\r\n<<Finished>><<Awaken>> \r\nEnd",
+		"position": {
+			"x": 433,
+			"y": 345
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LVL1BadEnding",
+		"tags": "",
+		"body": "...Is this for us?\r\nA cupcake...\r\nIt looks so nice... But why does it smell like that? That sweet, fruity smell...\r\nNo...\r\nNO!\r\nI REMEMBER IT ALL!\r\nWhenever father came home with that smell, I knew he wasn't himself anymore!\r\nThe whole house would become quiet... We would hide and wait until everything was over. \r\nI used to think that if we stayed out of his way...he would leave us alone.\"\r\nBut we were always scared...\r\nWE DON'T WANT TO FEEL THAT WAY ANYMORE!\r\nWE DON'T WANT THIS CUPCAKE!\r\nI DON'T WANT TO REMEMBER HIM!\r\n<<Finished>><<Awaken>> \r\nend",
+		"position": {
+			"x": 650,
+			"y": 355
+		},
+		"colorID": 0
+	},
+	{
+		"title": "StartLVL2",
+		"tags": "",
+		"body": "...Do I really have to wake up tomorrow?\r\nTomorrow is my birthday... but I don't want it to be.\r\nEveryone says birthdays are supposed to be fun...but every year my friends tell me to close my eyes and make a wish.\r\n...Then they push my face into the birthday cake.\r\nThey all laugh but I don't think it's funny!\r\nThe cake gets all over my face, and especially the chocolate frosting, ugh.\r\nI don't like chocolate cake anymore! I don't even want to look at one!\r\nI wish they would just let me have a normal birthday...\r\n...I just wish tomorrow would never come.\r\n<<Finished>><<Ask>> \r\nend",
+		"position": {
+			"x": -71,
+			"y": 561
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LVL2Ask",
+		"tags": "",
+		"body": "Who needs birthdays anyways?\n<<Finished>>\nend",
+		"position": {
+			"x": 185,
+			"y": 567
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LVL2BadEnding",
+		"tags": "",
+		"body": "...Seriously?\r\nA chocolate cake? That's what you came up with?\r\nWow... amazing timing.\r\nEveryone always thinks cake makes everything better! Like it's some kind of magic that fixes everything.\r\nJust put a cake in front of me and suddenly I'm supposed to smile?\r\nAre you also making fun of me Stanley?!\r\nI don't want another reminder. I don't want another birthday cake!\r\n...\r\n...I don't want tomorrow to come.\r\n<<Finished>><<Awaken>> \r\nend",
+		"position": {
+			"x": 431,
+			"y": 574
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LVL2GoodEnding",
+		"tags": "",
+		"body": "...Wait. This isn't like the others.\r\nIt's not chocolate...\r\nHuh.\r\nIt's vanilla and lemon flavoured?\r\nI didn't think a cupcake could actually surprise me...\r\n...\r\nIt tastes nice.\r\nIt's sweet... but it doesn't feel overwhelming. The lemon makes it feel different.\r\nIs this your gift to me for my birthday, Stanley?\r\nI guess I always thought birthdays were ruined forever. But maybe...\r\nMaybe it wasn't the birthday that was the problem. Maybe it was just the people who made it feel that way.\r\n...\r\nNext time, I think I'll celebrate with people who actually care about me.\r\nMaybe I don't need those friends around. I can celebrate with my parents instead. People who won't laugh when I'm scared.\r\n...\r\nI think I can look forward to my birthday again.\r\nThank you.\r\n<<Finished>><<Awaken>>\r\nend",
+		"position": {
+			"x": 659,
+			"y": 574
+		},
+		"colorID": 0
 	}
 ]

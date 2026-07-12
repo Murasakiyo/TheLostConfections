@@ -873,6 +873,26 @@
             "=",
             "300"
           ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "Inventory.Sugar",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "MountainMinigame",
+            "True",
+            ""
+          ]
         }
       ],
       "events": [

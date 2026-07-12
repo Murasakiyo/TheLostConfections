@@ -210,6 +210,73 @@
             "value": "DialogueTree::ClearState"
           },
           "parameters": []
+        },
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "InventoryCupcake",
+            "=",
+            "\"None\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "PlatformerMinigame",
+            "False",
+            "\"None\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "FrogMinigame",
+            "False",
+            "\"None\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "KrieQNAMinigame",
+            "False",
+            "\"None\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "TooManyFruits",
+            ">",
+            "3"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "TooManyFruits",
+            "=",
+            "3"
+          ]
         }
       ]
     }
