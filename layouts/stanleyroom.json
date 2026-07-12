@@ -879,9 +879,19 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "Inventory.Sprinkles",
+            "SprinkleMinigame",
             "False",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "CurrentLVL",
+            "!=",
+            "1"
           ]
         },
         {
@@ -937,9 +947,19 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "Inventory.Sprinkles",
+            "SprinkleMinigame",
             "False",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "CurrentLVL",
+            "!=",
+            "1"
           ]
         }
       ],

@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2796226521839383,
+    "zoomFactor": 0.2987985363606915,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,49 +29,41 @@
   "variables": [
     {
       "name": "JumpTimer",
-      "persistentUuid": "f148dda8-1bca-4dca-b51a-7b9c0b3a367c",
       "type": "number",
       "value": 0
     },
     {
       "name": "GunCooldown",
-      "persistentUuid": "4306ef5d-0ed6-4c2e-9743-15fccb21b7ea",
       "type": "number",
       "value": 0
     },
     {
       "name": "ShotGun",
-      "persistentUuid": "fac8529c-46af-4b5f-a6c9-97ea851d8310",
       "type": "boolean",
       "value": false
     },
     {
       "name": "HitCount",
-      "persistentUuid": "597ec93e-d144-4e15-ada7-2f3cdf4cd782",
       "type": "number",
       "value": 0
     },
     {
       "name": "FrogDeath",
-      "persistentUuid": "30f6d9a1-5c47-4919-b185-10d3f0046dd6",
       "type": "boolean",
       "value": false
     },
     {
       "name": "DeathTimer",
-      "persistentUuid": "967520f2-b06d-4ef4-a902-14e5fe3a4a81",
       "type": "number",
       "value": 0
     },
     {
       "name": "GameStart",
-      "persistentUuid": "2fb7e22e-a422-4e6f-80f6-f11f38c8d21a",
       "type": "boolean",
       "value": false
     },
     {
       "name": "GameStartTimer",
-      "persistentUuid": "327d0b72-26f9-4f8c-bac1-b27c86a7bb8f",
       "type": "number",
       "value": 0
     }
@@ -116,7 +108,7 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "Instruction",
       "name": "WinText",
       "persistentUuid": "53a1f1f0-f4c3-43fd-8ae1-e4f91f0ffb3c",
       "width": 0,
@@ -133,29 +125,13 @@
       "depth": 0,
       "height": 256,
       "keepRatio": true,
-      "layer": "",
+      "layer": "Instruction",
       "name": "MeltedChocolate",
       "persistentUuid": "1ea7873b-9194-41ac-ac36-27a51d354fe6",
       "width": 256,
       "x": 940,
       "y": -412,
       "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "Instruction",
-      "name": "InstructionText",
-      "persistentUuid": "fd9a5dc8-bc05-4562-aacc-70ab1c515d10",
-      "width": 0,
-      "x": 487,
-      "y": 342,
-      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1230,6 +1206,40 @@
             "+",
             "1"
           ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "Frog",
+            "\"255;74;74\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.2\n"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Frog",
+                "\"255;255;255\""
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1360,6 +1370,26 @@
                 "=",
                 "280"
               ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Inventory.MeltedChoco",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "FrogMinigame",
+                "True",
+                ""
+              ]
             }
           ]
         },
@@ -1377,7 +1407,18 @@
               ]
             }
           ],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"TorresRoom\"",
+                ""
+              ]
+            }
+          ]
         }
       ]
     }

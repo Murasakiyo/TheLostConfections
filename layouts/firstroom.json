@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.06944547167666065,
+    "zoomFactor": 0.05326224540999155,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,57 +29,53 @@
   "variables": [
     {
       "name": "StopScreen",
-      "persistentUuid": "a5f94848-0464-42d4-883a-52a36432e2f2",
       "type": "boolean",
       "value": false
     },
     {
       "name": "CurrentNPC",
-      "persistentUuid": "6576ca70-d5b7-409a-8a08-141bd4b24f98",
       "type": "string",
       "value": "None"
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "4b05461d-049f-4282-9c17-35bf1730ba18",
       "type": "number",
       "value": 0
     },
     {
       "name": "CurrentRoom",
-      "persistentUuid": "75b33b04-d699-42e4-9bca-2989e3b25ef0",
       "type": "string",
       "value": "None"
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "982d7095-479b-499c-b42f-7c01c7392d4e",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartVanillaTimer",
-      "persistentUuid": "540a00f8-2d63-41be-8886-4cc5703f5523",
       "type": "boolean",
       "value": false
     },
     {
       "name": "LastPositionX",
-      "persistentUuid": "7b37f3ed-c045-464e-939c-f0d4c8ca95ca",
       "type": "number",
       "value": 934
     },
     {
       "name": "LastPositionY",
-      "persistentUuid": "4ae627b9-e36f-4960-9754-0b8bf9a2c7b0",
       "type": "number",
       "value": 683
     },
     {
       "name": "tutorialpart",
-      "persistentUuid": "fe9270f8-2a67-4b34-bb72-e0182f43b773",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "CompleteLevel",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -451,8 +447,8 @@
       "name": "childnpc",
       "persistentUuid": "02232d08-b888-4ed4-9622-eef708f967d6",
       "width": 180,
-      "x": 1649,
-      "y": 382,
+      "x": 4918,
+      "y": -2808,
       "zOrder": 11,
       "numberProperties": [
         {
@@ -634,8 +630,8 @@
       "name": "DialogueBox",
       "persistentUuid": "76e0e25e-72fb-4419-8a4c-092d138dcc6b",
       "width": 1339,
-      "x": 5244,
-      "y": -2399,
+      "x": 5198,
+      "y": -2755,
       "zOrder": 22,
       "numberProperties": [],
       "stringProperties": [],
@@ -721,6 +717,57 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 198,
+      "keepRatio": true,
+      "layer": "Player + NPC",
+      "name": "childnpc",
+      "persistentUuid": "8769562b-5fc6-4a5d-aad2-3744813fd894",
+      "width": 180,
+      "x": 4683,
+      "y": -2817,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Name",
+          "type": "string",
+          "value": "Level_1Kid"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 190.30000000000004,
+      "keepRatio": true,
+      "layer": "Player + NPC",
+      "name": "childnpc",
+      "persistentUuid": "506fd520-6c27-4f0b-925a-7bd89b9230f7",
+      "width": 173,
+      "x": 4400,
+      "y": -3009,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Name",
+          "type": "string",
+          "value": "Level_2Kid"
+        }
+      ]
     }
   ],
   "objects": [
@@ -1251,55 +1298,6 @@
       }
     },
     {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "Warning",
-      "persistentUuid": "40ca8ec8-d3ad-4d1b-a837-7ec0fe56aace",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "string": "test",
-      "font": "retro-pixel-cute-prop.ttf",
-      "textAlignment": "left",
-      "characterSize": 80,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": true,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "test",
-        "font": "retro-pixel-cute-prop.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 80,
-        "lineHeight": 0,
-        "color": "0;0;0"
-      }
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "tutorialbox",
@@ -1578,9 +1576,6 @@
         "objectName": "Transition"
       },
       {
-        "objectName": "Warning"
-      },
-      {
         "objectName": "tutorialbox"
       }
     ]
@@ -1688,7 +1683,159 @@
       "target": "Player Movement"
     },
     {
-      "folded": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "CurrentLVL",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "StringObjectVariable"
+          },
+          "parameters": [
+            "childnpc",
+            "Name",
+            "=",
+            "\"Tutorialguy\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "childnpc",
+            "=",
+            "1649",
+            "=",
+            "382"
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "childnpc",
+            "Animation",
+            "=",
+            "\"npc_tutorial\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "CurrentLVL",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "StringObjectVariable"
+          },
+          "parameters": [
+            "childnpc",
+            "Name",
+            "=",
+            "\"Level_1Kid\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "childnpc",
+            "=",
+            "-661",
+            "=",
+            "1120"
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "childnpc",
+            "Animation",
+            "=",
+            "\"npc_lvl1\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "CurrentLVL",
+            "=",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "StringObjectVariable"
+          },
+          "parameters": [
+            "childnpc",
+            "Name",
+            "=",
+            "\"Level_2Kid\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "childnpc",
+            "=",
+            "1612",
+            "=",
+            "-2563"
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "childnpc",
+            "Animation",
+            "=",
+            "\"npc_lvl2\""
+          ]
+        }
+      ]
+    },
+    {
       "type": "BuiltinCommonInstructions::ForEach",
       "object": "childnpc",
       "conditions": [
@@ -1907,7 +2054,7 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "TutoKidStart",
+                "TalktoKid",
                 "True",
                 ""
               ]
@@ -1915,6 +2062,11 @@
           ],
           "actions": [],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -2151,8 +2303,8 @@
                       },
                       "parameters": [
                         "CurrentLVL",
-                        "=",
-                        "0"
+                        "<",
+                        "2"
                       ]
                     },
                     {
@@ -2198,6 +2350,83 @@
                         "\"linear\"",
                         "1",
                         "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Else",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "CurrentLVL",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "CurrentNPC",
+                        "=",
+                        "\"Louie\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "DialogueOngoing",
+                        "True",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "LastPositionX",
+                        "=",
+                        "Stanley.X()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "LastPositionY",
+                        "=",
+                        "Stanley.Y()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FileSystem::SaveVariableToJSONFileSync"
+                      },
+                      "parameters": [
+                        "LastPositionX",
+                        "\"LastPositionX\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FileSystem::SaveVariableToJSONFileSync"
+                      },
+                      "parameters": [
+                        "LastPositionY",
+                        "\"LastPositionY\"",
+                        ""
                       ]
                     }
                   ]
@@ -2279,6 +2508,73 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Else",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "CurrentLVL",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "LastPositionX",
+                        "=",
+                        "Stanley.X()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "LastPositionY",
+                        "=",
+                        "Stanley.Y()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FileSystem::SaveVariableToJSONFileSync"
+                      },
+                      "parameters": [
+                        "LastPositionX",
+                        "\"LastPositionX\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FileSystem::SaveVariableToJSONFileSync"
+                      },
+                      "parameters": [
+                        "LastPositionY",
+                        "\"LastPositionY\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Outside\"",
+                        ""
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -2301,7 +2597,7 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "TutoKidStart",
+                "TalktoKid",
                 "False",
                 ""
               ]
@@ -2354,6 +2650,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Camera Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2743,6 +3040,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Tutorial",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2887,7 +3185,7 @@
                     "value": "BooleanVariable"
                   },
                   "parameters": [
-                    "TutoKidStart",
+                    "TalktoKid",
                     "True",
                     "1"
                   ]
@@ -3098,21 +3396,21 @@
                   "actions": [
                     {
                       "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "tutorialbox",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "SetBooleanVariable"
                       },
                       "parameters": [
                         "tutorial",
                         "False",
                         "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "tutorialbox",
-                        ""
                       ]
                     }
                   ]
@@ -3163,6 +3461,348 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DialogueTree::IsCommandCalled"
+          },
+          "parameters": [
+            "\"Awaken\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "CompleteLevel",
+            "True",
+            "1"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "CurrentLVL",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "childnpc",
+                "Animation",
+                "=",
+                "\"happy_tutorial\""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "CompleteLevel",
+            "True",
+            "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "CurrentLVL",
+            "=",
+            "0"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "E"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "childnpc",
+            "Tween",
+            "\"awaken\"",
+            "0",
+            "\"linear\"",
+            "1",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "TutorialComplete",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "2"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Win Screen\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "CompleteLevel",
+            "True",
+            "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "CurrentLVL",
+            ">",
+            "0"
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "InventoryCupcake",
+                "=",
+                "\"Bad\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Lose Screen\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Else",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "InventoryCupcake",
+                "=",
+                "\"Good\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "E"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "childnpc",
+                "Tween",
+                "\"awaken\"",
+                "0",
+                "\"linear\"",
+                "1",
+                "yes"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CurrentLVL",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Level1Complete",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Win Screen\"",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CurrentLVL",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Level2Complete",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Win Screen\"",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "layers": [

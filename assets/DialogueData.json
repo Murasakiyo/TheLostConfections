@@ -2,7 +2,7 @@
 	{
 		"title": "Start",
 		"tags": "",
-		"body": "Stanley...\nI'm upset...\nBut you know what would cheer me up..?\nA chocolate cupcake!!\nOh but not just any chocolate cupcake, specially topped with your gorgeous vanilla essence and finished off with rainbow sprinkles!!\nCould you do that?\n<<Finished>> \nPlease?",
+		"body": "Stanley...\nI'm upset...\nBut you know what would cheer me up..?\nA chocolate cupcake!!\nOh but not just any chocolate cupcake, specially topped with your gorgeous vanilla essence and finished off with rainbow sprinkles!!\nCould you do that?\n<<Finished>><<Ask>> \nPlease?",
 		"position": {
 			"x": -41,
 			"y": -116
@@ -12,7 +12,7 @@
 	{
 		"title": "ReceivedCupcake",
 		"tags": "",
-		"body": "Oh, Thank you Stanley! Thank you so much!\nThis is exactly what I needed, I'm so happy...\nLets meet again soon!\nGoodbye!\n<<Finished>> \nEnd",
+		"body": "Oh, Thank you Stanley! Thank you so much!\nThis is exactly what I needed, I'm so happy...\nLets meet again soon!\nGoodbye!\n<<Finished>><<Awaken>> \nEnd",
 		"position": {
 			"x": -45,
 			"y": 126
@@ -44,8 +44,178 @@
 		"tags": "",
 		"body": "<<Torres>><<TTalk>> \nHope you're satisfied.\n<<Finished>> \nend",
 		"position": {
+			"x": 450,
+			"y": 126
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Torreslevel1",
+		"tags": "",
+		"body": "<<Stanley>><<SHappy>>\nSorry to bother you again, Torres~\n<<Torres>><<TAngry>>\nYOU-!!!!!!!\n<<Stanley>><<SShock>>\nME???\n<<Torres>><<TMiff>>\nWhy is it that so many pests are attracted to this place lately?!\n<<Stanley>><<STalk>>\nWell, you know what they say.\nThe more pests there is here, the more ingredients we can get!\nAnd this frog is perfect as melted chocolate toppings!\n<<Torres>><<TMiff>>\nJust get them out of here....\n<<Finished>><<FrogMinigame>> \nend",
+		"position": {
+			"x": 454,
+			"y": -118
+		},
+		"colorID": 0
+	},
+	{
+		"title": "StartLVL1",
+		"tags": "",
+		"body": "...We don't want to go home.\n..Father always comes back smelling... funny.\nSometimes he smells like berries... sometimes like limes...\n...But when he smells like cherries...\n...he gets really angry.\nHe shouts... and... sometimes he hits us.\nWe're scared he'll come home smelling like fruits again...\n<<Finished>><<Ask>> \nend",
+		"position": {
+			"x": -60,
+			"y": 341
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LVL1Ask",
+		"tags": "",
+		"body": "Father is scary!\n<<Finished>> \nend",
+		"position": {
+			"x": 184,
+			"y": 353
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TorresLVL1Complete",
+		"tags": "",
+		"body": "<<Torres>><<TTalk>> \nThat should be all of it... Thanks for the hand.\n<<TMiff>>\n....I guess.\n<<Finished>> \nend",
+		"position": {
+			"x": 668,
+			"y": -128
+		},
+		"colorID": 0
+	},
+	{
+		"title": "KriePlatformer",
+		"tags": "",
+		"body": "<<Krie>><<KTalk>>\nOh wait Stanley, come here!\n<<Stanley>><<SShock>>\nWhat is it, Your Majesty?\n<<Krie>><<KHappy>>\nIf it's ingredients you need, then I think I have a few more around in the greenhouse here somewhere!\n<<Stanley>><<STalk>>\nReally?! That would be so helpful! Where can I get them?\n<<Krie>><<KTalk>>\nIt's situated somewhere a bit dangerous, but I'm sure it'll be a piece of cupcake for a doll like you.\n<<Finished>><<MinigamePlatform>> \nend",
+		"position": {
+			"x": 692,
+			"y": 88
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LVL1GoodEnding",
+		"tags": "",
+		"body": "...A cupcake?\r\nYou made this... for me?\r\n...It smells like coffee.\r\nMother always made coffee in the mornings. Whenever I smelled it... it meant she was awake.\r\nShe'd sit with mus before school and tell us everything was going to be okay. Even if Dad came home angry the night before...\r\nThe smell of coffee always made the house feel a little safer...\r\n...I haven't thought about that in a long time.\r\n...\r\nThank you.\r\nMaybe... when we wake up tomorrow... we'll remember the smell of coffee instead of being scared of him.\r\n...I think I can do that.\r\n<<Finished>><<Awaken>> \r\nEnd",
+		"position": {
+			"x": 433,
+			"y": 345
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LVL1BadEnding",
+		"tags": "",
+		"body": "...Is this for us?\r\nA cupcake...\r\nIt looks so nice... But why does it smell like that? That sweet, fruity smell...\r\nNo...\r\nNO!\r\nI REMEMBER IT ALL!\r\nWhenever father came home with that smell, I knew he wasn't himself anymore!\r\nThe whole house would become quiet... We would hide and wait until everything was over. \r\nI used to think that if we stayed out of his way...he would leave us alone.\"\r\nBut we were always scared...\r\nWE DON'T WANT TO FEEL THAT WAY ANYMORE!\r\nWE DON'T WANT THIS CUPCAKE!\r\nI DON'T WANT TO REMEMBER HIM!\r\n<<Finished>><<Awaken>> \r\nend",
+		"position": {
+			"x": 650,
+			"y": 355
+		},
+		"colorID": 0
+	},
+	{
+		"title": "StartLVL2",
+		"tags": "",
+		"body": "...Do I really have to wake up tomorrow?\r\nTomorrow is my birthday... but I don't want it to be.\r\nEveryone says birthdays are supposed to be fun...but every year my friends tell me to close my eyes and make a wish.\r\n...Then they push my face into the birthday cake.\r\nThey all laugh but I don't think it's funny!\r\nThe cake gets all over my face, and especially the chocolate frosting, ugh.\r\nI don't like chocolate cake anymore! I don't even want to look at one!\r\nI wish they would just let me have a normal birthday...\r\n...I just wish tomorrow would never come.\r\n<<Finished>><<Ask>> \r\nend",
+		"position": {
+			"x": -71,
+			"y": 561
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LVL2Ask",
+		"tags": "",
+		"body": "Who needs birthdays anyways?\n<<Finished>>\nend",
+		"position": {
+			"x": 185,
+			"y": 567
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LVL2BadEnding",
+		"tags": "",
+		"body": "...Seriously?\r\nA chocolate cake? That's what you came up with?\r\nWow... amazing timing.\r\nEveryone always thinks cake makes everything better! Like it's some kind of magic that fixes everything.\r\nJust put a cake in front of me and suddenly I'm supposed to smile?\r\nAre you also making fun of me Stanley?!\r\nI don't want another reminder. I don't want another birthday cake!\r\n...\r\n...I don't want tomorrow to come.\r\n<<Finished>><<Awaken>> \r\nend",
+		"position": {
 			"x": 431,
-			"y": 175
+			"y": 574
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LVL2GoodEnding",
+		"tags": "",
+		"body": "...Wait. This isn't like the others.\r\nIt's not chocolate...\r\nHuh.\r\nIt's vanilla and lemon flavoured?\r\nI didn't think a cupcake could actually surprise me...\r\n...\r\nIt tastes nice.\r\nIt's sweet... but it doesn't feel overwhelming. The lemon makes it feel different.\r\nIs this your gift to me for my birthday, Stanley?\r\nI guess I always thought birthdays were ruined forever. But maybe...\r\nMaybe it wasn't the birthday that was the problem. Maybe it was just the people who made it feel that way.\r\n...\r\nNext time, I think I'll celebrate with people who actually care about me.\r\nMaybe I don't need those friends around. I can celebrate with my parents instead. People who won't laugh when I'm scared.\r\n...\r\nI think I can look forward to my birthday again.\r\nThank you.\r\n<<Finished>><<Awaken>>\r\nend",
+		"position": {
+			"x": 659,
+			"y": 574
+		},
+		"colorID": 0
+	},
+	{
+		"title": "KrieLVL3",
+		"tags": "",
+		"body": "<<Krie>><<KAngry>> \nOh Stanley~~ What are you doing wandering around this late? The Queen commands you to state your business!\n<<Stanley>>\nYour Majesty... It seems like I need one more special ingredient for our lost child. \nWould it be alright if you were to lend me-\n<<Krie>><<KTalk>>\nStop right there! I know exactly what you need. But hmm it depends on whether you've been a good jester, or a greedy jester!\n<<Stanley>><<SSilly>> \n[i]G-Greedy?![/i]\n<<Krie>><<KThink>>\nLet's see...\n<<Thinking>> ",
+		"position": {
+			"x": 965,
+			"y": -155
+		},
+		"colorID": 0
+	},
+	{
+		"title": "NoLemon",
+		"tags": "",
+		"body": "<<Krie>><<KHappy>> \nYou've taken all my fruits from before so no more gifts for you, Mr Greedy Jester!\n<<Stanley>><<SCrazy>>\nW-What? \n<<SHappy>> \nOh, but come now... Krie!!!\n<<Finished>> \nEnd",
+		"position": {
+			"x": 1018,
+			"y": 133
+		},
+		"colorID": 0
+	},
+	{
+		"title": "YesLemon",
+		"tags": "",
+		"body": "<<Krie>><<KTalk>>\nHmph, seems you still have some self-control...\n<<GetLemon>> \nJust take it!\n<<Stanley>><<SShock>> \nEh? This is...\n<<Finished>>\nend",
+		"position": {
+			"x": 1249,
+			"y": 113
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LouieStart",
+		"tags": "",
+		"body": "<<Stanley>><<SShock>>\nHello?\nYour Highness, are you awake?\n...\n.......\n<<Louie>>\n[color=#71d4e0]Stanley...?[/color]\n[color=#71d4e0]Why are you...[/color]\n[color=#71d4e0]I mean- Do you need anything?[/color]\n<<Stanley>> <<SHappy>>  \nHey! I apologize for bothering you, Your Highness, but I was hoping you could help me with something.\n<<STalk>> \nI'm trying to bake special cupcakes for the lost children. It seems that they won't wake up unless they are comforted so I'm doing my best!\n<<Louie>> \n[color=#71d4e0]...I see.[/color]\n<<Stanley>>\nYou had mentioned before that you have that \"thing\" and I thought; \"What could be better in a cupcake?!\"\n<<Louie>> \n[color=#71d4e0]Yes, I do have one...[/color]\n[color=#71d4e0]But it's fragile. If it's opened the wrong way, it won't last.[/color]\n<< Stanley>> \nDon't worry~ I'll be careful with it!\n<<Louie>> \n[color=#71d4e0]...You're not being very convincing...[/color]\n<<Stanley>> \nWell then, how about you guide me and I'll follow? That way it's impossible for it to go wrong!\n<<Louie>>\n[color=#71d4e0]...![/color]\n[color=#71d4e0]Well...[/color]\n[color=#71d4e0]Alright... Let's do it...Come in...[/color]\n[color=#71d4e0]Just remember, it's not something that can be replaced easily.[/color]\n<<Stanley>>\n[i]The prince's room...[/i]\n<<Finished>><<Rhythm>> \nend",
+		"position": {
+			"x": -84,
+			"y": 824
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LouieBadEnd",
+		"tags": "",
+		"body": "<<Louie>><<LIdle>> \r\n...It's spoiled.\r\n<<Stanley>><<SShock>> \r\nOh my stitches, Louie, I am so so sorry! I didn't mean for this to happen!\r\n<<Louie>><<LWorry>> \r\nI-it's okay... It's not your fault.\r\nIt's just... The sight of that spoiled thing...\r\nPlease just take it, I have no use for it anymore.\r\n<<Stanley>><<SShock>> \r\nLouie...\r\nI promise I'll make it up to you!\r\n<<Louie>><<LIdle>> \r\n...\r\nThank you...\r\nI think I need some time alone now.\r\n<<Finished>><<Home>> \r\nend",
+		"position": {
+			"x": 148,
+			"y": 824
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LouieGoodEnd",
+		"tags": "",
+		"body": "<<Louie>><<LThink>> \r\n...You managed to keep it safe.\r\n<<Stanley>><<SHappy>> \r\nI told you I could do it with your guidance!\r\n<<Louie>>\r\nYou seem strangely confident of my abilities...\r\n<<Stanley>><<SShock>> \r\nWell, of course! You're our reliable Float Prince! Why wouldn't I trust you?\r\n<<Louie>><<LBlush>> \r\n...!\r\nOh...\r\nI...\r\n<<LSmile>> \r\nI trust in you too Stanley.\r\n<<Stanley>><<SHappy>> \r\nHehe, anyways, thanks for the ingredient! I must hurry and create the perfect cupcake for that lost child now!\r\n<<Louie>>\r\nAh... Yes, see you around Stanley...\r\n<<Finished>><<Home>> \r\nend",
+		"position": {
+			"x": 380,
+			"y": 805
 		},
 		"colorID": 0
 	}

@@ -202,17 +202,17 @@
 	{
 		"title": "GoodEnding",
 		"tags": "good",
-		"body": "<<Krie>>\n<<KTalk>> \nYou did so well, Stanley!\nI didn't know you were so knowledgeable about botany.\n<<Stanley>> \n<<SHappy>> \nHaha, thank you for praising this humble jester. Will I be rewarded accordingly?\n<<Krie>>\nYupp! Here you go! The cherry syrup you've been needing.\n<<Stanley>> \n<<STalk>> \nSplendid! Thank you for your time, Your Highness.\n<<Krie>>\nDon't forget to come back and help out!",
+		"body": "<<Krie>>\n<<KTalk>> \nYou did so well, Stanley!\nI didn't know you were so knowledgeable about botany.\n<<Stanley>> \n<<SHappy>> \nHaha, thank you for praising this humble jester. Will I be rewarded accordingly?\n<<Krie>><<Cherry>> \nYupp! Here you go! The cherry syrup you've been needing.\n<<Stanley>> \n<<STalk>> \nSplendid! Thank you for your time, Your Highness.\n<<Krie>>\nDon't forget to come back and help out!\n<<Finished>>\nend",
 		"position": {
 			"x": 3029,
-			"y": -2752
+			"y": -2753
 		},
 		"colorID": 0
 	},
 	{
 		"title": "BadEnding",
 		"tags": "bad",
-		"body": "<<Krie>>\n<<KThink>> \nOh dear me... that did not go as well as I had hoped.\n<<Stanley>> \n<<STalk>> \nI'm afraid your questions are a little too complicated for me, Your Highness.\n<<Krie>>\nI suppose that's fair.\nBut I'm sorry, Stanley. I think it would be best if I held onto the syrup first.\nI'm sure you can find other ingredients, right?\n<<Stanley>> \n[i]*sigh*[/i] Well, I suppose I can.\nThank you for your time, Your Highness.\n<<Krie>>\nDon't forget to come back and help out!",
+		"body": "<<Krie>>\n<<KThink>> \nOh dear me... that did not go as well as I had hoped.\n<<Stanley>> \n<<STalk>> \nI'm afraid your questions are a little too complicated for me, Your Highness.\n<<Krie>>\nI suppose that's fair.\nBut I'm sorry, Stanley. I think it would be best if I held onto the syrup first.\nI'm sure you can find other ingredients, right?\n<<Stanley>> \n[i]*sigh*[/i] Well, I suppose I can.\nThank you for your time, Your Highness.\n<<Krie>>\nDon't forget to come back and help out!\n<<Finished>>\nend",
 		"position": {
 			"x": 2511,
 			"y": -2768

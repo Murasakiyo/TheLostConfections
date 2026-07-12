@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.26167741169921543,
+    "zoomFactor": 0.27962265218393817,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -51,6 +51,11 @@
       "name": "TextColor",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "Stop",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -159,54 +164,6 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
-      "name": "FoundChocolateBarTXT",
-      "persistentUuid": "d91d9dc3-ecd5-424e-a372-0517e2f774dc",
-      "width": 0,
-      "x": 1151,
-      "y": -98,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "FoundChocolateBarTXT",
-      "persistentUuid": "779df5e5-27c8-4487-a3ba-ab38eede546b",
-      "width": 0,
-      "x": 1934,
-      "y": 509,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "FoundChocolateBarTXT",
-      "persistentUuid": "462aa066-991d-46ce-a1cc-4eb28b650a2f",
-      "width": 0,
-      "x": 1385,
-      "y": 1183,
-      "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
       "layer": "Dialogue",
       "name": "NameTXT_Distract",
       "persistentUuid": "80979b51-626f-46a0-b898-6a8b30a262d3",
@@ -254,6 +211,45 @@
         {
           "name": "animation",
           "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 47.256797583081585,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "FoundChocolateBarTXT",
+      "persistentUuid": "0e7382e5-ff25-4692-8ae2-91e3cb51b782",
+      "width": 711,
+      "x": 663,
+      "y": 341,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 251.72000000000017,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "Ingredients",
+      "persistentUuid": "cf9ce5f2-a559-4948-8e19-f4043e372fc4",
+      "width": 203,
+      "x": 890,
+      "y": 407,
+      "zOrder": 14,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
         }
       ],
       "stringProperties": [],
@@ -538,10 +534,10 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "",
+      "string": "You obtained a bar of Chocolate!",
       "font": "retro-pixel-cute-prop.ttf",
       "textAlignment": "left",
-      "characterSize": 20,
+      "characterSize": 40,
       "color": {
         "b": 255,
         "g": 255,
@@ -561,11 +557,11 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "",
+        "text": "You obtained a bar of Chocolate!",
         "font": "retro-pixel-cute-prop.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 20,
+        "characterSize": 40,
         "lineHeight": 0,
         "color": "255;255;255"
       }
@@ -662,6 +658,16 @@
           "parameters": [
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "Stop",
+            "False",
+            ""
+          ]
         }
       ],
       "actions": [
@@ -709,6 +715,22 @@
             "DistractFinished",
             "False",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "Ingredients"
+          ]
+        },
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "FoundChocolateBarTXT"
           ]
         }
       ]
@@ -827,11 +849,66 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DialogueTree::IsCommandCalled"
+          },
+          "parameters": [
+            "\"Finished\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "Stop",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "EndingType",
+                "=",
+                "\"GoodEnding\""
+              ]
+            }
+          ],
+          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"TorresRoom\"",
+                ""
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1320,7 +1397,22 @@
             "=",
             "\"GoodEnding\""
           ]
-        },
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DialogueTree::IsCommandCalled"
+          },
+          "parameters": [
+            "\"GetChocolate\""
+          ]
+        }
+      ],
+      "actions": [
         {
           "type": {
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
@@ -1329,7 +1421,45 @@
             "FoundChocolateBarTXT",
             "Text",
             "=",
-            "\"You found Bar of Chocolate!!\""
+            "\"You found A Bar of Chocolate!!\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "Ingredients",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "FoundChocolateBarTXT",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "TorresDistractMinigame",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "Inventory.ChocoBar",
+            "True",
+            ""
           ]
         }
       ]
@@ -1576,6 +1706,60 @@
       "isLightingLayer": false,
       "isLocked": true,
       "name": "Options",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Main",
       "renderingType": "",
       "visibility": true,
       "cameras": [],

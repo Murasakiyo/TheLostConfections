@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2291680161074892,
+    "zoomFactor": 0.2987985363606931,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,33 +29,39 @@
   "variables": [
     {
       "name": "WrongAnswerCount",
-      "persistentUuid": "8b5e5145-1694-4e36-b17f-3634f8cf9672",
+      "persistentUuid": "f89c8b0d-be3d-4b2a-836a-a83cabe7a088",
       "type": "number",
       "value": 0
     },
     {
       "name": "DialogueState",
-      "persistentUuid": "907da5f2-1fd8-4b6f-a34c-1e0a541c8682",
+      "persistentUuid": "2cf54e94-dd68-4be0-96d0-79d1eb121c25",
       "type": "number",
       "value": 0
     },
     {
       "name": "EndingType",
-      "persistentUuid": "defe14be-8f28-4ac7-a4aa-ebe772371d94",
+      "persistentUuid": "b1eb535f-f75d-4f38-a961-074043ff6a35",
       "type": "string",
       "value": ""
     },
     {
       "name": "QNAFinished",
-      "persistentUuid": "62ab3dff-b68f-45ed-9642-22b997423c39",
+      "persistentUuid": "04e3727c-9ec1-465d-8dcd-3464e47e2ef3",
       "type": "boolean",
       "value": false
     },
     {
       "name": "TextColor",
-      "persistentUuid": "7d9e6938-dbf8-465a-a3d3-8619e91606c3",
+      "persistentUuid": "87696fb7-ce2f-4866-a76e-ce53b79443ff",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "Stop",
+      "persistentUuid": "dc5f76c9-7ff0-4d71-859d-d5725aaae0c5",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -166,43 +172,11 @@
       "keepRatio": true,
       "layer": "",
       "name": "FoundCherrySyrupTXT",
-      "persistentUuid": "d91d9dc3-ecd5-424e-a372-0517e2f774dc",
-      "width": 0,
-      "x": 1151,
-      "y": -98,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "FoundCherrySyrupTXT",
       "persistentUuid": "779df5e5-27c8-4487-a3ba-ab38eede546b",
       "width": 0,
       "x": 1934,
       "y": 509,
       "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "FoundCherrySyrupTXT",
-      "persistentUuid": "462aa066-991d-46ce-a1cc-4eb28b650a2f",
-      "width": 0,
-      "x": 1385,
-      "y": 1183,
-      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -255,6 +229,44 @@
       "y": 409,
       "zOrder": 13,
       "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Found",
+      "name": "FoundCherrySyrupTXT",
+      "persistentUuid": "e274deed-5c28-4b01-ba74-f0ab4ecbf9e3",
+      "width": 0,
+      "x": 712,
+      "y": 261,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 307.99999999999994,
+      "keepRatio": true,
+      "layer": "Found",
+      "name": "Ingredients",
+      "persistentUuid": "d0a5cad0-e681-4e21-bda2-d5f116a854ff",
+      "width": 308,
+      "x": 822,
+      "y": 311,
+      "zOrder": 15,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
       "stringProperties": [],
       "initialVariables": []
     }
@@ -537,14 +549,14 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "",
+      "string": "You found Cherry Syrup!",
       "font": "retro-pixel-cute-prop.ttf",
       "textAlignment": "left",
-      "characterSize": 20,
+      "characterSize": 50,
       "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
+        "b": 0,
+        "g": 0,
+        "r": 0
       },
       "content": {
         "bold": false,
@@ -560,13 +572,13 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "",
+        "text": "You found Cherry Syrup!",
         "font": "retro-pixel-cute-prop.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 20,
+        "characterSize": 50,
         "lineHeight": 0,
-        "color": "255;255;255"
+        "color": "0;0;0"
       }
     },
     {
@@ -660,6 +672,16 @@
           "parameters": [
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "Stop",
+            "False",
+            ""
+          ]
         }
       ],
       "actions": [
@@ -712,6 +734,37 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneJustBegins"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "Ingredients"
+          ]
+        },
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "FoundCherrySyrupTXT"
+          ]
+        }
+      ]
+    },
+    {
       "aiGeneratedEventId": "01KX3R44QEE76CGM7JWD4JEW8V",
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -721,6 +774,16 @@
           },
           "parameters": [
             "\"text\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "Stop",
+            "False",
+            ""
           ]
         }
       ],
@@ -825,11 +888,59 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DialogueTree::IsCommandCalled"
+          },
+          "parameters": [
+            "\"Finished\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "Stop",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Greenhouse\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "KrieQNAMinigame",
+                "True",
+                ""
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1224,6 +1335,70 @@
       "conditions": [
         {
           "type": {
+            "value": "DialogueTree::IsCommandCalled"
+          },
+          "parameters": [
+            "\"Cherry\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "FoundCherrySyrupTXT",
+            "Text",
+            "=",
+            "\"You found Cherry Syrup!!\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "Inventory.CherrySyrup",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "FoundCherrySyrupTXT",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "Ingredients",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "TooManyFruits",
+            "+",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "BooleanVariable"
           },
           "parameters": [
@@ -1336,17 +1511,6 @@
               },
               "parameters": [
                 "\"GoodEnding\""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "FoundCherrySyrupTXT",
-                "Text",
-                "=",
-                "\"You found Cherry Syrup!!\""
               ]
             }
           ]
@@ -1595,6 +1759,60 @@
       "isLightingLayer": false,
       "isLocked": false,
       "name": "Options",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Found",
       "renderingType": "",
       "visibility": true,
       "cameras": [],

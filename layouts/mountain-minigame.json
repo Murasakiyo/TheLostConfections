@@ -29,43 +29,36 @@
   "variables": [
     {
       "name": "DropTimer",
-      "persistentUuid": "cc63b394-e493-4440-84fe-bec30d37afc9",
       "type": "number",
       "value": 0
     },
     {
       "name": "CupcakeCount",
-      "persistentUuid": "a8a4f98d-b651-439c-842b-d667f2cfcfb6",
       "type": "number",
       "value": 0
     },
     {
       "name": "SnowballCount",
-      "persistentUuid": "9ede2ec8-efbe-4a81-b7d5-f5c56138b898",
       "type": "number",
       "value": 0
     },
     {
       "name": "COMPLETE",
-      "persistentUuid": "159f9a2d-59f3-414c-ae27-c0096df34661",
       "type": "boolean",
       "value": false
     },
     {
       "name": "EndTimer",
-      "persistentUuid": "99b4c7e7-4de1-44a9-bb6a-e84e88c3bdbb",
       "type": "number",
       "value": 0
     },
     {
       "name": "GameStart",
-      "persistentUuid": "fdf7226e-4391-4414-a947-9723266abfc4",
       "type": "boolean",
       "value": false
     },
     {
       "name": "GameStartTimer",
-      "persistentUuid": "38d3f7fc-c0be-496e-b92f-9d8d33853b49",
       "type": "number",
       "value": 0
     }
@@ -759,6 +752,15 @@
             "=",
             "\"Score: \" + SnowballCount"
           ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "InstructionText",
+            ""
+          ]
         }
       ]
     },
@@ -871,6 +873,26 @@
             "=",
             "300"
           ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "Inventory.Sugar",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "MountainMinigame",
+            "True",
+            ""
+          ]
         }
       ],
       "events": [
@@ -888,7 +910,18 @@
               ]
             }
           ],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Outside\"",
+                ""
+              ]
+            }
+          ]
         }
       ]
     }

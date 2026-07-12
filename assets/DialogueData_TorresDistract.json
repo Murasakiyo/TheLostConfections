@@ -52,20 +52,20 @@
 	{
 		"title": "GoodEnding",
 		"tags": "good",
-		"body": "<<Stanley>><<SHappy>>  There we go! The bar of chocolate has been obtained!",
+		"body": "<<Stanley>><<SHappy>><<GetChocolate>>There we go! The bar of chocolate has been obtained!\n<<Finished>>\nend",
 		"position": {
-			"x": 1443,
-			"y": -93
+			"x": 1442,
+			"y": -94
 		},
 		"colorID": 0
 	},
 	{
 		"title": "BadEnding",
 		"tags": "bad",
-		"body": "<<Torres>><<TMiff>>  Stanley, I don't know what you're up to, but I don't have time for it! Get out of my room!\n<<stanley>><<STalk>>  Wait, Torres, I really do need to--\n<<Torres>><<TAngry>>  Get out, now!!!",
+		"body": "<<Torres>><<TMiff>>  Stanley, I don't know what you're up to, but I don't have time for it! Get out of my room!\n<<stanley>><<STalk>>  Wait, Torres, I really do need to--\n<<Torres>><<TAngry>>  Get out, now!!!\n<<Finished>>\nend",
 		"position": {
-			"x": 1446,
-			"y": -389
+			"x": 1445,
+			"y": -392
 		},
 		"colorID": 0
 	},

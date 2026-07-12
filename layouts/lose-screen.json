@@ -326,7 +326,7 @@
         },
         {
           "type": {
-            "value": "MouseButtonFromTextPressed"
+            "value": "MouseButtonFromTextReleased"
           },
           "parameters": [
             "",
@@ -347,9 +347,18 @@
           },
           "parameters": [
             "",
-            "\"Fly Shooting  Minigame\"",
+            "\"LevelSelection\"",
             ""
           ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Reset"
         }
       ]
     }
