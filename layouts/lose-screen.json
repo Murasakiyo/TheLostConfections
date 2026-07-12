@@ -5,7 +5,7 @@
   "name": "Lose Screen",
   "r": 247,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "",
   "v": 249,
   "uiSettings": {

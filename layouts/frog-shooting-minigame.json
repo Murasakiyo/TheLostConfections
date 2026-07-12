@@ -5,7 +5,7 @@
   "name": "Frog Shooting Minigame",
   "r": 247,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "",
   "v": 249,
   "uiSettings": {

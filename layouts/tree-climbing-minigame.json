@@ -5,7 +5,7 @@
   "name": "Tree Climbing Minigame",
   "r": 255,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "",
   "v": 255,
   "uiSettings": {
@@ -710,9 +710,9 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": true,
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
           "platformType": "Ladder",
           "yGrabOffset": 0
         }
