@@ -879,7 +879,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "Inventory.Sprinkles",
+            "SprinkleMinigame",
             "False",
             ""
           ]
@@ -947,7 +947,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "Inventory.Sprinkles",
+            "SprinkleMinigame",
             "False",
             ""
           ]

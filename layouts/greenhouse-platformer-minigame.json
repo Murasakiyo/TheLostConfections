@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.22169247275005444,
+    "zoomFactor": 0.2987985363606945,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -567,6 +567,23 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 117,
+      "keepRatio": true,
+      "layer": "Platforms",
+      "name": "Killbox",
+      "persistentUuid": "40e6b13c-66c9-4392-8369-5c5070073f7b",
+      "width": 2999,
+      "x": -462,
+      "y": 1080,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -675,90 +692,6 @@
       ],
       "animations": [
         {
-          "name": "idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.7,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/playersprite/stanley_sp.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 14,
-                        "y": 20
-                      },
-                      {
-                        "x": 589,
-                        "y": 20
-                      },
-                      {
-                        "x": 589,
-                        "y": 740
-                      },
-                      {
-                        "x": 14,
-                        "y": 740
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/playersprite/stanley_sp2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 14,
-                        "y": 20
-                      },
-                      {
-                        "x": 589,
-                        "y": 20
-                      },
-                      {
-                        "x": 589,
-                        "y": 740
-                      },
-                      {
-                        "x": 14,
-                        "y": 740
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "name": "running",
           "useMultipleDirections": false,
           "directions": [
@@ -784,20 +717,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 14,
-                        "y": 20
+                        "x": 16,
+                        "y": 25
                       },
                       {
-                        "x": 589,
-                        "y": 20
+                        "x": 600,
+                        "y": 25
                       },
                       {
-                        "x": 589,
-                        "y": 740
+                        "x": 600,
+                        "y": 735
                       },
                       {
-                        "x": 14,
-                        "y": 740
+                        "x": 16,
+                        "y": 735
                       }
                     ]
                   ]
@@ -820,20 +753,104 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 14,
-                        "y": 20
+                        "x": 16,
+                        "y": 25
                       },
                       {
-                        "x": 589,
-                        "y": 20
+                        "x": 600,
+                        "y": 25
                       },
                       {
-                        "x": 589,
-                        "y": 740
+                        "x": 600,
+                        "y": 735
                       },
                       {
-                        "x": 14,
-                        "y": 740
+                        "x": 16,
+                        "y": 735
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.7,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/playersprite/stanley_sp.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 25
+                      },
+                      {
+                        "x": 600,
+                        "y": 25
+                      },
+                      {
+                        "x": 600,
+                        "y": 735
+                      },
+                      {
+                        "x": 16,
+                        "y": 735
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/playersprite/stanley_sp2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 25
+                      },
+                      {
+                        "x": 600,
+                        "y": 25
+                      },
+                      {
+                        "x": 600,
+                        "y": 735
+                      },
+                      {
+                        "x": 16,
+                        "y": 735
                       }
                     ]
                   ]
@@ -1406,6 +1423,26 @@
         "lineHeight": 0,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Killbox",
+      "persistentUuid": "04ea4738-0f17-42ed-b709-81e28b209b80",
+      "texture": "assets/big_box.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "canBeGrabbed": true,
+          "name": "Platform",
+          "platformType": "NormalPlatform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "yGrabOffset": 0
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1443,6 +1480,9 @@
       },
       {
         "objectName": "CoffeeBeans"
+      },
+      {
+        "objectName": "Killbox"
       }
     ]
   },
@@ -1529,6 +1569,17 @@
             "",
             "\"IngredientLayer\"",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "Killbox",
+            "Opacity",
+            "=",
+            "0"
           ]
         }
       ]
@@ -2373,8 +2424,33 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "PlatformBehavior::IsObjectOnGivenFloor"
+          },
+          "parameters": [
+            "Stanley_Greenhouse",
+            "PlatformerObject",
+            "Killbox",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "Stanley_Greenhouse",
+            "=",
+            "-361",
+            "=",
+            "820"
+          ]
+        }
+      ]
     }
   ],
   "layers": [

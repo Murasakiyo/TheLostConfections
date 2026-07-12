@@ -910,7 +910,18 @@
               ]
             }
           ],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Outside\"",
+                ""
+              ]
+            }
+          ]
         }
       ]
     }

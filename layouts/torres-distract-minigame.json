@@ -1451,6 +1451,16 @@
             "True",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "Inventory.ChocoBar",
+            "True",
+            ""
+          ]
         }
       ]
     }

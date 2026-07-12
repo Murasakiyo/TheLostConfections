@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.08197080873859237,
+    "zoomFactor": 0.05326224540999155,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -2388,6 +2388,46 @@
                         "True",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "LastPositionX",
+                        "=",
+                        "Stanley.X()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "LastPositionY",
+                        "=",
+                        "Stanley.Y()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FileSystem::SaveVariableToJSONFileSync"
+                      },
+                      "parameters": [
+                        "LastPositionX",
+                        "\"LastPositionX\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FileSystem::SaveVariableToJSONFileSync"
+                      },
+                      "parameters": [
+                        "LastPositionY",
+                        "\"LastPositionY\"",
+                        ""
+                      ]
                     }
                   ]
                 }
@@ -3675,6 +3715,59 @@
                   },
                   "parameters": [
                     "Level1Complete",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Win Screen\"",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CurrentLVL",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Level2Complete",
                     "True",
                     ""
                   ]

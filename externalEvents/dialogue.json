@@ -632,7 +632,7 @@
                   },
                   "parameters": [
                     "LevelCupcakeComplete",
-                    "False",
+                    "True",
                     ""
                   ]
                 }
@@ -1192,6 +1192,16 @@
                 "\"linear\"",
                 "1",
                 "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Inventory.LemonZest",
+                "True",
+                ""
               ]
             }
           ]

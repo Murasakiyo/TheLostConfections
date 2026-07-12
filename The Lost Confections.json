@@ -62,7 +62,7 @@
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
       "backgroundImageResourceName": "",
-      "gdevelopLogoStyle": "light",
+      "gdevelopLogoStyle": "dark",
       "logoAndProgressFadeInDuration": 0.2,
       "logoAndProgressLogoFadeInDelay": 0,
       "minDuration": 1.5,
@@ -1505,7 +1505,7 @@
       {
         "file": "assets/directions/StartButton.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/directions/StartButton.png\",\"extension\":\".png\"}",
         "name": "assets/directions/StartButton.png",
         "smoothed": false,
         "userAdded": false
@@ -2117,6 +2117,22 @@
         "name": "assets/children/childlvl3.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/MainMenu.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/MainMenu.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/StartButton2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/directions/StartButton",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -2688,8 +2704,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 16,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2724,8 +2740,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 16,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2763,8 +2779,8 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
+              "looping": true,
+              "timeBetweenFrames": 0.8,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -2772,8 +2788,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 31.5,
+                    "y": 64
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2808,8 +2824,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 31.5,
+                    "y": 64
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -6462,7 +6478,7 @@
     {
       "name": "CurrentLVL",
       "type": "number",
-      "value": 2
+      "value": 0
     },
     {
       "name": "InventoryCupcake",
@@ -6518,7 +6534,11 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/untitled-scene"
+      "referenceTo": "/layouts/menu"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/levelselection"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -6526,7 +6546,23 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/levelselection"
+      "referenceTo": "/layouts/torresroom"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/stanleyroom"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/louieroom"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/kitchen-topdown"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/outside"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -6542,27 +6578,11 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/krie-qna-minigame"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/torres-distract-minigame"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/kitchen-topdown"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/torresroom"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/louieroom"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/stanleyroom"
+      "referenceTo": "/layouts/krie-qna-minigame"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -6603,10 +6623,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/greenhouse-platformer-minigame"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/outside"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
