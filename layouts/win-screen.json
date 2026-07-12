@@ -5,7 +5,7 @@
   "name": "Win Screen",
   "r": 247,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "",
   "v": 249,
   "uiSettings": {
@@ -29,6 +29,7 @@
   "variables": [
     {
       "name": "GoodStars",
+      "persistentUuid": "a311802a-a2ef-4fce-970a-fa23028dc0fa",
       "type": "number",
       "value": 0
     }

@@ -5,7 +5,7 @@
   "name": "Color Pattern Minigame",
   "r": 247,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "",
   "v": 249,
   "uiSettings": {
@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.14404931549250313,
+    "zoomFactor": 0.3895856273827295,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -30,17 +30,21 @@
     {
       "folded": true,
       "name": "SystemPatternOne",
+      "persistentUuid": "bd633180-a2f3-4509-ab29-b5c5080e9cd2",
       "type": "array",
       "children": [
         {
+          "persistentUuid": "b15d0d9a-8fd1-4b55-960e-a9a4a4baeeac",
           "type": "number",
           "value": 1
         },
         {
+          "persistentUuid": "f0029b5d-9cf4-4096-a346-4c35bc8c7974",
           "type": "number",
           "value": 2
         },
         {
+          "persistentUuid": "96c3a6ff-222c-4554-b80e-2bb37292637b",
           "type": "number",
           "value": 3
         }
@@ -49,21 +53,26 @@
     {
       "folded": true,
       "name": "SystemPatternTwo",
+      "persistentUuid": "5123ece6-bc3d-4859-b0cf-6e4906fbd34c",
       "type": "array",
       "children": [
         {
+          "persistentUuid": "c38b11f6-c6b4-43f6-ae77-d89f931edad7",
           "type": "number",
           "value": 2
         },
         {
+          "persistentUuid": "565562d5-d45e-423c-9ce6-68e13d09ecdf",
           "type": "number",
           "value": 3
         },
         {
+          "persistentUuid": "87ba0c92-88b9-4198-8bd9-9076513513ef",
           "type": "number",
           "value": 4
         },
         {
+          "persistentUuid": "0ea8a8e8-6101-4599-bd30-5229c4076499",
           "type": "number",
           "value": 1
         }
@@ -72,25 +81,31 @@
     {
       "folded": true,
       "name": "SystemPatternThree",
+      "persistentUuid": "05b1f906-0ad8-4713-9709-b8e545068ed1",
       "type": "array",
       "children": [
         {
+          "persistentUuid": "5ec2d4b7-e520-4edd-8be8-07b1e8d0322f",
           "type": "number",
           "value": 1
         },
         {
+          "persistentUuid": "113bab46-1f4f-4ea2-9511-f3b3f8be0d9d",
           "type": "number",
           "value": 2
         },
         {
+          "persistentUuid": "5924a076-8148-43e7-bde2-f6e6175197a1",
           "type": "number",
           "value": 2
         },
         {
+          "persistentUuid": "a38d3237-60cb-43ea-8b7b-776ae0f88724",
           "type": "number",
           "value": 4
         },
         {
+          "persistentUuid": "dc4cf061-ed8d-4e6c-be69-b415a96a5b30",
           "type": "number",
           "value": 3
         }
@@ -98,66 +113,79 @@
     },
     {
       "name": "SystemStep",
+      "persistentUuid": "ee4a01e7-7421-41cc-a621-924ee0eaab63",
       "type": "number",
       "value": 0
     },
     {
       "name": "PlayerStep",
+      "persistentUuid": "7f8faab5-e227-4203-bb24-1fd1920d5b8d",
       "type": "number",
       "value": -1
     },
     {
       "name": "CurrentTurn",
+      "persistentUuid": "511ad0ba-f3c1-4c98-8a26-2e72ee621272",
       "type": "string",
       "value": "System"
     },
     {
       "name": "Timer",
+      "persistentUuid": "e3a694a8-6df2-4ed7-a138-c5b58512abb2",
       "type": "number",
       "value": 0
     },
     {
       "name": "SystemPhase",
+      "persistentUuid": "a588d315-d022-4412-9521-486b3cbc2e50",
       "type": "string",
       "value": "FirstLvl"
     },
     {
       "name": "LastInput",
+      "persistentUuid": "f8077e7f-ff13-4824-bbde-8bdc1dc5c9c1",
       "type": "number",
       "value": 0
     },
     {
       "name": "StepsThisPhase",
+      "persistentUuid": "5b587ab5-5ebd-4c1b-b7aa-1c6a662c05a1",
       "type": "number",
       "value": 0
     },
     {
       "name": "SystemPlayPattern",
+      "persistentUuid": "c642e179-801a-4384-9cfd-0f10ae07fd20",
       "type": "boolean",
       "value": true
     },
     {
       "name": "ToggleTimer",
+      "persistentUuid": "87433284-0e04-4fe2-bfea-5e296018e7c4",
       "type": "boolean",
       "value": true
     },
     {
       "name": "COMPLETE",
+      "persistentUuid": "4a5ab1f5-d6a1-49fd-ba6e-cbbcc1e65be3",
       "type": "boolean",
       "value": false
     },
     {
       "name": "FAIL",
+      "persistentUuid": "0367c5d3-1731-4ac8-af60-6c630245833e",
       "type": "boolean",
       "value": false
     },
     {
       "name": "Lives",
+      "persistentUuid": "259a0c3a-8b1b-46a3-8469-a8599e208d94",
       "type": "number",
       "value": 3
     },
     {
       "name": "EndTimer",
+      "persistentUuid": "8da89719-42ea-441d-8d80-67257da7d9b5",
       "type": "number",
       "value": 0
     }
@@ -1990,6 +2018,31 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/Piano Note [F7GdHALHlRg].mp3",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
                     "value": "NumberVariable"
                   },
                   "parameters": [
@@ -2088,6 +2141,31 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/Piano Note [F7GdHALHlRg].mp3",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
                     "value": "NumberVariable"
                   },
                   "parameters": [
@@ -2181,6 +2259,31 @@
             }
           ],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/Piano Note [F7GdHALHlRg].mp3",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -2397,6 +2500,31 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/Piano Note [F7GdHALHlRg].mp3",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
                     "value": "NumberVariable"
                   },
                   "parameters": [
@@ -2490,6 +2618,31 @@
             }
           ],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/Piano Note [F7GdHALHlRg].mp3",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -2593,6 +2746,31 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/Piano Note [F7GdHALHlRg].mp3",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
                     "value": "NumberVariable"
                   },
                   "parameters": [
@@ -2686,6 +2864,31 @@
             }
           ],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/Piano Note [F7GdHALHlRg].mp3",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -2902,6 +3105,31 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/Piano Note [F7GdHALHlRg].mp3",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
                     "value": "NumberVariable"
                   },
                   "parameters": [
@@ -2995,6 +3223,31 @@
             }
           ],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/Piano Note [F7GdHALHlRg].mp3",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -3098,6 +3351,31 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/Piano Note [F7GdHALHlRg].mp3",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
                     "value": "NumberVariable"
                   },
                   "parameters": [
@@ -3196,6 +3474,31 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/Piano Note [F7GdHALHlRg].mp3",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
                     "value": "NumberVariable"
                   },
                   "parameters": [
@@ -3289,6 +3592,31 @@
             }
           ],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/Piano Note [F7GdHALHlRg].mp3",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [

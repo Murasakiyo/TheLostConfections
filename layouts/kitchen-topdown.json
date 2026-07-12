@@ -5,7 +5,7 @@
   "name": "Kitchen (Topdown)",
   "r": 247,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "",
   "v": 249,
   "uiSettings": {
@@ -29,31 +29,31 @@
   "variables": [
     {
       "name": "CompleteIngredient",
-      "persistentUuid": "6846d6c5-3743-4990-ade5-c0f653e01e87",
+      "persistentUuid": "2a18c431-d769-4cbf-a5c0-d41029b4448c",
       "type": "number",
       "value": 0
     },
     {
       "name": "MixingProgress",
-      "persistentUuid": "724a4b0a-9623-4c67-8c78-bc02125ceb5f",
+      "persistentUuid": "3508b5a2-8b55-498a-87ad-13d18159a64e",
       "type": "number",
       "value": 0
     },
     {
       "name": "StirDirection",
-      "persistentUuid": "a6d6ffa0-ecdb-4e2b-ac44-06a4525b0ade",
+      "persistentUuid": "76f55f26-f659-4781-90eb-8a43079a9079",
       "type": "number",
       "value": 0
     },
     {
       "name": "Complete",
-      "persistentUuid": "539e7ef0-eeb6-408d-9c80-9ce84ef55932",
+      "persistentUuid": "5d2dd4ea-a94b-467c-94ec-a77aa9ebc809",
       "type": "boolean",
       "value": false
     },
     {
       "name": "StartCook",
-      "persistentUuid": "cd405015-b2a3-41ba-82d7-3a3d5cdfbb80",
+      "persistentUuid": "1f164058-b83a-4c7d-a901-3c8f2541560b",
       "type": "boolean",
       "value": false
     }
@@ -2168,6 +2168,31 @@
                   "parameters": [
                     "",
                     "\"Firstroom\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/toaster oven ding - sound effect [KS85lRtQ_pk].mp3",
+                    "no",
+                    "",
                     ""
                   ]
                 }

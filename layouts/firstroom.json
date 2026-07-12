@@ -5,7 +5,7 @@
   "name": "Firstroom",
   "r": 247,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "",
   "v": 249,
   "uiSettings": {
@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.05326224540999155,
+    "zoomFactor": 0.05505826590603115,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"

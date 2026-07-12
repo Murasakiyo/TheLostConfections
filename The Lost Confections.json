@@ -2133,6 +2133,54 @@
         "name": "assets/directions/StartButton",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/directions/StartButton2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/StartButton2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/idle music 3.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/idle music 3.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/toaster oven ding - sound effect [KS85lRtQ_pk].mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/toaster oven ding - sound effect [KS85lRtQ_pk].mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/mr_berrydev-single-keypad-beep-433456.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/mr_berrydev-single-keypad-beep-433456.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Piano Note [F7GdHALHlRg].mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/Piano Note [F7GdHALHlRg].mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },
@@ -6627,6 +6675,18 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/greenhouse"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/tutorialinstructions"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/leveloneinstructions"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/leveltwoinstructions"
     }
   ],
   "externalEvents": [
