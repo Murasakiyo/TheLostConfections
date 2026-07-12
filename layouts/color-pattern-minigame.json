@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.24488383633725502,
+    "zoomFactor": 0.14404931549250313,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -285,7 +285,7 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "Text",
       "name": "EndText",
       "persistentUuid": "d7041955-644e-4daf-85b0-ef1acf66e647",
       "width": 0,
@@ -4773,6 +4773,16 @@
             },
             {
               "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Inventory.Milk",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "SetXY"
               },
               "parameters": [
@@ -4781,6 +4791,42 @@
                 "820",
                 "=",
                 "480"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "5"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"LouieRoom\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "PatternMinigame",
+                    "True",
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -4879,6 +4925,16 @@
             },
             {
               "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Inventory.CreamCheese",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "SetXY"
               },
               "parameters": [
@@ -4887,6 +4943,42 @@
                 "820",
                 "=",
                 "480"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "5"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"LouieRoom\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "PatternMinigame",
+                    "True",
+                    ""
+                  ]
+                }
               ]
             }
           ]

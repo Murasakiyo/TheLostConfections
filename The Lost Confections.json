@@ -6508,6 +6508,11 @@
       "name": "MountainMinigame",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "PatternMinigame",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [

@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.27050126039625577,
+    "zoomFactor": 0.20746499616301425,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -84,15 +84,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 0,
-      "flippedX": true,
       "height": 722.1818181818182,
       "keepRatio": true,
-      "layer": "Player + NPCs",
+      "layer": "Sprites",
       "name": "Stanley_QNA",
       "persistentUuid": "811b5d8b-873a-49ac-9210-d26582cec560",
       "width": 1324,
-      "x": 1557,
-      "y": 1311,
+      "x": 1975,
+      "y": 1322,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -102,14 +101,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 0,
-      "height": 727.0909090909087,
+      "height": 890.1818181818177,
       "keepRatio": true,
-      "layer": "Player + NPCs",
+      "layer": "Sprites",
       "name": "Louie_QNA",
       "persistentUuid": "52a23a54-6d75-4d60-b99a-e5e8d10844c5",
-      "width": 1333,
-      "x": 1141,
-      "y": 1212,
+      "width": 1632,
+      "x": 142,
+      "y": 1134,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -192,7 +191,66 @@
       }
     ]
   },
-  "events": [],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Stanley",
+            "PlatformerObject",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneJustBegins"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "CurrentNPC",
+            "=",
+            "\"Louie\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "DialogueOngoing",
+            "True",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Dialogue"
+    }
+  ],
   "layers": [
     {
       "ambientLightColorB": 200,
@@ -272,6 +330,60 @@
       "isLightingLayer": false,
       "isLocked": false,
       "name": "Player + NPCs",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Sprites",
       "renderingType": "",
       "visibility": true,
       "cameras": [],

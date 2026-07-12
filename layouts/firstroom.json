@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.12203823303709982,
+    "zoomFactor": 0.08197080873859237,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,61 +29,51 @@
   "variables": [
     {
       "name": "StopScreen",
-      "persistentUuid": "be900d8f-4e1a-42c9-84e4-ea0f71c7353f",
       "type": "boolean",
       "value": false
     },
     {
       "name": "CurrentNPC",
-      "persistentUuid": "1817141f-2399-4d98-83b5-e41ee99a7af0",
       "type": "string",
       "value": "None"
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "63e85d4a-1bdb-44d0-a5fc-3a20e7a69171",
       "type": "number",
       "value": 0
     },
     {
       "name": "CurrentRoom",
-      "persistentUuid": "8a359fb1-b288-4e0f-af4b-e5895e429501",
       "type": "string",
       "value": "None"
     },
     {
       "name": "VanillaTimer",
-      "persistentUuid": "660c5832-302a-42c8-9d35-a346ede4d6ad",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartVanillaTimer",
-      "persistentUuid": "6e348185-9952-47d2-9df8-242ad979cd7b",
       "type": "boolean",
       "value": false
     },
     {
       "name": "LastPositionX",
-      "persistentUuid": "e134149f-e9cd-4afe-99b3-f12a74b14d66",
       "type": "number",
       "value": 934
     },
     {
       "name": "LastPositionY",
-      "persistentUuid": "8d017989-f601-4043-84d1-b3a709fdb99d",
       "type": "number",
       "value": 683
     },
     {
       "name": "tutorialpart",
-      "persistentUuid": "6d59efe6-104f-4438-b02b-c65953bf9a48",
       "type": "number",
       "value": 0
     },
     {
       "name": "CompleteLevel",
-      "persistentUuid": "5fedc68e-fc49-4db6-b7a4-7073bf6c373f",
       "type": "boolean",
       "value": false
     }
@@ -640,8 +630,8 @@
       "name": "DialogueBox",
       "persistentUuid": "76e0e25e-72fb-4419-8a4c-092d138dcc6b",
       "width": 1339,
-      "x": 5244,
-      "y": -2399,
+      "x": 5198,
+      "y": -2755,
       "zOrder": 22,
       "numberProperties": [],
       "stringProperties": [],
@@ -1846,7 +1836,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::ForEach",
       "object": "childnpc",
       "conditions": [
@@ -2382,11 +2371,21 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Scene"
+                        "value": "SetStringVariable"
                       },
                       "parameters": [
-                        "",
-                        "\"LouieRoom\"",
+                        "CurrentNPC",
+                        "=",
+                        "\"Louie\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "DialogueOngoing",
+                        "True",
                         ""
                       ]
                     }

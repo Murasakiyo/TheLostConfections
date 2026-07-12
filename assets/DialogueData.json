@@ -158,5 +158,65 @@
 			"y": 574
 		},
 		"colorID": 0
+	},
+	{
+		"title": "KrieLVL3",
+		"tags": "",
+		"body": "<<Krie>><<KAngry>> \nOh Stanley~~ What are you doing wandering around this late? The Queen commands you to state your business!\n<<Stanley>>\nYour Majesty... It seems like I need one more special ingredient for our lost child. \nWould it be alright if you were to lend me-\n<<Krie>><<KTalk>>\nStop right there! I know exactly what you need. But hmm it depends on whether you've been a good jester, or a greedy jester!\n<<Stanley>><<SSilly>> \n[i]G-Greedy?![/i]\n<<Krie>><<KThink>>\nLet's see...\n<<Thinking>> ",
+		"position": {
+			"x": 965,
+			"y": -155
+		},
+		"colorID": 0
+	},
+	{
+		"title": "NoLemon",
+		"tags": "",
+		"body": "<<Krie>><<KHappy>> \nYou've taken all my fruits from before so no more gifts for you, Mr Greedy Jester!\n<<Stanley>><<SCrazy>>\nW-What? \n<<SHappy>> \nOh, but come now... Krie!!!\n<<Finished>> \nEnd",
+		"position": {
+			"x": 1018,
+			"y": 133
+		},
+		"colorID": 0
+	},
+	{
+		"title": "YesLemon",
+		"tags": "",
+		"body": "<<Krie>><<KTalk>>\nHmph, seems you still have some self-control...\n<<GetLemon>> \nJust take it!\n<<Stanley>><<SShock>> \nEh? This is...\n<<Finished>>\nend",
+		"position": {
+			"x": 1249,
+			"y": 113
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LouieStart",
+		"tags": "",
+		"body": "<<Stanley>><<SShock>>\nHello?\nYour Highness, are you awake?\n...\n.......\n<<Louie>>\n[color=#71d4e0]Stanley...?[/color]\n[color=#71d4e0]Why are you...[/color]\n[color=#71d4e0]I mean- Do you need anything?[/color]\n<<Stanley>> <<SHappy>>  \nHey! I apologize for bothering you, Your Highness, but I was hoping you could help me with something.\n<<STalk>> \nI'm trying to bake special cupcakes for the lost children. It seems that they won't wake up unless they are comforted so I'm doing my best!\n<<Louie>> \n[color=#71d4e0]...I see.[/color]\n<<Stanley>>\nYou had mentioned before that you have that \"thing\" and I thought; \"What could be better in a cupcake?!\"\n<<Louie>> \n[color=#71d4e0]Yes, I do have one...[/color]\n[color=#71d4e0]But it's fragile. If it's opened the wrong way, it won't last.[/color]\n<< Stanley>> \nDon't worry~ I'll be careful with it!\n<<Louie>> \n[color=#71d4e0]...You're not being very convincing...[/color]\n<<Stanley>> \nWell then, how about you guide me and I'll follow? That way it's impossible for it to go wrong!\n<<Louie>>\n[color=#71d4e0]...![/color]\n[color=#71d4e0]Well...[/color]\n[color=#71d4e0]Alright... Let's do it...Come in...[/color]\n[color=#71d4e0]Just remember, it's not something that can be replaced easily.[/color]\n<<Stanley>>\n[i]The prince's room...[/i]\n<<Finished>><<Rhythm>> \nend",
+		"position": {
+			"x": -84,
+			"y": 824
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LouieBadEnd",
+		"tags": "",
+		"body": "<<Louie>><<LIdle>> \r\n...It's spoiled.\r\n<<Stanley>><<SShock>> \r\nOh my stitches, Louie, I am so so sorry! I didn't mean for this to happen!\r\n<<Louie>><<LWorry>> \r\nI-it's okay... It's not your fault.\r\nIt's just... The sight of that spoiled thing...\r\nPlease just take it, I have no use for it anymore.\r\n<<Stanley>><<SShock>> \r\nLouie...\r\nI promise I'll make it up to you!\r\n<<Louie>><<LIdle>> \r\n...\r\nThank you...\r\nI think I need some time alone now.\r\n<<Finished>><<Home>> \r\nend",
+		"position": {
+			"x": 148,
+			"y": 824
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LouieGoodEnd",
+		"tags": "",
+		"body": "<<Louie>><<LThink>> \r\n...You managed to keep it safe.\r\n<<Stanley>><<SHappy>> \r\nI told you I could do it with your guidance!\r\n<<Louie>>\r\nYou seem strangely confident of my abilities...\r\n<<Stanley>><<SShock>> \r\nWell, of course! You're our reliable Float Prince! Why wouldn't I trust you?\r\n<<Louie>><<LBlush>> \r\n...!\r\nOh...\r\nI...\r\n<<LSmile>> \r\nI trust in you too Stanley.\r\n<<Stanley>><<SHappy>> \r\nHehe, anyways, thanks for the ingredient! I must hurry and create the perfect cupcake for that lost child now!\r\n<<Louie>>\r\nAh... Yes, see you around Stanley...\r\n<<Finished>><<Home>> \r\nend",
+		"position": {
+			"x": 380,
+			"y": 805
+		},
+		"colorID": 0
 	}
 ]
