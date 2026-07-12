@@ -1,8 +1,8 @@
 {
   "b": 255,
   "disableInputWhenNotFocused": true,
-  "mangledName": "TorresRoom",
-  "name": "TorresRoom",
+  "mangledName": "Greenhouse",
+  "name": "Greenhouse",
   "r": 247,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.21446078431372864,
+    "zoomFactor": 0.22169247275005338,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -30,16 +30,32 @@
   "instances": [
     {
       "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Ground",
+      "name": "Ground",
+      "persistentUuid": "4c035469-967d-4459-b894-c1d91b5fb0f2",
+      "width": 0,
+      "x": -116,
+      "y": 942,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
       "customSize": true,
       "depth": 0,
-      "height": 371.2499999999999,
+      "height": 992.1600000000008,
       "keepRatio": true,
-      "layer": "Player",
-      "name": "Stanley",
-      "persistentUuid": "cdfbd62a-0539-4837-a06f-38cd4934ef6b",
-      "width": 297,
-      "x": 266,
-      "y": 952,
+      "layer": "",
+      "name": "insidegreenhouse",
+      "persistentUuid": "28eefa14-4d09-415f-bf68-65a143805c95",
+      "width": 2756,
+      "x": -350,
+      "y": -9,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -49,14 +65,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 0,
-      "height": 1080.0000000000002,
+      "height": 380.00000000000006,
       "keepRatio": true,
-      "layer": "",
-      "name": "background",
-      "persistentUuid": "29e5894a-3b1a-45ee-af14-d7ef033404ef",
-      "width": 1920,
-      "x": 0,
-      "y": 0,
+      "layer": "Player + NPCs",
+      "name": "Stanley",
+      "persistentUuid": "ebc71a5b-3391-4134-9de4-8abd93fe4d59",
+      "width": 304,
+      "x": 548,
+      "y": 961,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -66,30 +82,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 0,
-      "height": 348.97443609022554,
+      "height": 334.41650671785004,
       "keepRatio": true,
-      "layer": "Player",
-      "name": "Torres",
-      "persistentUuid": "eeab9f97-6dc8-4ba3-ae32-a1183ad22537",
-      "width": 332,
-      "x": 1446,
-      "y": 619,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "floor",
-      "persistentUuid": "082ca9b7-52db-423e-8f85-3ca4a6c03cf5",
-      "width": 0,
-      "x": 3,
-      "y": 955,
+      "layer": "Player + NPCs",
+      "name": "Krie",
+      "persistentUuid": "ad3f61ce-4838-49a7-ad01-2a41e5a5f3e7",
+      "width": 243,
+      "x": 1499,
+      "y": 637,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -98,14 +98,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 0,
-      "height": 475,
-      "layer": "Menu",
-      "name": "DialogueBox",
-      "persistentUuid": "b64ff1f9-72e9-4a74-97ec-c2486be90eed",
-      "width": 1339,
-      "x": 915,
-      "y": -535,
+      "depth": 1,
+      "height": 343,
+      "keepRatio": true,
+      "layer": "",
+      "name": "transitionscreen",
+      "persistentUuid": "b90c1242-3399-4d9b-b666-5fa77fdaa43d",
+      "width": 32,
+      "x": 1915,
+      "y": 605,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -115,32 +116,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 209,
-      "keepRatio": true,
-      "layer": "Menu",
-      "name": "DialogueTXT",
-      "persistentUuid": "0aee32a6-3e6a-4822-901c-d355c7f18349",
-      "width": 1103,
-      "x": 1047,
-      "y": -428,
-      "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 61,
+      "height": 373,
       "keepRatio": true,
       "layer": "",
-      "name": "E",
-      "persistentUuid": "bfc7ce90-617f-4ed4-9572-fc5c87d3e8ed",
-      "width": 61,
-      "x": 1612,
-      "y": 570,
-      "zOrder": 8,
+      "name": "leave",
+      "persistentUuid": "9e12164b-7516-4cc5-84e2-22ac38c25a98",
+      "width": 32,
+      "x": -26,
+      "y": 597,
+      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -150,12 +134,47 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "Menu",
-      "name": "Space",
-      "persistentUuid": "2572a80e-4a94-4dd5-8cdc-1edc36285f62",
+      "layer": "Player + NPCs",
+      "name": "location",
+      "persistentUuid": "cb0e3134-8f36-48e8-8762-6953f5b1c978",
       "width": 0,
-      "x": 2048,
-      "y": -218,
+      "x": 661,
+      "y": 841,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 65,
+      "keepRatio": true,
+      "layer": "",
+      "name": "E",
+      "persistentUuid": "f45b2097-35b2-4225-84c8-1d5817b62f21",
+      "width": 65,
+      "x": 1583,
+      "y": 565,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "flippedX": true,
+      "height": 642.5454545454546,
+      "keepRatio": true,
+      "layer": "Sprites",
+      "name": "Stanley_QNA",
+      "persistentUuid": "4d67764d-65fc-4bf5-b810-31ef73df21a2",
+      "width": 1178,
+      "x": -1287,
+      "y": 163,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -167,12 +186,45 @@
       "height": 0,
       "keepRatio": true,
       "layer": "Sprites",
-      "name": "Stanley_QNA",
-      "persistentUuid": "46b612d6-5497-43be-bb7d-04a293762985",
+      "name": "Krie_QNA",
+      "persistentUuid": "21558bf1-7340-4bd9-95dd-ff5bbaaab074",
       "width": 0,
-      "x": -329,
-      "y": -104,
+      "x": -820,
+      "y": 278,
       "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 475,
+      "layer": "Dialogue",
+      "name": "DialogueBox",
+      "persistentUuid": "cccff9be-3351-4b06-8b91-ce5873b66ff0",
+      "width": 1339,
+      "x": -1821,
+      "y": 802,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 200,
+      "keepRatio": true,
+      "layer": "Dialogue",
+      "name": "DialogueTXT",
+      "persistentUuid": "8ebd1417-2c44-4802-91c8-c9da13e24a6d",
+      "width": 1076,
+      "x": -1680,
+      "y": 929,
+      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -182,30 +234,13 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "Sprites",
-      "name": "Torres_QNA",
-      "persistentUuid": "6c62147d-a86c-4586-8c6d-ef719735cb4b",
+      "layer": "Dialogue",
+      "name": "Space",
+      "persistentUuid": "7ffc704e-30d9-4af7-b415-d797de5bf632",
       "width": 0,
-      "x": -1209,
-      "y": -175,
-      "zOrder": 11,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 368.22913719943426,
-      "keepRatio": true,
-      "layer": "Player",
-      "name": "Froggy",
-      "persistentUuid": "52140901-05bb-4e35-b20e-2ff3589e0320",
-      "width": 403,
-      "x": 1982,
-      "y": 665,
-      "zOrder": 12,
+      "x": -704,
+      "y": 1113,
+      "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -214,17 +249,37 @@
   "objects": [
     {
       "assetStoreId": "",
+      "height": 200,
+      "name": "Ground",
+      "persistentUuid": "3b7cea61-0c45-43d0-a115-a801249d0add",
+      "texture": "assets/backgrounds/ground.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 2200,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "canBeGrabbed": true,
+          "name": "Platform",
+          "platformType": "NormalPlatform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "yGrabOffset": 0
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
       "bottomMargin": 0,
       "height": 1080,
       "leftMargin": 0,
-      "name": "background",
-      "persistentUuid": "6a54cace-4b4f-4119-9297-b5debbd65139",
+      "name": "insidegreenhouse",
+      "persistentUuid": "058f7c78-463e-4b4a-86d3-72c0d71cf9a7",
       "rightMargin": 0,
-      "texture": "assets/backgrounds/fly_room.png",
+      "texture": "assets/backgrounds/inside_greenhouse.png",
       "tiled": false,
       "topMargin": 0,
       "type": "PanelSpriteObject::PanelSprite",
-      "width": 1920,
+      "width": 3000,
       "variables": [],
       "effects": [],
       "behaviors": []
@@ -232,136 +287,8 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Torres",
-      "persistentUuid": "f633aed5-720e-45fb-afba-141b04981629",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "Name",
-          "type": "string",
-          "value": "Torres"
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "stand",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.7,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/NPCS/Torres1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15,
-                        "y": 53
-                      },
-                      {
-                        "x": 657,
-                        "y": 53
-                      },
-                      {
-                        "x": 657,
-                        "y": 683
-                      },
-                      {
-                        "x": 15,
-                        "y": 683
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/NPCS/Torres2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15,
-                        "y": 53
-                      },
-                      {
-                        "x": 657,
-                        "y": 53
-                      },
-                      {
-                        "x": 657,
-                        "y": 683
-                      },
-                      {
-                        "x": 15,
-                        "y": 683
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
-      "bottomMargin": 0,
-      "height": 125,
-      "leftMargin": 0,
-      "name": "floor",
-      "persistentUuid": "0f4c52fe-cc60-4c36-8edd-a138cf16f67e",
-      "rightMargin": 0,
-      "texture": "assets/backgrounds/fly_room.png2",
-      "tiled": false,
-      "topMargin": 0,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 1920,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Platform",
-          "type": "PlatformBehavior::PlatformBehavior",
-          "canBeGrabbed": true,
-          "platformType": "NormalPlatform",
-          "yGrabOffset": 0
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Froggy",
-      "persistentUuid": "e050130e-db52-4dff-9431-18720875fd95",
+      "name": "Krie",
+      "persistentUuid": "5a84f645-53e6-422e-a2d5-49af2f69c050",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -378,7 +305,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/creatures/frog_enemy1.png",
+                  "image": "assets/NPCS/kriesprite1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -394,27 +321,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 167,
-                        "y": 158
+                        "x": 48,
+                        "y": 52
                       },
                       {
-                        "x": 582,
-                        "y": 158
+                        "x": 479,
+                        "y": 52
                       },
                       {
-                        "x": 582,
-                        "y": 563
+                        "x": 479,
+                        "y": 687
                       },
                       {
-                        "x": 167,
-                        "y": 563
+                        "x": 48,
+                        "y": 687
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/creatures/frog_enemy3.png",
+                  "image": "assets/NPCS/kriesprite2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -430,20 +357,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 167,
-                        "y": 158
+                        "x": 48,
+                        "y": 52
                       },
                       {
-                        "x": 582,
-                        "y": 158
+                        "x": 479,
+                        "y": 52
                       },
                       {
-                        "x": 582,
-                        "y": 563
+                        "x": 479,
+                        "y": 687
                       },
                       {
-                        "x": 167,
-                        "y": 563
+                        "x": 48,
+                        "y": 687
                       }
                     ]
                   ]
@@ -453,22 +380,44 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 0,
+      "height": 32,
+      "leftMargin": 0,
+      "name": "leave",
+      "persistentUuid": "e7302e9a-7843-4030-ac9b-d531c9c66921",
+      "rightMargin": 0,
+      "texture": "NewPanelSprite",
+      "tiled": true,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "background"
+        "objectName": "Ground"
       },
       {
-        "objectName": "floor"
+        "objectName": "insidegreenhouse"
       },
       {
-        "objectName": "Torres"
+        "objectName": "Krie"
       },
       {
-        "objectName": "Froggy"
+        "objectName": "leave"
       }
     ]
   },
@@ -482,68 +431,16 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "PosX"
-          },
-          "parameters": [
-            "Stanley",
-            "<",
-            "200"
-          ]
-        }
-      ],
+      "conditions": [],
       "actions": [
         {
           "type": {
-            "value": "Create"
+            "value": "ActivateBehavior"
           },
           "parameters": [
-            "",
-            "LocationInteract",
-            "150",
-            "500",
-            "\"Player\""
-          ]
-        },
-        {
-          "type": {
-            "value": "ScalableCapability::ScalableBehavior::SetValue"
-          },
-          "parameters": [
-            "LocationInteract",
-            "Scale",
-            "=",
-            "1.3"
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"f\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Firstroom\"",
-                ""
-              ]
-            }
+            "Stanley",
+            "StayOnScreen",
+            "no"
           ]
         }
       ]
@@ -553,33 +450,77 @@
       "conditions": [
         {
           "type": {
-            "value": "PosX"
+            "value": "CollisionNP"
           },
           "parameters": [
             "Stanley",
-            ">",
-            "200"
+            "leave",
+            "",
+            "",
+            "no"
           ]
         }
       ],
       "actions": [
         {
           "type": {
-            "value": "Delete"
+            "value": "Scene"
           },
           "parameters": [
-            "LocationInteract",
+            "",
+            "\"Outside\"",
             ""
           ]
         }
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Inventory"
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneJustBegins"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "location",
+            "Text",
+            "=",
+            "\"Krie's Greenhouse\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "location",
+            "Tween",
+            "\"Fade out\"",
+            "0",
+            "\"linear\"",
+            "2",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "E"
+          ]
+        }
+      ]
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -590,7 +531,7 @@
           },
           "parameters": [
             "Stanley",
-            "Torres",
+            "Krie",
             "200",
             ""
           ]
@@ -613,7 +554,7 @@
           "parameters": [
             "CurrentNPC",
             "=",
-            "\"Torres\""
+            "\"Krie\""
           ]
         }
       ],
@@ -629,17 +570,82 @@
                 "",
                 "\"e\""
               ]
-            }
-          ],
-          "actions": [
+            },
             {
               "type": {
-                "value": "SetBooleanVariable"
+                "value": "NumberVariable"
               },
               "parameters": [
-                "DialogueOngoing",
-                "True",
-                ""
+                "CurrentLVL",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "KrieQNAMinigame",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Krie QNA Minigame\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Else",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "KrieQNAMinigame",
+                    "True",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "PlatformerMinigame",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "DialogueOngoing",
+                    "True",
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -656,7 +662,7 @@
           },
           "parameters": [
             "Stanley",
-            "Torres",
+            "Krie",
             "200",
             ""
           ]
@@ -695,6 +701,42 @@
       "conditions": [
         {
           "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Stanley",
+            "transitionscreen",
+            "",
+            "",
+            "no"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Tree Climbing Minigame\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Inventory"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "BooleanVariable"
           },
           "parameters": [
@@ -713,54 +755,6 @@
             "Stanley",
             "PlatformerObject",
             ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "CurrentLVL",
-            "=",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "FrogMinigame",
-            "=",
-            "1"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Show"
-          },
-          "parameters": [
-            "Froggy",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetXY"
-          },
-          "parameters": [
-            "Froggy",
-            "=",
-            "726",
-            "=",
-            "675"
           ]
         }
       ]
@@ -844,7 +838,61 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "Player",
+      "name": "Ground",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Player + NPCs",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
@@ -899,6 +947,60 @@
       "isLightingLayer": false,
       "isLocked": false,
       "name": "Sprites",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Dialogue",
       "renderingType": "",
       "visibility": true,
       "cameras": [],

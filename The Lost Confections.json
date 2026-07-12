@@ -1845,6 +1845,70 @@
         "name": "assets/platforms/greenhouse_platform.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/directions/lockedenter.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/lockedenter.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/BrightArrowUp2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/directions/BrightArrowUp",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/directions/arrow4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/directions/arrow4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/ground.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/ground.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NPCS/kriesprite2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NPCS/kriesprite2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NPCS/kriesprite1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NPCS/kriesprite1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/grassnow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/grassnow.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/backgrounds/greenhouse.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/backgrounds/greenhouse.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -1860,6 +1924,7 @@
       "effects": [],
       "behaviors": [
         {
+          "isFolded": true,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 6000,
@@ -5026,6 +5091,55 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Warning",
+      "persistentUuid": "40ca8ec8-d3ad-4d1b-a837-7ec0fe56aace",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "test",
+      "font": "retro-pixel-cute-prop.ttf",
+      "textAlignment": "left",
+      "characterSize": 80,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "test",
+        "font": "retro-pixel-cute-prop.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 80,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -5083,6 +5197,9 @@
         "objectName": "Space"
       },
       {
+        "objectName": "Warning"
+      },
+      {
         "objectName": "Torres_QNA"
       },
       {
@@ -5111,7 +5228,7 @@
       "value": true
     },
     {
-      "name": "TutoKidStart",
+      "name": "TalktoKid",
       "type": "boolean",
       "value": false
     },
@@ -5126,7 +5243,6 @@
       "value": "Main"
     },
     {
-      "folded": true,
       "name": "Inventory",
       "type": "structure",
       "children": [
@@ -5218,41 +5334,29 @@
       "value": false
     },
     {
-      "name": "LVL1",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "name": "LVL2",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "folded": true,
       "name": "GameSave",
       "type": "structure",
-      "children": [
-        {
-          "name": "Level1Comeplete",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Level2Complete",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "TutorialComplete",
-          "type": "boolean",
-          "value": false
-        }
-      ]
+      "children": []
+    },
+    {
+      "name": "TutorialComplete",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "name": "Level1Complete",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "Level2Complete",
+      "type": "boolean",
+      "value": false
     },
     {
       "name": "CurrentLVL",
       "type": "number",
-      "value": 0
+      "value": 1
     },
     {
       "name": "InventoryCupcake",
@@ -5268,6 +5372,21 @@
       "name": "AmountOfGoodIngredients",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "FrogMinigame",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "KrieQNAMinigame",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "PlatformerMinigame",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
@@ -5358,6 +5477,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/greenhouse-platformer-minigame"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/outside"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/greenhouse"
     }
   ],
   "externalEvents": [
@@ -5380,6 +5507,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/character-sprites"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/reset"
     }
   ],
   "eventsFunctionsExtensions": [

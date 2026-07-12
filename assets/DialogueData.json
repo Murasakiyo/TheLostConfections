@@ -2,7 +2,7 @@
 	{
 		"title": "Start",
 		"tags": "",
-		"body": "Stanley...\nI'm upset...\nBut you know what would cheer me up..?\nA chocolate cupcake!!\nOh but not just any chocolate cupcake, specially topped with your gorgeous vanilla essence and finished off with rainbow sprinkles!!\nCould you do that?\n<<Finished>> \nPlease?",
+		"body": "Stanley...\nI'm upset...\nBut you know what would cheer me up..?\nA chocolate cupcake!!\nOh but not just any chocolate cupcake, specially topped with your gorgeous vanilla essence and finished off with rainbow sprinkles!!\nCould you do that?\n<<Finished>><<Ask>> \nPlease?",
 		"position": {
 			"x": -41,
 			"y": -116
@@ -12,7 +12,7 @@
 	{
 		"title": "ReceivedCupcake",
 		"tags": "",
-		"body": "Oh, Thank you Stanley! Thank you so much!\nThis is exactly what I needed, I'm so happy...\nLets meet again soon!\nGoodbye!\n<<Finished>> \nEnd",
+		"body": "Oh, Thank you Stanley! Thank you so much!\nThis is exactly what I needed, I'm so happy...\nLets meet again soon!\nGoodbye!\n<<Finished>><<Awaken>> \nEnd",
 		"position": {
 			"x": -45,
 			"y": 126
@@ -44,8 +44,58 @@
 		"tags": "",
 		"body": "<<Torres>><<TTalk>> \nHope you're satisfied.\n<<Finished>> \nend",
 		"position": {
-			"x": 431,
-			"y": 175
+			"x": 450,
+			"y": 126
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Torreslevel1",
+		"tags": "",
+		"body": "<<Stanley>><<SHappy>>\nSorry to bother you again, Torres~\n<<Torres>><<TAngry>>\nYOU-!!!!!!!\n<<Stanley>><<SShock>>\nME???\n<<Torres>><<TMiff>>\nWhy is it that so many pests are attracted to this place lately?!\n<<Stanley>><<STalk>>\nWell, you know what they say.\nThe more pests there is here, the more ingredients we can get!\nAnd this frog is perfect as melted chocolate toppings!\n<<Torres>><<TMiff>>\nJust get them out of here....\n<<Finished>><<FrogMinigame>> \nend",
+		"position": {
+			"x": 454,
+			"y": -118
+		},
+		"colorID": 0
+	},
+	{
+		"title": "StartLVL1",
+		"tags": "",
+		"body": "...We don't want to go home.\n..Father always comes back smelling... funny.\nSometimes he smells like berries... sometimes like limes...\n...But when he smells like cherries...\n...he gets really angry.\nHe shouts... and... sometimes he hits us.\nWe're scared he'll come home smelling like fruits again...\n<<Finished>><<Ask>> \nend",
+		"position": {
+			"x": -60,
+			"y": 341
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LVL1Ask",
+		"tags": "",
+		"body": "Father is scary!\n<<Finished>> \nend",
+		"position": {
+			"x": 184,
+			"y": 353
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TorresLVL1Complete",
+		"tags": "",
+		"body": "<<Torres>><<TTalk>> \nThat should be all of it... Thanks for the hand.\n<<TMiff>>\n....I guess.\n<<Finished>> \nend",
+		"position": {
+			"x": 668,
+			"y": -128
+		},
+		"colorID": 0
+	},
+	{
+		"title": "KriePlatformer",
+		"tags": "",
+		"body": "<<Krie>><<KTalk>>\nOh wait Stanley, come here!\n<<Stanley>><<SShock>>\nWhat is it, Your Majesty?\n<<Krie>><<KHappy>>\nIf it's ingredients you need, then I think I have a few more around in the greenhouse here somewhere!\n<<Stanley>><<STalk>>\nReally?! That would be so helpful! Where can I get them?\n<<Krie>><<KTalk>>\nIt's situated somewhere a bit dangerous, but I'm sure it'll be a piece of cupcake for a doll like you.\n<<Finished>><<MinigamePlatform>> \nend",
+		"position": {
+			"x": 692,
+			"y": 88
 		},
 		"colorID": 0
 	}

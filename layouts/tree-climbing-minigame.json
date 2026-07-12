@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.18781732880530486,
+    "zoomFactor": 0.23689563725446872,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,13 +29,11 @@
   "variables": [
     {
       "name": "LimeTimer",
-      "persistentUuid": "96a135d8-8905-4e55-ae26-555d5e5f91ba",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartLimeTimer",
-      "persistentUuid": "469c8cb5-05bf-4f7e-9bf8-3e53cb4e5e74",
       "type": "boolean",
       "value": false
     }
@@ -45,15 +43,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 214,
+      "height": 164,
       "keepRatio": true,
       "layer": "",
       "name": "Ground",
       "persistentUuid": "54842534-aca5-47d2-8465-d6a2291eea28",
       "width": 2765,
-      "x": -844,
-      "y": 960,
-      "zOrder": 1,
+      "x": -848,
+      "y": 822,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -62,13 +60,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 1806,
+      "height": 1632,
       "keepRatio": true,
       "layer": "Trunk",
       "name": "Trunk",
       "persistentUuid": "52ce405a-c722-4713-8721-d1d5a1cbc659",
-      "width": 1096,
-      "x": 692,
+      "width": 626,
+      "x": 901,
       "y": -626,
       "zOrder": 5,
       "numberProperties": [],
@@ -79,15 +77,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 1844,
+      "height": 2257,
       "keepRatio": true,
       "layer": "",
       "name": "Background",
       "persistentUuid": "3ea21846-dcf4-4b60-ad36-5b6521ae092f",
-      "width": 2765,
-      "x": -843,
-      "y": -879,
-      "zOrder": 3,
+      "width": 4213,
+      "x": -1539,
+      "y": -1284,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -102,8 +100,8 @@
       "name": "Stanley_Tree",
       "persistentUuid": "fb811de1-5593-4f49-907c-181387462148",
       "width": 105,
-      "x": 1089,
-      "y": -699,
+      "x": -138,
+      "y": 703,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -118,8 +116,8 @@
       "name": "WarningTXT",
       "persistentUuid": "e80d4995-d196-4565-9065-ce70511fdd70",
       "width": 0,
-      "x": -15,
-      "y": 807,
+      "x": 24,
+      "y": 825,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -214,8 +212,8 @@
       "layer": "Trunk",
       "name": "Platform",
       "persistentUuid": "6db4ee48-def8-4ecf-8dc1-6005393a8313",
-      "width": 235,
-      "x": 1113,
+      "width": 302,
+      "x": 1074,
       "y": -564,
       "zOrder": 11,
       "numberProperties": [],
@@ -404,6 +402,23 @@
       "x": 1352,
       "y": -823,
       "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 949.5,
+      "keepRatio": true,
+      "layer": "",
+      "name": "greenhouse",
+      "persistentUuid": "c6d7e5b5-a4e2-450e-813d-61429a97b343",
+      "width": 1688,
+      "x": -1481,
+      "y": -39,
+      "zOrder": 18,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -685,7 +700,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Trunk",
       "persistentUuid": "d8e4afff-d879-4a27-84a1-e43b1140a56d",
@@ -695,9 +710,9 @@
       "effects": [],
       "behaviors": [
         {
+          "canBeGrabbed": true,
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior",
-          "canBeGrabbed": true,
           "platformType": "Ladder",
           "yGrabOffset": 0
         }
@@ -737,12 +752,12 @@
                         "y": 30
                       },
                       {
-                        "x": 864,
-                        "y": 1050
+                        "x": 1013.5,
+                        "y": 2869
                       },
                       {
-                        "x": 168,
-                        "y": 1050
+                        "x": 126,
+                        "y": 2834
                       }
                     ]
                   ]
@@ -843,7 +858,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/backgrounds/grass.png",
+                  "image": "assets/backgrounds/ground.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -863,16 +878,16 @@
                         "y": 0
                       },
                       {
-                        "x": 1920,
+                        "x": 2200,
                         "y": 0
                       },
                       {
-                        "x": 1920,
-                        "y": 1080
+                        "x": 2200,
+                        "y": 200
                       },
                       {
                         "x": 0,
-                        "y": 1080
+                        "y": 200
                       }
                     ]
                   ]
@@ -1159,7 +1174,7 @@
       }
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Leaves",
       "persistentUuid": "87c095c2-b616-4f17-a95b-35d52fa4962b",
@@ -1199,16 +1214,77 @@
                         "y": 50
                       },
                       {
-                        "x": 559,
-                        "y": 50
+                        "x": 1018.5,
+                        "y": 62
                       },
                       {
-                        "x": 559,
-                        "y": 357
+                        "x": 1021.5,
+                        "y": 640
                       },
                       {
-                        "x": 34,
-                        "y": 357
+                        "x": 50,
+                        "y": 669
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "greenhouse",
+      "persistentUuid": "c92c1497-51f0-4bd9-a7ca-82021e1ae1bf",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/backgrounds/greenhouse.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1051.5,
+                        "y": 585.5
+                      },
+                      {
+                        "x": 1276.5,
+                        "y": 563.5
+                      },
+                      {
+                        "x": 1312,
+                        "y": 973
+                      },
+                      {
+                        "x": 1012,
+                        "y": 975
                       }
                     ]
                   ]
@@ -1249,6 +1325,9 @@
       },
       {
         "objectName": "Leaves"
+      },
+      {
+        "objectName": "greenhouse"
       },
       {
         "objectName": "WarningTXT"
@@ -1861,8 +1940,8 @@
           "parameters": [
             "Ingredients",
             "Resizable",
-            "135",
-            "135"
+            "64",
+            "64"
           ]
         }
       ]
@@ -2121,6 +2200,42 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Stanley_Tree",
+            "greenhouse",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Greenhouse\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Inventory"
     }
   ],
   "layers": [
@@ -2419,7 +2534,7 @@
       "isLocked": false,
       "name": "Leaves",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [],
       "effects": [
         {

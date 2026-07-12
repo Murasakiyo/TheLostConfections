@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4027225833325919,
+    "zoomFactor": 0.3411856023473459,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,7 +29,6 @@
   "variables": [
     {
       "name": "GoodStars",
-      "persistentUuid": "72b57a65-a1bd-403d-826f-6e5e56dc3bf2",
       "type": "number",
       "value": 0
     }
@@ -89,14 +88,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 0,
-      "height": 64,
+      "height": 108,
       "keepRatio": true,
       "layer": "",
       "name": "GoodStar",
       "persistentUuid": "0c09ecd8-6a9b-42b2-b434-6551814ec362",
-      "width": 64,
-      "x": 73,
-      "y": 52,
+      "width": 108,
+      "x": 68,
+      "y": 36,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -123,15 +122,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 0,
-      "height": 64,
+      "height": 108,
       "keepRatio": true,
       "layer": "",
       "name": "GoodStar",
-      "persistentUuid": "8850f24c-8eca-4ef7-9920-4af91fd589af",
-      "width": 64,
-      "x": 190,
-      "y": 52,
-      "zOrder": 6,
+      "persistentUuid": "1972fc5a-ebb2-4e2f-ae77-fea3532c37b1",
+      "width": 108,
+      "x": 185,
+      "y": 34,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": [
@@ -146,15 +145,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 0,
-      "height": 64,
+      "height": 108,
       "keepRatio": true,
       "layer": "",
       "name": "GoodStar",
-      "persistentUuid": "2150bded-f484-4fd7-8b87-abc851a4993d",
-      "width": 64,
-      "x": 306,
-      "y": 52,
-      "zOrder": 7,
+      "persistentUuid": "67a149f4-70e4-4dc3-95c2-fb9bd1ad494e",
+      "width": 108,
+      "x": 298,
+      "y": 36,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": [
@@ -461,16 +460,17 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "assets/directions/BrightArrowUp",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/directions/BrightArrowUp.png",
+                  "image": "assets/directions/BrightArrowUp",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -486,20 +486,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
+                        "x": 2,
                         "y": 1
                       },
                       {
-                        "x": 32,
+                        "x": 31,
                         "y": 1
                       },
                       {
-                        "x": 32,
-                        "y": 32
+                        "x": 31,
+                        "y": 31
                       },
                       {
-                        "x": 0,
-                        "y": 32
+                        "x": 2,
+                        "y": 31
                       }
                     ]
                   ]

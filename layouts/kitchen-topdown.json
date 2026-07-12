@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.1700303648902914,
+    "zoomFactor": 0.2987985363606942,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,26 +29,31 @@
   "variables": [
     {
       "name": "CompleteIngredient",
+      "persistentUuid": "5794f2cf-6afc-40e8-ace8-bd98eb80157c",
       "type": "number",
       "value": 0
     },
     {
       "name": "MixingProgress",
+      "persistentUuid": "4dd80af8-732b-45a0-bc26-c66c06f2c88d",
       "type": "number",
       "value": 0
     },
     {
       "name": "StirDirection",
+      "persistentUuid": "b537ac3c-ebbe-4e13-9103-3c3a113b2199",
       "type": "number",
       "value": 0
     },
     {
       "name": "Complete",
+      "persistentUuid": "7de5df11-2fe1-4596-81bc-57076e41ad29",
       "type": "boolean",
       "value": false
     },
     {
       "name": "StartCook",
+      "persistentUuid": "aa374d20-141b-4ec7-b3cd-75538e609b9d",
       "type": "boolean",
       "value": false
     }
@@ -2068,6 +2073,21 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ]
         }

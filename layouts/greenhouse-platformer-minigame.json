@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.37687720367508915,
+    "zoomFactor": 0.22169247275005444,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,25 +29,21 @@
   "variables": [
     {
       "name": "StartCoffeeBeanTimer",
-      "persistentUuid": "938f6392-e1d6-41c3-8340-3c8dc133af12",
       "type": "boolean",
       "value": false
     },
     {
       "name": "CoffeeBeanTimer",
-      "persistentUuid": "72c0529f-eb82-49a9-b092-7d0f02c4e7cf",
       "type": "number",
       "value": 0
     },
     {
       "name": "StartGrapeTimer",
-      "persistentUuid": "1a883657-66ae-4df9-a80e-12bb7e3e9911",
       "type": "boolean",
       "value": false
     },
     {
       "name": "GrapeTimer",
-      "persistentUuid": "60b0e1a8-ea64-440c-b852-d387585acb76",
       "type": "number",
       "value": 0
     }
@@ -113,8 +109,8 @@
       "name": "Stanley_Greenhouse",
       "persistentUuid": "9ad127a4-4404-40d1-93a4-8e24e1dd62ef",
       "width": 80,
-      "x": -385,
-      "y": 784,
+      "x": -361,
+      "y": 820,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -329,12 +325,12 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "Ingredients",
+      "layer": "IngredientLayer",
       "name": "Grapes",
       "persistentUuid": "5e8f6c0d-7e46-4586-882e-97ce0bb0ceff",
       "width": 0,
-      "x": 1992,
-      "y": -396,
+      "x": 2605,
+      "y": -392,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -461,14 +457,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 58,
+      "height": 43,
       "keepRatio": true,
       "layer": "Platforms",
       "name": "GrassPlatform",
       "persistentUuid": "1b66a4c5-5d30-48cf-8e5a-abf1ebd3b924",
       "width": 208,
       "x": 2336,
-      "y": 160,
+      "y": 175,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -513,12 +509,12 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "Platforms",
+      "layer": "IngredientLayer",
       "name": "CoffeeBeans",
       "persistentUuid": "9d3c041a-f427-4b88-88c1-db51cb8a5a2d",
       "width": 0,
-      "x": 2313,
-      "y": -296,
+      "x": 2657,
+      "y": -413,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -552,6 +548,22 @@
       "x": 1435,
       "y": 42,
       "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Ingredients",
+      "persistentUuid": "fc3acb9b-bc6d-43c0-b9e4-12b77be2aa1a",
+      "width": 0,
+      "x": 2481,
+      "y": -212,
+      "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -861,7 +873,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/backgrounds/grass.png",
+                  "image": "assets/backgrounds/ground.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -881,16 +893,16 @@
                         "y": 0
                       },
                       {
-                        "x": 1920,
+                        "x": 2200,
                         "y": 0
                       },
                       {
-                        "x": 1920,
-                        "y": 1080
+                        "x": 2200,
+                        "y": 200
                       },
                       {
                         "x": 0,
-                        "y": 1080
+                        "y": 200
                       }
                     ]
                   ]
@@ -1479,7 +1491,7 @@
           "parameters": [
             "",
             "2",
-            "\"Ingredients\"",
+            "\"IngredientLayer\"",
             ""
           ]
         },
@@ -1515,7 +1527,7 @@
             "",
             "Stanley_Greenhouse",
             "",
-            "\"Ingredients\"",
+            "\"IngredientLayer\"",
             ""
           ]
         }
@@ -1833,8 +1845,8 @@
             "",
             "Ingredients",
             "1490",
-            "120",
-            "\"Ingredients\""
+            "139",
+            "\"IngredientLayer\""
           ]
         },
         {
@@ -1855,8 +1867,75 @@
           "parameters": [
             "Ingredients",
             "Resizable",
-            "135",
-            "135"
+            "64",
+            "64"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "Inventory.CoffeeBean",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "CurrentLVL",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Ingredients",
+            "2407",
+            "108",
+            "\"IngredientLayer\""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Ingredients",
+            "Animation",
+            "=",
+            "\"coffeebean\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetSize"
+          },
+          "parameters": [
+            "Ingredients",
+            "Resizable",
+            "64",
+            "64"
           ]
         }
       ]
@@ -1897,7 +1976,7 @@
             "FoundCoffeeBeanTXT",
             "Text",
             "=",
-            "\"You found Coffee Bean!\""
+            "\"You found Grapes!\""
           ]
         },
         {
@@ -2024,10 +2103,20 @@
             },
             {
               "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "PlatformerMinigame",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Delete"
               },
               "parameters": [
-                "FoundGrapesTXT",
+                "FoundCoffeeBeanTXT",
                 ""
               ]
             },
@@ -2039,74 +2128,17 @@
                 "Ingredients",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Greenhouse\"",
+                ""
+              ]
             }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "Inventory.CoffeeBean",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "CurrentLVL",
-            "=",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "Ingredients",
-            "2425",
-            "90",
-            "\"Ingredient\""
-          ]
-        },
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-          },
-          "parameters": [
-            "Ingredients",
-            "Animation",
-            "=",
-            "\"coffeebean\""
-          ]
-        },
-        {
-          "type": {
-            "value": "ResizableCapability::ResizableBehavior::SetSize"
-          },
-          "parameters": [
-            "Ingredients",
-            "Resizable",
-            "135",
-            "135"
           ]
         }
       ]
@@ -2147,7 +2179,7 @@
             "FoundGrapesTXT",
             "Text",
             "=",
-            "\"You found Coffee Bean!\""
+            "\"You found Coffee Beans!\""
           ]
         },
         {
@@ -2274,10 +2306,20 @@
             },
             {
               "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "PlatformerMinigame",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Delete"
               },
               "parameters": [
-                "FoundCoffeeBeanTXT",
+                "FoundGrapesTXT",
                 ""
               ]
             },
@@ -2287,6 +2329,16 @@
               },
               "parameters": [
                 "Ingredients",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Greenhouse\"",
                 ""
               ]
             }
@@ -2486,7 +2538,7 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "Ingredients",
+      "name": "IngredientLayer",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
